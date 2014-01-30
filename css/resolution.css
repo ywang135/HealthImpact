@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:1500px)
+{
+	body { background: yellow; }
+}
+
+@media screen and (max-width:1000px)
+{
+	body { background: green; }
+}
+
+@media screen and (max-width:500px)
+{
+	body { background: red; }
+}
