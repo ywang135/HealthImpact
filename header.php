@@ -4,6 +4,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/resolution.css" type="text/css" media="screen">
+	<script src='JS/jquery.js'></script>
 	<title>Loading..</title>
 </head>
 <body>
