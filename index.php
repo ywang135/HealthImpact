@@ -6,16 +6,17 @@
     $(document).ready(function() {
         $(this).attr("title", $title);
        	$("#sub_menu").show();
+       	$("#copyright").css( { "margin-top" : "700px"} );
     });
 </script>
 	<div class="main_body">
 		<div id="line_1">
-		<div id="sq_l_t"></div>
-		<div id="sq_r_t"></div>
+			<div id="sq_l_t" onclick="location.href='company.php';"></div>
+			<div id="sq_r_t" onclick="location.href='disease.php';"></div>
 		</div><!-- #line_1 end -->
 		<div id="line_2">
-		<div id="sq_l_b"></div>
-		<div id="sq_r_b"></div>
+			<div id="sq_l_b" onclick="location.href='drug.php';"></div>
+			<div id="sq_r_b" onclick="location.href='country.php';"></div>
 		</div><!-- #line_2 end -->
 	</div><!-- .main_body end -->
 

@@ -29,9 +29,9 @@
 			<div id="network_ico">
 			<table border="0" cellpadding="1" >
   				<tr>
-  				<td height="26"><a href="http://www.facebook.com/pages/yourfanpage/12345678" target="_blank"><img src="http://api.ning.com/files/yK4NcMrBlofWleqeABbNHR-JwhBMxMRlC7NRM0KCYhLk4i-pqoO0AYXzAp3bKHf0IYIP3Qjn0GVzm5V1Gv56dUqaq68hdmSW/facebooks1_60.png" alt="Join Our Facebook Fan Page" width="24" height="24" border="0"></a>
+  				<td height="26"><a href="https://www.facebook.com/AcademicsStandAgainstPoverty" target="_blank"><img src="http://api.ning.com/files/yK4NcMrBlofWleqeABbNHR-JwhBMxMRlC7NRM0KCYhLk4i-pqoO0AYXzAp3bKHf0IYIP3Qjn0GVzm5V1Gv56dUqaq68hdmSW/facebooks1_60.png" alt="Join Our Facebook Fan Page" width="24" height="24" border="0"></a>
   				</td>
-				<td><a href="http://twitter.com/yourtwitter" target="_blank"><img src="http://api.ning.com/files/vwYvIcXARnCDb7rmTyv-ajyO2kvmHyKJ813N8CvFCImegtIaEvi9NeRhZ1RWCqojSEvAqmOzVNsoWX4HPus6Zwt-nMYOBXWU/twitters1_60.png" alt="Follow Us On Twitter" width="24" height="24" border="0"></a>
+				<td><a href="https://twitter.com/AcademicsStand" target="_blank"><img src="http://api.ning.com/files/vwYvIcXARnCDb7rmTyv-ajyO2kvmHyKJ813N8CvFCImegtIaEvi9NeRhZ1RWCqojSEvAqmOzVNsoWX4HPus6Zwt-nMYOBXWU/twitters1_60.png" alt="Follow Us On Twitter" width="24" height="24" border="0"></a>
 				</td></tr>
   			</table>
 			</div><!-- #network end -->
@@ -41,7 +41,7 @@
 			<li><span><a href="#">The Index</a></span></li>
 			<li><span><a href="#">Companies and Drugs</a></span></li>
 			<li><span><a href="#">Resources</a></span></li>
-			<li><span><a href="#">News</a></span></li>
+			<li><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">News</a></span></li>
 			<li><span><a href="#">Methodology</a></span></li>
 			<li><span><a href="#">Contact Us</a></span></li>
 			</ul>

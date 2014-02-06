@@ -34,7 +34,15 @@ html{
 	.main_body {
 		text-align:center;
 		display:block;
-		margin-top:90px;
+		margin-top:80px;
+	}
+	#copyright {
+		display:block;
+		width:100%;
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:0px;
 	}
 	#header {
 		width:100%;
@@ -116,7 +124,11 @@ html{
 		border-color:white;
 		border-radius:8px;
 		-moz-border-radius:8px; /* Old Firefox */
-		font-size:80%;		
+		white-space:nowrap;
+		font-size:auto;		
+	}
+	#menu_bar #main_menu ul li a:hover{
+		background: yellow;	
 	}
 	#menu_bar #sub_menu ul li a:link, #menu_bar #sub_menu ul a:visited{
 		width:130px;
@@ -132,7 +144,11 @@ html{
 		border-color:white;
 		border-radius:8px;
 		-moz-border-radius:8px; /* Old Firefox */
-		font-size:100%;		
+		white-space:nowrap;
+		font-size:auto;		
+	}
+	#menu_bar #sub_menu ul li a:hover{
+		background: blue;	
 	}
 	#network_ico {
 		float:right;
