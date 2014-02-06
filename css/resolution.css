@@ -63,18 +63,32 @@ html{
 	}
 	#menu_bar #main_menu ul{
 		list-style-type:none;
-		margin-top:70px;
+		margin-top:65px;
 		min-width:900px;
-		margin-bottom:10px;
 		width:100%;
 		
 	}
+	#menu_bar #sub_menu{
+		display:none;
+	}
+	#menu_bar #sub_menu ul{
+		list-style-type:none;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:-35px;
+		text-align:center;
+		min-width:600px;
+		width:70%;
+	}
 	#menu_bar #main_menu ul li{
 		float:left;
-		//display: inline;
 		width: 138px;		
 	}
-	#menu_bar #main_menu ul li a:link, #menu_bar ul a:visited{
+	#menu_bar #sub_menu ul li{
+		float:left;
+		width: 148px;		
+	}
+	#menu_bar #main_menu ul li a:link, #menu_bar #main_menu ul a:visited{
 		width:130px;
 		text-decoration:none;
 		float:left;
@@ -90,7 +104,22 @@ html{
 		-moz-border-radius:8px; /* Old Firefox */
 		font-size:80%;		
 	}
-	
+	#menu_bar #sub_menu ul li a:link, #menu_bar #sub_menu ul a:visited{
+		width:130px;
+		text-decoration:none;
+		float:left;
+		text-align:center;
+		padding-left:auto;
+		padding-right:auto;
+		padding-top:6px;
+		padding-bottom:6px;
+		background: red;
+		color: white;
+		border-color:white;
+		border-radius:8px;
+		-moz-border-radius:8px; /* Old Firefox */
+		font-size:100%;		
+	}
 	#network_ico {
 		float:right;
 	}
@@ -104,7 +133,7 @@ html{
 		-moz-border-radius:6px; /* Old Firefox */
 	}
 	#seperate_line {
-		margin-top:115px;
+		margin-top:110px;
 		FILTER: alpha(opacity=100,finishopacity=0,style=5);
 	}
 }

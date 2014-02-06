@@ -47,5 +47,13 @@
 			</ul>
 			</div><!-- #main_menu end -->
 			<HR id="seperate_line" width="100%" color=blue SIZE=5></br>
+			<div id="sub_menu">
+				<ul>
+				<li><span><a href="#">COUNTRY</a></span></li>
+				<li><span><a href="#">COMPANY</a></span></li>
+				<li><span><a href="#">DRUG</a></span></li>
+				<li><span><a href="#">DISEASE</a></span></li>
+				</ul>
+			</div><!-- #sub_menu end -->
 		</div><!-- #menu_bar end -->
 	</div><!-- #header end -->
