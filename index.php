@@ -7,9 +7,8 @@
         $(this).attr("title", $title);
     });
 </script>
-<container>
 
-</container>
+
 <?php
 	include "footer.php";
 ?>
