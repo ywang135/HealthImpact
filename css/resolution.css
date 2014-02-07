@@ -31,6 +31,9 @@ html{
 		background-color: rgb(255, 255, 255);
 		border:0px;
 	}
+	input[type="text"]:focus { 
+		outline: none;
+	}
 	.main_body {
 		text-align:center;
 		display:block;
