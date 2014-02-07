@@ -6,7 +6,7 @@
     $(document).ready(function() {
         $(this).attr("title", $title);
        	$("#sub_menu").show();
-       	$("#copyright").css( { "margin-top" : "700px"} );
+       	$("#copyright").css( { "margin-top" : "760px"} );
     });
 </script>
 	<div class="main_body">
