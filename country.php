@@ -1,28 +1,17 @@
 <?php
 	include "header.php";
 ?>
+<script type="text/javascript" src="Maps/FusionCharts.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="JS/jq.js"></script>
 <script type="text/javascript">
 	$title = "The Global Health Impact";
     $(document).ready(function() {
         $(this).attr("title", $title);
-       	$("#sub_menu").show();
-       	$("#copyright").css( { "top" : "1160px"} );
-       	$("#popupwd").hide();
-       	$("#emap").mouseover(function(){
-       		$("#popupwd").show();
-       	});
-       	$("#emap").mouseout(function(){
-       		$("#popupwd").hide();
-       	});
-       	$("#popupwd").mouseover(function(){
-       		$("#popupwd").show();
-       	});
-       	$("#popupwd").mouseout(function(){
-       		$("#popupwd").hide();
-       	});
     });
+ 
 </script>
-<script type="text/javascript" src="JS/jq.js"></script>
+
 	<div class="main_body">
 	<div id="controlchoi">
 		<div id="orderByName"><a href="#listByName">Name</a></div>
@@ -33,8 +22,15 @@
 	
 	</div><!-- #rankls end -->
 	<div id="emap">
-	
+		<div id="mapcontainer">
+		</div><!-- #mapcontainer end -->
 	</div><!-- #emap end -->
+	<script type="text/javascript"><!--
+    var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", "MyMapId", "706.912", "522.928", "0");
+    myMap.setXMLUrl ("Maps/genr.php");//Maps/WorldwithCountriesData.xml
+    myMap.render("mapcontainer");  
+    // --> 
+    </script>
 	<div id="country_text">
 	
 	</div><!-- #country_text end -->
