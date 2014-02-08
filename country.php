@@ -10,7 +10,15 @@
     });
 </script>
 	<div class="main_body">
-
+	<div id="rankls">
+	
+	</div><!-- #rankls end -->
+	<div id="emap">
+	
+	</div><!-- #emap end -->
+	<div id="popupwd">
+	
+	</div><!-- #popupwd end -->	
 	</div><!-- .main_body end -->
 
 <?php

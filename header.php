@@ -17,11 +17,11 @@
 			<form method="get" action="http://www.google.com/search">
 			<table border="0" cellpadding="0">
   				<tr><td>
-  				<input type="text" name="q" size="30" maxlength="255" title="search" value="" placeholder="Search" style=""/>
+  				<input type="text" name="q" size="22" maxlength="255" title="search" value="" placeholder="Search" style=""/>
   				<input type="hidden" name="sitesearch" value="www.binghamton.edu"/>
   				</td><td>
   				<input type="image" name="sa" id="edit-sa" alt="Search" class="form-submit form-submit search-submit" 
-  				src="images/1391730788_84062.ico" title="search" width="18" height="18" >
+  				src="images/1391730788_84062.ico" title="search" width="30" height="30" >
   				</td></tr>
   			</table>
   			</form>
@@ -29,9 +29,9 @@
 			<div id="network_ico">
 			<table border="0" cellpadding="1" >
   				<tr>
-  				<td height="26"><a href="https://www.facebook.com/AcademicsStandAgainstPoverty" target="_blank"><img src="http://api.ning.com/files/yK4NcMrBlofWleqeABbNHR-JwhBMxMRlC7NRM0KCYhLk4i-pqoO0AYXzAp3bKHf0IYIP3Qjn0GVzm5V1Gv56dUqaq68hdmSW/facebooks1_60.png" alt="Join Our Facebook Fan Page" width="24" height="24" border="0"></a>
+  				<td height="33"><a href="https://www.facebook.com/AcademicsStandAgainstPoverty" target="_blank"><img src="images/facebookicon.jpg" alt="Join Our Facebook Fan Page" width="32" height="32" border="0"></a>
   				</td>
-				<td><a href="https://twitter.com/AcademicsStand" target="_blank"><img src="http://api.ning.com/files/vwYvIcXARnCDb7rmTyv-ajyO2kvmHyKJ813N8CvFCImegtIaEvi9NeRhZ1RWCqojSEvAqmOzVNsoWX4HPus6Zwt-nMYOBXWU/twitters1_60.png" alt="Follow Us On Twitter" width="24" height="24" border="0"></a>
+				<td><a href="https://twitter.com/AcademicsStand" target="_blank"><img src="images/twittericon.jpg" alt="Follow Us On Twitter" width="32" height="32" border="0"></a>
 				</td></tr>
   			</table>
 			</div><!-- #network end -->
@@ -39,14 +39,14 @@
 			<ul>
 			<li><span><a href="index.php">About the Index</a></span></li>
 			<li><span><a href="#">The Index</a></span></li>
-			<li><span><a href="#">Companies and Drugs</a></span></li>
+			<li id="companyanddrug"><span><a href="#">Companies and Drugs</a></span></li>
 			<li><span><a href="#">Resources</a></span></li>
 			<li><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">News</a></span></li>
 			<li><span><a href="#">Methodology</a></span></li>
 			<li><span><a href="#">Contact Us</a></span></li>
 			</ul>
 			</div><!-- #main_menu end -->
-			<HR id="seperate_line" width="100%" color=blue SIZE=5></br>
+			<HR id="seperate_line" width="100%" color=#0083ca SIZE=5></br>
 			<div id="sub_menu">
 				<ul>
 				<li><span><a href="country.php">COUNTRY</a></span></li>
