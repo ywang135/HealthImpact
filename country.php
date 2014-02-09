@@ -9,7 +9,7 @@
     $(document).ready(function() {
         $(this).attr("title", $title);
         $("#sub_menu").show();
-       	$("#copyright").css( { "top" : "980px"} );
+       	$("#copyright").css( { "top" : "950px"} );
     });
  
 </script>
@@ -23,18 +23,23 @@
 		<div id="showMalaria"><a href="#Malaria">Malaria</a></div>
 		<div id="showTB"><a href="#TB">TB</a></div>	
 		<div id="showHIV"><a href="#HIV">HIV/ADIS</a></div>
+		<div id="showAll"><a href="#All">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
 	
 	</div><!-- #rankls end -->
 	<div id="emap">
-		<div id="mapcontainer">
-		</div><!-- #mapcontainer end -->
+		<div id="mapcontainer_0" class="map_container">
+		</div><!-- #mapcontainer_0 end -->
+		<div id="mapcontainer_1" class="map_container">
+		</div><!-- #mapcontainer_1 end -->
+		<div id="mapcontainer_2" class="map_container">
+		</div><!-- #mapcontainer_2 end -->
+		<div id="mapcontainer_3" class="map_container">
+		</div><!-- #mapcontainer_3 end -->		
 	</div><!-- #emap end -->
 	<script type="text/javascript"><!--
-    var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", "MyMapId", "706.912", "522.928", "0");
-    myMap.setXMLUrl ("Maps/genr.php");//Maps/WorldwithCountriesData.xml
-    myMap.render("mapcontainer");  
+      
     // --> 
     </script>
 	<div id="country_text">

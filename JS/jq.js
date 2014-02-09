@@ -1,4 +1,10 @@
 $(document).ready(function() {
+		drawMap("Maps/genAll.php","mapcontainer_0","0");
+		drawMap("Maps/genMalaria.php","mapcontainer_1","1");
+		drawMap("Maps/genTB.php","mapcontainer_2","2");
+		drawMap("Maps/genHIV.php","mapcontainer_3","3");
+		$(".map_container").hide();
+       		$("#mapcontainer_0").fadeIn();
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
        		$("#country_text").hide();
@@ -24,16 +30,53 @@ $(document).ready(function() {
        		$("#country_text").show();
        		$("#popupwd").hide();
        	});
+       	
+        $("#showAll").click(function(){
+       		$(".map_container").hide();
+       		$("#mapcontainer_0").fadeIn();
+       	});
+       	$("#showMalaria").click(function(){
+       		$(".map_container").hide();
+       		$("#mapcontainer_1").fadeIn();
+       	});
+       	$("#showTB").click(function(){
+       		$(".map_container").hide();
+       		$("#mapcontainer_2").fadeIn();
+       	});
+       	$("#showHIV").click(function(){
+       		$(".map_container").hide();
+       		$("#mapcontainer_3").fadeIn();
+       	});
     });
-function myJS(vName, sc1, sc2, sc3, tsc, iso_code){
+    
+function drawMap(source, div_id, map_id){
+	var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", map_id, "706.912", "522.928", "0");
+    myMap.setXMLUrl (source);//"Maps/genAll.php"
+    myMap.render(div_id);//"mapcontainer"
+}
+function myJSAll(vName, sc1, sc2, sc3, tsc, iso_code){
 	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
 	document.getElementById('additional_statistic').innerHTML=vName;			
 	document.getElementById('country_iso').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
-	/*var r=confirm("Press a button");
-	if (r==true){
-  		window.location.href = "../country.php?q="+encodeURIComponent(vName);
-  	}*/
+}
+function myJSMalaria(vName, sc1, sc2, sc3, tsc, iso_code){
+	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	document.getElementById('additional_statistic').innerHTML=vName;			
+	document.getElementById('country_iso').innerHTML=str;
+	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
+}
+function myJSTB(vName, sc1, sc2, sc3, tsc, iso_code){
+	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	document.getElementById('additional_statistic').innerHTML=vName;			
+	document.getElementById('country_iso').innerHTML=str;
+	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
+}
+function myJSHIV(vName, sc1, sc2, sc3, tsc, iso_code){
+	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	document.getElementById('additional_statistic').innerHTML=vName;			
+	document.getElementById('country_iso').innerHTML=str;
+	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
 }
 google.load("visualization", "1", {packages: ["corechart"]});
 google.setOnLoadCallback(drawChart);
