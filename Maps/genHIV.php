@@ -8,7 +8,7 @@
 	<colorRange>
 	<color minValue='2000000' maxValue='10000000' displayValue='High' color='#EF3E2E' />
 	<color minValue='500000' maxValue='2000000' displayValue='middle' color='#FFB31C' />
-	<color minValue='0' maxValue='500000' displayValue='low' color='#0083CA' />
+	<color minValue='1' maxValue='500000' displayValue='low' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'
@@ -25,7 +25,7 @@
 		else {
 			$hover = 'FF030C';
 		}
-		echo "<entity id='$row[5]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:myJSHIV'$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";
+		echo "<entity id='$row[5]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:myJSHIV('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";
     }
     mysqli_close($con);
     echo "

@@ -61,19 +61,19 @@ function myJSAll(vName, sc1, sc2, sc3, tsc, iso_code){
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),0);
 }
 function myJSMalaria(vName, sc1, sc2, sc3, tsc, iso_code){
-	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	var str = "<br>Malaria Treatment Impact: "+sc1+"<br>ISO code: "+iso_code;
 	document.getElementById('additional_statistic').innerHTML=vName;			
 	document.getElementById('country_iso').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),1);
 }
 function myJSTB(vName, sc1, sc2, sc3, tsc, iso_code){
-	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	var str = "<br>TB Treatment Impact: "+sc2+"<br>ISO code: "+iso_code;
 	document.getElementById('additional_statistic').innerHTML=vName;			
 	document.getElementById('country_iso').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),2);
 }
 function myJSHIV(vName, sc1, sc2, sc3, tsc, iso_code){
-	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	var str = "<br>HIV Treatment Impact: "+sc3+"<br>ISO code: "+iso_code;
 	document.getElementById('additional_statistic').innerHTML=vName;			
 	document.getElementById('country_iso').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),3);
