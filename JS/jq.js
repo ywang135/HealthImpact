@@ -1,6 +1,4 @@
 $(document).ready(function() {
-       	$("#sub_menu").show();
-       	$("#copyright").css( { "top" : "1160px"} );
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
        		$("#popupwd").show();
@@ -22,8 +20,8 @@ $(document).ready(function() {
        	});
     });
 function myJS(vName, sc1, sc2, sc3, tsc, iso_code){
-	var str = "<p>Name: "+vName+",<br>Overall Impact: "+tsc+",<br>ISO code: "+iso_code;		
-	document.getElementById('bar_details').innerHTML=str;
+	var str = vName+",<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;		
+	document.getElementById('country_name').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
 	/*var r=confirm("Press a button");
 	if (r==true){
@@ -40,10 +38,11 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
         	['Total HIV Treatment Impact', imp3, 'color: #EF3E2E' ]
      	 	]);
 	var options = {
+		title: countryName,
     	width: 337,
         height: 180,
         marginTop: 100,
-        legend: { position: 'top', maxLines: 1 },
+        legend: { position: "none" },//'top', maxLines: 1
 		bar: { groupWidth: '50%' },
         isStacked: true,
     };
