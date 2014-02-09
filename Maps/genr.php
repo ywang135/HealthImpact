@@ -7,8 +7,8 @@
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
 	<color minValue='2000000' maxValue='10000000' displayValue='High' color='#EF3E2E' />
-	<color minValue='500000' maxValue='1999999' displayValue='middle' color='#FFB31C' />
-	<color minValue='0' maxValue='499999' displayValue='low' color='#0083CA' />
+	<color minValue='500000' maxValue='2000000' displayValue='middle' color='#FFB31C' />
+	<color minValue='0' maxValue='500000' displayValue='low' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'

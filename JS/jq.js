@@ -1,27 +1,34 @@
 $(document).ready(function() {
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
+       		$("#country_text").hide();
        		$("#popupwd").show();
        	});
        	$("#emap").mouseout(function(){
+       		$("#country_text").show();
        		$("#popupwd").hide();
        	});
        	$("#rankls").mouseover(function(){
+       		$("#country_text").hide();
        		$("#popupwd").show();
        	});
        	$("#rankls").mouseout(function(){
+       		$("#country_text").show();
        		$("#popupwd").hide();
        	});
        	$("#popupwd").mouseover(function(){
+       		$("#country_text").hide();
        		$("#popupwd").show();
        	});
        	$("#popupwd").mouseout(function(){
+       		$("#country_text").show();
        		$("#popupwd").hide();
        	});
     });
 function myJS(vName, sc1, sc2, sc3, tsc, iso_code){
-	var str = vName+",<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;		
-	document.getElementById('country_name').innerHTML=str;
+	var str = "<br>Overall Impact: "+tsc+"<br>ISO code: "+iso_code;
+	document.getElementById('additional_statistic').innerHTML=vName;			
+	document.getElementById('country_iso').innerHTML=str;
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
 	/*var r=confirm("Press a button");
 	if (r==true){
