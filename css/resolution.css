@@ -79,7 +79,7 @@ html{
 		padding-right:auto;
 		text-align:center;
 	}
-	#control_by_order div a:link, #control_by_disease div a:visited {
+	#control_by_order div a:link, #control_by_order div a:visited {
 		width: 80px;
 		text-decoration:none;
 		font-family: "Myriad pro Semibold";
