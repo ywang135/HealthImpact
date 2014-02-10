@@ -66,12 +66,30 @@ a:link, a:visited {
 		display:block;
 		margin-top:80px;
 	}
+	::-webkit-scrollbar {
+    	width: 12px;
+	}
+ 
+	::-webkit-scrollbar-track {
+   		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    	border-radius: 10px;
+	}
+ 
+	::-webkit-scrollbar-thumb {
+    	border-radius: 10px;
+    	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
 	#additional_statistic {
 		padding-top:20px;
 		font-family: "Myriad pro Semibold";
 		color: #0083CA;
 		font-weight: normal;
 		font-size:20px;
+	}
+	#all_list{
+		width:100%;
+		overflow:auto;
+		max-height:447px;
 	}
 	#bar_details {
 		width:338px;
@@ -135,9 +153,11 @@ a:link, a:visited {
 	}
 	#country_by_rank {;
 		line-height: 40px;
+		width:100%;
 		background:#0083CA;
 		color:white;
-		border-radius:0px 0px 0px 12px;
+		border-color:#0083CA;
+		border-radius:0px 0px 12px 12px;
 		-moz-border-radius:9px; /* Old Firefox */
 	}
 	#country_text {
@@ -328,7 +348,7 @@ a:link, a:visited {
 		border:4px solid #0083CA;
 		border-radius:19px;
 		-moz-border-radius:19px; /* Old Firefox */
-		overflow:scroll;
+		overflow:hidden;
 	}
 	#rankls table {
 		border-collapse:collapse;

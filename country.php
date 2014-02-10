@@ -29,6 +29,7 @@
 		<div id="country_by_rank">
 		Country & Overall Impact By Rank
 		</div><!-- #country_by_rank end -->
+		<div id="all_list">
 		<div id="list_all_impact" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
@@ -179,6 +180,7 @@
 			?>
 			</table>
 		</div><!-- #list_HIV_impact end -->
+		</div><!-- #all_list end -->
 	</div><!-- #rankls end -->
 	<div id="emap">
 		<div id="mapcontainer_0" class="map_container">
