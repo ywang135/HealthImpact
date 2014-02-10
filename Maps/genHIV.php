@@ -16,13 +16,13 @@
 	$result = $con->query("call show_countries_by_id()");
 	$hover ="";
 	while($row = mysqli_fetch_array($result)){
-		if($row[4]<500000){
+		if($row[3]<500000){
 			$hover = '639ACE';
 		}
-		elseif ($row[4]<2000000) {
+		elseif ($row[3]<2000000) {
 			$hover = 'DFE31D';
 		}
-		else {
+		elseif ($row[3]>=2000000) {
 			$hover = 'FF030C';
 		}
 		echo "<entity id='$row[5]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:myJSHIV('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";

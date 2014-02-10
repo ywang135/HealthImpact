@@ -4,7 +4,7 @@ $(document).ready(function() {
 		drawMap("Maps/genTB.php","mapcontainer_2","2");
 		drawMap("Maps/genHIV.php","mapcontainer_3","3");
 		$(".map_container").hide();
-       		$("#mapcontainer_0").fadeIn();
+       	$("#mapcontainer_0").fadeIn();
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
        		$("#country_text").hide();

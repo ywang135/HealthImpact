@@ -3,7 +3,7 @@
 ?>
 <script type="text/javascript" src="Maps/FusionCharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="JS/jq.js"></script>
+<script type="text/javascript" src="JS/jquery_country.js"></script>
 <script type="text/javascript">
 	$title = "The Global Health Impact Country Index";
     $(document).ready(function() {
@@ -26,7 +26,14 @@
 		<div id="showAll"><a href="#All">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
-	
+		<div id="list_all_impact" class="country_rank_list"></div><!-- # end -->
+		<div id="list_all_name" class="country_rank_list"></div><!-- # end -->
+		<div id="list_malaria_impact" class="country_rank_list"></div><!-- # end -->
+		<div id="list_malaria_name" class="country_rank_list"></div><!-- # end -->
+		<div id="list_TB_impact" class="country_rank_list"></div><!-- # end -->
+		<div id="list_TB_name" class="country_rank_list"></div><!-- # end -->
+		<div id="list_HIV_impact" class="country_rank_list"></div><!-- # end -->
+		<div id="list_HIV_name" class="country_rank_list"></div><!-- # end -->
 	</div><!-- #rankls end -->
 	<div id="emap">
 		<div id="mapcontainer_0" class="map_container">
