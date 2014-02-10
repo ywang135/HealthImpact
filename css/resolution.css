@@ -27,7 +27,9 @@ html{
 	margin-right:auto;
 	padding-bottom:0px;
 }
-
+a:link, a:visited {
+	text-decoration:none;
+}
 @media screen and (max-width:1500px)
 {
 	body {
@@ -55,6 +57,10 @@ html{
 	input[type="text"]:focus { 
 		outline: none;
 	}
+	.chosen {
+		filter:alpha(opacity=80);
+		opacity:0.8;
+	}
 	.main_body {
 		text-align:center;
 		display:block;
@@ -75,7 +81,7 @@ html{
 	}
 	#control_by_order{
 		float:center;
-		padding-left:60px;
+		padding-left:95px;
 		padding-right:auto;
 		text-align:center;
 	}
@@ -99,65 +105,14 @@ html{
 	}
 	#control_by_disease{
 		float:center;
-		padding-left:400px;
+		padding-left:465px;
 		padding-right:auto;
 		text-align:center;
 	}
 	#control_by_disease div {
 		position: relative;
 	}
-	#control_by_disease #showAll a:link, #control_by_disease #showAll a:visited {
-		background: purple;
-		width: 120px;
-		text-decoration:none;
-		font-family: "Myriad pro Semibold";
-		font-size:15px;
-		text-align:center;
-		padding-left:auto;
-		padding-right:auto;
-		padding-top:8px;
-		padding-bottom:8px;
-		color: white;
-		border-color:white;
-		border-radius:8px;
-		-moz-border-radius:8px; /* Old Firefox */
-		float:left;
-	}	
-	#control_by_disease #showHIV a:link, #control_by_disease #showHIV a:visited {
-		background: #EF3E2E;
-		width: 120px;
-		text-decoration:none;
-		font-family: "Myriad pro Semibold";
-		font-size:15px;
-		text-align:center;
-		padding-left:auto;
-		padding-right:auto;
-		padding-top:8px;
-		padding-bottom:8px;
-		color: white;
-		border-color:white;
-		border-radius:8px;
-		-moz-border-radius:8px; /* Old Firefox */
-		float:left;
-	}
-	#control_by_disease #showMalaria a:link, #control_by_disease #showMalaria a:visited {
-		background: #0083CA;
-		width: 120px;
-		text-decoration:none;
-		font-family: "Myriad pro Semibold";
-		font-size:15px;
-		text-align:center;
-		padding-left:auto;
-		padding-right:auto;
-		padding-top:8px;
-		padding-bottom:8px;
-		color: white;
-		border-color:white;
-		border-radius:8px;
-		-moz-border-radius:8px; /* Old Firefox */
-		float:left;
-	}
-	#control_by_disease #showTB a:link, #control_by_disease #showTB a:visited {
+	#control_by_disease div a:link, #control_by_disease div a:visited {
 		background: #FFB31C;
 		width: 120px;
 		text-decoration:none;
@@ -173,6 +128,17 @@ html{
 		border-radius:8px;
 		-moz-border-radius:8px; /* Old Firefox */
 		float:left;
+		margin-left:8px;
+	}
+	#control_by_disease div a:hover {
+		background: #EF3E2E;
+	}
+	#country_by_rank {;
+		line-height: 40px;
+		background:#0083CA;
+		color:white;
+		border-radius:0px 0px 0px 12px;
+		-moz-border-radius:9px; /* Old Firefox */
 	}
 	#country_text {
 		width:702.912px;
@@ -182,7 +148,7 @@ html{
 		font-family:"Myriad pro Regular";
 		font-size:16px;
 		letter-spacing:1px;
-		color:#0083ca;
+		color:#0083CA;
 		margin-left:372.452px;
 		margin-top:580px;
 	}
@@ -267,25 +233,9 @@ html{
 		width:100%;
 		
 	}
-	#menu_bar #sub_menu{
-		display:none;
-	}
-	#menu_bar #sub_menu ul{
-		list-style-type:none;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:-35px;
-		text-align:center;
-		min-width:600px;
-		width:70%;
-	}
 	#menu_bar #main_menu ul li{
 		float:left;
 		width: 14%;		
-	}
-	#menu_bar #sub_menu ul li{
-		float:left;
-		width: 168px;		
 	}
 	#menu_bar #main_menu ul li a:link, #menu_bar #main_menu ul a:visited{
 		width: 140px;
@@ -313,6 +263,22 @@ html{
 	#menu_bar #main_menu ul li a:hover{
 		background: #FFB31C;	
 	}
+	#menu_bar #sub_menu{
+		display:none;
+	}
+	#menu_bar #sub_menu ul{
+		list-style-type:none;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:-15px;
+		text-align:center;
+		min-width:600px;
+		width:70%;
+	}
+	#menu_bar #sub_menu ul li{
+		float:left;
+		width: 168px;
+	}	
 	#menu_bar #sub_menu ul li a:link, #menu_bar #sub_menu ul a:visited{
 		width:140px;
 		text-decoration:none;
@@ -322,7 +288,7 @@ html{
 		padding-right:auto;
 		padding-top:5.5px;
 		padding-bottom:5.5px;
-		background: #FFB31C;
+		background: #EF3E2E;
 		color: white;
 		border-color:white;
 		border-radius:8px;
@@ -331,7 +297,7 @@ html{
 		font-size:20px;		
 	}
 	#menu_bar #sub_menu ul li a:hover{
-		background: #EF3E2E;	
+		background: #0083CA;	
 	}
 	#network_ico {
 		margin-top:5px;
@@ -362,6 +328,23 @@ html{
 		border:4px solid #0083CA;
 		border-radius:19px;
 		-moz-border-radius:19px; /* Old Firefox */
+		overflow:scroll;
+	}
+	#rankls table {
+		border-collapse:collapse;
+		margin-top:10px;
+	}
+	#rankls table, td {
+		border:1px solid white;
+	}
+	#rankls table, td a{
+		font-family: "Myriad pro Semibold";
+		font-size:15px;
+		color:#0083CA;
+		float:left;
+	}
+	#rankls tr:hover {
+		background: #F1F1F1;
 	}
 	#search {
 		margin-top:5px;

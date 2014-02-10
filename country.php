@@ -20,20 +20,165 @@
 		<div id="orderByImpact"><a href="#listByImpact">Impact</a></div>	
 	</div><!-- #control_by_order end -->
 	<div id="control_by_disease">
-		<div id="showMalaria"><a href="#Malaria">Malaria</a></div>
-		<div id="showTB"><a href="#TB">TB</a></div>	
-		<div id="showHIV"><a href="#HIV">HIV/ADIS</a></div>
-		<div id="showAll"><a href="#All">All</a></div>
+		<div id="showMalaria" class="c_b_d"><a href="#Malaria">Malaria</a></div>
+		<div id="showTB" class="c_b_d"><a href="#TB">TB</a></div>	
+		<div id="showHIV" class="c_b_d"><a href="#HIV">HIV/ADIS</a></div>
+		<div id="showAll" class="c_b_d"><a href="#All">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
-		<div id="list_all_impact" class="country_rank_list"></div><!-- # end -->
-		<div id="list_all_name" class="country_rank_list"></div><!-- # end -->
-		<div id="list_malaria_impact" class="country_rank_list"></div><!-- # end -->
-		<div id="list_malaria_name" class="country_rank_list"></div><!-- # end -->
-		<div id="list_TB_impact" class="country_rank_list"></div><!-- # end -->
-		<div id="list_TB_name" class="country_rank_list"></div><!-- # end -->
-		<div id="list_HIV_impact" class="country_rank_list"></div><!-- # end -->
-		<div id="list_HIV_name" class="country_rank_list"></div><!-- # end -->
+		<div id="country_by_rank">
+		Country & Overall Impact By Rank
+		</div><!-- #country_by_rank end -->
+		<div id="list_all_impact" class="country_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con/con_ghi.php";
+				$result = $con->query("call show_top_countries(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\">
+    					<td>$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";
+    				if($row[4]<1){
+    					$l1 = "0px";$l2 = "0px";$l3 = "0px";
+    				}
+    				else{
+    					$l1 = "".max(($row[1]*250/10551873),0.5)."px";
+    					$l2 = "".max(($row[2]*250/10551873),0.5)."px";
+    					$l3 = "".max(($row[3]*250/10551873),0.5)."px";
+    				}
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
+    					</td></tr>";
+    				$i++;
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_all_impact end -->
+		<div id="list_all_name" class="country_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con/con_ghi.php";
+				$result = $con->query("call show_top_countries_by_name(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\">
+    					<td>$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";
+    				if($row[4]<1){
+    					$l1 = "0px";$l2 = "0px";$l3 = "0px";
+    				}
+    				else{
+    					$l1 = "".max(($row[1]*250/10551873),0.5)."px";
+    					$l2 = "".max(($row[2]*250/10551873),0.5)."px";
+    					$l3 = "".max(($row[3]*250/10551873),0.5)."px";
+    				}
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
+    					</td></tr>";
+    				$i++;
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_all_name end -->
+		<div id="list_malaria_impact" class="country_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con/con_ghi.php";
+				$result = $con->query("call show_top_countries_by_malaria(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\">
+    					<td>$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";
+    				if($row[4]<1){
+    					$l1 = "0px";$l2 = "0px";$l3 = "0px";
+    				}
+    				else{
+    					$l1 = "".max(($row[1]*250/10551873),0.5)."px";
+    					$l2 = "".max(($row[2]*250/10551873),0.5)."px";
+    					$l3 = "".max(($row[3]*250/10551873),0.5)."px";
+    				}
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
+    					</td></tr>";
+    				$i++;
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_malaria_impact end -->
+		<div id="list_TB_impact" class="country_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con/con_ghi.php";
+				$result = $con->query("call show_top_countries_by_TB(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\">
+    					<td>$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";
+    				if($row[4]<1){
+    					$l1 = "0px";$l2 = "0px";$l3 = "0px";
+    				}
+    				else{
+    					$l1 = "".max(($row[1]*250/10551873),0.5)."px";
+    					$l2 = "".max(($row[2]*250/10551873),0.5)."px";
+    					$l3 = "".max(($row[3]*250/10551873),0.5)."px";
+    				}
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
+    					</td></tr>";
+    				$i++;
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_TB_impact end -->
+		<div id="list_HIV_impact" class="country_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con/con_ghi.php";
+				$result = $con->query("call show_top_countries_by_HIV(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\">
+    					<td>$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";
+    				if($row[4]<1){
+    					$l1 = "0px";$l2 = "0px";$l3 = "0px";
+    				}
+    				else{
+    					$l1 = "".max(($row[1]*250/10551873),0.5)."px";
+    					$l2 = "".max(($row[2]*250/10551873),0.5)."px";
+    					$l3 = "".max(($row[3]*250/10551873),0.5)."px";
+    				}
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
+    					</td></tr>";
+    				$i++;
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_HIV_impact end -->
 	</div><!-- #rankls end -->
 	<div id="emap">
 		<div id="mapcontainer_0" class="map_container">

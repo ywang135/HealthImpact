@@ -16,7 +16,10 @@
 	$result = $con->query("call show_countries_by_id()");
 	$hover ="";
 	while($row = mysqli_fetch_array($result)){
-		if($row[3]<500000){
+		if($row[3]==0){
+			$hover = 'F1f1f1';
+		}
+		elseif($row[3]<500000){
 			$hover = '639ACE';
 		}
 		elseif ($row[3]<2000000) {
@@ -25,10 +28,19 @@
 		elseif ($row[3]>=2000000) {
 			$hover = 'FF030C';
 		}
-		echo "<entity id='$row[5]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:myJSHIV('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";
+		echo "<entity id='$row[5]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";
     }
     mysqli_close($con);
     echo "
+    	<entity id='24' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('Greenland','0','0','0','0','');\" />
+    	<entity id='31' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='32' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='50' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='87' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='102' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='126' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='149' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='171' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
     	</data>
 	
 	<markers>
