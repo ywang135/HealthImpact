@@ -39,7 +39,7 @@
 			<ul>
 			<li><span><a href="index.php">Home</a></span></li>
 			<li><span><a href="#">The Index</a></span></li>
-			<li id="companyanddrug"><span><a href="#">Companies and Drugs</a></span></li>
+			<li id="companyanddrug"><span><a href="#">About the Index</a></span></li>
 			<li><span><a href="#">Resources</a></span></li>
 			<li><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">Reports</a></span></li>
 			<li><span><a href="#">Methodology</a></span></li>
