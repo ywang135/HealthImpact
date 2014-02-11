@@ -38,7 +38,8 @@
 		$result = $con->query("call show_top_countries(10)");
 		while($row = mysqli_fetch_array($result)){
 			$q=urlencode($row[0]);
-			echo "<tr><td>$i</td><td><div id='country'  onmouseover=\"myJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\"><a href='country?name=$q'>$row[0]</a></div></td></tr>";
+			echo "<tr><td>$i</td><td><div id='country' 
+			onmouseover=\"myJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\"><a href='country?name=$q'>$row[0]</a></div></td></tr>";
   			if($i==11){
 				echo "<div id='hide'>";
 			}

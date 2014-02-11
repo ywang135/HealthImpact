@@ -22,7 +22,7 @@
 	<div id="control_by_disease">
 		<div id="showMalaria" class="c_b_d"><a href="#Malaria">Malaria</a></div>
 		<div id="showTB" class="c_b_d"><a href="#TB">TB</a></div>	
-		<div id="showHIV" class="c_b_d"><a href="#HIV">HIV/ADIS</a></div>
+		<div id="showHIV" class="c_b_d"><a href="#HIV">HIV/AIDS</a></div>
 		<div id="showAll" class="c_b_d"><a href="#All">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
@@ -192,10 +192,17 @@
 		<div id="mapcontainer_3" class="map_container">
 		</div><!-- #mapcontainer_3 end -->		
 	</div><!-- #emap end -->
-	<script type="text/javascript"><!--
-      
-    // --> 
-    </script>
+	<div id="check_radio">
+		<form>
+			<input type="radio" name="show_ranklist_order" value="by_name">Order by name<br>
+			<input type="radio" name="show_ranklist_order" value="by_impact" checked>Order by impact<p>
+			
+			<input type="radio" name="show_disease" value="All" checked>All<br>
+			<input type="radio" name="show_disease" value="Malaria">Malaria<br>
+			<input type="radio" name="show_disease" value="TB">TB<br>
+			<input type="radio" name="show_disease" value="HIV">HIV/AIDS<br>			
+		</form>
+	</div><!-- #emap end -->
 	<div id="country_text">
 	<p>Every year</p> 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDs,
  every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. 

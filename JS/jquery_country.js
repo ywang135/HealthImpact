@@ -38,6 +38,29 @@ $(document).ready(function() {
        	
         $("#showAll").click(function(){
         	$SHOW_DISEASE = 0;
+        	$('input:radio[name="show_disease"]').attr('checked', false);
+       		$('input:radio[name="show_disease"]').filter('[value="All"]').attr('checked', true);
+       		$('input:radio[name=show_disease][value=All]').click();
+       	});
+       	$("#showMalaria").click(function(){
+       		$SHOW_DISEASE = 1;
+       		$('input:radio[name="show_disease"]').attr('checked', false);
+       		$('input:radio[name="show_disease"]').filter('[value="Malaria"]').attr('checked', true);
+       		$('input:radio[name=show_disease][value=Malaria]').click();
+       	});
+       	$("#showTB").click(function(){
+       		$SHOW_DISEASE = 2;
+       		$('input:radio[name="show_disease"]').attr('checked', false);
+       		$('input:radio[name="show_disease"]').filter('[value="TB"]').attr('checked', true);
+       		$('input:radio[name=show_disease][value=TB]').click();   		
+       	});
+       	$("#showHIV").click(function(){
+       		$SHOW_DISEASE = 3;
+       		$('input:radio[name="show_disease"]').attr('checked', false);
+       		$('input:radio[name="show_disease"]').filter('[value="HIV"]').attr('checked', true);
+       		$('input:radio[name=show_disease][value=HIV]').click();
+       	});
+       	$('input:radio[name=show_disease][value=All]').click(function(){
        		$(".map_container").hide();
        		$("#mapcontainer_0").fadeIn();
        		$(".malaria_bar").fadeIn();
@@ -48,8 +71,7 @@ $(document).ready(function() {
        			$("#list_all_impact").fadeIn();
        		}
        	});
-       	$("#showMalaria").click(function(){
-       		$SHOW_DISEASE = 1;
+       	$('input:radio[name=show_disease][value=Malaria]').click(function(){
        		$(".map_container").hide();
        		$("#mapcontainer_1").fadeIn();
        		$(".malaria_bar").fadeIn();
@@ -60,8 +82,7 @@ $(document).ready(function() {
        			$("#list_malaria_impact").fadeIn();
        		}
        	});
-       	$("#showTB").click(function(){
-       		$SHOW_DISEASE = 2;
+       	$('input:radio[name=show_disease][value=TB]').click(function(){
        		$(".map_container").hide();
        		$("#mapcontainer_2").fadeIn();
        		$(".malaria_bar").hide();
@@ -70,10 +91,9 @@ $(document).ready(function() {
        		if($ORDER_NAME_OR_IMPACT==0){
        			$(".country_rank_list").hide();
        			$("#list_TB_impact").fadeIn();
-       		}    		
+       		} 
        	});
-       	$("#showHIV").click(function(){
-       		$SHOW_DISEASE = 3;
+       	$('input:radio[name=show_disease][value=HIV]').click(function(){
        		$(".map_container").hide();
        		$("#mapcontainer_3").fadeIn();
        		$(".malaria_bar").hide();
@@ -86,14 +106,24 @@ $(document).ready(function() {
        	});
        	$("#orderByName").click(function(){
        		$ORDER_NAME_OR_IMPACT = 1;
+       		$('input:radio[name="show_ranklist_order"]').attr('checked', false);
+       		$('input:radio[name="show_ranklist_order"]').filter('[value="by_name"]').attr('checked', true);
+       		$('input:radio[name=show_ranklist_order][value=by_name]').click();
+       	});
+       	$("#orderByImpact").click(function(){
+       		$ORDER_NAME_OR_IMPACT = 0;
+       		$('input:radio[name="show_ranklist_order"]').attr('checked', false);
+       		$('input:radio[name="show_ranklist_order"]').filter('[value="by_impact"]').attr('checked', true);
+       		$('input:radio[name=show_ranklist_order][value=by_impact]').click();
+       	});
+       	$('input:radio[name=show_ranklist_order][value=by_name]').click(function(){
        		$(".country_rank_list").hide();
        		$("#list_all_name").fadeIn();
        		$("#country_by_rank").html("Country & Overall Impact By Rank");
        		$('#orderByImpact').removeClass('chosen');
        		$("#orderByName").addClass('chosen');
        	});
-       	$("#orderByImpact").click(function(){
-       		$ORDER_NAME_OR_IMPACT = 0;
+       	$('input:radio[name=show_ranklist_order][value=by_impact]').click(function(){
        		$(".country_rank_list").hide();
        		$("#country_by_rank").html("Country Name By Rank");
        		$('#orderByName').removeClass('chosen');
