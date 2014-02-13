@@ -1,4 +1,4 @@
-		<div id="copyright"><p>&copy;2014 Academics Stand Against Poverty</p>
+		<div id="copyright"><p>&copy;2014 The Global Health Impact</p>
 		</div>
 	</container>
   </body>

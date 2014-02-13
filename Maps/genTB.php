@@ -13,8 +13,9 @@
 	<data>";
 //useHoverColor='1'
 //<entity id='174' value='174' link='JavaScript:myJS('R', 174);' />
-	$result = $con->query("call show_countries_by_id()");
+	$result = $con->query("call show_top_countries_by_TB(-1)");
 	$hover ="";
+	$i = 1;
 	while($row = mysqli_fetch_array($result)){
 		if($row[2]==0){
 			$hover = 'F1f1f1';
@@ -28,7 +29,8 @@
 		elseif ($row[2]>=2000000) {
 			$hover = 'FF030C';
 		}
-		echo "<entity id='$row[5]' value='$row[2]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]');\" />";
+		echo "<entity id='$row[5]' value='$row[2]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\" />";
+		$i++;
     }
     mysqli_close($con);
     echo "
@@ -41,6 +43,8 @@
     	<entity id='126' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
     	<entity id='149' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
     	<entity id='171' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='174' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
+    	<entity id='204' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('South Sudan','0','0','0','0','');\" />
     	</data>
 	
 	<markers>
