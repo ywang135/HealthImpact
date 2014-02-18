@@ -93,6 +93,7 @@ a:link, a:visited {
 		position: absolute;
 		display:block;
 		margin-left:30px;
+		color: #0083CA;
 		font-family: "Myriad pro Regular";
 	}
 	#check_box{
@@ -101,10 +102,11 @@ a:link, a:visited {
 		margin-top:550px;
 		text-align:left;
 		border:1px solid white;
+		color:#0083CA;
 		font-family:"Myriad pro Regular";
 	}
 	#check_box input{
-		color:black;
+		color:#0083CA;
 		height: 20px;		
 	}
 	#control_by_order{
@@ -173,7 +175,7 @@ a:link, a:visited {
 	#country_by_rank {;
 		line-height: 50px;
 		position: absolute;
-		width:302.452;
+		width:302.452px;
 		background:white;
 		position: relative;
 		color:#0083CA;
@@ -186,6 +188,7 @@ a:link, a:visited {
 	#country_info {
 		font-family:"Myriad pro Regular";
 		font-size:16px;
+		color:#0083CA;
 	}
 	#country_text {
 		width:702.912px;
@@ -198,6 +201,13 @@ a:link, a:visited {
 		color:#0083CA;
 		margin-left:372.452px;
 		margin-top:580px;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;		
 	}
 	#country_text p{
 		text-align:left;
