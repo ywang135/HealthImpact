@@ -87,7 +87,8 @@ a:link, a:visited {
 	#bar_details {
 		width:338px;
 		display:block;
-		background:#FFB31C;
+		
+		color:#FFB31C;
 	}
 	#bar_sub_title {
 		position: absolute;

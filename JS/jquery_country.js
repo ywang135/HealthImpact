@@ -147,6 +147,8 @@ function popupJS(vName, sc1, sc2, sc3, tsc, iso_code, rank_id){
 google.load("visualization", "1", {packages: ["corechart"]});
 google.setOnLoadCallback(drawChart);
 function drawChart(div_name, countryName, imp1,imp2,imp3) {
+	var vColor="#7E5BA6";
+	var hColor="#3A96AA";
 	if($SHOW_DISEASE==0){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
@@ -158,9 +160,12 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
     		width: 337,
         	height: 180,
         	marginTop: 100,
-        	legend: { position: "none" },//'top', maxLines: 1
+        	fontName: 'Myriad pro Semibold',
+        	legend: { position: "none"},//'top', maxLines: 1
 			bar: { groupWidth: '50%' },
-        	isStacked: true,
+			isStacked: true,
+        	hAxis:{ textStyle:{color: vColor}},
+        	vAxis:{ textStyle:{color: hColor}},
     	};
     }
     else if($SHOW_DISEASE ==1){
@@ -175,6 +180,8 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
+        	hAxis:{ textStyle:{color: vColor}},
+        	vAxis:{ textStyle:{color: hColor}},
     	};
     }
     else if($SHOW_DISEASE ==2){
@@ -189,6 +196,8 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
+        	hAxis:{ textStyle:{color: vColor}},
+        	vAxis:{ textStyle:{color: hColor}},
     	};
     }
     else if($SHOW_DISEASE==3){
@@ -203,6 +212,8 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
+        	hAxis:{ textStyle:{color: vColor}},
+        	vAxis:{ textStyle:{color: hColor}},
     	};
     }
     var chart = new google.visualization.BarChart(document.getElementById(div_name));
