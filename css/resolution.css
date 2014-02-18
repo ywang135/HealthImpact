@@ -177,14 +177,11 @@ a:link, a:visited {
 		line-height: 50px;
 		position: absolute;
 		width:302.452px;
-		background:white;
+		//background:none;
 		position: relative;
-		color:#0083CA;
+		color:white;
 		font-family: "Myriad pro Regular";
 		font-size:17px;
-		border-color:#0083CA;
-		border-radius:0px 0px 0px 0px;
-		-moz-border-radius:9px;
 	}
 	#country_info {
 		font-family:"Myriad pro Regular";
@@ -389,6 +386,14 @@ a:link, a:visited {
 		border-radius:12px;
 		-moz-border-radius:12px;
 		overflow:hidden;
+		background: url(../images/box.jpg) no-repeat 0 0;
+		background-image: url(../images/box.jpg);
+		background-size:103% 50px;
+    	-webkit-background-size:103% 50px;        
+    	-khtml-background-size:103% 50px;         
+    	-moz-background-size:103% 50px; 
+    	background-position: -5px -3px;   
+		background-repeat: no-repeat;
 	}
 	#rankls table {
 		border-collapse:collapse;
