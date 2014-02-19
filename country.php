@@ -15,15 +15,11 @@
 </script>
 
 	<div class="main_body">
-<!--	<div id="control_by_order">
-		<div id="orderByName"><a href="#listByName">Name</a></div>
-		<div id="orderByImpact"><a href="#listByImpact">Impact</a></div>	
-	</div> #control_by_order end -->
 	<div id="control_by_disease">
-		<div id="showMalaria" class="c_b_d"><a href="#Malaria">Malaria</a></div>
-		<div id="showTB" class="c_b_d"><a href="#TB">TB</a></div>	
-		<div id="showHIV" class="c_b_d"><a href="#HIV">HIV/AIDS</a></div>
-		<div id="showAll" class="c_b_d"><a href="#All">All</a></div>
+		<div id="showMalaria" class="c_b_d"><a href="#">Malaria</a></div>
+		<div id="showTB" class="c_b_d"><a href="#">TB</a></div>	
+		<div id="showHIV" class="c_b_d"><a href="#">HIV/AIDS</a></div>
+		<div id="showAll" class="c_b_d"><a href="#">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
 		<div id="country_by_rank">

@@ -2,13 +2,19 @@
 
 <?php
 
-	include "../../con/con_ghi.php";
+	include "../../con/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
+	$itv1=2000000;
+	$itv2=1000000;
+	$itv3=500000;
+	$itv4=150000;
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10'  markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
-	<color minValue='2000000' maxValue='15000000' displayValue='High' color='#EF3E2E' />
-	<color minValue='500000' maxValue='2000000' displayValue='middle' color='#FFB31C' />
-	<color minValue='1' maxValue='500000' displayValue='low' color='#0083CA' />
+	<color minValue='$itv1' maxValue='12000000' color='#EF3E2E' />
+	<color minValue='$itv2' maxValue='$itv1'  color='#FFB31C' />
+	<color minValue='$itv3' maxValue='$itv2'  color='#FFE85E' />
+	<color minValue='$itv4' maxValue='$itv3'  color='#6DC067' />	
+	<color minValue='1' maxValue='$itv4' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'
@@ -20,21 +26,27 @@
 		if($row[4]==0){
 			$hover = 'F1f1f1';
 		}
-		elseif($row[4]<500000){
+		elseif($row[4]<$itv4){
 			$hover = '639ACE';
 		}
-		elseif ($row[4]<2000000) {
-			$hover = 'DFE31D';
+		elseif ($row[4]<$itv3) {
+			$hover = '799A28';
+		}
+		elseif ($row[4]<$itv2) {
+			$hover = '';
+		}
+		elseif ($row[4]<$itv1) {
+			$hover = 'E18F4B';
 		}
 		else {
-			$hover = 'FF030C';
+			$hover = 'A9213A';
 		}
 		echo "<entity id='$row[5]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\" />";
 		$i++;
     }
     mysqli_close($con);
     echo "
-    	<entity id='24' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('Greenland','0','0','0','0','');\" />
+    	<entity id='24' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('Greenland','0','0','0','','');\" />
     	<entity id='31' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
     	<entity id='32' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />
     	<entity id='50' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0','');\" />

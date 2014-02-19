@@ -110,30 +110,6 @@ a:link, a:visited {
 		color:#0083CA;
 		height: 20px;		
 	}
-	#control_by_order{
-		float:center;
-		padding-left:95px;
-		padding-right:auto;
-		text-align:center;
-	}
-	#control_by_order div a:link, #control_by_order div a:visited {
-		width: 80px;
-		text-decoration:none;
-		font-family: "Myriad pro Semibold";
-		font-size:15px;
-		text-align:center;
-		padding-left:auto;
-		padding-right:auto;
-		margin-left:10px;
-		padding-top:8px;
-		padding-bottom:8px;
-		background: #0083CA;
-		color: white;
-		border-color:white;
-		border-radius:10px;
-		-moz-border-radius:10px; 
-		float:left;
-	}
 	#control_by_disease{
 		float:center;
 		padding-left:465px;
@@ -144,8 +120,8 @@ a:link, a:visited {
 		position: relative;
 	}
 	#control_by_disease div a:link, #control_by_disease div a:visited {
-		background: #FFB31C;
 		width: 120px;
+		background: #FFB31C;
 		text-decoration:none;
 		font-family: "Myriad pro Semibold";
 		font-size:15px;
@@ -155,7 +131,7 @@ a:link, a:visited {
 		padding-top:8px;
 		padding-bottom:8px;
 		color: white;
-		border-color:white;
+		border:1px solid white;
 		border-radius:8px;
 		-moz-border-radius:8px; 
 		float:left;
