@@ -33,9 +33,16 @@
 				$result = $con->query("call show_top_countries(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\">
+					if(strlen($row[0])<15){
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
+    					<a href='#'>$row[0]</a>";	
+    				}
+    				else {
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[7]\">$i</td><td align='left'>
+    					<a href='#'>$row[5]</a>";
+    				}
     				if($row[4]<1){
     					$l1 = "0px";$l2 = "0px";$l3 = "0px";
     				}
@@ -63,9 +70,16 @@
 				$result = $con->query("call show_top_countries_by_name(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\">
-    					<td id=\"$row[0]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
+    				if(strlen($row[0])<15){
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[6]\">$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";	
+    				}
+    				else {
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[7]\">$i</td><td align='left'>
+    					<a href='#'>$row[5]</a>";
+    				}
     				if($row[4]<1){
     					$l1 = "0px";$l2 = "0px";$l3 = "0px";
     				}
@@ -93,9 +107,16 @@
 				$result = $con->query("call show_top_countries_by_malaria(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\">
-    					<td id=\"$row[0]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
+    				if(strlen($row[0])<15){
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[6]\">$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";	
+    				}
+    				else {
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[7]\">$i</td><td align='left'>
+    					<a href='#'>$row[5]</a>";
+    				}
     				if($row[4]<1){
     					$l1 = "0px";$l2 = "0px";$l3 = "0px";
     				}
@@ -123,9 +144,16 @@
 				$result = $con->query("call show_top_countries_by_TB(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\">
-    					<td id=\"$row[0]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
+    				if(strlen($row[0])<15){
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[6]\">$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";	
+    				}
+    				else {
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[7]\">$i</td><td align='left'>
+    					<a href='#'>$row[5]</a>";
+    				}
     				if($row[4]<1){
     					$l1 = "0px";$l2 = "0px";$l3 = "0px";
     				}
@@ -153,9 +181,16 @@
 				$result = $con->query("call show_top_countries_by_HIV(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\">
-    					<td>$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
+    				if(strlen($row[0])<15){
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[6]\">$i</td><td align='left'>
+    					<a href='#'>$row[0]</a>";	
+    				}
+    				else {
+    					echo "<tr onmouseover=\"popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\">
+    					<td id=\"$row[7]\">$i</td><td align='left'>
+    					<a href='#'>$row[5]</a>";
+    				}
     				if($row[4]<1){
     					$l1 = "0px";$l2 = "0px";$l3 = "0px";
     				}

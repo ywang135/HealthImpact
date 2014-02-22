@@ -4,17 +4,17 @@
 
 	include "../../con/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
 	$itv1=2000000;
-	$itv2=1000000;
-	$itv3=500000;
-	$itv4=150000;
+	$itv2=500000;
+	//$itv3=500000;
+	//$itv4=150000;<color minValue='$itv3' maxValue='$itv2'  color='#FFE85E' />
+	//<color minValue='$itv4' maxValue='$itv3'  color='#6DC067' />
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10'  markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
 	<color minValue='$itv1' maxValue='12000000' color='#EF3E2E' />
 	<color minValue='$itv2' maxValue='$itv1'  color='#FFB31C' />
-	<color minValue='$itv3' maxValue='$itv2'  color='#FFE85E' />
-	<color minValue='$itv4' maxValue='$itv3'  color='#6DC067' />	
-	<color minValue='1' maxValue='$itv4' color='#0083CA' />
+		
+	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'
@@ -26,22 +26,16 @@
 		if($row[4]==0){
 			$hover = 'F1f1f1';
 		}
-		elseif($row[4]<$itv4){
+		elseif($row[4]<$itv2){
 			$hover = '639ACE';
 		}
-		elseif ($row[4]<$itv3) {
-			$hover = '799A28';
-		}
-		elseif ($row[4]<$itv2) {
-			$hover = '';
-		}
 		elseif ($row[4]<$itv1) {
-			$hover = 'E18F4B';
+			$hover = '';
 		}
 		else {
 			$hover = 'A9213A';
 		}
-		echo "<entity id='$row[5]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\" />";
+		echo "<entity id='$row[6]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\" />";
 		$i++;
     }
     mysqli_close($con);

@@ -50,9 +50,15 @@ a:link, a:visited {
 	input[type="text"]:focus { 
 		outline: none;
 	}
+	input[type="checkbox"] {
+		font-size: 115%;
+	}
 	.chosen {
 		filter:alpha(opacity=80);
 		opacity:0.8;
+	}
+	.country_rank_list tr { 
+		line-height: 30px; 
 	}
 	.main_body {
 		text-align:center;
@@ -99,16 +105,23 @@ a:link, a:visited {
 	}
 	#check_box{
 		float:left;
-		margin-left:-850px;
-		margin-top:550px;
-		text-align:left;
+		margin-left:-900px;
+		margin-top:589px;
 		border:1px solid white;
-		color:#0083CA;
+		color:#FFB31C;
 		font-family:"Myriad pro Regular";
-	}
-	#check_box input{
-		color:#0083CA;
-		height: 20px;		
+		font-size:20px;
+		color:#FFB31C;
+		letter-spacing:1px;
+		text-align:justify;
+		hyphens:auto;
+    	
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+    	//line-height:10%;
 	}
 	#control_by_disease{
 		float:center;
@@ -144,6 +157,8 @@ a:link, a:visited {
 		display:block;
 		position:absolute;
 		width:100%;
+		font-family: "Myriad pro Semibold";
+		color:#0083CA;
 		text-align:center;
 		margin-left:auto;
 		margin-right:auto;

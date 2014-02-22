@@ -6,9 +6,9 @@
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
-	<color minValue='2000000' maxValue='10000000' displayValue='High' color='#EF3E2E' />
-	<color minValue='500000' maxValue='2000000' displayValue='middle' color='#FFB31C' />
-	<color minValue='1' maxValue='500000' displayValue='low' color='#0083CA' />
+	<color minValue='800000' maxValue='2100000' color='#EF3E2E' />
+	<color minValue='100000' maxValue='800000' color='#FFB31C' />
+	<color minValue='1' maxValue='500000' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'
@@ -24,12 +24,12 @@
 			$hover = '639ACE';
 		}
 		elseif ($row[2]<2000000) {
-			$hover = 'DFE31D';
+			$hover = '';
 		}
 		elseif ($row[2]>=2000000) {
 			$hover = 'FF030C';
 		}
-		echo "<entity id='$row[5]' value='$row[2]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[6]',$i);\" />";
+		echo "<entity id='$row[6]' value='$row[2]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]','$row[7]',$i);\" />";
 		$i++;
     }
     mysqli_close($con);
