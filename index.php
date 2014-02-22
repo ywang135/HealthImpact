@@ -1,6 +1,7 @@
 <?php
 	include "header.php";
 ?>
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
 <script type="text/javascript">
 	$title = "The Global Health Impact";
     $(document).ready(function() {

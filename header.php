@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">	
+	<link rel="stylesheet" href="css/header_footer.css" type="text/css" media="screen">
 	<link rel="icon" href="images/GlobalHealthLogo.png" type="image/png" /> 
-	<link rel="stylesheet" href="css/resolution.css" type="text/css" media="screen">
 	<script src='JS/jquery.js'></script>
 	<title>Loading..</title>
 </head>

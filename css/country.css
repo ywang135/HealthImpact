@@ -1,55 +1,8 @@
 @charset "utf-8";
-@font-face {
-  font-family: 'Myriad pro Semibold';
-  src: url('MYRIADPRO-SEMIBOLD.OTF') format('opentype');
-}
-@font-face {
-  font-family: 'Myriad pro Regular';
-  src: url('MyriadPro-Regular.otf') format('opentype');
-}
-//
-/* CSS Document */
-body{
-	width:100%;
-	margin:0; 
-	padding:0 ;	
-}
-html{ 
-	height:100%;
-}
-
-a:link, a:visited {
-	text-decoration:none;
-}
 /*
 @media screen and (max-width:1500px)
 {
 */
-	body {
-		min-width:1272px;
-	}
-	container {
-		width:97%;
-		max-width:1340px;
-		margin-top:30px;
-		height:100%;
-		display:block;
-		position:relative;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	input[type="text"] {
-		height:18px;
-		font-size:15px;
-		font-style: normal;
-  		font-weight: normal;
-		font-family: "Myriad pro Semibold";
-		background-color: rgb(255, 255, 255);
-		border:0px;
-	}
-	input[type="text"]:focus { 
-		outline: none;
-	}
 	input[type="checkbox"] {
 		font-size: 115%;
 	}
@@ -59,11 +12,6 @@ a:link, a:visited {
 	}
 	.country_rank_list tr { 
 		line-height: 30px; 
-	}
-	.main_body {
-		text-align:center;
-		display:block;
-		margin-top:80px;
 	}
 	::-webkit-scrollbar {
     	width: 12px;
@@ -153,17 +101,6 @@ a:link, a:visited {
 	#control_by_disease div a:hover {
 		background: #EF3E2E;
 	}
-	#copyright {
-		display:block;
-		position:absolute;
-		width:100%;
-		font-family: "Myriad pro Semibold";
-		color:#0083CA;
-		text-align:center;
-		margin-left:auto;
-		margin-right:auto;
-		padding-bottom:0px;
-	}
 	#country_by_rank {;
 		line-height: 50px;
 		position: absolute;
@@ -218,47 +155,6 @@ a:link, a:visited {
 		overflow:hidden;
 		z-index:0;
 		position:absolute;
-	}
-	#header {
-		width:100%;
-		position:relative;
-		display:inline;
-		margin:0; 
-		padding:0 ; 
-	}
-	#line_1	{
-		width:520px;
-		height:270px;
-		margin-left:auto;
-		margin-right:auto;
-		text-align:center;
-		display:block;
-		border:1px solid white;
-	}
-	#line_2{
-		width:520px;
-		height:270px;
-		margin-left:auto;
-		margin-right:auto;
-		text-align:center;
-		display:block;
-		border:1px solid white;
-	}
-	#logo_site {
-		height: 190px;
-		width: 193px;
-		line-height: 0;
-		font-size: 0%;
-		text-indent: -9999em
-		background: url(../images/GlobalHealthLogo.png) no-repeat 0 0;
-		background-image: url(../images/GlobalHealthLogo.png);
-		background-size:100% 100%;
-    	-webkit-background-size:100% 100%;        
-    	-khtml-background-size:100% 100%;         
-    	-moz-background-size:100% 100%;    
-		background-repeat: no-repeat;
-		position:absolute;
-		z-index:2;
 	}
 	.map_container {
 		margin-top:-20px;
@@ -347,13 +243,6 @@ a:link, a:visited {
 	#menu_bar #sub_menu ul li a:hover{
 		background: #0083CA;	
 	}
-	#network_ico {
-		margin-top:5px;
-		float:right;
-		padding-right:10px;
-		filter:alpha(opacity=61);
-		opacity:0.61;
-	}
 	#popupwd {
 		width:338.517px;
 		height:325.438px;
@@ -401,69 +290,6 @@ a:link, a:visited {
 	}
 	#rankls tr:hover {
 		background: #F1F1F1;
-	}
-	#search {
-		margin-top:5px;
-		background-color: white;
-		float:right;
-		width:232.5px;
-		line-height:15px;
-		border:2px solid #0083CA;
-		border-radius:9px;
-		-moz-border-radius:9px; 
-		filter:alpha(opacity=80);
-		opacity:0.8;
-	}
-	#seperate_line {
-		margin-top:108px;
-		FILTER: alpha(opacity=100,finishopacity=0,style=5);
-	}
-	#sq_l_b {
-		//margin-top:0px;
-		//margin-left:0px;
-		width:212px;
-		height:215px;
-		display:inline-block;
-		border:7px solid #0083CA;
-		border-top-left-radius:66px;
-		border-bottom-right-radius: 66px;
-		-moz-border-top-left-radius:66px;
-		-moz-border-bottom-right-radius: 66px;
-	}
-	#sq_l_t {
-		width:252.764px;
-		height:256.709px;
-		//display:inline-block;
-		float:left;
-		border:7px solid #0083CA;
-		border-top-left-radius:70px;
-		border-bottom-right-radius: 70px;
-		-moz-border-top-left-radius:70px;
-		-moz-border-bottom-right-radius: 70px;
-	}
-	#sq_r_b {	
-		width:252.764px;
-		height:256.709px;
-		margin-left:20px;
-		display:inline-block;
-		border:7px solid #0083CA;
-		border-top-left-radius:70px;
-		border-bottom-right-radius: 70px;
-		-moz-border-top-left-radius:70px;
-		-moz-border-bottom-right-radius: 70px;
-	}
-	#sq_r_t {
-		margin-left:20px;
-		display:relative;
-		top:-41.7px;
-		width:212px;
-		height:215px;
-		float:left;
-		border:7px solid #0083CA;
-		border-top-left-radius:66px;
-		border-bottom-right-radius: 66px;
-		-moz-border-top-left-radius:66px;
-		-moz-border-bottom-right-radius: 66px;
 	}
 //}
 /*

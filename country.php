@@ -1,6 +1,7 @@
 <?php
 	include "header.php";
 ?>
+<link rel="stylesheet" href="css/resolution.css" type="text/css" media="screen">
 <script type="text/javascript" src="Maps/FusionCharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="JS/jquery_country.js"></script>
