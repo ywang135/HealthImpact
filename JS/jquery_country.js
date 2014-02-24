@@ -1,6 +1,10 @@
 $SHOW_DISEASE = 0;
 $ORDER_NAME_OR_IMPACT = 0;
+$title = "The Global Health Impact Country Index";
 $(document).ready(function() {
+		$SHOW_DISEASE = 0;
+        $(this).attr("title", $title);
+       	$("#copyright").css( { "top" : "950px"} );
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
 		drawMap("Maps/genMalaria.php","mapcontainer_1","1");
 		drawMap("Maps/genTB.php","mapcontainer_2","2");
@@ -9,10 +13,7 @@ $(document).ready(function() {
 		$(".map_container").hide();
 		$(".country_rank_list").hide();
        	$("#mapcontainer_0").fadeIn();
-       	//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
-       	//popupJS("", 0, 0, 0, 0, "", 0);
        	$("#list_all_impact").fadeIn();
-       	$("#orderByImpact").addClass('chosen');
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
        		$("#country_text").hide();
@@ -60,7 +61,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_all_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
        	});
        	$("#showMalaria").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -83,7 +84,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_malaria_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
        	});
        	$("#showTB").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -106,7 +107,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_TB_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));  		
+       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));  		
        	});
        	$("#showHIV").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -129,7 +130,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_HIV_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
        	});
        	$('#orderForm :checkbox').click(function() {
     		var $this = $(this);
@@ -164,33 +165,33 @@ function drawMap(source, div_id, map_id){
     myMap.setXMLUrl (source);//"Maps/genAll.php"
     myMap.render(div_id);//"mapcontainer"
 }
-function popupJS(vName, sc1, sc2, sc3, tsc, iso_code, rank_id){
+function popupJS(vName, sc1, sc2, sc3, tsc, disease, rank_id){
 	document.getElementById('additional_statistic').innerHTML=vName;			
-	if($SHOW_DISEASE==0){
-		var str = "<br>Overall Impact: "+tsc.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");;
+	if(disease==0){
+		var str = "<br>Overall Impact: "+tsc.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 		str = str+"<br>Rank: "+rank_id;
     }
-    else if($SHOW_DISEASE ==1){
-		var str = "<br>Malaria Treatment Impact: "+sc1.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");;
+    else if(disease ==1){
+		var str = "<br>Malaria Treatment Impact: "+sc1.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 		str = str+"<br>Rank: "+rank_id;
     }
-    else if($SHOW_DISEASE ==2){
-		var str = "<br>TB Treatment Impact: "+sc2.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");;
+    else if(disease ==2){
+		var str = "<br>TB Treatment Impact: "+sc2.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 		str = str+"<br>Rank: "+rank_id;
     }
-    else if($SHOW_DISEASE==3){
-		var str = "<br>HIV Treatment Impact: "+sc3.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");;
+    else if(disease==3){
+		var str = "<br>HIV Treatment Impact: "+sc3.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 		str = str+"<br>Rank: "+rank_id;
     }
 	document.getElementById('country_info').innerHTML=str;
-	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3));
+	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),$SHOW_DISEASE);
 }
 google.load("visualization", "1", {packages: ["corechart"]});
 google.setOnLoadCallback(drawChart);
-function drawChart(div_name, countryName, imp1,imp2,imp3) {
-	var vColor="#7E5BA6";
-	var hColor="#3A96AA";
-	if($SHOW_DISEASE==0){
+function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
+	var vColor="#0083CA";
+	var hColor="#0083CA";
+	if(disease==0){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
         	['Malaria', imp1, 'color: #0083CA' ],
@@ -198,18 +199,18 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
         	['HIV/AIDS', imp3, 'color: #EF3E2E' ]
      	 	]);
      	var options = {
-    		width: 337,
-        	height: 180,
+     		width:337,
         	marginTop: 100,
         	fontName: 'Myriad pro Semibold',
         	legend: { position: "none"},//'top', maxLines: 1
 			bar: { groupWidth: '50%' },
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor}},
-        	vAxis:{ textStyle:{color: hColor}},
+        	vAxis:{ textStyle:{color: hColor,fontSize: 13}},
+        	chartArea:{left:80,top:0}
     	};
     }
-    else if($SHOW_DISEASE ==1){
+    else if(disease ==1){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
         	['Malaria', imp1, 'color: #0083CA' ]
@@ -218,14 +219,15 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
     		width: 337,
         	height: 180,
         	marginTop: 100,
+        	fontName: 'Myriad pro Semibold',
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
-        	hAxis:{ textStyle:{color: vColor}},
-        	vAxis:{ textStyle:{color: hColor}},
+        	hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
+        	chartArea:{left:80,top:0}
     	};
     }
-    else if($SHOW_DISEASE ==2){
+    else if(disease ==2){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
         	['TB', imp2, 'color: #FFB31C' ]
@@ -234,14 +236,15 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
     		width: 337,
         	height: 180,
         	marginTop: 100,
+        	fontName: 'Myriad pro Semibold',
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
-        	hAxis:{ textStyle:{color: vColor}},
-        	vAxis:{ textStyle:{color: hColor}},
+        	hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
+        	chartArea:{left:80,top:0}
     	};
     }
-    else if($SHOW_DISEASE==3){
+    else{//if($SHOW_DISEASE==3)
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
         	['HIV/AIDS', imp3, 'color: #EF3E2E' ]
@@ -250,13 +253,14 @@ function drawChart(div_name, countryName, imp1,imp2,imp3) {
     		width: 337,
         	height: 180,
         	marginTop: 100,
+        	fontName: 'Myriad pro Semibold',
         	legend: { position: "none" },//'top', maxLines: 1
 			bar: { groupWidth: '20%' },
         	isStacked: true,
-        	hAxis:{ textStyle:{color: vColor}},
-        	vAxis:{ textStyle:{color: hColor}},
+        	hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
+        	chartArea:{left:80,top:0}
     	};
     }
-    var chart = new google.visualization.BarChart(document.getElementById(div_name));
+    var chart = new google.visualization.BarChart(document.getElementById("bar_details"));
     chart.draw(data, options);
 }

@@ -133,9 +133,6 @@ a:link, a:visited {
 	#menu_bar #main_menu ul li a:hover{
 		background: #FFB31C;	
 	}
-	#menu_bar #sub_menu{
-		display:none;
-	}
 	#menu_bar #sub_menu ul{
 		list-style-type:none;
 		margin-left:auto;

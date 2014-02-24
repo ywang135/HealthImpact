@@ -2,14 +2,7 @@
 	include "header.php";
 ?>
 <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
-<script type="text/javascript">
-	$title = "The Global Health Impact";
-    $(document).ready(function() {
-        $(this).attr("title", $title);
-       	$("#sub_menu").show();
-       	$("#copyright").css( { "margin-top" : "60px"} );
-    });
-</script>
+<script type="text/javascript" src="JS/jquery_index.js"></script>
 	<div class="main_body">
 		<div id="line_1">
 			<div id="sq_l_t" class="sq_index" onclick="location.href='country.php';"></div>
