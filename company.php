@@ -38,7 +38,7 @@
     					$l1 = "0px";
     				}
     				else{
-    					$l1 = "".max(($row[3]*460/15848987),0.5)."px";
+    					$l1 = "".max(($row[3]*460/15848987),1)."px";
     				}
     				echo "
     					<br>
@@ -60,7 +60,7 @@
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[4]*460/14041746),0.5)."px";
+    				$l1 = "".max(($row[4]*460/14041746),1)."px";
     				echo "
     					<br>
     					<div class='malaria_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
@@ -81,7 +81,7 @@
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[5]*460/5803804),0.5)."px";
+    				$l1 = "".max(($row[5]*460/5803804),1)."px";
     				echo "
     					<br>
     					<div class='TB_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
@@ -101,7 +101,7 @@
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]',$i);\">
     					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[6]*460/7494448),0.5)."px";
+    				$l1 = "".max(($row[6]*460/7494448),1)."px";
     				echo "
     					<br>
     					<div class='HIV_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>

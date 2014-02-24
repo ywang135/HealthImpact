@@ -8,7 +8,7 @@ $(document).ready(function() {
        	//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
        	//popupJS("", 0, 0, 0, 0, "", 0);
        	$(this).attr("title", $title);
-       	$("#copyright").css( { "top" : "1200px"} );
+       	$("#copyright").css( { "top" : "1250px"} );
        	$("#popupwd").hide();
        	$(".company_rank_list").hide();
        	$("#list_all_impact").fadeIn();
@@ -198,7 +198,7 @@ function drawChart(div_name, companyName, disease) {
 		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Malaria Burden by Company";
 		var options = {
     	width: 337,
-        height: 304,
+        height: 284,
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
@@ -218,7 +218,7 @@ function drawChart(div_name, companyName, disease) {
 		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global TB Burden by Company";
 		var options = {
     	width: 337,
-        height: 304,
+        height: 284,
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
@@ -238,7 +238,7 @@ function drawChart(div_name, companyName, disease) {
 		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global HIV Burden by Company";
 		var options = {
     	width: 337,
-        height: 304,
+        height: 284,
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
