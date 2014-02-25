@@ -61,7 +61,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_all_impact").fadeIn();
        		}
-       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
        	});
        	$("#showMalaria").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -84,7 +84,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_malaria_impact").fadeIn();
        		}
-       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
        	});
        	$("#showTB").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -107,7 +107,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_TB_impact").fadeIn();
        		}
-       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));  		
+       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);  		
        	});
        	$("#showHIV").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -130,7 +130,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_HIV_impact").fadeIn();
        		}
-       		//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
+       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
        	});
        	$('#orderForm :checkbox').click(function() {
     		var $this = $(this);
@@ -158,6 +158,7 @@ $(document).ready(function() {
        			}
     		}
 		});
+		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
     });
     
 function drawMap(source, div_id, map_id){
@@ -194,9 +195,9 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
 	if(disease==0){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
-        	['Malaria', imp1, 'color: #0083CA' ],
-        	['TB', imp2, 'color: #FFB31C' ],
-        	['HIV/AIDS', imp3, 'color: #EF3E2E' ]
+        	['Malaria', parseFloat(imp1), 'color: #0083CA' ],
+        	['TB', parseFloat(imp2), 'color: #FFB31C' ],
+        	['HIV/AIDS', parseFloat(imp3), 'color: #EF3E2E' ]
      	 	]);
      	var options = {
      		width:337,
@@ -213,7 +214,7 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
     else if(disease ==1){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
-        	['Malaria', imp1, 'color: #0083CA' ]
+        	['Malaria', parseFloat(imp1), 'color: #0083CA' ]
      	 	]);     	
      	var options = {
     		width: 337,
@@ -230,7 +231,7 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
     else if(disease ==2){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
-        	['TB', imp2, 'color: #FFB31C' ]
+        	['TB', parseFloat(imp2), 'color: #FFB31C' ]
      	 	]);
      	var options = {
     		width: 337,
@@ -244,10 +245,10 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
         	chartArea:{left:80,top:0}
     	};
     }
-    else{//if($SHOW_DISEASE==3)
+    else if(disease == 3){
 		var data = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
-        	['HIV/AIDS', imp3, 'color: #EF3E2E' ]
+        	['HIV/AIDS', parseFloat(imp3), 'color: #EF3E2E' ]
      	 	]);
      	var options = {
     		width: 337,
@@ -260,6 +261,9 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
         	hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
         	chartArea:{left:80,top:0}
     	};
+    }
+    else{
+    	return;
     }
     var chart = new google.visualization.BarChart(document.getElementById("bar_details"));
     chart.draw(data, options);
