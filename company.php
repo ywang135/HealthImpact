@@ -20,7 +20,7 @@
 		<div id="list_all_impact" class="company_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company(-1)");
 				while($row = mysqli_fetch_array($result)){
 					//if(strlen($row[0])<15){
@@ -51,7 +51,7 @@
 		<div id="list_malaria_impact" class="company_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_Malaria(-1)");
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
@@ -70,7 +70,7 @@
 		<div id="list_TB_impact" class="company_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_TB(-1)");
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
@@ -89,7 +89,7 @@
 		<div id="list_HIV_impact" class="company_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_HIV(-1)");
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">

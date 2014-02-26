@@ -2,7 +2,7 @@
 
 <?php
 
-	include "../../con/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
+	include "../../con_/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
 	$itv1=2000000;
 	$itv2=500000;
 	//$itv3=500000;

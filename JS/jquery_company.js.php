@@ -99,7 +99,7 @@ var ColorHIV=[];
 	header('Content-type: text/javascript');
 	echo 
 "function setArray(){";
-	include "./../../con/con_ghi.php";
+	include "./../../con_/con_ghi.php";
 	$result = $con->query("call show_top_company(-1)");
 	$all = 0;
 	$malaria = 0;
@@ -131,7 +131,7 @@ var ColorHIV=[];
     }
     echo "ColorAll.push('#b1b1b1');ColorMalaria.push('#b1b1b1');ColorTB.push('#b1b1b1');ColorHIV.push('#b1b1b1');";
     mysqli_close($con);
-    include "./../../con/con_ghi.php";
+    include "./../../con_/con_ghi.php";
     $result = $con->query("call show_sum()");
     while($row = mysqli_fetch_array($result)){
     	$total = floatval($row[1]);

@@ -20,7 +20,7 @@
 		<div id="list_all_impact" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_countries(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
@@ -55,7 +55,7 @@
 		<div id="list_all_name" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_countries_by_name(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
@@ -90,7 +90,7 @@
 		<div id="list_malaria_impact" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_countries_by_malaria(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
@@ -125,7 +125,7 @@
 		<div id="list_TB_impact" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_countries_by_TB(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
@@ -160,7 +160,7 @@
 		<div id="list_HIV_impact" class="country_rank_list">
 			<table cellpadding="1">
 			<?php 
-				include "./../con/con_ghi.php";
+				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_countries_by_HIV(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
