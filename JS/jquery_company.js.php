@@ -31,6 +31,8 @@ $(document).ready(function() {
         	$SHOW_DISEASE = 0;
        		$(".company_rank_list").hide();
        		$("#list_all_impact").fadeIn();
+       		drawChart("bar_details_1", "", 0);
+       		drawChart("bar_details_2", "", 1);
        	});
        	$("#showMalaria").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -46,6 +48,8 @@ $(document).ready(function() {
        		$SHOW_DISEASE = 1;
        		$(".company_rank_list").hide();
        		$("#list_malaria_impact").fadeIn();
+       		drawChart("bar_details_1", "", 0);
+       		drawChart("bar_details_2", "", 1);
        	});
        	$("#showTB").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -60,7 +64,9 @@ $(document).ready(function() {
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".company_rank_list").hide();
-       		$("#list_TB_impact").fadeIn(); 		
+       		$("#list_TB_impact").fadeIn(); 	
+       		drawChart("bar_details_1", "", 0);
+       		drawChart("bar_details_2", "", 1);	
        	});
        	$("#showHIV").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -76,6 +82,8 @@ $(document).ready(function() {
        		$SHOW_DISEASE = 3;
        		$(".company_rank_list").hide();
        		$("#list_HIV_impact").fadeIn();
+       		drawChart("bar_details_1", "", 0);
+       		drawChart("bar_details_2", "", 1);
        	});
        	setArray();
        	drawChart("bar_details_1", "", 0);

@@ -22,22 +22,17 @@
 			<?php 
 				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company(-1)");
+				$i=1;
 				while($row = mysqli_fetch_array($result)){
-					//if(strlen($row[0])<15){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
-    				/*}
-    				else {
-    					echo "<tr onmouseover=\"popupPiGraph('$row[11]','$row[4]');\">
-    					<td id=\"$row[7]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";
-    				}*/
+    				$i++;
     				if($row[3]<1){
     					$l1 = "0px";
     				}
     				else{
-    					$l1 = "".max(($row[3]*460/15848987),1)."px";
+    					$l1 = "".max(($row[3]*420/15848987),1)."px";
     				}
     				echo "
     					<br>
@@ -53,11 +48,13 @@
 			<?php 
 				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_Malaria(-1)");
+				$i=1;
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[4]*460/14041746),1)."px";
+    				$i++;
+    				$l1 = "".max(($row[4]*420/14041746),1)."px";
     				echo "
     					<br>
     					<div class='malaria_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
@@ -72,11 +69,13 @@
 			<?php 
 				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_TB(-1)");
+				$i=1;
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[5]*460/5803804),1)."px";
+    				$i++;
+    				$l1 = "".max(($row[5]*420/5803804),1)."px";
     				echo "
     					<br>
     					<div class='TB_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
@@ -91,10 +90,12 @@
 			<?php 
 				include "./../con_/con_ghi.php";
 				$result = $con->query("call show_top_company_by_HIV(-1)");
+				$i=1;
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
-    					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";	
-    				$l1 = "".max(($row[6]*460/7494448),1)."px";
+    					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";
+    				$i++;	
+    				$l1 = "".max(($row[6]*420/7494448),1)."px";
     				echo "
     					<br>
     					<div class='HIV_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
