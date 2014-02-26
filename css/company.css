@@ -40,7 +40,7 @@
 	#all_list{
 		width:100%;
 		overflow:auto;
-		max-height:616.438px;
+		max-height:646.438px;
 	}
 	#bar_details {
 		width:338px;
@@ -109,7 +109,7 @@
 	}
 	#control_by_disease_company{
 		float:center;
-		padding-left:227px;
+		padding-left:197px;
 		padding-right:auto;
 		text-align:center;
 	}
@@ -150,7 +150,7 @@
 		-moz-border-radius:9px;
 	}
 	#company_text {
-		width:702.912px;
+		width:898px;
 		text-align:left;
 		position:absolute;
 		//background:#FFB31C;
@@ -158,8 +158,8 @@
 		font-size:16px;
 		letter-spacing:1px;
 		color:#0083CA;
-		margin-left:372.452px;
-		margin-top:730px;
+		margin-left:210px;
+		margin-top:760px;
 		hyphens:auto;
     	text-align:justify;
     	-webkit-hyphens:auto;
@@ -181,11 +181,11 @@
 		display:block;
 		float:left;
 		margin-top:30px;
-		width:400px;
-		height:682px;
+		width:440px;
+		height:719px;
 	}
 	#popupwd1 {
-		width:338.517px;
+		width:368.517px;
 		height:350.438px;
 		margin-left:55px;
 		position:absolute;
@@ -198,7 +198,7 @@
 	}
 	#popupwd2 {
 		float:right;
-		width:338.517px;
+		width:368.517px;
 		height:350.438px;
 		margin-left:55px;
 		margin-top:360px;
@@ -213,8 +213,8 @@
 
 	#rankls {
 		width:500.452px;
-		height:676.438px;
-		margin-left:224px;
+		height:710.438px;
+		margin-left:194px;
 		margin-top:30px;
 		float:left;
 		position: absolute;

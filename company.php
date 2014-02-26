@@ -22,10 +22,9 @@
 			<?php 
 				include "./../con/con_ghi.php";
 				$result = $con->query("call show_top_company(-1)");
-				$i=1;
 				while($row = mysqli_fetch_array($result)){
 					//if(strlen($row[0])<15){
-    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
     				/*}
@@ -44,7 +43,6 @@
     					<br>
     					<div style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
     					</td></tr>";
-    				$i++;
     			}
    		 		mysqli_close($con);
 			?>
@@ -55,9 +53,8 @@
 			<?php 
 				include "./../con/con_ghi.php";
 				$result = $con->query("call show_top_company_by_Malaria(-1)");
-				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
     				$l1 = "".max(($row[4]*460/14041746),1)."px";
@@ -65,7 +62,6 @@
     					<br>
     					<div class='malaria_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
     					</td></tr>";
-    				$i++;
     			}
    		 		mysqli_close($con);
 			?>
@@ -76,9 +72,8 @@
 			<?php 
 				include "./../con/con_ghi.php";
 				$result = $con->query("call show_top_company_by_TB(-1)");
-				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
     				$l1 = "".max(($row[5]*460/5803804),1)."px";
@@ -86,7 +81,6 @@
     					<br>
     					<div class='TB_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
     					</td></tr>";
-    				$i++;
     			}
    		 		mysqli_close($con);
 			?>
@@ -97,16 +91,14 @@
 			<?php 
 				include "./../con/con_ghi.php";
 				$result = $con->query("call show_top_company_by_HIV(-1)");
-				$i=1;
 				while($row = mysqli_fetch_array($result)){
-    				echo "<tr onmouseover=\"popupPiGraph('$row[0]',$i);\">
+    				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";	
     				$l1 = "".max(($row[6]*460/7494448),1)."px";
     				echo "
     					<br>
     					<div class='HIV_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
     					</td></tr>";
-    				$i++;
     			}
    		 		mysqli_close($con);
 			?>
@@ -125,7 +117,7 @@
 			</div>
 		</div><!-- #popupwd1 end -->	
 		<div id="popupwd2">
-			<div id="additional_statistic_1">ADDITIONAL STATISTICS
+			<div id="additional_statistic_1">
 			</div><!-- #additional_statistic end -->
 			<div id="bar_details_2">
 			</div><!-- #bar_details end -->

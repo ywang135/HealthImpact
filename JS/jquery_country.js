@@ -4,6 +4,7 @@ $title = "The Global Health Impact Country Index";
 $(document).ready(function() {
 		$SHOW_DISEASE = 0;
         $(this).attr("title", $title);
+        $("#sub_menu #sub_country a").css("background-color", "#0083CA");
        	$("#copyright").css( { "top" : "950px"} );
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
 		drawMap("Maps/genMalaria.php","mapcontainer_1","1");

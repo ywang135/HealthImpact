@@ -37,22 +37,22 @@
 			</div><!-- #network end -->
 			<div id="main_menu">
 			<ul>
-			<li><span><a href="index.php">Home</a></span></li>
-			<li><span><a href="#">The Index</a></span></li>
-			<li id="companyanddrug"><span><a href="#">About the Index</a></span></li>
-			<li><span><a href="#">Resources</a></span></li>
-			<li><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">Reports</a></span></li>
-			<li><span><a href="#">Methodology</a></span></li>
-			<li><span><a href="#">Contact Us</a></span></li>
+			<li id="menu_home"><span><a href="index.php">Home</a></span></li>
+			<li id="menu_the_index"><span><a href="#">The Index</a></span></li>
+			<li id="menu_about_the_index"><span><a href="#">About the Index</a></span></li>
+			<li id="menu_resources"><span><a href="#">Resources</a></span></li>
+			<li id="menu_reports"><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">Reports</a></span></li>
+			<li id="menu_methodology"><span><a href="#">Methodology</a></span></li>
+			<li id="menu_contact_us"><span><a href="#">Contact Us</a></span></li>
 			</ul>
 			</div><!-- #main_menu end -->
 			<HR id="seperate_line" width="100%" color=#0083ca SIZE=5></br>
 			<div id="sub_menu">
 				<ul>
-				<li><span><a href="country.php">COUNTRY</a></span></li>
-				<li><span><a href="company.php">COMPANY</a></span></li>
-				<li><span><a href="#">DRUG</a></span></li>
-				<li><span><a href="#">DISEASE</a></span></li>
+				<li id="sub_country"><span><a href="country.php">COUNTRY</a></span></li>
+				<li id="sub_company"><span><a href="company.php">COMPANY</a></span></li>
+				<li id="sub_drug"><span><a href="#">DRUG</a></span></li>
+				<li id="sub_disease"><span><a href="#">DISEASE</a></span></li>
 				</ul>
 			</div><!-- #sub_menu end -->
 		</div><!-- #menu_bar end -->
