@@ -1,7 +1,7 @@
 $title = "The Global Health Impact";
 $(document).ready(function() {
 	$(this).attr("title", $title);
-	$("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
+	$("#main_menu #menu_home a").css("background-color", "#FFB31C");
     $("#copyright").css( { "margin-top" : "60px"} );
     
     $("#sq_l_t").mouseover(function(){
