@@ -60,6 +60,7 @@
 		border-bottom-right-radius: 70px;
 		-moz-border-top-left-radius:70px;
 		-moz-border-bottom-right-radius: 70px;
+		
 	}
 	#sq_r_t {
 		margin-left:20px;
@@ -73,6 +74,13 @@
 		border-bottom-right-radius: 66px;
 		-moz-border-top-left-radius:66px;
 		-moz-border-bottom-right-radius: 66px;
+		background: url(../images/pills_.jpg) no-repeat 0 0;
+		background-image: url(../images/pills_.jpg);
+		background-size:100% 100%;
+    	-webkit-background-size:100% 100%;        
+    	-khtml-background-size:100% 100%;         
+    	-moz-background-size:100% 100%;    
+		background-repeat: no-repeat;
 	}
 //}
 /*
