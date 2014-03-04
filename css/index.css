@@ -49,6 +49,13 @@
 		border-bottom-right-radius: 70px;
 		-moz-border-top-left-radius:70px;
 		-moz-border-bottom-right-radius: 70px;
+		background: url(../images/countries.jpg) no-repeat 0 0;
+		background-image: url(../images/countries.jpg);
+		background-size:100% 100%;
+    	-webkit-background-size:100% 100%;        
+    	-khtml-background-size:100% 100%;         
+    	-moz-background-size:100% 100%;    
+		background-repeat: no-repeat;
 	}
 	#sq_r_b {	
 		width:252.764px;

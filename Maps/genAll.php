@@ -28,12 +28,15 @@
 		}
 		elseif($row[4]<$itv2){
 			$hover = '639ACE';
+			
 		}
 		elseif ($row[4]<$itv1) {
 			$hover = '';
 		}
 		else {
-			$hover = 'A9213A';
+			//$hover = 'A9213A';
+			//$hover = 'B42F23'; //darker one 75%
+			$hover = 'FF6666';
 		}
 		echo "<entity id='$row[6]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',0,$i);\" />";
 		$i++;
