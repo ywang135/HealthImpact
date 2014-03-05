@@ -12,10 +12,10 @@ $(document).ready(function() {
     });
     
     $("#sq_r_t").mouseover(function(){
-       	$("#sub_menu #sub_drug a").css("background-color", "#0083CA"); 
+       	$("#sub_menu #sub_company a").css("background-color", "#0083CA"); 
     });
     $("#sq_r_t").mouseout(function(){
-       	$("#sub_menu #sub_drug a").css("background-color", "#EF3E2E"); 
+       	$("#sub_menu #sub_company a").css("background-color", "#EF3E2E"); 
     });
     
     $("#sq_l_b").mouseover(function(){
@@ -26,9 +26,9 @@ $(document).ready(function() {
     });
     
     $("#sq_r_b").mouseover(function(){
-       		$("#sub_menu #sub_company a").css("background-color", "#0083CA"); 
+       	$("#sub_menu #sub_drug a").css("background-color", "#0083CA"); 
     });
     $("#sq_r_b").mouseout(function(){
-       	$("#sub_menu #sub_company a").css("background-color", "#EF3E2E"); 
+       	$("#sub_menu #sub_drug a").css("background-color", "#EF3E2E"); 
     });
 });
