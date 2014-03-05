@@ -15,6 +15,8 @@ $(document).ready(function() {
 		$(".map_container").hide();
 		$(".country_rank_list").hide();
        	$("#mapcontainer_0").fadeIn();
+       	$("#list_all_impact").load("Maps/All.php");   
+       	$("#list_all_name").load("Maps/Name.php");
        	$("#list_all_impact").fadeIn();
        	$("#popupwd").hide();
        	$("#emap").mouseover(function(){
@@ -78,11 +80,12 @@ $(document).ready(function() {
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
        		$(".map_container").hide();
+       		$("#mapcontainer_1").fadeIn();
        		if($MAP_MALARIA == 0){
+       			$("#list_malaria_impact").load("Maps/Malaria.php");
        			drawMap("Maps/genMalaria.php","mapcontainer_1","1");
        			$MAP_MALARIA = 1;
        		}
-       		$("#mapcontainer_1").fadeIn();
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").hide();
        		$(".HIV_bar").hide();
@@ -105,10 +108,11 @@ $(document).ready(function() {
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".map_container").hide();
-       		if($MAP_TB == 0){
+			if($MAP_TB == 0){
+       			$("#list_TB_impact").load("Maps/TB.php");
        			drawMap("Maps/genTB.php","mapcontainer_2","2");
        			$MAP_TB = 1;
-       		}       		
+       		}      		
        		$("#mapcontainer_2").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").fadeIn();
@@ -133,9 +137,10 @@ $(document).ready(function() {
        		$SHOW_DISEASE = 3;
        		$(".map_container").hide();
        		if($MAP_HIV == 0){
+       			$("#list_HIV_impact").load("Maps/HIV.php");
        			drawMap("Maps/genHIV.php","mapcontainer_3","3");
        			$MAP_HIV = 1;
-       		}       		
+       		}      		
        		$("#mapcontainer_3").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").hide();
