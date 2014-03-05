@@ -2,19 +2,16 @@
 	header('Content-type: text/javascript');
 ?>
 $SHOW_DISEASE = 0;
-$ORDER_NAME_OR_IMPACT = 0;
 $title = "The Global Health Impact Company Index";
-$(document).ready(function() {		
-       	//drawChart("bar_details", "", parseFloat(0), parseFloat(0), parseFloat(0));
-       	//popupJS("", 0, 0, 0, 0, "", 0);
+$(document).ready(function() {
        	$(this).attr("title", $title);
        	$("#sub_menu #sub_company a").css("background-color", "#0083CA"); 
-       	$("#copyright").css( { "top" : "1250px"} );
+       	$("#copyright").css( { "top" : "1450px"} );
        	$("#rankls").mouseout(function(){
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);
        	});
-       	$(".company_rank_list").hide();
+       	$(".items_rank_list").hide();
        	$("#list_all_impact").fadeIn();
        	$("#showAll a").css("background-color", "#ef3e2e"); 		
         $("#showAll").click(function(){
@@ -29,7 +26,7 @@ $(document).ready(function() {
         	}
         	$("#showAll a").css("background-color", "#ef3e2e");
         	$SHOW_DISEASE = 0;
-       		$(".company_rank_list").hide();
+       		$(".items_rank_list").hide();
        		$("#list_all_impact").fadeIn();
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);
@@ -46,7 +43,7 @@ $(document).ready(function() {
         	}
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
-       		$(".company_rank_list").hide();
+       		$(".items_rank_list").hide();
        		$("#list_malaria_impact").fadeIn();
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);
@@ -63,7 +60,7 @@ $(document).ready(function() {
         	}
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
-       		$(".company_rank_list").hide();
+       		$(".items_rank_list").hide();
        		$("#list_TB_impact").fadeIn(); 	
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);	
@@ -80,7 +77,7 @@ $(document).ready(function() {
         	}
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
-       		$(".company_rank_list").hide();
+       		$(".items_rank_list").hide();
        		$("#list_HIV_impact").fadeIn();
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);
@@ -279,4 +276,3 @@ function drawChart(div_name, companyName, showOther) {
     	chart.draw(data, options);
     }
 }
-// data.setCell(v_id,1,data.getValue(v_id,1),{color: 'black'});	

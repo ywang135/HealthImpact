@@ -1,33 +1,141 @@
 <?php
 	include "header.php";
 ?>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="JS/jquery_drug.js"></script>
-<link rel="stylesheet" href="css/drug.css" type="text/css" media="screen">
 
-	<div class="main_body_drug">
+<link rel="stylesheet" href="css/companyanddrug.css" type="text/css" media="screen">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="JS/jquery_drug.js.php"></script>
+
+	<div class="main_body">
 	
-	<div id="control_by_disease_drug">
-		<div id="showMalaria" class="c_b_d"><a href="#Malaria">Malaria</a></div>
-		<div id="showTB" class="c_b_d"><a href="#TB">TB</a></div>	
-		<div id="showHIV" class="c_b_d"><a href="#HIV">HIV/AIDS</a></div>
-		<div id="showAll" class="c_b_d"><a href="#All">All</a></div>
+	<div id="control_by_disease_items">
+		<div id="showMalaria" class="c_b_d"><a href="#">Malaria</a></div>
+		<div id="showTB" class="c_b_d"><a href="#">TB</a></div>	
+		<div id="showHIV" class="c_b_d"><a href="#">HIV/AIDS</a></div>
+		<div id="showAll" class="c_b_d"><a href="#">All</a></div>
 	</div><!-- #control_by_disease end -->
 	<div id="rankls">
-		<div id="drugs_by_rank">
+		<div id="items_by_rank">
 			Drugs By Rank
-		</div><!-- #drugs_by_rank end -->
+		</div><!-- #items_by_rank end -->
 		<div id="all_list">
+			<div id="list_all_impact" class="items_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con_/con_ghi.php";
+				$result = $con->query("call show_top_drug(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				<td id=\"$row[2]\">$i</td><td align='left'>
+    					<a href='#'>$row[1] ($row[0])</a>"; 	
+    				$i++;						
+    				$l1 = "".max(($row[2]*420/14710476),1)."px";
+    				$color;
+    				if($row[4]=="Malaria"){
+    					$color="#0083CA";
+    				}
+    				else if($row[4]=="TB"){
+    					$color="#FFB31C";
+    				}
+    				else if($row[4]=="HIV"){
+    					$color="#EF3E2E";
+    				}
+    				echo "<br>
+    					<div style='float:left;background:$color;height:15px;width:$l1;'></div>
+    					</td></tr>";
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_all_impact end -->
+		
+		<div id="list_malaria_impact" class="items_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con_/con_ghi.php";
+				$result = $con->query("call show_top_drug_by_Malaria(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				<td id=\"$row[2]\">$i</td><td align='left'>
+    					<a href='#'>$row[1]</a>";	
+    				$i++;
+    				$l1 = "".max(($row[2]*420/14710476),1)."px";
+    				echo "
+    					<br>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+    					</td></tr>";
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_malaria_impact end -->
+		
+		<div id="list_TB_impact" class="items_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con_/con_ghi.php";
+				$result = $con->query("call show_top_drug_by_TB(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				<td id=\"$row[2]\">$i</td><td align='left'>
+    					<a href='#'>$row[1]</a>";	
+    				$i++;
+    				$l1 = "".max(($row[2]*420/2848482),1)."px";
+    				echo "
+    					<br>
+    					<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l1;'></div>
+    					</td></tr>";
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_TB_impact end -->
+		
+		<div id="list_HIV_impact" class="items_rank_list">
+			<table cellpadding="1">
+			<?php 
+				include "./../con_/con_ghi.php";
+				$result = $con->query("call show_top_drug_by_HIV(-1)");
+				$i=1;
+				while($row = mysqli_fetch_array($result)){
+    				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
+    				<td id=\"$row[2]\">$i</td><td align='left'>
+					<a href='#'>$row[1]</a>";
+    				$i++;	
+    				$l1 = "".max(($row[2]*420/7494448),1)."px";
+    				echo "
+    					<br>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l1;'></div>
+    					</td></tr>";
+    			}
+   		 		mysqli_close($con);
+			?>
+			</table>
+		</div><!-- #list_HIV_impact end -->
 		</div><!-- #all_list end -->
 	</div><!-- #rankls end -->
-	<div id="check_box">
-		<form id="orderForm">
-			<input type="checkbox" name="show_ranklist_order" value="by_name">Order by name<br>
-			
-		</form>
-	</div><!-- #check_box end -->
-	
-	<div id="drugs_text">
+	<div id="popupwd">
+		<div id="popupwd1">
+			<div id="additional_statistic">Impact Score by Drug
+			</div><!--#additional_statistic end -->
+			<div id="bar_details_1">
+			</div><!-- #bar_details end -->
+			<div id="bar_sub_title">
+			</div>
+		</div><!-- #popupwd1 end -->	
+		<div id="popupwd2">
+			<div id="additional_statistic_1">
+			</div><!-- #additional_statistic end -->
+			<div id="bar_details_2">
+			</div><!-- #bar_details end -->
+			<div id="bar_sub_title">
+			</div>
+		</div><!-- #popupwd2 end -->
+	</div><!-- #popupwd end -->	
+	<div id="items_text">
 	<p>Breakdown of Disease Scores</p>
 	The Global Health Impact Drug Index measures key malaria, TB, and HIV drugs’ impacts.
 	<br> To do so, it looks at three things:
@@ -40,27 +148,8 @@
 	<br>Resources
 			For additional information, please click here: <a href="#">link to report page </a>
 
-	</div><!-- #drug_text end -->
-	<div id="popupdrug1">
-		<div id="additional_statistic">ADDITIONAL STATISTICS
-		</div><!-- #additional_statistic end -->
-		<div id="drug_info">
-		</div><!-- #drug_info end -->
-		<div id="bar_details">
-		</div><!-- #bar_details end -->
-		<div id="bar_sub_title">PI graph here
-		</div>
-	</div><!-- #popupdrug1 end -->	
-	<div id="popupdrug2">
-		<div id="additional_statistic">ADDITIONAL STATISTICS
-		</div><!-- #additional_statistic end -->
-		<div id="drug_info">
-		</div><!-- #drug_info end -->
-		<div id="bar_details">
-		</div><!-- #bar_details end -->
-		<div id="bar_sub_title">PI graph here
-		</div>
-	</div><!-- #popupdrug2 end -->	
+	</div><!-- items_text end -->
+
 	</div><!-- .main_body end -->
 
 <?php
