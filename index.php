@@ -10,7 +10,7 @@
 		</div><!-- #line_1 end -->
 		<div id="line_2">
 			<div id="sq_l_b" class="sq_index" onclick="location.href='disease.php';"></div>
-			<div id="sq_r_b" class="sq_index" onclick="location.href='drugc.php';"></div>
+			<div id="sq_r_b" class="sq_index" onclick="location.href='drug.php';"></div>
 		</div><!-- #line_2 end -->
 	</div><!-- .main_body end -->
 

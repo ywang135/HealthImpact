@@ -178,6 +178,7 @@ function drawChart(div_name, itemsName, showOther) {
         is3D: true,
         sliceVisibilityThreshold:0,
         chartArea:{left:20,top:10,width:"80%",height:"90%"},
+        tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
     	};
    	}
@@ -200,6 +201,7 @@ function drawChart(div_name, itemsName, showOther) {
         is3D: true,
         sliceVisibilityThreshold:0,
         chartArea:{left:20,top:10,width:"80%"},
+        tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
     	};
    	}
@@ -222,6 +224,7 @@ function drawChart(div_name, itemsName, showOther) {
         is3D: true,
         sliceVisibilityThreshold:0,
         chartArea:{left:20,top:10,width:"80%",height:"98%"},
+        tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
     	};
    	}
@@ -244,9 +247,12 @@ function drawChart(div_name, itemsName, showOther) {
         is3D: true,
         sliceVisibilityThreshold:0,
         chartArea:{left:20,top:10,width:"80%",height:"98%"},
+        tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
     	};
    	}
+   	var formatter = new google.visualization.NumberFormat({pattern:'###,###.##'} );
+  	formatter.format(data, 1);
     var chart = new google.visualization.PieChart(document.getElementById(div_name));  
     chart.draw(data, options);
     if(isset == 1){
