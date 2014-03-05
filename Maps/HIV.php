@@ -12,7 +12,7 @@
     				else {
     					echo "<a href='#'>$row[5]</a>";
     				}
-    				if($row[4]<1){
+    				if($row[3]<1){
     					$l3 = "0px";
     				}
     				else{
