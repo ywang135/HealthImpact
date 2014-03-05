@@ -7,9 +7,6 @@ $(document).ready(function() {
         $("#sub_menu #sub_country a").css("background-color", "#0083CA");
        	$("#copyright").css( { "top" : "950px"} );
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
-		drawMap("Maps/genMalaria.php","mapcontainer_1","1");
-		drawMap("Maps/genTB.php","mapcontainer_2","2");
-		drawMap("Maps/genHIV.php","mapcontainer_3","3");
 		$("#showAll a").css("background-color", "#ef3e2e");
 		$(".map_container").hide();
 		$(".country_rank_list").hide();
@@ -55,6 +52,7 @@ $(document).ready(function() {
         	$SHOW_DISEASE = 0;        	
         	$(".map_container").hide();
        		$("#mapcontainer_0").fadeIn();
+       		drawMap("Maps/genAll.php", "#mapcontainer_0", 0);
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").fadeIn();
        		$(".HIV_bar").fadeIn();
@@ -77,6 +75,7 @@ $(document).ready(function() {
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
        		$(".map_container").hide();
+       		drawMap("Maps/genMalaria.php","mapcontainer_1","1");
        		$("#mapcontainer_1").fadeIn();
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").hide();
@@ -100,6 +99,7 @@ $(document).ready(function() {
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".map_container").hide();
+       		drawMap("Maps/genTB.php","mapcontainer_2","2");
        		$("#mapcontainer_2").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").fadeIn();
@@ -123,6 +123,7 @@ $(document).ready(function() {
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
        		$(".map_container").hide();
+       		drawMap("Maps/genHIV.php","mapcontainer_3","3");
        		$("#mapcontainer_3").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").hide();
