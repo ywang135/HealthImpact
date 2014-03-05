@@ -3,7 +3,7 @@ $title = "The Global Health Impact Drug Index";
 $(document).ready(function() {		
       	$(this).attr("title", $title);
        	$("#sub_menu #sub_drug a").css("background-color", "#0083CA"); 
-       	$("#copyright").css( { "top" : "1450px"} );
+       	$("#copyright").css( { "top" : "1250px"} );
        	$("#rankls").mouseout(function(){
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);
