@@ -1,14 +1,15 @@
 
 
 <?php
-
+	$itv1=2000000;
+	$itv2=500000;
 	include "../../con_/con_ghi.php";
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
-	<color minValue='2000000' maxValue='10000000' color='#EF3E2E' />
-	<color minValue='500000' maxValue='2000000' color='#FFB31C' />
-	<color minValue='1' maxValue='500000' color='#0083CA' />
+	<color minValue='$itv1' maxValue='10000000' color='#EF3E2E' />
+	<color minValue='$itv2' maxValue='$itv1' color='#FFB31C' />
+	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>
 	<data>";
 //useHoverColor='1'
@@ -20,14 +21,14 @@
 		if($row[1] < 1){
 			$hover = 'F1f1f1';
 		}
-		elseif($row[1]<500000){
+		elseif($row[1]<$itv2){
 			$hover = '639ACE';
 		}
-		elseif ($row[1]<2000000) {
+		elseif ($row[1]<$itv1) {
 			$hover = '';
 		}
-		elseif ($row[1]>=2000000) {
-			$hover = 'FF030C';
+		elseif ($row[1]>=$itv1) {
+			$hover = 'FF6666';
 		}
 		echo "<entity id='$row[6]' value='$row[1]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',1,$i);\" />";
 		$i++;
