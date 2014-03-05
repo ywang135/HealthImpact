@@ -1,9 +1,13 @@
 $SHOW_DISEASE = 0;
 $ORDER_NAME_OR_IMPACT = 0;
+$MAP_MALARIA = 0;
+$MAP_TB = 0;
+$MAP_HIV = 0;
 $title = "The Global Health Impact Country Index";
 $(document).ready(function() {
 		$SHOW_DISEASE = 0;
         $(this).attr("title", $title);
+        $("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
         $("#sub_menu #sub_country a").css("background-color", "#0083CA");
        	$("#copyright").css( { "top" : "950px"} );
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
@@ -52,7 +56,6 @@ $(document).ready(function() {
         	$SHOW_DISEASE = 0;        	
         	$(".map_container").hide();
        		$("#mapcontainer_0").fadeIn();
-       		drawMap("Maps/genAll.php", "#mapcontainer_0", 0);
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").fadeIn();
        		$(".HIV_bar").fadeIn();
@@ -75,7 +78,10 @@ $(document).ready(function() {
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
        		$(".map_container").hide();
-       		drawMap("Maps/genMalaria.php","mapcontainer_1","1");
+       		if($MAP_MALARIA == 0){
+       			drawMap("Maps/genMalaria.php","mapcontainer_1","1");
+       			$MAP_MALARIA = 1;
+       		}
        		$("#mapcontainer_1").fadeIn();
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").hide();
@@ -99,7 +105,10 @@ $(document).ready(function() {
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".map_container").hide();
-       		drawMap("Maps/genTB.php","mapcontainer_2","2");
+       		if($MAP_TB == 0){
+       			drawMap("Maps/genTB.php","mapcontainer_2","2");
+       			$MAP_TB = 1;
+       		}       		
        		$("#mapcontainer_2").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").fadeIn();
@@ -123,7 +132,10 @@ $(document).ready(function() {
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
        		$(".map_container").hide();
-       		drawMap("Maps/genHIV.php","mapcontainer_3","3");
+       		if($MAP_HIV == 0){
+       			drawMap("Maps/genHIV.php","mapcontainer_3","3");
+       			$MAP_HIV = 1;
+       		}       		
        		$("#mapcontainer_3").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").hide();

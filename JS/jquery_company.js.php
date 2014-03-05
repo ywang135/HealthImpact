@@ -5,6 +5,7 @@ $SHOW_DISEASE = 0;
 $title = "The Global Health Impact Company Index";
 $(document).ready(function() {
        	$(this).attr("title", $title);
+       	$("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
        	$("#sub_menu #sub_company a").css("background-color", "#0083CA"); 
        	$("#copyright").css( { "top" : "1450px"} );
        	$("#rankls").mouseout(function(){

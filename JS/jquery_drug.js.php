@@ -2,6 +2,7 @@ $SHOW_DISEASE = 0;
 $title = "The Global Health Impact Drug Index";
 $(document).ready(function() {		
       	$(this).attr("title", $title);
+      	$("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
        	$("#sub_menu #sub_drug a").css("background-color", "#0083CA"); 
        	$("#copyright").css( { "top" : "1250px"} );
        	$("#rankls").mouseout(function(){
