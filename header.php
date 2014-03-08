@@ -37,12 +37,12 @@
 			</div><!-- #network end -->
 			<div id="main_menu">
 			<ul>
-			<li id="menu_home"><span><a href="index.php">Home</a></span></li>
-			<li id="menu_the_index"><span><a href="#">The Index</a></span></li>
-			<li id="menu_about_the_index"><span><a href="#">About the Index</a></span></li>
+			<li id="menu_the_index"><span><a href="">The Index</a></span></li>
+			<li id="menu_about_the_index"><span><a href="aboutindex.php">About the Index</a></span></li>
 			<li id="menu_resources"><span><a href="#">Resources</a></span></li>
 			<li id="menu_reports"><span><a href="http://academicsstand.org/projects/global-health-impact-project/news/">Reports</a></span></li>
-			<li id="menu_methodology"><span><a href="#">Methodology</a></span></li>
+			<li id="menu_news"><span><a href="index.php">News</a></span></li>
+			<li id="menu_methodology"><span><a href="methodology.php">Methodology</a></span></li>
 			<li id="menu_contact_us"><span><a href="#">Contact Us</a></span></li>
 			</ul>
 			</div><!-- #main_menu end -->

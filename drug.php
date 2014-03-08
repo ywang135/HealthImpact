@@ -146,7 +146,7 @@
 	</ul>
 	<br>Here you see the proportional impact of drugs for each disease. Click <a href="#">here </a> to see the proportional impact by drug.
 	<br>Resources
-			For additional information, please click here: <a href="#">link to report page </a>
+			For additional information, please click here: <a href="reports.php">link to report page </a>
 
 	</div><!-- items_text end -->
 

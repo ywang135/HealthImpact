@@ -138,7 +138,7 @@
 		<li>The number of people who can access the drugs.</li>
 		</ul>Each company’s score is the sum of its drugs’ impacts.
 			<br>Resources
-			For additional information, please click here: <a href="#">link to report page </a>
+			For additional information, please click here: <a href="reports.php">link to report page </a>
 	</div><!-- #items_text end -->
 		
 	</div><!-- .main_body end -->
