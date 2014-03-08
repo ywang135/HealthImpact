@@ -6,6 +6,7 @@ $(document).ready(function() {
     	return false;
 	});
     $("#copyright").css( { "margin-top" : "60px"} );
+    $("#copyright").fadeIn();
     
     $("#sq_l_t").mouseover(function(){
        	$("#sub_menu #sub_country a").css("background-color", "#0083CA"); 

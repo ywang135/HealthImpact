@@ -10,6 +10,7 @@ $(document).ready(function() {
         $("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
         $("#sub_menu #sub_country a").css("background-color", "#0083CA");
        	$("#copyright").css( { "top" : "950px"} );
+       	$("#copyright").fadeIn();
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
 		$("#showAll a").css("background-color", "#ef3e2e");
 		$(".map_container").hide();

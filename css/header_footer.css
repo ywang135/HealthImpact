@@ -56,7 +56,7 @@ a:link, a:visited {
 		margin-top:80px;
 	}
 	#copyright {
-		display:block;
+		display:none;
 		position:absolute;
 		width:100%;
 		font-family: "Myriad pro Semibold";

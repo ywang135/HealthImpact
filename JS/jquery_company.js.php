@@ -8,6 +8,7 @@ $(document).ready(function() {
        	$("#main_menu #menu_the_index a").css("background-color", "#FFB31C");
        	$("#sub_menu #sub_company a").css("background-color", "#0083CA"); 
        	$("#copyright").css( { "top" : "1450px"} );
+       	$("#copyright").fadeIn();
        	$("#rankls").mouseout(function(){
        		drawChart("bar_details_1", "", 0);
        		drawChart("bar_details_2", "", 1);

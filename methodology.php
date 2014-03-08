@@ -56,7 +56,7 @@
 			<table cellpadding="5">
 				<tr><td><div><a href="http://academicsstand.org/wp-content/uploads/2013/03/WP_11_2012_Hassoun.pdf">
 				<img src="" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>The Global Health Impact Index: Promoting Global Health</subtitle><br>
+				<td><subtitle>The Global Health Impact Index: Promoting Global Health</><br>
 				<p>
 				 This report explains in detail how the Company Index is calculated. In doing so, 
 				 it gives examples of how drug scores are calculated.
@@ -82,8 +82,16 @@
 			</table>			
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
-			<object width="100%" height="50" data="bookmark.swf"></object>
-			<object width="100%" height="50" data="bookmark.swf"></object>
+			<table rules="rows"><tr><td>
+			<div class="slices"><object data="images/ppt_meth_1.swf"></object></div>
+			<a href="#">slice title and download link</a>
+			</td></tr><tr><td>
+			<div class="slices"><object data="images/ppt_meth_2.swf"></object></div>
+			<a href="#">slice title and download link</a>
+			</td></tr><tr><td>
+			<div class="slices"><object data="images/ppt_meth_3.swf"></object></div>
+			<a href="#">slice title and download link</a>
+			</td></tr></table>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
 <?php

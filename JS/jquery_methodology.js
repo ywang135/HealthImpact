@@ -5,5 +5,6 @@ $(document).ready(function() {
 		window.location.href = 'country.php';
     	return false;
 	});
-    $("#copyright").css( { "margin-top" : "890px"} );
+    $("#copyright").css( { "margin-top" : "840px"} );
+    $("#copyright").fadeIn();
 });
