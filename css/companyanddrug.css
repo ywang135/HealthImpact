@@ -126,6 +126,13 @@
     	-webkit-hyphenate-limit-before:3;
     	-moz-hyphens:auto;
 	}
+	#items_text a:link, #items_text a:visited{
+		font-family:"Myriad pro Regular";
+		font-size:16px;
+		color:#0083CA;
+		line-height:10%;
+		
+	}	
 	#items_text p{
 		text-align:left;
 		font-family:"Myriad pro Regular";

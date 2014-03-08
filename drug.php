@@ -144,7 +144,7 @@
 	<li>The drugs’ effectiveness.</li>
 	<li>The number of people who can access the drugs.</li>
 	</ul>
-	<br>Here you see the proportional impact of drugs for each disease. Click <a href="#">here </a> to see the proportional impact by drug.
+	Here you see the proportional impact of drugs for each disease. Click <a href="#">here </a> to see the proportional impact by drug.
 	<br>Resources
 			For additional information, please click here: <a href="reports.php">link to report page </a>
 
