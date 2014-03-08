@@ -17,8 +17,9 @@
 		text-align:left;
 		position:relative;
 		float:left;
-		margin-left:30px;
-		width: 32%;
+		margin-left:3%;
+		margin-top:10px;
+		width: 29%;
 		height: 880px;
 		border:1px solid white;
 	}
@@ -59,8 +60,9 @@
 	#middle_bar {
 		float:left;
 		position:relative;
-		margin-left:10px;
-		width: 39%;
+		margin-left:3%;
+		margin-top:-30px;
+		width: 37%;
 		height: 880px;
 		border:1px solid white;
 	}
@@ -89,7 +91,7 @@
 	}
 	#right_bar {
 		float:left;
-		margin-left:10px;
+		margin-left:3%;
 		position:relative;
 		width: auto;
 		height: 890px;
