@@ -44,7 +44,7 @@
 				</td></tr>
 				<tr><td><div><a href="http://harvey.binghamton.edu/~nhassoun/Papers/Rating%20Efforts%20to%20Extend%20Access%20on%20Essential%20Medicines.pdf">
 				<img src="images/Rating Efforts to Extend Access on Essential Medicines.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Rating Efforts to Extend Access on Essential Medicines</subtitle><br>
+				<td><subtitle>Extending Access on Essential Medicines</subtitle><br>
 				<p>
 				Increasing Global Health Impact -- This paper considers some philosophical issues underlying 
 				the construction of a good index for rating global health and advances a proposal along the 
