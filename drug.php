@@ -59,7 +59,7 @@
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
     				<td id=\"$row[2]\">$i</td><td align='left'>
-    					<a href='#'>$row[1]</a>";	
+    					<a href='#'>$row[1] ($row[0])</a>";	
     				$i++;
     				$l1 = "".max(($row[2]*420/14710476),1)."px";
     				echo "
@@ -81,7 +81,7 @@
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
     				<td id=\"$row[2]\">$i</td><td align='left'>
-    					<a href='#'>$row[1]</a>";	
+    					<a href='#'>$row[1] ($row[0])</a>";	
     				$i++;
     				$l1 = "".max(($row[2]*420/2848482),1)."px";
     				echo "
@@ -103,7 +103,7 @@
 				while($row = mysqli_fetch_array($result)){
     				echo "<tr onmouseover=\"popupPiGraph('$row[0]');\">
     				<td id=\"$row[2]\">$i</td><td align='left'>
-					<a href='#'>$row[1]</a>";
+					<a href='#'>$row[1] ($row[0])</a>";
     				$i++;	
     				$l1 = "".max(($row[2]*420/7494448),1)."px";
     				echo "

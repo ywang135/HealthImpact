@@ -95,6 +95,10 @@ var AllImpact={};
 var MalariaImpact={};
 var TBImpact={};
 var HIVImpact={};
+var ColorAll=[];
+var ColorMalaria=[];
+var ColorTB=[];
+var ColorHIV=[];
 <?php
 	header('Content-type: text/javascript');
 	echo 
@@ -106,21 +110,23 @@ var HIVImpact={};
 	$TB = 0;
 	$HIV = 0;
 	while($row = mysqli_fetch_array($result)){
-		echo "AllImpact['$row[0]']=$row[2];";
+		echo "AllImpact['$row[0]']=$row[2];
+		ColorAll.push('#$row[5]');";
 		if($row[4]=="Malaria"){
-			echo "MalariaImpact['$row[0]']=$row[2];";
+			echo "MalariaImpact['$row[0]']=$row[2];ColorMalaria.push('#$row[5]');";
 			$malaria = $malaria + floatval($row[2]);
 		}
 		if($row[4]=="TB"){
-			echo "TBImpact['$row[0]']=$row[2];";
+			echo "TBImpact['$row[0]']=$row[2];ColorTB.push('#$row[5]');";
 			$TB = $TB + floatval($row[2]);
 		}
 		if($row[4]=="HIV"){
-			echo "HIVImpact['$row[0]']=$row[2];";
+			echo "HIVImpact['$row[0]']=$row[2];ColorHIV.push('#$row[5]');";
 			$HIV = $HIV + floatval($row[2]);
     	}
     	$all = $all + floatval($row[2]);
     }
+    echo "ColorAll.push('#b1b1b1');ColorMalaria.push('#b1b1b1');ColorTB.push('#b1b1b1');ColorHIV.push('#b1b1b1');";
     mysqli_close($con);
     include "./../../con_/con_ghi.php";
     $result = $con->query("call show_sum()");
@@ -155,6 +161,7 @@ function drawChart(div_name, itemsName, showOther) {
 	data.addColumn('string', 'Company Name');
 	data.addColumn('number', 'Score');
 	var row = 1;
+	var changeRow = 0;
 	var isset = 0;
 	var i = 0;
 	if($SHOW_DISEASE == 0){
@@ -164,21 +171,30 @@ function drawChart(div_name, itemsName, showOther) {
 			data.addRows([[itemsName, parseFloat(AllImpact[itemsName])]]);
 		}
 		for(var key in AllImpact){
-			if(showOther==1 || key !== "Burden Unalleviated" ){
-				
+			if(showOther==1 || key !== "Burden Unalleviated" ){				
 				if(key != itemsName){
-					data.addRows([[key, parseFloat(AllImpact[key])]]);
-					
+					data.addRows([[key, parseFloat(AllImpact[key])]]);	
 				}
+				else {
+					changeRow = i;
+				}
+				i++;
 			}
 		}
 		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Disease Burden by Each Company";
+		var cloneArray = ColorAll.slice(0);
+		if(isset == 1){
+			var temp = cloneArray[0];
+    		cloneArray[0] = cloneArray[changeRow];
+    		cloneArray[changeRow] = temp;
+    	}
 		var options = {
     	width: 367,
         height: 278,
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
+        colors: cloneArray,
         chartArea:{left:20,top:10,width:"80%",height:"90%"},
         tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
@@ -202,6 +218,7 @@ function drawChart(div_name, itemsName, showOther) {
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
+        colors: ColorMalaria,
         chartArea:{left:20,top:10,width:"80%"},
         tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
@@ -225,6 +242,7 @@ function drawChart(div_name, itemsName, showOther) {
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
+        colors: ColorTB,
         chartArea:{left:20,top:10,width:"80%",height:"98%"},
         tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
@@ -248,6 +266,7 @@ function drawChart(div_name, itemsName, showOther) {
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
+        colors: ColorHIV,
         chartArea:{left:20,top:10,width:"80%",height:"98%"},
         tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13.5}},
