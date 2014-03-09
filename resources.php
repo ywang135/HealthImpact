@@ -5,25 +5,25 @@
 <script type="text/javascript" src="JS/jquery_resources.js"></script>
 	<div class="main_body">
 		<div id="left_bar">
+		
+		<subtitle>Presentation at Harvard University</subtitle>
+		<p>Check out this video with a presentation on the Global Health Impact Index 
+		from a recent conference at Harvard University</p>
 		<embed src="http://c.brightcove.com/services/viewer/federated_f8/271530229" bgcolor="#FFFFFF" 
 		flashVars="videoId=3004310549001&playerId=271530229&viewerSecureGatewayURL=https://console.brightcove.com/services/amfgateway&servicesURL=http://services.brightcove.com/services&cdnURL=http://admin.brightcove.com&domain=embed&autoStart=false&" 
 		base="http://admin.brightcove.com" name="flashObj" width="100%" height="300" 
 		seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" 
 		pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
-		<subtitle>what title should I put there</subtitle>
-		<p>Check out this video with a presentation on the Global Health Impact Index 
-		from a recent conference at Harvard University</p>
-		
+			
 		<p>&nbsp;</p><p>&nbsp;</p>
-		<audio controls>
+			<subtitle>Global Justice and Global Health</subtitle>
+			<p>An interview on New Books in Philosophy that discusses the Global Health Impact Proposal.</p>
+			<audio controls>
   			<source src="horse.ogg" type="audio/ogg">
-  			<source src="audio/Ethics-at-noon-Nicole-hassoun.mp3" type="audio/mpeg">
+  			<source src="audio/030philosophyhassoun.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
-		</audio>
-			<p></p>
-		<subtitle>what title should I put there</subtitle>
-		<p>A podcast from a lecture on the Global Health Impact Index at Santa Clara University</p>
-		
+			</audio>
+		<p></p>	
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">
 			<table cellpadding="5">
@@ -54,22 +54,19 @@
 			</table>			
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
+			<subtitle>Podcast from Santa Clara University</subtitle>
+			<p>A podcast from a lecture on the Global Health Impact Index at Santa Clara University</p>
 			<audio controls>
-  			<source src="horse.ogg" type="audio/ogg">
-  			<source src="audio/030philosophyhassoun.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
+  				<source src="audio/Ethics-at-noon-Nicole-hassoun.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
 			</audio>
-			<p></p>
-			<subtitle>Interview on Globalization and Global Justice</subtitle>
-			<p>An interview on New Books in Philosophy that discusses the Global Health Impact Proposal.</p>
-			<p>&nbsp;</p><p>&nbsp;</p>
-			<iframe src="http://prezi.com/embed/x3zshtfplobb/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined"
-			 width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
-			 </iframe>
-			<p></p>
-			<subtitle>some title</subtitle>
-			<p>A slide show for an introduction to the Company Index</p>
 			
+			<p>&nbsp;</p><p>&nbsp;</p>
+			<subtitle>Learn More About the Global Health Impact Index</subtitle>
+			<p>A slide show for an introduction to the Company Index</p>
+			<iframe src="http://prezi.com/embed/x3zshtfplobb/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
+			</iframe>
+			<p></p>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
 <?php
