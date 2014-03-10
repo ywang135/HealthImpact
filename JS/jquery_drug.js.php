@@ -126,7 +126,7 @@ var ColorHIV=[];
     	}
     	$all = $all + floatval($row[2]);
     }
-    echo "ColorAll.push('#815017');ColorMalaria.push('#815017');ColorTB.push('#815017');ColorHIV.push('#815017');";
+    echo "ColorAll.push('#3A96AA');ColorMalaria.push('#3A96AA');ColorTB.push('#3A96AA');ColorHIV.push('#3A96AA');";
     mysqli_close($con);
     include "./../../con_/con_ghi.php";
     $result = $con->query("call show_sum()");
