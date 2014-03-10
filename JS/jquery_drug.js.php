@@ -126,7 +126,7 @@ var ColorHIV=[];
     	}
     	$all = $all + floatval($row[2]);
     }
-    echo "ColorAll.push('#b1b1b1');ColorMalaria.push('#b1b1b1');ColorTB.push('#b1b1b1');ColorHIV.push('#b1b1b1');";
+    echo "ColorAll.push('#815017');ColorMalaria.push('#815017');ColorTB.push('#815017');ColorHIV.push('#815017');";
     mysqli_close($con);
     include "./../../con_/con_ghi.php";
     $result = $con->query("call show_sum()");
@@ -181,7 +181,7 @@ function drawChart(div_name, itemsName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Disease Burden by Each Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Disease Burden Alleviated by Each Company";
 		var cloneArray = ColorAll.slice(0);
 		if(isset == 1){
 			var temp = cloneArray[0];
@@ -211,7 +211,7 @@ function drawChart(div_name, itemsName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Malaria Burden by Each Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Malaria Burden Alleviated by Each Company";
 		var options = {
     	width: 367,
         height: 278,
@@ -235,7 +235,7 @@ function drawChart(div_name, itemsName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global TB Burden by Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global TB Burden Alleviated by Company";
 		var options = {
     	width: 367,
         height: 278,
@@ -259,7 +259,7 @@ function drawChart(div_name, itemsName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global HIV Burden by Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global HIV Burden Alleviated by Company";
 		var options = {
     	width: 367,
         height: 278,

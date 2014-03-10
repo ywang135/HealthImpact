@@ -29,14 +29,14 @@
 			<table cellpadding="5">
 				<tr><td><div><a href="http://harvey.binghamton.edu/%7Enhassoun/Disclaimer_GlobalHealthImpact.php">
 				<img src="images/Paper_Global Health Impact.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>The Global Health Impact Index</subtitle><br>
+				<td><subtitle>About the Index</subtitle><br>
 				<p>
 				 This paper explains how to leverage the Index to promote global health.
 				</p>
 				</td></tr>
 				<tr><td><div><a href="http://academicsstand.org/wp-content/uploads/2013/03/WP_11_2012_Hassoun.pdf">
 				<img src="images/WP_11_2012_Hassoun.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Efficacy Data Review Methodology</subtitle><br>
+				<td><subtitle>The Global Health Impact Index</subtitle><br>
 				<p>
 				 This report explains in detail how the Company Index is calculated. In doing so, 
 				 it gives examples of how drug scores are calculated.
@@ -62,7 +62,7 @@
 			</audio>
 			
 			<p>&nbsp;</p><p>&nbsp;</p>
-			<subtitle>Learn More About the Global Health Impact Index</subtitle>
+			<subtitle>Introduction to the Index</subtitle>
 			<p>A slide show for an introduction to the Company Index</p>
 			<iframe src="http://prezi.com/embed/x3zshtfplobb/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
 			</iframe>
