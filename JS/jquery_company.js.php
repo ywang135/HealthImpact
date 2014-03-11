@@ -184,7 +184,7 @@ function drawChart(div_name, companyName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Disease Burden by Each Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Disease Burden Alleviated by Each Company";
 		var options = {
     	width: 367,
         height: 278,
@@ -208,7 +208,7 @@ function drawChart(div_name, companyName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Malaria Burden by Each Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global Malaria Burden Alleviated by Each Company";
 		var options = {
     	width: 367,
         height: 278,
@@ -232,7 +232,7 @@ function drawChart(div_name, companyName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global TB Burden by Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global TB Burden Alleviated by Company";
 		var options = {
     	width: 367,
         height: 278,
@@ -256,7 +256,7 @@ function drawChart(div_name, companyName, showOther) {
 				i++;
 			}
 		}
-		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global HIV Burden by Company";
+		document.getElementById('additional_statistic_1').innerHTML="Proportion of Global HIV Burden Alleviated by Company";
 		var options = {
     	width: 367,
         height: 278,

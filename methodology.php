@@ -15,14 +15,14 @@
 		<subtitle>The Country Index</subtitle>
 		<p>The Country Index sums all drugs’ impacts within the country. So, for instance, 
 		if two drugs are used in some country and the first averts 1 million DALYS and the 
-		second averts 2 million. The country score would be 3 million DALYS averted. We 
+		second averts 2 million, the country score would be 3 million DALYS averted. We 
 		also break down the scores so that it is possible to see the DALYS averted by drugs 
 		for malaria, TB, and HIV/AIDS respectively. </p>
 
 		<subtitle>The Company Index</subtitle>
 		<p>The Company Index sums the impact of all of a company’s drugs. So, for instance, 
 		if one company makes two drugs that avert 3 and 6 million DALYS respectively, 
-		the Company Score would be 9 million DALYS averted.We also break down the scores so 
+		the Company Score would be 9 million DALYS averted. We also break down the scores so 
 		that it is possible to see the DALYS averted 
 		by company for malaria, TB, and HIV/AIDS respectively.</p>
 
@@ -54,7 +54,7 @@
 				</td></tr>
 				<tr><td><div><a href="https://drive.google.com/?authuser=0#folders/0Bx_3ii8A4GX5YmJlMWZiNDAtOGUxNy00MDNlLTg5ZjItMTY0MGUyODc5MzVj">
 				<img src="" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Malaria Drug Efficacy Data Collection Methodology</subtitle><br>
+				<td><subtitle>Malaria Efficacy Data Collection</subtitle><br>
 				<p>
 				 This report explains our search methodology for finding missing efficacy information for malaria, 
 				a similar search strategy was employed for fall-back data for HIV/AIDS medicines.
