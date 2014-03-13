@@ -28,15 +28,14 @@
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
     				$i++;
-    				if($row[3]<1){
-    					$l1 = "0px";
-    				}
-    				else{
-    					$l1 = "".max(($row[3]*420/15848987),1)."px";
-    				}
+    				$l1 = "".($row[4]*250/15848987)."px";
+					$l2 = "".($row[5]*250/15848987)."px";
+					$l3 = "".($row[6]*250/15848987)."px";
     				echo "
     					<br>
-    					<div style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
+    					<div class='malaria_bar' style='float:left;background:#0083CA;height:15px;width:$l1;'></div>
+						<div class='TB_bar' style='float:left;background:#FFB31C;height:15px;width:$l2;'></div>
+    					<div class='HIV_bar' style='float:left;background:#EF3E2E;height:15px;width:$l3;'></div>
     					</td></tr>";
     			}
    		 		mysqli_close($con);

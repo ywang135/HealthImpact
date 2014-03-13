@@ -66,7 +66,8 @@
 			<subtitle>Making an Impact</subtitle>
 			<p>This Harvard Global Health Footprint video explains the importance of rating 
 			systems like the Global Health Impact Index for global health.</p>
-			<iframe width="330" height="270" src="//www.youtube.com/embed/gBLqy82E6lY" frameborder="0" allowfullscreen></iframe>
+			
+			<iframe width="330" height="270" src="http://www.youtube.com/embed/gBLqy82E6lY?start=40" frameborder="0" allowfullscreen></iframe>
 			<p></p>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
