@@ -1,0 +1,162 @@
+@charset "utf-8";
+/*
+@media screen and (max-width:1500px)
+{
+*/
+	drug_name {
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+	}
+	.main_body {
+		text-align:left;
+		display:block;
+		margin-top:80px;
+	}
+	.box_info {
+		margin-left:20px;
+		margin-top:10px;
+	}
+	.company_info {
+		color: #0083CA;
+		font-family:"Myriad pro Regular";
+		font-size:17px;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	.drugs_info {
+		color: #0083CA;
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	#bar_graph{
+		z-index:-1;
+	}
+	#company_info_box{
+		float:left;
+		position:relative;
+		margin-left:1%;
+		border-radius:8px;
+		width: 23%;
+		height: 612px;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		border:4px solid white;
+	}
+
+	#fhcn {
+		float:left;
+		position:relative;
+		margin-left:1%;
+		width: 24%;
+		height: 600px;
+		border:1px solid white;
+	}
+	#info_detail_box{
+		color:#0083CA;
+		font-family:"Myriad pro Regular";
+		font-size:16px;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		height:300px;
+		border:4px solid #0083CA;
+	}
+	#list_company {
+		display:inline;
+		text-align:left;
+		position:relative;
+		color:#0083CA;
+		font-family:"Myriad pro Regular";
+		font-size:18px;
+		float:left;
+		margin-left:1%;
+		width: 23%;
+		height: 742px;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		border:4px solid #0083CA;
+	}
+	#list_company ul{
+		list-style-type:none;
+	}
+	#list_company ul li{
+		margin-left:-38px;
+	}
+	#list_company ul li a:link, #list_company ul li a:visited{
+		font-family:"Myriad pro Regular";
+		font-size:18px;
+		color:#0083CA;
+		width:90%;
+		display:block;
+		padding-top:9px;
+		padding-bottom:10px;
+		padding-left:14px;
+		padding-right:14px;
+	}
+	#list_company ul li a:hover{
+		background: #0083CA;
+		color:white;
+	}
+	#list_company table{
+		margin-top:10px;
+	}
+	#report_src {
+		position: absolute;
+		display:block;
+		top:550px;
+	}
+	#report_src a:link,#report_src a:visited{
+		font-family:"Myriad pro Regular";
+		color:#0083CA;
+		font-size:16px;		
+	}
+	#score_explanation{
+		float:left;
+		font-family:"Myriad pro Regular";
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	
+	#subtitle{
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+		font-size:20px;
+		margin-top:10px
+		margin-bottom;-10px;
+	}
+	#tdcn{
+		float:left;
+		position:relative;
+		margin-left:1%;
+		width: 24%;
+		height: 600px;
+		border:1px solid white;
+	}
+//}
+/*
+@media screen and (max-width:1000px)
+{
+	body { 
+		min-width:100px;
+		width:100%;
+		background: grey; 
+	}
+}
+*/
