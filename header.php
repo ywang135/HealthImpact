@@ -43,7 +43,7 @@
 			<li id="menu_reports"><span><a href="reports">Reports</a></span></li>
 			<li id="menu_news"><span><a href="news.php">News</a></span></li>
 			<li id="menu_methodology"><span><a href="methodology.php">Methodology</a></span></li>
-			<li id="menu_contact_us"><span><a href="#">Contact Us</a></span></li>
+			<li id="menu_contact_us"><span><a href="contact.php">Contact Us</a></span></li>
 			</ul>
 			</div><!-- #main_menu end -->
 			<HR id="seperate_line" width="100%" color=#0083ca SIZE=5></br>

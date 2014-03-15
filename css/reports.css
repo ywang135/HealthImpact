@@ -88,6 +88,7 @@
 		border:4px solid #0083CA;
 	}
 	#list_company ul{
+		margin-top:2px;
 		list-style-type:none;
 	}
 	#list_company ul li{
@@ -107,9 +108,6 @@
 	#list_company ul li a:hover{
 		background: #0083CA;
 		color:white;
-	}
-	#list_company table{
-		margin-top:10px;
 	}
 	#report_src {
 		position: absolute;
