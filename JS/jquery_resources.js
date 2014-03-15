@@ -8,4 +8,9 @@ $(document).ready(function() {
     $("#main_menu #menu_resources a").css("background-color", "#FFB31C");
     $("#copyright").css( { "margin-top" : "680px"} );
     $("#copyright").fadeIn();
+    $("#thumbnail").click(function(){
+    	$("#thumbnail").hide();
+    	$("#videoharvard").fadeIn();
+    });
+    
 });
