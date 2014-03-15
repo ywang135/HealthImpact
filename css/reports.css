@@ -19,7 +19,7 @@
 	.company_info {
 		color: #0083CA;
 		font-family:"Myriad pro Regular";
-		font-size:17px;
+		font-size:15px;
 		hyphens:auto;
     	text-align:justify;
     	-webkit-hyphens:auto;
@@ -41,12 +41,12 @@
     	-moz-hyphens:auto;	
 	}
 	#bar_graph{
-		z-index:-1;
+		z-index:0;
 	}
 	#company_info_box{
 		float:left;
 		position:relative;
-		margin-left:1%;
+		margin-left:1.5%;
 		border-radius:8px;
 		width: 23%;
 		height: 612px;
@@ -58,7 +58,7 @@
 	#fhcn {
 		float:left;
 		position:relative;
-		margin-left:1%;
+		margin-left:1.5%;
 		width: 24%;
 		height: 600px;
 		border:1px solid white;
@@ -69,7 +69,7 @@
 		font-size:16px;
 		border-radius:8px;
 		-moz-border-radius:8px;
-		height:300px;
+		height:315px;
 		border:4px solid #0083CA;
 	}
 	#list_company {
@@ -81,8 +81,8 @@
 		font-size:18px;
 		float:left;
 		margin-left:1%;
-		width: 23%;
-		height: 742px;
+		width: 22%;
+		height: 692px;
 		border-radius:8px;
 		-moz-border-radius:8px;
 		border:4px solid #0083CA;
@@ -96,7 +96,7 @@
 	}
 	#list_company ul li a:link, #list_company ul li a:visited{
 		font-family:"Myriad pro Regular";
-		font-size:18px;
+		font-size:20px;
 		color:#0083CA;
 		width:90%;
 		display:block;
@@ -112,7 +112,9 @@
 	#report_src {
 		position: absolute;
 		display:block;
-		top:550px;
+		color:#0083CA;
+		font-size:15px;
+		font-family:"Myriad pro Regular";
 	}
 	#report_src a:link,#report_src a:visited{
 		font-family:"Myriad pro Regular";
@@ -142,8 +144,8 @@
 	#tdcn{
 		float:left;
 		position:relative;
-		margin-left:1%;
-		width: 24%;
+		margin-left:1.5%;
+		width: 23.5%;
 		height: 600px;
 		border:1px solid white;
 	}

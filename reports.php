@@ -12,8 +12,10 @@
 				$result = $con->query("call show_top_company(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
+					$name = str_replace("Pharmaceuticals","",$row[0]);
+					$name = str_replace("Pharmaceutical","",$name);
     				echo "<li id='$row[11]' class='rankls'><a href=\"#$row[11]\">
-    					$i &nbsp; $row[0]</a>
+    					$i &nbsp; $name</a>
     					</li>";
     					$i++;
     			}
@@ -21,13 +23,11 @@
 			?>
 		</ul>
 	</div><!-- #list_company end -->
-	<div id="company_info_box">
-		<div id="subtitle">
-			Company Info
-		</div><!-- #subtitle end -->
+	<div id="company_info_box">		
 		<div id="info_detail">
 			<div id="Daichii" class="company_info">
-			<p>Daiichi Sankyo</p>
+			<div id="subtitle">Daiichi Sankyo</div><!-- #subtitle end -->
+			<br>
 		In 2012, Daiichi Sankyo reported revenue of 9 Billion.  
 		They are an international pharmaceutical company and are the second largest pharmaceutical company in Japan. 
 		The company is currently ranked number 17 in world sales. They hold the German biotechnology company U3, 
@@ -37,7 +37,8 @@
 		Pharmaceutical).
 			</div> 
 			<div id="Sanofi" class="company_info">
-			<p>Sanofi-Aventis</p>
+			<div id="subtitle">Sanofi-Aventis</div><!-- #subtitle end -->
+			<br>
 		In 2011, Sanofi-Aventis reported revenue of 47.5 billion dollars. A few of their key 
 		products include Ambien, Plavix and Renagel, as well as vaccines Fluzone and Menactra. 
 		They focus on products for cardiovascular disease, the central nervous system, internal medicine, 
@@ -46,7 +47,8 @@
 		over 100 countries, and was founded in 2004 (by a merger of Aventis and Sanofi-Synthelabo).
 			</div> 
 			<div id="Shire" class="company_info">
-			<p>Shire Pharmaceuticals</p>
+			<div id="subtitle">Shire Pharmaceuticals</div><!-- #subtitle end -->
+			<br>
 		In 2012, Shire reported revenue of 5 million.  The company focuses on behavioral health, 
 		regenerative medicine, rare diseases, and gastrointestinal conditions. Shire was founded 
 		in 1986.  Its first major products were calcium supplements for the treatment of osteoporosis. 
@@ -54,7 +56,8 @@
 		major products include Vyvanse and Adderall XR but it also makes an important HIV medication.
 			</div> 
 			<div id="Boehringer" class="company_info">
-			<p>Boehringer Ingelheim Pharmaceuticals</p>
+			<div id="subtitle">Boehringer Ingelheim Pharmaceuticals</div><!-- #subtitle end -->
+			<br>
 		In 2012, Boehringer Ingelheim Pharmaceuticals reported revenue of 18.8 Billion. 
 		The company's main fields of focus are cardiovascular disease, hepatitis, Parkinson's disease, 
 		respiratory disease, HIV, oncology, cerebrovascular disease, and diabetes. Some of their key 
@@ -68,7 +71,8 @@
 		time Boehringer also established a number of new plants, notably a subsidiary one in Vienna.
 			</div>
 			<div id="Pfizer" class="company_info">
-			<p>Pfizer</p>
+			<div id="subtitle">Pfizer</div><!-- #subtitle end -->
+			<br>
 		In 2012, Pfizer reported revenue of 59 billion. They are currently the world's largest 
 		research-based biopharmaceutical company. They focus on immunology, inflammation, oncology, 
 		cardiovascular, metabolic diseases, neuroscience, pain, and vaccines. Some key Pfizer 
@@ -78,7 +82,8 @@
 		company and, in 2006, Pfizer sold its consumer healthcare unit to Johnson and Johnson. 
 			</div> 		
 			<div id="Bristol-Myers" class="company_info">
-			<p>Bristol-Myers Squibb</p>
+			<div id="subtitle">Bristol-Myers Squibb</div><!-- #subtitle end -->
+			<br>
 		In 2012, Bristol-Myers Squibb (BMS) reported revenue of 17.6 billion. The company 
 		manufactures prescription pharmaceuticals in several areas including, HIV/AIDS, cardiovascular 
 		disease, cancer, hepatitis, and diabetes. A few key products include Abilify, Yervoy, and 
@@ -91,7 +96,8 @@
 		a 100 million dollar “secure the future fund” to commit to HIV/AIDS research in African communities. 
 			</div> 			
 			<div id="Viiv" class="company_info">
-			<p>Viiv Healthcare</p>
+			<div id="subtitle">Viiv Healthcare</div><!-- #subtitle end -->
+			<br>
 		In 2011, Viiv manufactured 10 major medicines and made a profit of more than two billion. 
 		They are an independent company, which focuses on HIV medication. Viiv is based out of the 
 		UK with headquarters in North America (United States, Puerto Rico, Canada, Mexico), Europe 
@@ -102,7 +108,8 @@
 		15 percent.
 			</div> 			
 			<div id="Merck" class="company_info">
-			<p>Merck</p>
+			<div id="subtitle">Merck</div><!-- #subtitle end -->
+			<br>
 		In 2011, Merck reported revenue of 48 billion  It is currently one of the world’s largest 
 		seven pharmaceutical companies by market capitalization and revenue. Some key products 
 		include Claritin, MiraLax, Zegrid, Coppertone, Dr. Scholl’s, and Lotrimin. Merck also 
@@ -110,7 +117,8 @@
 		drug store.  It has since expanded, and Merck moved to New York in 1891. 
 			</div> 
 			<div id="Hoffman" class="company_info">
-			<p>Hoffman-LaRoche</p>
+			<div id="subtitle">Hoffman-LaRoche</div><!-- #subtitle end -->
+			<br>
 		In 2011, Hoffman LaRoche reported revenue of 43 billion U.S Dollars.  Hoffman-LaRoche focuses 
 		primarily on HIV and cancer medication. Some of their key products include Tamiflu, and Valium. 
 		Fritz Hoffmann-La Roche founded the company in 1896. At its start, the company mainly produced 
@@ -120,7 +128,8 @@
 		owns a third of its shares.
 			</div> 			
 			<div id="Gilead" class="company_info">
-			<p>Gilead Science</p>
+			<div id="subtitle">Gilead Science</div><!-- #subtitle end -->
+			<br>
 		In 2010, Gilead Science reported revenue of approximately 8.4 billion dollars. They are 
 		an American biotechnology company that develops and sells pharmaceuticals. Currently the 
 		company is highly invested in drugs for HIV/AIDS as well as serious respiratory ailments, 
@@ -128,7 +137,8 @@
 		Atripla. Gilead was founded in 1987 and is based in California. 
 			</div>
 			<div id="Abbot" class="company_info">
-			<p>Abbott Labs</p>
+			<div id="subtitle">Abbott Labs</div><!-- #subtitle end -->
+			<br>
 		In 2011, Abbott reported revenue of 38.8 billion.  It is currently a world leader in blood 
 		screening and immunoassay tests and diagnostics. A few of its major products include Valium, 
 		Tamiflu, and Ensure (meal replacement shakes). Abbott is an American company founded in 1888 
@@ -136,13 +146,15 @@
 		and in 1962 (to Japan). In 1985, Abbott developed the first HIV blood-screening test. 
 			</div>			
 			<div id="Tonghe" class="company_info">
-			<p>Chongqing Tonghe Pharmaceutical Co</p>
+			<div id="subtitle">Chongqing Tonghe Pharmaceutical Co</div><!-- #subtitle end -->
+			<br>
 		In 2011, Chongqing Tonghe reported estimated revenue of five-hundred thousand to a million 
 		dollars. The company mostly focuses on anti-malarial drugs. They were established in 1998 
 		and are based in China. 
 			</div>
 			<div id="Novartis" class="company_info">
-			<p>Novartis</p>
+			<div id="subtitle">Novartis</div><!-- #subtitle end -->
+			<br>
 		In 2012, Novartis reported revenue of 56 billion.  The company manufactures mainly prescription 
 		medications and features key products such as Lamisil and Ritalin. In 1996, Novartis was created 
 		from the merger of Ciba-Geigy and Sandoz Laboratories. Both companies have long histories 
@@ -152,7 +164,8 @@
 		Cambridge, Massachusetts. 
 			</div>		
 			<div id="Lilly" class="company_info">
-			<p>Eli Lilly</p>
+			<div id="subtitle">Eli Lilly</div><!-- #subtitle end -->
+			<br>
 		In 2010, Eli Lilly reported revenue of over 24 billion.  Currently their products are sold 
 		in over 125 countries. Lilly was the first company to mass-produce penicillin, the Salk polio 
 		vaccine, insulin, methadone, and Prozac. Some of its key products include Cialis and Evista. 
@@ -160,7 +173,8 @@
 		expand, building plants in three cities (Waluj, Roha, and Goa) all in India. 
 			</div> 		
 			<div id="Bayer" class="company_info">
-			<p>Bayer AG</p>
+			<div id="subtitle">Bayer AG</div><!-- #subtitle end -->
+			<br>
 		In 2011, Bayer reported revenue of over 48 Billion dollars. Bayer focuses primarily on 
 		pharmaceutical, and veterinary, products. Much of its profit comes from Aspirin. The company 
 		was founded in 1863 in Germany. In 1888, the company launched its pharmaceutical department. 
@@ -172,7 +186,8 @@
 		largest suppliers of diagnostics systems and chemical reagents.
 			</div> 
 			<div id="Kyorin" class="company_info">
-			<p>Kyorin Pharmaceutical Co., Ltd</p>
+			<div id="subtitle">Kyorin Pharmaceutical Co., Ltd</div><!-- #subtitle end -->
+			<br>
 		In 2012, Kyorin reported revenue of 11.8 billion dollars.  It is primarily engaged in the 
 		manufacture and sale of prescription medicines. The company also emphasizes respiratory, urinary, 
 		and otolaryn-gological drugs as well as synthetic antibacterial agents. Some of its key products 
@@ -182,7 +197,7 @@
 	</div><!-- #company_info end -->
 	<div id="tdcn">
 		<div id="info_detail_box">
-			<div id="company_short_name" class="box_info"></div>
+			<div id="subtitle"><div id="company_short_name" class="box_info"></div></div>
 			<div id="impact_score" class="box_info"></div>
 			<div id="company_drugs" class="box_info"></div>
 			<div id="company_disease" class="box_info"></div><br>
@@ -259,13 +274,13 @@
 			first line ACT treatment drugs globally. This is largely because of its high cure rates against 
 			multi-drug-resistant malaria.  Side effects such as headaches, anorexia, and sleep disorders 
 			have been associated with AL.  AL was patented by the Indian company Ranbaxy Laboratories in 
-			2009, which was bought by Daiichi Sankyo in 2008.<br>
+			2009, which was bought by Daiichi Sankyo in 2008.<br><br>
 			<drug_name>Levofloxacin</drug_name> is used to treat tuberculosis and other bacterial pathogens responsible 
 			for respiratory, gastrointestinal, urinary tract, and abdominal infections. In 2011, the U.S. Food 
 			and Drug Administration (FDA) added two black box warnings for this drug because of its relation 
 			to tendon ruptures, muscle weakness and breathing problems. However, Levofloxacin is about twice 
 			as potent as ofloxacin against mycobacterium tuberculosis. 
-			The FDA approved the drug on December 20th, 1996. <br> 
+			The FDA approved the drug on December 20th, 1996. <br> <br>
 			<drug_name>Ofloxacin</drug_name> is a flurorquinolone synthetic antiotic. It is used in combination with other 
 			drugs as treatment for MDR-TB.  Daiichi Pharmaceutical Co., Ltd. first patented the drug in 1980. 
 			Daiichi has since merged with Sankyo Co., Ltd. to form Daiichi Sankyo Co., Ltd.
@@ -273,10 +288,10 @@
 			<div id="Sanofi" class="drugs_info">
 			<drug_name>Artesunate/Amodiaquine</drug_name> is an artemisinin-based combination therapy (ACT) used 
 			to treat acute uncomplicated plasmodium falciparum malaria. This anti-malarial combination treatment 
-			was launched in 2007 by the Drugs for Neglected Disease Initiative in partnership with Sanofi-Aventis.<br> 
+			was launched in 2007 by the Drugs for Neglected Disease Initiative in partnership with Sanofi-Aventis.<br><br> 
 			<drug_name>Artesunate + Sulfadoxine-Pyrimethamine</drug_name> is another artemisin-based combination 
 			therapy for the treatment of malaria. Sanofi acquired the patent once it bought Hoechst AG which held 
-			the original patent. <br>
+			the original patent. <br><br>
 			<drug_name>Rifampicin</drug_name> is an antibiotic that is used in the treatment of tuberculosis along 
 			with drugs such as pyranizamide, isoniazid, and ethambutol.  The earliest patent for Rifampicin was 
 			filed in 1965 by Gruppo Lepetit (now a subsidiary of Sanofi).
@@ -297,12 +312,12 @@
 			<drug_name>Cycloserine</drug_name> is an antibiotic used against mycobacterium tuberculosis. It is 
 			classified as a second line drug and is used in combination therapies for MDR- and XDR-TB. It is 
 			known to cause many side effects including headache, dizziness, anxiety, confusion, irritability, 
-			tingling, speech difficulties, fainting, drowsiness, tremor, psychosis and depression.<br> 
+			tingling, speech difficulties, fainting, drowsiness, tremor, psychosis and depression.<br><br> 
 			<drug_name>Ethambutol</drug_name> is a bacteriostatic anti-mycobacterial drug used to treat tuberculosis. 
 			It is usually given in combination with other tuberculosis drugs like isoniazid rifampicin and pyrazinamide. 
 			The earliest patent for Ethambutol held by the American Cyanamid Company was issued in 1976.  American 
 			then became a subsidiary of American Home Products Corp.  In 1995, American Home Products eventually 
-			changed its name to Wyeth and Pfizer subsequently acquired Wyeth.<br>
+			changed its name to Wyeth and Pfizer subsequently acquired Wyeth.<br><br>
 			<drug_name>Pyrazinamide</drug_name> is used to treat tuberculosis. The drug is largely used to slow down 
 			the growth of bacteria, but it can be used to kill actively replicating tuberculosis bacteria. 
 			It is only used in combination with other drugs like isoniazid and rifampicin in the treatment of 
@@ -315,14 +330,14 @@
 			<drug_name>Didanosine</drug_name> is an antiretroviral drug (reverse transciptase inhibitor) used as a 
 			treatment for HIV.  The drug and its effectiveness as an HIV treatment were discovered by The National 
 			Cancer Institute (NCI). Since NCI does not market products, they awarded the license to Bristol Myers 
-			Squibb. Didanosine was the second HIV treatment drug to be awarded approval by the FDA in 1991.<br>
+			Squibb. Didanosine was the second HIV treatment drug to be awarded approval by the FDA in 1991.<br><br>
 			<drug_name>Stavudine</drug_name> is an antiretroviral (nucleoside analog reverse transcriptase inhibitor) 
 			used in the treatment of HIV. It was discovered in the 1960’s and was subsequently found to be effective 
 			in treating HIV. The FDA approved the drug in 1994 and it is currently manufactured under the trade name 
 			Zerit.<br>
 			<drug_name>Kanamycin</drug_name> is an antibiotic (aminoglycoside bactericidal) that is used in treatment 
 			of MDR-TB as well as a wide variety of infections. Additionally, the drug is often used for research, 
-			particularly, in molecular biology as a selective agent most commonly to isolate bacteria.<br>
+			particularly, in molecular biology as a selective agent most commonly to isolate bacteria.<br><br>
 			<drug_name>Amikacin</drug_name> is used in combination therapy to treat MDR-TB.  It is also commonly used to 
 			treat major, infections from drug-resistant bacteria.  The patent for Amikacin was issued to Brstol Myers 
 			Squibb in 1973. 
@@ -331,11 +346,11 @@
 			<drug_name>Neflinivar</drug_name> is an antiretroviral that is used in the treatment of HIV. The Agouron 
 			Institute first developed Nelfinavir. Agouron was then sold to Warner Lambert in 1998, which subsequently 
 			merged with Pfizer.  ViiV was created in 2009 as a joint venture between GlaxoSmithKline and Pfizer to 
-			take over their HIV operations and thus holds the patent for Neflinivar.<br>
+			take over their HIV operations and thus holds the patent for Neflinivar.<br><br>
 			<drug_name>Abacavir</drug_name> is an antiretroviral drug used to treat HIV and AIDS. The drug is never 
 			taken alone for threat of serious adverse effects (hypersensitivity and Anaphylaxis). The first patent 
 			for Abacavir was by The Wellcome Foundation Limited.  The Wellcome Foundation Limited then merged with 
-			Glaxo in 1995 to form Glaxo Wellcome.<br>
+			Glaxo in 1995 to form Glaxo Wellcome.<br><br>
 			<drug_name>Zidovudine</drug_name> is an antiviral drug used to treat HIV and AIDS. It was the first U.S 
 			government approved treatment for HIV therapy and is also used prevent HIV transmission. It is often 
 			administered in combination therapy specifically in highly active antiretroviral therapy (HAART) where 
@@ -345,7 +360,7 @@
 			<drug_name>Efavirenz</drug_name> is used as a part of highly active antiretroviral therapy used to treat 
 			HIV type 1 (as a non-nucleoside reverse transciptase inhibitor). It is also used as a regimen to reduce 
 			the likelihood of HIV infection in people who are exposed to significant risk. Merck first patented the 
-			drug in 1996.<br>
+			drug in 1996.<br><br>
 			<drug_name>Streptomycin</drug_name> is an antibiotic, antimycobacterial drug (classified as an aminoglycosides). 
 			It was the first antibiotic remedy for tuberculosis. It is only administered through injections and is used 
 			in combination with other anti-TB drugs.
@@ -358,7 +373,7 @@
 			<div id="Gilead" class="drugs_info">
 			<drug_name>Emtricitabine</drug_name> is a nucleotide reverse transcript inhibitor that is used as a 
 			treatment for HIV. Emtricitabine was first developed by scientists at Emory University. Gilead subsequently 
-			paid $525 million for the royalties due to Emory for the drug.<br>
+			paid $525 million for the royalties due to Emory for the drug.<br><br>
 			<drug_name>Tenofovir</drug_name> is an antiretroviral drug used in treatment of HIV. The drug was approved 
 			by the FDA in 2006 and is often used with emtricitabine and Efivarenz. Tenofovir was patented by Gilead 
 			Sciences, Inc. in 1998 (filed in 1996).
@@ -368,7 +383,7 @@
 			used with ritonavir in a combination treatment for HIV (approved by the FDA in 2000). Some common side effects 
 			of Lopinavir and Ritonavir include nausea, irregular heartbeat, and tiredness.  Lopinivar/Ritonavir was 
 			produced as an upgrade for Ritonavir. The FDA approved Lopinavir in 2000, and the patent for the drug will 
-			expire in 2016.<br>
+			expire in 2016.<br><br>
 			<drug_name>Atazanavir/Ritonavir</drug_name> is another antiretroviral that is used in the treatment of HIV. 
 			When Atazanavir is used with Ritonavir this drug combination is as potent as Lopinavir. The earliest patent 
 			for Atazanavir was by Novartis in 1995. 
@@ -407,15 +422,22 @@
 			</div>	
 		</div><!-- #key_drug end -->
 		<div id="report_src">
-			<p>&nbsp;</p>
+			<br><br>
 			<div id="subtitle">
 			Report Sources
 			</div>
-			<ul>
-			<li><a href="">Report link 1</a></li>
-			<li><a href="">Report link 2</a></li>
-			</ul>
-	
+			<table cellpadding="5">
+				<tr><td><div><a href="">
+				<img src="images/Paper_Global Health Impact.jpg" width="40px" height="60px"/></a></div></td>
+				<td><drug_name>Company Report</drug_name><!-- #subtitle end --><br>
+				 Learn more about the companies and drugs.
+				</td></tr>
+				<tr><td><div><a href="">
+				<img src="images/WP_11_2012_Hassoun.jpg" width="40px" height="60px"/></a></div></td>
+				<td><drug_name>Score Explanation</drug_name><!-- #subtitle end --><br>
+				 This report explains the score break-down for each company.
+				</td></tr>
+			</table>	
 		</div><!-- #report_src end -->
 	</div><!-- #fhcn end -->	
 	</div><!-- .main_body end -->

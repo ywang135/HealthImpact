@@ -285,6 +285,8 @@ function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
     else{
     	return;
     }
+    var formatter = new google.visualization.NumberFormat({pattern:'###,###,###.##'} );
+  	formatter.format(data, 1);
     var chart = new google.visualization.BarChart(document.getElementById("bar_details"));
     chart.draw(data, options);
 }

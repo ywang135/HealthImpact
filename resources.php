@@ -35,7 +35,7 @@
 			<table cellpadding="5">
 				<tr><td><div><a href="http://harvey.binghamton.edu/%7Enhassoun/Disclaimer_GlobalHealthImpact.php">
 				<img src="images/Paper_Global Health Impact.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>he Policy Proposal</subtitle><br>
+				<td><subtitle>The Policy Proposal</subtitle><br>
 				<p>
 				 This paper explains how to leverage the Index to promote global health.
 				</p>

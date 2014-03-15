@@ -22,7 +22,7 @@ $(document).ready(function() {
     	return false;
 	});	
     $("#main_menu #menu_reports a").css("background-color", "#FFB31C");
-    $("#copyright").css( { "margin-top" : "770px"} );
+    $("#copyright").css( { "margin-top" : "722px", "margin-left": "-515px"} );
     $("#copyright").fadeIn();
     $("#info_detail #Sanofi").fadeIn(); 
     $("#score_explanation #Sanofi").fadeIn();
@@ -64,8 +64,9 @@ $(document).ready(function() {
 ?>
 
 function companyInfo(cName){
+	var score = impact_score[cName].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 	document.getElementById('company_short_name').innerHTML=cName;
-	document.getElementById('impact_score').innerHTML="Score: "+impact_score[cName];
+	document.getElementById('impact_score').innerHTML="Score: "+score;
 	document.getElementById('company_drugs').innerHTML="Drugs: "+drug[cName];
 	document.getElementById('company_disease').innerHTML="Diseases: "+disease[cName];
 	drawChart(cName);
@@ -99,9 +100,9 @@ function drawChart(cName) {
 	}
     var options = {
      		width:267,
-     		height:200,
+     		height:170,
         	marginTop: 20,
-        	fontName: 'Myriad pro Semibold',
+        	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},
         	bar: { groupWidth: width },
 			isStacked: true,
@@ -109,6 +110,8 @@ function drawChart(cName) {
         	vAxis:{ textStyle:{color: hColor,fontSize: 13}},
         	chartArea:{left:60,top:0,width:"80%"}
     };
+    var formatter = new google.visualization.NumberFormat({pattern:'###,###.##'} );
+  	formatter.format(data, 1);
     var chart = new google.visualization.BarChart(document.getElementById("bar_graph"));
     chart.draw(data, options);
 }
