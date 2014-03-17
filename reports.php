@@ -14,6 +14,8 @@
 				while($row = mysqli_fetch_array($result)){
 					$name = str_replace("Pharmaceuticals","",$row[0]);
 					$name = str_replace("Pharmaceutical","",$name);
+					$name = str_replace(" Inc","",$name);
+					$name = str_replace(" Co. Ltd.","",$name);
     				echo "<li id='$row[11]' class='rankls'><a href=\"#$row[11]\">
     					$i &nbsp; $name</a>
     					</li>";
@@ -33,7 +35,7 @@
 		The company is currently ranked number 17 in world sales. They hold the German biotechnology company U3, 
 		the American biotechnology company Plexxikon, and have a 35 percent stake in Ranbaxy Laboratories 
 		(a majority share). Daiichi focuses on prescription drug manufacturing and research and development. 
-		One of their key drugs is Effient. Daiichi Sankyo was founded in 2005 (by merger of Sankyo Co and Daiichi 
+		One of their key drugs is effient. Daiichi Sankyo was founded in 2005 (by merger of Sankyo Co and Daiichi 
 		Pharmaceutical).
 			</div> 
 			<div id="Sanofi" class="company_info">
@@ -44,7 +46,7 @@
 		They focus on products for cardiovascular disease, the central nervous system, internal medicine, 
 		oncology, ophthalmology, and vaccines (subsidiary Sanofi Pasteur makes vaccines while its 
 		Genzyme unit makes biopharmaceuticals).  They are a French company, which operates out of 
-		over 100 countries, and was founded in 2004 (by a merger of Aventis and Sanofi-Synthelabo).
+		over 100 countries, and were founded in 2004 (by a merger of Aventis and Sanofi-Synthelabo).
 			</div> 
 			<div id="Shire" class="company_info">
 			<div id="subtitle">Shire Pharmaceuticals</div><!-- #subtitle end -->
@@ -56,7 +58,7 @@
 		major products include Vyvanse and Adderall XR but it also makes an important HIV medication.
 			</div> 
 			<div id="Boehringer" class="company_info">
-			<div id="subtitle">Boehringer Ingelheim Pharmaceuticals</div><!-- #subtitle end -->
+			<div id="subtitle">Boehringer Ingelheim</div><!-- #subtitle end -->
 			<br>
 		In 2012, Boehringer Ingelheim Pharmaceuticals reported revenue of 18.8 Billion. 
 		The company's main fields of focus are cardiovascular disease, hepatitis, Parkinson's disease, 
@@ -64,8 +66,8 @@
 		products include Phenylephrine, Epinephrine, and Ketoprofen.  They were founded in 1885 when 
 		Boehringer was established as a tartaric acid plant and supplied materials for dyeing and 
 		cooking purposes. In 1893, with the discovery of chemical synthesis of lactic acid, the 
-		company merged as a major biotech firm and expanded exponentially. Various drugs were then l
-		aunched up until the end of the Second World War, many utilizing lactic and tartaric acid 
+		company merged as a major biotech firm and expanded exponentially. Various drugs were then 
+		launched up until the end of the Second World War, many utilizing lactic and tartaric acid 
 		for use in the food industry. By the 1950’s, the company transitioned from its previous base 
 		to treatments of respiratory, cardiovascular, and gastrointestinal diseases. During this 
 		time Boehringer also established a number of new plants, notably a subsidiary one in Vienna.
@@ -84,7 +86,7 @@
 			<div id="Bristol-Myers" class="company_info">
 			<div id="subtitle">Bristol-Myers Squibb</div><!-- #subtitle end -->
 			<br>
-		In 2012, Bristol-Myers Squibb (BMS) reported revenue of 17.6 billion. The company 
+		In 2012, Bristol-Myers Squibb reported revenue of 17.6 billion. The company 
 		manufactures prescription pharmaceuticals in several areas including, HIV/AIDS, cardiovascular 
 		disease, cancer, hepatitis, and diabetes. A few key products include Abilify, Yervoy, and 
 		Sustiva. Edward Robinson Squibb founded Bristol-Myers, a United States based company, in 1858. 
@@ -120,7 +122,7 @@
 			<div id="subtitle">Hoffman-LaRoche</div><!-- #subtitle end -->
 			<br>
 		In 2011, Hoffman LaRoche reported revenue of 43 billion U.S Dollars.  Hoffman-LaRoche focuses 
-		primarily on HIV and cancer medication. Some of their key products include Tamiflu, and Valium. 
+		primarily on HIV and cancer medication. Some of their key products include Tamiflu and Valium. 
 		Fritz Hoffmann-La Roche founded the company in 1896. At its start, the company mainly produced 
 		various vitamin preparations and derivatives. In 1934, it became the first company to mass-produce 
 		synthetic vitamin (which was branded as Redoxon). By the early 1990s, Roche Biomedical had one 
@@ -141,21 +143,21 @@
 			<br>
 		In 2011, Abbott reported revenue of 38.8 billion.  It is currently a world leader in blood 
 		screening and immunoassay tests and diagnostics. A few of its major products include Valium, 
-		Tamiflu, and Ensure (meal replacement shakes). Abbott is an American company founded in 1888 
+		Tamiflu, and Ensure (meal replacement shakes). Abbott is an US company founded in 1888 
 		(as Abbott Alkaloidal Company). They expanded their markets internationally in 1935 (to Canada) 
 		and in 1962 (to Japan). In 1985, Abbott developed the first HIV blood-screening test. 
 			</div>			
 			<div id="Tonghe" class="company_info">
-			<div id="subtitle">Chongqing Tonghe Pharmaceutical Co</div><!-- #subtitle end -->
+			<div id="subtitle">Chongqing Tonghe</div><!-- #subtitle end -->
 			<br>
-		In 2011, Chongqing Tonghe reported estimated revenue of five-hundred thousand to a million 
+		In 2011, Chongqing Tonghe's revenue was estimated to be five-hundred thousand to a million 
 		dollars. The company mostly focuses on anti-malarial drugs. They were established in 1998 
 		and are based in China. 
 			</div>
 			<div id="Novartis" class="company_info">
 			<div id="subtitle">Novartis</div><!-- #subtitle end -->
 			<br>
-		In 2012, Novartis reported revenue of 56 billion.  The company manufactures mainly prescription 
+		In 2012, Novartis reported revenue of 56 billion.  The company mainly focuses on prescription 
 		medications and features key products such as Lamisil and Ritalin. In 1996, Novartis was created 
 		from the merger of Ciba-Geigy and Sandoz Laboratories. Both companies have long histories 
 		(Ciba Geigy came about from a merger in 1975 and Sandoz was founded in 1886). In 1998, Novartis 
@@ -176,21 +178,21 @@
 			<div id="subtitle">Bayer AG</div><!-- #subtitle end -->
 			<br>
 		In 2011, Bayer reported revenue of over 48 Billion dollars. Bayer focuses primarily on 
-		pharmaceutical, and veterinary, products. Much of its profit comes from Aspirin. The company 
+		pharmaceutical, and veterinary products. Much of its profit comes from Aspirin. The company 
 		was founded in 1863 in Germany. In 1888, the company launched its pharmaceutical department. 
 		In 1897, Bayer was the first company to utilize the main ingredient found in Aspirin and began 
 		selling it worldwide. In 1940, Bayer launched the first multi-vitamin to be sold in the United 
 		States. In 1950, Bayer launched one of the first globally successful anti-malarials in Resochin. 
-		Bayer purchased Miles laboratories Inc. in 1978, and thus gained a major stake in the American 
+		Bayer purchased Miles laboratories Inc. in 1978, and thus gained a major stake in the US 
 		pharmaceutical market. In 1989, Bayer bought Cooper Technicon to become one of the world’s 
 		largest suppliers of diagnostics systems and chemical reagents.
 			</div> 
 			<div id="Kyorin" class="company_info">
-			<div id="subtitle">Kyorin Pharmaceutical Co., Ltd</div><!-- #subtitle end -->
+			<div id="subtitle">Kyorin</div><!-- #subtitle end -->
 			<br>
 		In 2012, Kyorin reported revenue of 11.8 billion dollars.  It is primarily engaged in the 
 		manufacture and sale of prescription medicines. The company also emphasizes respiratory, urinary, 
-		and otolaryn-gological drugs as well as synthetic antibacterial agents. Some of its key products 
+		and ear, nose, and throat drugs as well as synthetic antibacterial agents. Some of its key products 
 		include Mucodyne and Kipres. Kyorin Pharmaceutical is a Japanese company founded in 1923.
 			</div>
 		</div><!-- #info_detail end -->			
@@ -271,8 +273,8 @@
 			<div id="Daichii" class="drugs_info">
 			<drug_name>Artemether Lumefantrine (AL)</drug_name> is a fixed combination therapy of artemisinin and 
 			lumefantrine and is mainly used in the treatment in Malaria.  AL is one of the most common 
-			first line ACT treatment drugs globally. This is largely because of its high cure rates against 
-			multi-drug-resistant malaria.  Side effects such as headaches, anorexia, and sleep disorders 
+			first line combination therapies for malaria globally. This is largely because of its high cure rates against 
+			drug-resistant malaria.  Side effects such as headaches, anorexia, and sleep disorders 
 			have been associated with AL.  AL was patented by the Indian company Ranbaxy Laboratories in 
 			2009, which was bought by Daiichi Sankyo in 2008.<br><br>
 			<drug_name>Levofloxacin</drug_name> is used to treat tuberculosis and other bacterial pathogens responsible 
@@ -281,9 +283,9 @@
 			to tendon ruptures, muscle weakness and breathing problems. However, Levofloxacin is about twice 
 			as potent as ofloxacin against mycobacterium tuberculosis. 
 			The FDA approved the drug on December 20th, 1996. <br> <br>
-			<drug_name>Ofloxacin</drug_name> is a flurorquinolone synthetic antiotic. It is used in combination with other 
-			drugs as treatment for MDR-TB.  Daiichi Pharmaceutical Co., Ltd. first patented the drug in 1980. 
-			Daiichi has since merged with Sankyo Co., Ltd. to form Daiichi Sankyo Co., Ltd.
+			<drug_name>Ofloxacin</drug_name> is a flurorquinolone synthetic antibiotic. It is used in combination with other 
+			drugs as treatment for multi-drug-resistant TB. Daiichi first patented the drug in 1980. Daiichi has since 
+			merged with Sankyo  to form Daiichi Sankyo
 			</div> 
 			<div id="Sanofi" class="drugs_info">
 			<drug_name>Artesunate/Amodiaquine</drug_name> is an artemisinin-based combination therapy (ACT) used 
@@ -293,12 +295,12 @@
 			therapy for the treatment of malaria. Sanofi acquired the patent once it bought Hoechst AG which held 
 			the original patent. <br><br>
 			<drug_name>Rifampicin</drug_name> is an antibiotic that is used in the treatment of tuberculosis along 
-			with drugs such as pyranizamide, isoniazid, and ethambutol.  The earliest patent for Rifampicin was 
+			with drugs such as pyranizamide, isoniazid, and ethambutol.  The earliest patent for rifampicin was 
 			filed in 1965 by Gruppo Lepetit (now a subsidiary of Sanofi).
 			</div> 
 			<div id="Shire" class="drugs_info">
 			<drug_name>Lamivudine</drug_name> is often used in combination with AZT as an effective treatment 
-			against HIV. AF Biochem first patented Lamivudine, which subsequently changed its name to Biochem 
+			against HIV. AF Biochem first patented lamivudine, which subsequently changed its name to Biochem 
 			Pharma, and later merged, with Shire Pharmaceuticals in 2000.
 			</div> 
 			<div id="Boehringer" class="drugs_info">
@@ -314,8 +316,8 @@
 			known to cause many side effects including headache, dizziness, anxiety, confusion, irritability, 
 			tingling, speech difficulties, fainting, drowsiness, tremor, psychosis and depression.<br><br> 
 			<drug_name>Ethambutol</drug_name> is a bacteriostatic anti-mycobacterial drug used to treat tuberculosis. 
-			It is usually given in combination with other tuberculosis drugs like isoniazid rifampicin and pyrazinamide. 
-			The earliest patent for Ethambutol held by the American Cyanamid Company was issued in 1976.  American 
+			It is usually given in combination with other tuberculosis drugs like isoniazid, rifampicin, and pyrazinamide. 
+			The earliest patent for ethambutol held by the American Cyanamid Company was issued in 1976.  American 
 			then became a subsidiary of American Home Products Corp.  In 1995, American Home Products eventually 
 			changed its name to Wyeth and Pfizer subsequently acquired Wyeth.<br><br>
 			<drug_name>Pyrazinamide</drug_name> is used to treat tuberculosis. The drug is largely used to slow down 
@@ -334,7 +336,7 @@
 			<drug_name>Stavudine</drug_name> is an antiretroviral (nucleoside analog reverse transcriptase inhibitor) 
 			used in the treatment of HIV. It was discovered in the 1960’s and was subsequently found to be effective 
 			in treating HIV. The FDA approved the drug in 1994 and it is currently manufactured under the trade name 
-			Zerit.<br>
+			Zerit.<br><br>
 			<drug_name>Kanamycin</drug_name> is an antibiotic (aminoglycoside bactericidal) that is used in treatment 
 			of MDR-TB as well as a wide variety of infections. Additionally, the drug is often used for research, 
 			particularly, in molecular biology as a selective agent most commonly to isolate bacteria.<br><br>
@@ -348,16 +350,16 @@
 			merged with Pfizer.  ViiV was created in 2009 as a joint venture between GlaxoSmithKline and Pfizer to 
 			take over their HIV operations and thus holds the patent for Neflinivar.<br><br>
 			<drug_name>Abacavir</drug_name> is an antiretroviral drug used to treat HIV and AIDS. The drug is never 
-			taken alone for threat of serious adverse effects (hypersensitivity and Anaphylaxis). The first patent 
+			taken alone for threat of serious adverse effects (hypersensitivity and anaphylaxis). The first patent 
 			for Abacavir was by The Wellcome Foundation Limited.  The Wellcome Foundation Limited then merged with 
 			Glaxo in 1995 to form Glaxo Wellcome.<br><br>
 			<drug_name>Zidovudine</drug_name> is an antiviral drug used to treat HIV and AIDS. It was the first U.S 
-			government approved treatment for HIV therapy and is also used prevent HIV transmission. It is often 
+			government approved treatment for HIV therapy and is also used to prevent HIV transmission. It is often 
 			administered in combination therapy specifically in highly active antiretroviral therapy (HAART) where 
-			AZT is combined with other drugs to prevent AZT from mutating into an AZT-resistant form.
+			AZT is combined with other drugs to prevent AZT-resistant.
 			</div> 			
 			<div id="Merck" class="drugs_info">
-			<drug_name>Efavirenz</drug_name> is used as a part of highly active antiretroviral therapy used to treat 
+			<drug_name>Efavirenz</drug_name> is used as a part of highly active antiretroviral therapy to treat 
 			HIV type 1 (as a non-nucleoside reverse transciptase inhibitor). It is also used as a regimen to reduce 
 			the likelihood of HIV infection in people who are exposed to significant risk. Merck first patented the 
 			drug in 1996.<br><br>
@@ -375,7 +377,7 @@
 			treatment for HIV. Emtricitabine was first developed by scientists at Emory University. Gilead subsequently 
 			paid $525 million for the royalties due to Emory for the drug.<br><br>
 			<drug_name>Tenofovir</drug_name> is an antiretroviral drug used in treatment of HIV. The drug was approved 
-			by the FDA in 2006 and is often used with emtricitabine and Efivarenz. Tenofovir was patented by Gilead 
+			by the FDA in 2006 and is often used with emtricitabine and efivarenz. Tenofovir was patented by Gilead 
 			Sciences, Inc. in 1998 (filed in 1996).
 			</div>
 			<div id="Abbot" class="drugs_info">
@@ -385,13 +387,13 @@
 			produced as an upgrade for Ritonavir. The FDA approved Lopinavir in 2000, and the patent for the drug will 
 			expire in 2016.<br><br>
 			<drug_name>Atazanavir/Ritonavir</drug_name> is another antiretroviral that is used in the treatment of HIV. 
-			When Atazanavir is used with Ritonavir this drug combination is as potent as Lopinavir. The earliest patent 
-			for Atazanavir was by Novartis in 1995. 
+			When atazanavir is used with ritonavir this drug combination is as potent as Lopinavir. The earliest patent 
+			for atazanavir was by Novartis in 1995. 
 			</div>			
 			<div id="Tonghe" class="drugs_info">
-			<drug_name>Dihydroarteminisin-Piperaquine</drug_name> is a drug used to treat malaria. A patent for 
-			Dihydroartemisinin-Piperaquine for use in treatment of Malaria was first applied for by Chongqing Tonghe 
-			Pharmaceutical Co.,Ltd in 2000 (US Patent issued 2010).   It is sold commercially in combination and has 
+			<drug_name>Dihydroarteminisin-Piperaquine</drug_name> is a drug used to treat malaria. A patent for dihydroartemisinin-piperaquine 
+			for use in treatment of ,alaria was first applied for by Chongqing Tonghe in 2000 (US Patent issued 2010). 
+			It is sold commercially in combination and has 
 			been shown to be equivalent to artemether/lumefantrine in some trials but generally has fewer adverse side 
 			effects and is administered once a day for three days instead of twice a day.  This all makes the drug more 
 			patient-friendly than other artemisinin combination therapies (ACTs). Until recently, the public sector has 
@@ -401,12 +403,12 @@
 			<div id="Novartis" class="drugs_info">
 			<drug_name>Atazanavir/Ritonavir</drug_name> is an antiretroviral drug used in HIV/AIDS treatment. It is used 
 			to replace lopinavir/ritonavir treatment (it generally has less gastrointestinal toxicity). Abbott Laboratories 
-			first patented Ritonavir in 1993 and Novartis issued a patent for Atazanavir drug in 1995 (to Ciba-Geigy, 
+			first patented Ritonavir in 1993 and Novartis issued a patent for atazanavir in 1995 (to Ciba-Geigy, 
 			at the time).
 			</div>		
 			<div id="Lilly" class="drugs_info">
 			<drug_name>Capreomycin</drug_name> is used in treating lung infections caused by certain strains of tuberculosis. 
-			It is a peptide antibiotic, which is given in combination with other antibiotics for MDR-tuberculosis. Capreomycin 
+			It is a peptide antibiotic, which is given in combination with other antibiotics for multi-drug resistant TB. Capreomycin 
 			is a polypeptide antibiotic derived from Streptomyces capreolus originally isolated by Eli Lilly & Co. in 1961.
 			</div> 		
 			<div id="Bayer" class="drugs_info">
@@ -424,7 +426,7 @@
 		<div id="report_src">
 			<br><br>
 			<div id="subtitle">
-			Report Sources
+			Report
 			</div>
 			<table cellpadding="5">
 				<tr><td><div><a href="">
