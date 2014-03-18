@@ -38,6 +38,13 @@
 		border-bottom-right-radius: 66px;
 		-moz-border-top-left-radius:66px;
 		-moz-border-bottom-right-radius: 66px;
+		background: url(../images/disease.png) no-repeat 0 0;
+		background-image: url(../images/disease.png);
+		background-size:100% 100%;
+    	-webkit-background-size:100% 100%;        
+    	-khtml-background-size:100% 100%;         
+    	-moz-background-size:100% 100%;    
+		background-repeat: no-repeat;
 	}
 	#sq_l_t {
 		width:252.764px;
@@ -88,6 +95,13 @@
 		border-bottom-right-radius: 66px;
 		-moz-border-top-left-radius:66px;
 		-moz-border-bottom-right-radius: 66px;
+		background: url(../images/company.png) no-repeat 0 0;
+		background-image: url(../images/company.png);
+		background-size:100% 100%;
+    	-webkit-background-size:100% 100%;        
+    	-khtml-background-size:100% 100%;         
+    	-moz-background-size:100% 100%;    
+		background-repeat: no-repeat;
 	}
 //}
 /*
