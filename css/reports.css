@@ -7,6 +7,9 @@
 		font-family: "Myriad pro Semibold";
 		color:#FFB31C;
 	}
+	number {
+		color: #FFB31C;
+	}
 	.main_body {
 		text-align:left;
 		display:block;
@@ -82,7 +85,7 @@
 		float:left;
 		margin-left:1%;
 		width: 22%;
-		height: 694px;
+		height: 702px;
 		border-radius:8px;
 		-moz-border-radius:8px;
 		border:4px solid #0083CA;
@@ -97,7 +100,7 @@
 	#list_company ul li a:link, #list_company ul li a:visited{
 		font-family:"Myriad pro Regular";
 		font-size:20px;
-		color:#FFB31C;
+		color:#0083CA;
 		width:90%;
 		display:block;
 		padding-top:9px;
@@ -105,6 +108,7 @@
 		padding-left:14px;
 		padding-right:14px;
 	}
+	
 	#list_company ul li a:hover{
 		background: #0083CA;
 		color:white;

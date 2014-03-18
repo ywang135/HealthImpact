@@ -17,7 +17,7 @@
 					$name = str_replace(" Inc","",$name);
 					$name = str_replace(" Co. Ltd.","",$name);
     				echo "<li id='$row[11]' class='rankls'><a href=\"#$row[11]\">
-    					$i &nbsp; $name</a>
+    					<number>$i</number> &nbsp; $name</a>
     					</li>";
     					$i++;
     			}
