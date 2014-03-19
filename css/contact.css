@@ -13,11 +13,30 @@
 		width:100%;
 		height:auto;
 	}
+	
+	.main_body td{
+	height: 20px;
+	}
+		#heading {
+		margin-left:13%;
+		font-family:"Myriad pro Regular";
+		font-size:35px;
+		color:#FFB31C;
+		text-align: -webkit-center;
+	
+	}
+	#contact{
+		margin-left:13%;
+		font-family:"Myriad pro Regular";
+		font-size:20px;
+		color:#0083CA;
+		//text-align: -webkit-center;
+	}
 		#left_bar {
 		float:left;
 		position:relative;
 		margin-left:13%;
-		margin-top:-30px;
+		margin-top:30px;
 		width: 37%;
 		height: 880px;
 		border:1px solid white;
@@ -51,7 +70,7 @@
 		float:left;
 		position:relative;
 		margin-left:3%;
-		margin-top:-30px;
+		margin-top:30px;
 		width: 37%;
 		height: 880px;
 		border:1px solid white;

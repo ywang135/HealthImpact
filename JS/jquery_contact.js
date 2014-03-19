@@ -1,7 +1,7 @@
 $title = "The Global Health Impact Contact";
 $(document).ready(function() {
 	$(this).attr("title", $title);
-	$("#menu_contact_us").click(function(){
+	$("#menu_the_index").click(function(){
 		window.location.href = 'country.php';
     	return false;
 	});

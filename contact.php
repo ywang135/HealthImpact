@@ -4,15 +4,20 @@
 <link rel="stylesheet" href="css/contact.css" type="text/css" media="screen">
 <script type="text/javascript" src="JS/jquery_contact.js"></script>
 	<div class="main_body">
-		
+	<div id="contact">
+	<table>
+	<tr><td>For any Queries Conatct Us at <a href="mailto:globalhealthindex@gmail.com">globalhealthindex@gmail.com</a></td></tr>
+	<tr>To contibute to our project click <a href="#">Contribute</a></tr>
+	</table></div>
+		<div id="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
 		<div id="left_bar">
 			<table cellpadding="5">
 				<tr><td><div>
-				<img src="images/Kayla.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Kayla Stevens</subtitle><br>
+				<img src="images/Nick.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Nick Hall</subtitle><br>
 				<p>
-				 Kayla Stevens graduated from California University of Pennsylvania with a BA in Philosophy. 
-				 She will be moving to the Netherlands in May.
+				 Nicholas Hall is a Ph.D. candidate in philosophy at Binghamton University. His primary areas of study are in normative and applied ethics. 
+				 He has been involved in the Extending Access project since October 2012, working extensively on patent research, the rating model, and sensitivity analyses.
 				</p>
 				</td></tr>
 				<tr><td><div>
@@ -47,14 +52,7 @@
 				 sustainability and global health issues in developing countries
 				</p>
 				</td></tr>
-				<tr><td><div>
-				<img src="images/Justine.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Justin Kalin</subtitle><br>
-				<p>
-				 Justin Kalin is an undergraduate business student at Binghamton University with an interest in the development side of public and global health. His contribution to the fair trade label includes tracing patent histories to current manufacturers, itemizing product listings by pharmaceutical category, and writing reports 
-				 about the significance of the project for everyday consumers.
-				</p>
-				</td></tr>
+				
 				<tr><td><div>
 				<img src="images/Nathan.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Nathan Lubchenco</subtitle><br>
@@ -63,14 +61,7 @@
 				 He has previously worked as a data scientist at RichRelevance and Precog.
 				</p>
 				</td></tr>
-				<tr><td><div>
-				<img src="images/Angelina.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Angelina Sung</subtitle><br>
-				<p>
-				 Angelina Sung is an undergraduate psychology and philosophy double major at Carnegie Mellon University. Her research interests include applying positive/humanistic psychology to well-being and health as well as existential psychotherapy. 
-				 Her other interests in environmental ethics, bioethics, and philosophy of science had led her to work with the Global Health Impact project.
-				</p>
-				</td></tr>
+				
 				<tr><td><div>
 				<img src="images/George.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>George Nardi</subtitle><br>
@@ -94,11 +85,6 @@
 				 Jason Goldfarb is an undergraduate at Binghamton University looking to pursue a Ph.D. in Philosophy.
 				</p>
 				</td></tr>
-				</table>
-				<!--  new div -->
-				</div><!-- #left_bar end -->
-				<div id="right_bar">
-				<table cellpadding="5">
 				<tr><td><div>
 				<img src="images/Cheng.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Cheng-Yu Chao</subtitle><br>
@@ -108,20 +94,36 @@
 				</p>
 				</td></tr>
 				<tr><td><div>
+				<img src="images/Justine.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Justin Kalin</subtitle><br>
+				<p>
+				 Justin Kalin is an undergraduate business student at Binghamton University with an interest in the development side of public and global health. His contribution to the fair trade label includes tracing patent histories to current manufacturers, itemizing product listings by pharmaceutical category, and writing reports 
+				 about the significance of the project for everyday consumers.
+				</p>
+				</td></tr>
+				</table>
+				<!--  new div -->
+				</div><!-- #left_bar end -->
+				<div id="right_bar">
+				<table cellpadding="5">
+				<tr><td><div>
+				<img src="images/Angelina.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Angelina Sung</subtitle><br>
+				<p>
+				 Angelina Sung is an undergraduate psychology and philosophy double major at Carnegie Mellon University.
+				 Her research interests include applying positive/humanistic psychology to well-being and health as well as existential psychotherapy. 
+				 Her other interests in environmental ethics, bioethics, and philosophy of science had led her to work with the Global Health Impact project.
+				</p>
+				</td></tr>
+				
+				<tr><td><div>
 				<img src="images/Tyler.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Tyler West</subtitle><br>
 				<p>
 				 Tyler Ester is a Junior in Harpur College at Binghamton University majoring in Philosophy Politics and Law with a minor in Biology.
 				</p>
 				</td></tr>
-				<tr><td><div>
-				<img src="images/Nick.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Nick Hall</subtitle><br>
-				<p>
-				 Nicholas Hall is a Ph.D. candidate in philosophy at Binghamton University. His primary areas of study are in normative and applied ethics. 
-				 He has been involved in the Extending Access project since October 2012, working extensively on patent research, the rating model, and sensitivity analyses.
-				</p>
-				</td></tr>
+				
 				<tr><td><div>
 				<img src="images/Michael.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Michael Agulnick</subtitle><br>
@@ -179,6 +181,15 @@
 				 Pei Qi Yang is an undergraduate Integrative Neuroscience major and Asian Studies minor at Binghamton University. She plans to pursue a medical career after graduation and has interest in bioethics, scientific philosophy and economic studies. Her interest in these fields had led her to work on the Global Health Impact project. 
 				</p>
 				</td></tr>
+				<tr><td><div>
+				<img src="images/Kayla.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Kayla Stevens</subtitle><br>
+				<p>
+				 Kayla Stevens graduated from California University of Pennsylvania with a BA in Philosophy. 
+				 She will be moving to the Netherlands in May.
+				</p>
+				</td></tr>
+				
 			</table>			
 		</div><!-- #right_bar end -->
 		
