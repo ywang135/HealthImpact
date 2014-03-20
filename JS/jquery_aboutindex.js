@@ -1,3 +1,4 @@
+
 $title = "The Global Health Impact About the Index";
 $(document).ready(function() {
 	$(this).attr("title", $title);
@@ -12,5 +13,4 @@ $(document).ready(function() {
     	$("#thumbnail").hide();
     	$("#videoharvard").fadeIn();
     });
-    
 });

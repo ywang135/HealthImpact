@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 /*
 @media screen and (max-width:1500px)
@@ -150,4 +151,158 @@
 		background: grey; 
 	}
 }
+=======
+@charset "utf-8";
+/*
+@media screen and (max-width:1500px)
+{
+*/
+	.main_body {
+		text-align:left;
+		display:block;
+		margin-top:80px;
+	}
+	.slices object, .slices embed,  {
+		border:2px solid #0083CA;
+		width:100%;
+		height:auto;
+	}
+	#left_bar {
+		text-align:left;
+		position:relative;
+		float:left;
+		margin-left:3%;
+		margin-top:10px;
+		width: 29%;
+		height: 680px;
+		border:1px solid white;
+	}
+	#left_bar a:link, #left_bar a:visited {
+		text-decoration:underline;
+		color:#0083CA;
+	}
+	#left_bar a:hover {
+		color:#FFB31C;
+	}
+	#left_bar subtitle {
+		color:#FFB31C;
+		display:block;
+		font-size:18px;
+		margin-top:20px;
+		font-family: "Myriad pro Semibold";
+	}
+	#left_bar ul {
+		margin-top: -8px;
+		margin-bottom:-8px;
+		font-family:"Myriad pro Regular";
+		font-size:14px;
+		color:#0083CA;
+		hyphens:auto;	
+	}
+	#left_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	
+	#middle_bar {
+		float:left;
+		position:relative;
+		margin-left:3%;
+		margin-top:-30px;
+		width: 34%;
+		height: 680px;
+		border:1px solid white;
+	}
+	#middle_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	
+	#middle_bar ol {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	
+	#middle_bar subtitle {
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+		font-size:18px;
+		margin-top:10px
+		margin-bottom;-10px;
+	}
+	#middle_bar table {
+		width: 98%;
+		height:680px;
+	}
+	#right_bar {
+		float:left;
+		margin-left:3%;
+		margin-top:10px;
+		position:relative;
+		width: 25%;
+		height: 680px;
+		border:1px solid white;
+		text-align:left;
+	}	
+	#right_bar a:link, #right_bar a:visited {
+		font-size:15px;
+		color:#0083CA;
+	}
+	#right_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	#right_bar subtitle {
+		color:#FFB31C;
+		display:block;
+		font-size:18px;
+		margin-top:20px;
+		font-family: "Myriad pro Semibold";
+	}
+	#videoharvard{
+		display:none;
+	}
+//}
+/*
+@media screen and (max-width:1000px)
+{
+	body { 
+		min-width:100px;
+		width:100%;
+		background: grey; 
+	}
+}
+>>>>>>> fd68f386002290eb9d6571e137ffe0567990cc32
 */
