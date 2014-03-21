@@ -52,7 +52,7 @@
 				<li id="sub_country"><span><a href="country.php">COUNTRY</a></span></li>
 				<li id="sub_company"><span><a href="company.php">COMPANY</a></span></li>
 				<li id="sub_drug"><span><a href="drug.php">DRUG</a></span></li>
-				<li id="sub_disease"><span><a href="#">DISEASE</a></span></li>
+				<li id="sub_disease"><span><a href="disease.php">DISEASE</a></span></li>
 				</ul>
 			</div><!-- #sub_menu end -->
 		</div><!-- #menu_bar end -->
