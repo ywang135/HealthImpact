@@ -20,8 +20,8 @@
 		</div><!-- #video1 -->
 		
 		
-			<subtitle>Dummy Text for video</subtitle>
-			<p>Paragraph describing the video</p>
+			<subtitle>Learn about the Global Health Impact Index</subtitle>
+			<p>Check out this video from a recent conference at Harvard University for a brief presentation on the Global Health Impact project. Professor Nicole Hassoun introduces the Index, some possible uses for it, and explains the insight behind it.</p>
 		
 		<p></p>	
 		</div><!-- #left_bar end -->
@@ -36,7 +36,10 @@
 				</p>
 				<subtitle>Evaluating Drugs</subtitle><br>
 				<p>
-				There are three main considerations that go into evaluating each drug’s potential impact. These are <ol><li> the need for the drug, </li><li> its effectiveness, and </li><li>how many people who need a drug can access it around the world.</li></ol></p>
+				There are three main considerations that go into evaluating each drug’s potential impact. These are 
+				<br>1, the need for the drug, 
+				<br>2, its effectiveness, and 
+				<br>3, how many people who need a drug can access it around the world.</p>
 				<p>In the Global Health Impact model, the drug impact scores feed into four Indexes that provide essential information about the access to medicines problem.</p>
 				</p>
 				<subtitle>The Indexes</subtitle><br>
@@ -55,12 +58,8 @@
 			</table>			
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
-			<subtitle>Dummy Text Title</subtitle>
-			<p>Text describing PPT</p>
-			
-			<p>&nbsp;</p><p>&nbsp;</p>
-			<subtitle>Introduction to the Index</subtitle>
-			<p>A slide show for an introduction to the Company Index</p>
+			<subtitle>Introduction to the Company Index</subtitle>
+			<p>Check out this presentation for an introduction to the Company Index. Here you can see the company scores and some of the data that goes into the model. For more information check out our resources, reports, and methodology.</p>
 			<iframe src="http://prezi.com/embed/x3zshtfplobb/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
 			</iframe>
 			<p></p>
