@@ -94,11 +94,11 @@
 				</p>
 				</td></tr>
 				<tr><td><div>
-				<img src="images/Justine.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Justin Kalin</subtitle><br>
+				<img src="images/Dan-Hougendobler.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Daniel A. Hougendobler</subtitle><br>
 				<p>
-				 Justin Kalin is an undergraduate business student at Binghamton University with an interest in the development side of public and global health. His contribution to the fair trade label includes tracing patent histories to current manufacturers, itemizing product listings by pharmaceutical category, and writing reports 
-				 about the significance of the project for everyday consumers.
+				 Daniel Hougendobler, J.D., M.P.H., LL.M., is a Law Fellow with the O’Neill Institute. He holds a Juris Doctor and Masters in Public Health from Emory University, where he served as Articles Editor for the Emory Law Journal, as well as a Master of Laws in Global Health Lawfrom Georgetown University. His research interests include health law and policy, trade and health, and the impact of the global governance system on access to medicines.
+				 Prior to joining the O’Neill Institute, Daniel researched PEPFAR implementation in Rwanda, aided in an NGO's implementation of a clean water program in Haiti, and assisted the Medicines Patent Pool in its attempt to lower intellectual property barriers to HIV treatments.
 				</p>
 				</td></tr>
 				</table>
@@ -189,7 +189,14 @@
 				 She will be moving to the Netherlands in May.
 				</p>
 				</td></tr>
-				
+				<tr><td><div>
+				<img src="images/Justine.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Justin Kalin</subtitle><br>
+				<p>
+				 Justin Kalin is an undergraduate business student at Binghamton University with an interest in the development side of public and global health. His contribution to the fair trade label includes tracing patent histories to current manufacturers, itemizing product listings by pharmaceutical category, and writing reports 
+				 about the significance of the project for everyday consumers.
+				</p>
+				</td></tr>
 			</table>			
 		</div><!-- #right_bar end -->
 		
