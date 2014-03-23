@@ -37,9 +37,9 @@
 				<subtitle>Evaluating Drugs</subtitle><br>
 				<p>
 				There are three main considerations that go into evaluating each drug’s potential impact. These are 
-				1) the need for the drug, 
-				2) its effectiveness, and 
-				3) how many people who need a drug can access it around the world. In the Global Health Impact model, the drug impact scores feed into four Indexes that provide essential information about the access to medicines problem.</p>
+				1) the need for the drug, 2) its effectiveness, and 3) how many people who need a drug can access it 
+				around the world. In the Global Health Impact model, the drug impact scores feed into four Indexes that 
+				provide essential information about the access to medicines problem.
 				</p>
 				<subtitle>The Indexes</subtitle><br>
 				<p>The Drug Index ranks the drugs by their impact scores. The Disease Index looks at the size of the drugs’ impact on each of the diseases.
