@@ -4,9 +4,10 @@
 <link rel="stylesheet" href="css/disease.css" type="text/css" media="screen">
 <script type="text/javascript" src="Maps/FusionCharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="JS/jquery_disease.js"></script>
+<script type="text/javascript" src="JS/jquery_disease.js.php"></script>
 	<div class="main_body">
 	<div id="control_by_disease">
+		<div id="showSumary" class="c_b_d"><a href="#">Summary</a></div>
 		<div id="showMalaria" class="c_b_d"><a href="#">Malaria</a></div>
 		<div id="showTB" class="c_b_d"><a href="#">TB</a></div>	
 		<div id="showHIV" class="c_b_d"><a href="#">HIV/AIDS</a></div>
@@ -26,16 +27,15 @@
  
 
 	</div><!-- #disease_text end -->
-	<div id="popupwd">
+	
+	<div id="All_pop" class="popupwd">
 		<div id="popupwd1">
 			<div id="additional_statistic_1" class="additional_statistic">ADDITIONAL STATISTICS
 			</div><!-- #additional_statistic end -->
 			<div id="disease_info_1" class="disease_info">
 			</div><!-- #country_info end -->
-			<div id="ColumnChart_details">
+			<div id="all_graph" class="ColumnChart_details">
 			</div><!-- #bar_details end -->
-			<div id="Column_sub_title">Disability Adjusted Score Life years Averted
-			</div>	
 		</div><!-- #popupwd1 end -->
 		
 		<div id="popupwd2">
@@ -44,11 +44,72 @@
 			<div id="disease_info_2" class="disease_info">
 			</div><!-- #country_info end -->
 			<div id="Pie_details">
-			</div><!-- #bar_details end -->
-			<div id="Pie_sub_title">
 			</div>
 		</div><!-- #popupwd2 end -->
-	</div><!-- #popupwd end -->
+	</div><!-- .popupwd end -->
+	<div id="Malaria_pop" class="popupwd">
+		<div id="popupwd1">
+			<div id="additional_statistic_1" class="additional_statistic">Treatment Coverage for Malaria by Drug
+			</div><!-- #additional_statistic end -->
+			<div id="malaria_graph" class="Malaria_ColumnChart_details">
+			</div><!-- #malaria_graph end -->
+		</div><!-- #popupwd1 end -->
+		
+		<div id="popupwd2">
+			<div id="additional_statistic_2" class="additional_statistic">Malaria Treatment Efficacy by Drug
+			</div><!-- #additional_statistic end -->
+			<div id="malaria_graph2">
+			</div><!-- #malaria_graph2 end -->
+		</div><!-- #popupwd2 end -->
+	</div><!-- .popupwd end -->
+	<div id="TB_pop" class="popupwd">
+		<div id="popupwd1">
+			<div id="additional_statistic_1" class="additional_statistic">Treatment Coverage By TB Type
+			</div><!-- #additional_statistic end -->
+			<div id="TB_graph">
+			</div>	
+		</div><!-- #popupwd1 end -->
+		
+		<div id="popupwd2">
+			<div id="additional_statistic_2" class="additional_statistic">Treatment Efficacy By TB Type
+			</div><!-- #additional_statistic end -->
+			<div id="TB_graph2">
+			</div>
+		</div><!-- #TB_graph2 end -->
+	</div><!-- .popupwd end -->
+	<div id="HIV_pop" class="popupwd">
+		<div id="popupwd1_hiv">
+			<div id="additional_statistic_1" class="additional_statistic">HIV Treatment Coverage by Region
+			</div><!-- #additional_statistic end -->
+			<div id="pop_info">click box to zoom bigger</div>
+			<div id="HIV_graph">
+			</div>	
+			
+		</div><!-- #popupwd1 end -->
+		<div id="popupwd2_hiv">
+			<div id="additional_statistic_2" class="additional_statistic">Group A First Line Efficacy for Adults by Drug
+			</div><!-- #additional_statistic end -->
+			<div id="pop_info">click box to zoom bigger</div>
+			<div id="HIV_graph2">
+			</div><!-- #HIV_graph2 end -->
+		</div><!-- #popupwd2 end -->
+		
+		<div id="popupwd1_hiv_big" class="zoombig">
+			<div id="additional_statistic_1" class="additional_statistic">HIV Treatment Coverage by Region
+			</div><!-- #additional_statistic end -->
+			<div id="pop_info">click box to zoom smaller</div>
+			<div id="HIV_graph_big">
+			</div>	
+			
+		</div><!-- #popupwd1_hiv_big end -->
+		<div id="popupwd2_hiv_big" class="zoombig">
+			<div id="additional_statistic_2" class="additional_statistic">Group A First Line Efficacy for Adults by Drug
+			</div><!-- #additional_statistic end -->
+			<div id="pop_info">click box to zoom smaller</div>
+			<div id="HIV_graph2_big">
+			</div><!-- #HIV_graph2_big end -->
+		</div><!-- #popupwd1 end -->
+	</div><!-- .popupwd end -->
 	</div><!-- .main_body end -->
 
 <?php

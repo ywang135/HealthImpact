@@ -6,7 +6,7 @@
 	<div class="main_body">
 	<div id="contact">
 	<table>
-	<tr><td>For any Queries Conatct Us at <a href="mailto:globalhealthindex@gmail.com">globalhealthindex@gmail.com</a></td></tr>
+	<tr><td>For any queries contact us at <a href="mailto:globalhealthindex@gmail.com">globalhealthindex@gmail.com</a></td></tr>
 	<tr>To contibute to our project click <a href="#">Contribute</a></tr>
 	</table></div>
 		<div id="heading"><table><tr>Global Health Impact Research Team </tr></table></div>

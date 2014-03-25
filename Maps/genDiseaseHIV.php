@@ -31,22 +31,22 @@
 		elseif ($row[3]>=$itv1) {
 			$hover = 'FF6666';
 		}
-		echo "<entity id='$row[6]' value='$row[3]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',3,$i);\" />";
+		echo "<entity id='$row[6]' value='$row[3]' hoverColor='$hover'/>";
 		$i++;
     }
     mysqli_close($con);
     echo "
-    	<entity id='24' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('Greenland','0','0','0','0',3,'');\" />
-    	<entity id='31' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='32' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='50' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='87' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='102' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='126' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='149' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='171' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='174' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',3,'');\" />
-    	<entity id='204' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('South Sudan','0','0','0','0',3,'');\" />
+    	<entity id='24' value='0' hoverColor='F1f1f1' />
+    	<entity id='31' value='0' hoverColor='F1f1f1' />
+    	<entity id='32' value='0' hoverColor='F1f1f1' />
+    	<entity id='50' value='0' hoverColor='F1f1f1' />
+    	<entity id='87' value='0' hoverColor='F1f1f1' />
+    	<entity id='102' value='0' hoverColor='F1f1f1' />
+    	<entity id='126' value='0' hoverColor='F1f1f1' />
+    	<entity id='149' value='0' hoverColor='F1f1f1' />
+    	<entity id='171' value='0' hoverColor='F1f1f1' />
+    	<entity id='174' value='0' hoverColor='F1f1f1' />
+    	<entity id='204' value='0' hoverColor='F1f1f1' />
     	</data>
 	
 	<markers>
