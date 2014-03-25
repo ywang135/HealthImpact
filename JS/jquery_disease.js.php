@@ -166,29 +166,30 @@ var HIV_efficacy={};
 <?php
 	header('Content-type: text/javascript');
 	include "../../con_/con_ghi.php";
-	echo "function setArray(){";	
+	$arr = array('function setArray(){');
 	$result = $con->query("call show_coverage_efficacy()");
 	while($row = mysqli_fetch_array($result)){
 		if($row[0]<100){
 			if($row[1]=="Malaria"){
-				echo "Malaria_coverage['$row[2]']=$row[3];Malaria_efficacy['$row[2]']=$row[4];";
+				array_push($arr, 'Malaria_coverage[\'$row[2]\']=$row[3];Malaria_efficacy[\'$row[2]\']=$row[4];');
 			}
 			if($row[1]=="TB"){
-				echo "TB_coverage['$row[2]']=$row[3];TB_efficacy['$row[2]']=$row[4];";
+				array_push($arr, 'TB_coverage[\'$row[2]\']=$row[3];TB_efficacy[\'$row[2]\']=$row[4];');
 			}
 			if($row[1]=="HIV"){
-				echo "HIV_efficacy['$row[2]']=$row[4];";
+				array_push($arr, 'HIV_efficacy[\'$row[2]\']=$row[4];');
 			}
 		}
 		else if($row[0]<200){
-			echo "HIV_children_coverage['$row[2]']=$row[3];";
+			array_push($arr, 'HIV_children_coverage[\'$row[2]\']=$row[3];');
 		}
 		else{
-			echo "HIV_adults_coverage['$row[2]']=$row[3];";
+			array_push($arr, 'HIV_adults_coverage[\'$row[2]\']=$row[3];');
 		}
 	}
 	mysqli_close($con);
-	echo "}";
+	array_push($arr, '}');
+	echo implode(" ",$arr);
 ?>
 function drawMap(source, div_id, map_id){
 	var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", map_id, "706.912", "522.928", "0");
