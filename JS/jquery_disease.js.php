@@ -166,26 +166,28 @@ function setArray(){
 <?php
 	include "../../con_/con_ghi.php";	
 	$result = $con->query("call show_coverage_efficacy()");
+	$str = "";
 	while($row = mysqli_fetch_array($result)){
 		if($row[0]<100){
 			if($row[1]=="Malaria"){
-				//echo "Malaria_coverage['$row[2]']=$row[3];Malaria_efficacy['$row[2]']=$row[4];";
+				$str = $str."Malaria_coverage['$row[2]']=$row[3];Malaria_efficacy['$row[2]']=$row[4];";
 			}
 			if($row[1]=="TB"){
-				//echo "TB_coverage['$row[2]']=$row[3];TB_efficacy['$row[2]']=$row[4];";
+				$str = $str."TB_coverage['$row[2]']=$row[3];TB_efficacy['$row[2]']=$row[4];";
 			}
 			if($row[1]=="HIV"){
-				//echo "HIV_efficacy['$row[2]']=$row[4];";
+				$str = $str."HIV_efficacy['$row[2]']=$row[4];";
 			}
 		}
 		else if($row[0]<200){
-			//echo "HIV_children_coverage['$row[2]']=$row[3];";
+			$str = $str."HIV_children_coverage['$row[2]']=$row[3];";
 		}
 		else{
-			//echo "HIV_adults_coverage['$row[2]']=$row[3];";
+			$str = $str."HIV_adults_coverage['$row[2]']=$row[3];";
 		}
 	}
 	mysqli_close($con);
+	echo $str;
 ?>
 }
 function drawMap(source, div_id, map_id){
