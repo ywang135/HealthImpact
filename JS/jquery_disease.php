@@ -162,11 +162,10 @@ var TB_efficacy={};
 var HIV_children_coverage={};
 var HIV_adults_coverage={};
 var HIV_efficacy={};
-
+function setArray(){
 <?php
 	header('Content-type: text/javascript');
-	include "../../con_/con_ghi.php";
-	echo "function setArray(){";	
+	include "../../con_/con_ghi.php";	
 	$result = $con->query("call show_coverage_efficacy()");
 	while($row = mysqli_fetch_array($result)){
 		if($row[0]<100){
@@ -188,8 +187,8 @@ var HIV_efficacy={};
 		}
 	}
 	mysqli_close($con);
-	echo "}";
 ?>
+}
 function drawMap(source, div_id, map_id){
 	var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", map_id, "706.912", "522.928", "0");
     myMap.setXMLUrl (source);//"Maps/genAll.php"
