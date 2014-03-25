@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="css/disease.css" type="text/css" media="screen">
 <script type="text/javascript" src="Maps/FusionCharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="JS/jquery_disease.js.php"></script>
+<script type="text/javascript" src="/HealthImpact/JS/jquery_disease.js.php"></script>
 	<div class="main_body">
 	<div id="control_by_disease">
 		<div id="showSumary" class="c_b_d"><a href="#">Summary</a></div>
