@@ -164,7 +164,7 @@ var HIV_adults_coverage={};
 var HIV_efficacy={};
 function setArray(){
 <?php
-	header('Content-type: text/javascript');
+	header("Content-type: application/javascript");
 	include "../../con_/con_ghi.php";	
 	$result = $con->query("call show_coverage_efficacy()");
 	while($row = mysqli_fetch_array($result)){
