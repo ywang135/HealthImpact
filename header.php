@@ -30,8 +30,6 @@
 			<table border="0" cellpadding="1" >
   				<tr>
   				<td height="33"><a href="https://www.facebook.com/AcademicsStandAgainstPoverty" target="_blank"><img src="images/facebookicon.jpg" alt="Join Our Facebook Fan Page" width="32" height="32" border="0"></a>
-  				</td>
-				<td><a href="https://twitter.com/AcademicsStand" target="_blank"><img src="images/twittericon.jpg" alt="Follow Us On Twitter" width="32" height="32" border="0"></a>
 				</td></tr>
   			</table>
 			</div><!-- #network end -->

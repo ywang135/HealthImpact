@@ -22,7 +22,7 @@
 		
 			<subtitle>Learn about the Global Health Impact Index</subtitle>
 			<p>Check out this video from a recent conference at Harvard University for a brief presentation on the Global Health Impact project. Professor Nicole Hassoun introduces the Index, some possible uses for it, and explains the insight behind it.</p>
-		
+			<p>To view whole video, go <a href="resources.php#video1">resource page</a></p>
 		<p></p>	
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">

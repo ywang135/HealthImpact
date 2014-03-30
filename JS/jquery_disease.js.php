@@ -41,12 +41,34 @@ $(document).ready(function() {
        	});
         $("#popupwd2_hiv").click(function(){
        		$(".zoombig").hide();
+       		$("#popupwd2_hiv").hide();
         	$("#popupwd2_hiv_big").fadeIn();
        	});
        	$("#popupwd2_hiv_big").click(function(){
        		$(".zoombig").hide();
+       		$("#popupwd2_hiv").fadeIn();
        	});
-       	
+       	$("#showSummary").click(function(){
+        	$("#disease_text").html("<p>Breakdown of Disease Impact Summary:</p> context for summary tab");  		
+        	if($SHOW_DISEASE == 0){
+        		$("#showAll a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 1){
+        		$("#showMalaria a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 2){
+        		$("#showTB a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 3){
+        		$("#showHIV a").css("background-color", "#FFB31C");
+        	}
+        	$(".popupwd").hide();   
+       		$("#summary_pop").fadeIn();
+        	$("#showSummary a").css("background-color", "#ef3e2e");
+        	$SHOW_DISEASE = 4;        	
+        	$(".map_container").hide();
+        	$("#emap").hide();
+       	});
         
         $("#showAll").click(function(){
         	$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please click here: link to report page");  		
@@ -58,6 +80,10 @@ $(document).ready(function() {
         	}
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 4){
+        		$("#showSummary a").css("background-color", "#FFB31C");
+        		$("#emap").fadeIn();
         	}
         	$(".popupwd").hide();   
        		$("#All_pop").fadeIn();
@@ -79,6 +105,10 @@ $(document).ready(function() {
         	}
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 4){
+        		$("#showSummary a").css("background-color", "#FFB31C");
+        		$("#emap").fadeIn();
         	}
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
@@ -109,6 +139,10 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
         	}
+        	else if($SHOW_DISEASE == 4){
+        		$("#showSummary a").css("background-color", "#FFB31C");
+        		$("#emap").fadeIn();
+        	}
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".map_container").hide();
@@ -136,6 +170,10 @@ $(document).ready(function() {
         	}
         	else if($SHOW_DISEASE == 1){
         		$("#showMalaria a").css("background-color", "#FFB31C");
+        	}
+        	else if($SHOW_DISEASE == 4){
+        		$("#showSummary a").css("background-color", "#FFB31C");
+        		$("#emap").fadeIn();
         	}
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
@@ -222,9 +260,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
    	imp3 = typeof imp3 !== 'undefined' ? imp3 : 2734090.25;
 	var vColor="#0083CA";
 	var hColor="#0083CA";
-	if($SHOW_DISEASE == 0){
-			
-	
+	if($SHOW_DISEASE == 0){	
 		var formatter = new google.visualization.NumberFormat({pattern:'###,###,###.##'} );
 		var data1 = google.visualization.arrayToDataTable([
         	['Impact Name', 'Score', { role: 'style' }],
@@ -234,7 +270,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
      	 	]);
      	 	//, 'color: #0083CA', 'color: #FFB31C' , 'color: #EF3E2E' 
     	var options1 = {
-     		width:337,
+     		width:387,
         	marginTop: 100,
         	fontName: 'Myriad pro Semibold',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -242,7 +278,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor}},
         	vAxis:{ textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:80}
+        	chartArea:{left:80},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     
   	formatter.format(data1, 1);
@@ -256,14 +293,14 @@ function drawChart(countryName, imp1,imp2,imp3) {
         ]);
     
     var options2 = {
-    	width: 337,
+    	width: 387,
         height: 218,
         fontName: 'Myriad pro Semibold',
         is3D: true,
         sliceVisibilityThreshold:0,
         chartArea:{left:20,top:10,width:"80%",height:"90%"},
         colors: ["#0083CA","#FFB31C","#ef3e2e"],
-        tooltip:{textStyle: {color: '#0083CA'}, showColorCode: true},
+        tooltip:{textStyle: {color: '#0083CA'}},
         legend:{position: 'right', textStyle: {color: '#0083CA', fontSize: 13}},
     	};
     formatter.format(data2, 1);
@@ -280,7 +317,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			data1.addRows([[key, parseFloat(Malaria_coverage[key]),'color: #0083CA']]);
 		}
 		var options1 = {
-     		width:337,
+     		width:387,
         	marginTop: 180,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -288,7 +325,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor}},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:70}
+        	chartArea:{left:70},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     	formatter.format(data1, 1);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("malaria_graph"));
@@ -302,7 +340,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			data2.addRows([[key, parseFloat(Malaria_efficacy[key]),'color: #0083CA']]);
 		}
 		var options2 = {
-     		width:337,
+     		width:387,
         	marginTop: 180,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -310,7 +348,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor}},
         	vAxis:{ format:'##.##%', textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:70}
+        	chartArea:{left:70},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     	formatter.format(data2, 1);
     	var chart2 = new google.visualization.ColumnChart(document.getElementById("malaria_graph2"));
@@ -328,21 +367,20 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data2.addColumn('number', 'Efficacy');		
 		data2.addColumn({type: 'string', role: 'style'});
 		for(var key in TB_coverage){
-			data1.addRows([[key, parseFloat(TB_coverage[key]),'color: #EF3E2E']]);
-			data2.addRows([[key, parseFloat(TB_efficacy[key]),'color: #EF3E2E']]);
+			data1.addRows([[key, parseFloat(TB_coverage[key]),'color: #FFB31C']]);
+			data2.addRows([[key, parseFloat(TB_efficacy[key]),'color: #FFB31C']]);
 		}
 		var options = {
-     		width:337,
-        	marginTop: 180,
+     		width:397,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
 			bar: { groupWidth: '50%' },
 			isStacked: true,
-        	hAxis:{ textStyle:{color: vColor}},
-        	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:70}
+        	hAxis:{ textStyle:{color: vColor,fontSize: 15}},
+        	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 15}},
+        	chartArea:{left:70},
+        	tooltip:{textStyle: {color: vColor}}
     	};
-    	
     	formatter.format(data1, 1);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("TB_graph"));
     	chart1.draw(data1, options);
@@ -367,19 +405,20 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			data1.addRows([[key, parseFloat(HIV_children_coverage[key]),parseFloat(HIV_adults_coverage[key])]]);
 		}
 		for(var key in HIV_efficacy){
-			data2.addRows([[key, parseFloat(HIV_efficacy[key]),'color: #FFB31C']]);
+			data2.addRows([[key, parseFloat(HIV_efficacy[key]),'color: #EF3E2E']]);
 		}
 		var options1 = {
-     		width:337,
+     		width:387,
         	height: 240,
         	fontName: 'Myriad pro Regular',
 			bar: { groupWidth: '50%' },
         	hAxis:{ textStyle:{color: vColor, minTextSpacing:2},slantedText:true, slantedTextAngle:20,allowContainerBoundaryTextCufoff:true},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:70, height:100,top:80}
+        	chartArea:{left:75, height:100,top:40},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     	var options2 = {
-     		width:337,
+     		width:387,
         	marginTop: 180,
         	height: 230,
         	fontName: 'Myriad pro Regular',
@@ -388,7 +427,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor},slantedText:true },
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:70}
+        	chartArea:{left:70,height:100,top:40},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     	var options3 = {
      		width:580,
@@ -398,7 +438,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			bar: { groupWidth: '50%' },
         	hAxis:{ textStyle:{color: vColor, minTextSpacing:2},slantedText:true, slantedTextAngle:20,allowContainerBoundaryTextCufoff:true},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:130}
+        	chartArea:{left:130},
+        	tooltip:{textStyle: {color: vColor}}
     	};
     	var options4 = {
      		width:580,
@@ -410,7 +451,8 @@ function drawChart(countryName, imp1,imp2,imp3) {
 			isStacked: true,
         	hAxis:{ textStyle:{color: vColor},slantedText:true },
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:140}
+        	chartArea:{left:140},
+        	tooltip:{textStyle: {color: vColor}, showColorCode: true}
     	};
     	formatter.format(data1, 1);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("HIV_graph"));
@@ -426,5 +468,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
     	var chart4 = new google.visualization.ColumnChart(document.getElementById("HIV_graph2_big"));
     	chart4.draw(data2, options4);
     }
+    else if($SHOW_DISEASE == 4){
     
+    }
 }

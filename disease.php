@@ -7,7 +7,7 @@
 <script type="text/javascript" src="/HealthImpact/JS/jquery_disease.js.php"></script>
 	<div class="main_body">
 	<div id="control_by_disease">
-		<div id="showSumary" class="c_b_d"><a href="#">Summary</a></div>
+		<div id="showSummary" class="c_b_d"><a href="#">Summary</a></div>
 		<div id="showMalaria" class="c_b_d"><a href="#">Malaria</a></div>
 		<div id="showTB" class="c_b_d"><a href="#">TB</a></div>	
 		<div id="showHIV" class="c_b_d"><a href="#">HIV/AIDS</a></div>
@@ -27,7 +27,34 @@
  
 
 	</div><!-- #disease_text end -->
-	
+	<div id="summary_pop" class="popupwd">
+		<div id="popupwd1_summary">
+			<div id="additional_statistic_0" class="additional_statistic">ADDITIONAL STATISTICS
+			</div><!-- #additional_statistic end -->
+			<div id="disease_info_0" class="disease_info">
+			</div><!-- #country_info end -->
+			<div id="summary_graph" class="ColumnChart_details">
+			</div><!-- #bar_details end -->
+		</div><!-- #popupwd1 end -->
+		
+		<div id="popupwd2_summary">
+			<div id="additional_statistic_0_1" class="additional_statistic">ADDITIONAL STATISTICS
+			</div><!-- #additional_statistic end -->
+			<div id="disease_info_0_1" class="disease_info">
+			</div><!-- #country_info end -->
+			<div id="summary_details">
+			</div>
+		</div><!-- #popupwd2 end -->
+		
+		<div id="popupwd3_summary">
+			<div id="additional_statistic_0_2" class="additional_statistic">ADDITIONAL STATISTICS
+			</div><!-- #additional_statistic end -->
+			<div id="disease_info_0_2" class="disease_info">
+			</div><!-- #country_info end -->
+			<div id="summary_details">
+			</div>
+		</div><!-- #popupwd2 end -->
+	</div><!-- .popupwd end -->	
 	<div id="All_pop" class="popupwd">
 		<div id="popupwd1">
 			<div id="additional_statistic_1" class="additional_statistic">ADDITIONAL STATISTICS
@@ -81,33 +108,35 @@
 		<div id="popupwd1_hiv">
 			<div id="additional_statistic_1" class="additional_statistic">HIV Treatment Coverage by Region
 			</div><!-- #additional_statistic end -->
-			<div id="pop_info">click box to zoom bigger</div>
+			
 			<div id="HIV_graph">
 			</div>	
-			
+			<div id="pop_info">click box to zoom bigger</div>
 		</div><!-- #popupwd1 end -->
 		<div id="popupwd2_hiv">
 			<div id="additional_statistic_2" class="additional_statistic">Group A First Line Efficacy for Adults by Drug
 			</div><!-- #additional_statistic end -->
-			<div id="pop_info">click box to zoom bigger</div>
+			
 			<div id="HIV_graph2">
 			</div><!-- #HIV_graph2 end -->
+			<div id="pop_info">click box to zoom bigger</div>
 		</div><!-- #popupwd2 end -->
 		
 		<div id="popupwd1_hiv_big" class="zoombig">
 			<div id="additional_statistic_1" class="additional_statistic">HIV Treatment Coverage by Region
 			</div><!-- #additional_statistic end -->
-			<div id="pop_info">click box to zoom smaller</div>
+			
 			<div id="HIV_graph_big">
 			</div>	
-			
+			<div id="pop_info">click box to zoom smaller</div>
 		</div><!-- #popupwd1_hiv_big end -->
 		<div id="popupwd2_hiv_big" class="zoombig">
 			<div id="additional_statistic_2" class="additional_statistic">Group A First Line Efficacy for Adults by Drug
 			</div><!-- #additional_statistic end -->
-			<div id="pop_info">click box to zoom smaller</div>
+			
 			<div id="HIV_graph2_big">
 			</div><!-- #HIV_graph2_big end -->
+			<div id="pop_info">click box to zoom smaller</div>
 		</div><!-- #popupwd1 end -->
 	</div><!-- .popupwd end -->
 	</div><!-- .main_body end -->
