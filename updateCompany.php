@@ -16,7 +16,7 @@
     			return;
     		}
     		var i=0;
-    		for(i=0;i<len; i++){
+    		for(i=1;i<len; i++){
     			var fd = new FormData(); 			
     			fd.append('manufacturer', $('[name="manufacturer_'+i+'"]').val());
     			fd.append('disease', $('[name="disease_'+i+'"]').val());
@@ -66,9 +66,9 @@
             Password:<input type="password" name="passwd" id="pwd"> \
             <input type="submit" form ="companyForm" value="Submit"></form>'
 
-            for (var i=0; i<len; i++) {
+            for (var i=1; i<len; i++) {
                 
-                var str = json.feed.entry[i].content.$t.split(", ");
+                var str = json.feed.entry[i].content.$t.split(", _");
                 var map= new Object();
                 for(var j=0; j<str.length;j++){
                 	var kv = str[j].split(": ")
@@ -78,42 +78,42 @@
                     '<tr><td>', 
                     '<input type="text" readonly name="manufacturer_',i,
                     '" value="',
-                    map['manufacturer'],
+                    map['_cokwr'],
                     '" >',
                     '</td><td>', 
                     '<input type="text" readonly name="disease_',i,
                     '" value="',
-                    map['disease'], 
+                    map['cpzh4'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="drugs_',i,
                     '" value="',
-                    map['drugs'], 
+                    map['cre1l'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="impactscore_',i,
                     '" value="',
-                    map['impactscore'], 
+                    map['chk2m'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="malariascore_',i,
                     '" value="',
-                    map['malariascore'],
+                    map['ciyn3'],
                     '" >', 
                     '</td><td>', 
                      '<input type="text" readonly name="tbscore_',i,
                     '" value="',
-                    map['tbscore'],
+                    map['ckd7g'],
                     '" >', 
                     '</td><td>', 
                      '<input type="text" readonly name="hivscore_',i,
                     '" value="',
-                    map['hivscore'],
+                    map['clrrx'],
                     '" >', 
                     '</td><td>',  
                      '<input type="text" readonly name="percentageoftotaldalyslostalleviated_',i,
                     '" value="',
-                    map['percentageoftotaldalyslostalleviated'],
+                    map['cyevm'],
                     '" >', 
                     '</td>','</tr>'
                 ].join(''); 
@@ -128,7 +128,7 @@
 <div id="company_table_container"></div>
  
 <!-- Grab the data from our google spreadsheet, using the callback to call the function we just created -->
-<script src="http://spreadsheets.google.com/feeds/list/0AiEaimFwYPTadEVjSTJ3VmhkcVR2TVZjMDNIay1TNmc/od6/public/values?alt=json-in-script&gid=0&amp;callback=displayContent" type="text/javascript"></script>
+<script src="http://spreadsheets.google.com/feeds/list/1CrHlvTdTYtQPPG2iLHHoDbMPJdvAjHD2lndomw8-bk4/od6/public/values?alt=json-in-script&gid=0&amp;callback=displayContent" type="text/javascript"></script>
 <?php
 	//echo "<br>".md5("")."<br>";
 ?>

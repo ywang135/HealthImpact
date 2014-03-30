@@ -16,7 +16,7 @@
     			return;
     		}
     		var i=0;
-    		for(i=0;i<len; i++){
+    		for(i=1;i<len; i++){
     			var fd = new FormData();
     			
     			fd.append('countryName', $('[name="country_'+i+'"]').val());
@@ -87,15 +87,10 @@
             Row-length:<input type="text" readonly name="len" id="len" value ='+ len+ '\>\
             Password:<input type="password" name="passwd" id="pwd"> \
             <input type="submit" form ="countryForm" value="Submit"></form>'
-            //figure out how many rows our spreadsheet has
             
  
             //loop through the spreadsheet, gathering data
-            for (var i=0; i<len; i++) {
-                //for each row, add the following to actual HTML, grabbing it as a list, and then joining the list together as one long string.
-                //Uses HTML for table cells, and then grabs attributes from the spreadsheet, using appropriate syntax. Enter your table header in the Google spreadsheet between            
-                //the gsx$ and .$t.
-                
+            for (var i=1; i<len; i++) {
                 var str = json.feed.entry[i].content.$t.split(", ");
                 var map= new Object();
                 for(var j=0; j<str.length;j++){
@@ -111,52 +106,52 @@
                     '</td><td>', 
                     '<input type="text" readonly name="malariadalys_',i,
                     '" value="',
-                    map['malariadalys'], 
+                    map['_cokwr'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="tbdalys_',i,
                     '" value="',
-                    map['tbdalys'], 
+                    map['_cpzh4'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="hivadultdalys_',i,
                     '" value="',
-                    map['hivadultdalys'], 
+                    map['_cre1l'], 
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="hivchildrendalys_',i,
                     '" value="',
-                    map['hivchildrendalys'],
+                    map['_chk2m'],
                     '" >', 
                     '</td><td>', 
                      '<input type="text" readonly name="overallhivdalys_',i,
                     '" value="',
-                    map['overallhivdalys'],
+                    map['_ciyn3'],
                     '" >', 
                     '</td><td>',  
                      '<input type="text" readonly name="overalldalys_',i,
                     '" value="',
-                    map['overalldalys'],
+                    map['_ckd7g'],
                     '" >', 
                     '</td><td>',
                      '<input type="text" readonly name="malariascore_',i,
                     '" value="',  
-                    map['malariascore'],
+                    map['_clrrx'],
                     '" >',
                     '</td><td>', 
                      '<input type="text" readonly name="tbscore_',i,
                     '" value="', 
-                    map['tbscore'],
+                    map['_cyevm'],
                     '" >',
                     '</td><td>',
                      '<input type="text" readonly name="hivscore_',i,
                     '" value="',  
-                    map['hivscore'],
+                    map['_cztg3'],
                     '" >',              
                     '</td><td>', 
                      '<input type="text" readonly name="overallimpactscore_',i,
                     '" value="', 
-                    map['overallimpactscore'],
+                    map['_d180g'],
                     '" >',
                     '</td>','</tr>'
                 ].join(''); 
@@ -171,7 +166,7 @@
 <div id="country_table_container"></div>
  
 <!-- Grab the data from our google spreadsheet, using the callback to call the function we just created -->
-<script src="http://spreadsheets.google.com/feeds/list/0AiEaimFwYPTadDFJUFB3bmZFVHRYQmRzX1lvWU4zMlE/od6/public/values?alt=json-in-script&gid=1&amp;callback=displayContent" type="text/javascript"></script>
+<script src="http://spreadsheets.google.com/feeds/list/1iU4AQyAVbmVfS86TNhYwOgLwxgjLHjW0VJEacSbsZEU/od6/public/values?alt=json-in-script&gid=1&amp;callback=displayContent" type="text/javascript"></script>
 <?php
 	//echo "<br>".md5("")."<br>";
 ?>
