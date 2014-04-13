@@ -3,6 +3,7 @@
 @media screen and (max-width:1500px)
 {
 */
+
 	drug_name {
 		font-family: "Myriad pro Semibold";
 		color:#FFB31C;
@@ -42,27 +43,52 @@
     	-webkit-hyphenate-limit-after:1;
     	-webkit-hyphenate-limit-before:3;
     	-moz-hyphens:auto;	
+    	overflow:auto;
+    	border-radius:8px;
+		-moz-border-radius:8px;
+		border:2px solid #0083CA;
+		height:250px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		border-top:none;
+		border-bottom:none;
 	}
 	#bar_graph{
 		z-index:0;
+	}
+	#company_explanation{
+		border-radius:8px;
+		-moz-border-radius:8px;
+		border:2px solid #0083CA;
+		overflow:auto;
+		height:270px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:10px;
+		padding-bottom:5px;
+		border-top:none;
+		border-bottom:none;
 	}
 	#company_info_box{
 		float:left;
 		position:relative;
 		margin-left:1.5%;
 		border-radius:8px;
-		width: 23%;
+		width: 22.5%;
 		height: 612px;
 		border-radius:8px;
 		-moz-border-radius:8px;
-		border:4px solid white;
+		border:2px solid white;
+		
 	}
 
 	#fhcn {
 		float:left;
 		position:relative;
 		margin-left:1.5%;
-		width: 24%;
+		width: 23.5%;
 		height: 600px;
 		border:1px solid white;
 	}
@@ -114,7 +140,7 @@
 		color:white;
 	}
 	#report_src {
-		position: absolute;
+		margin-left:30px;
 		display:block;
 		color:#0083CA;
 		font-size:15px;

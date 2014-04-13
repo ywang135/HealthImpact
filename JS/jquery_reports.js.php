@@ -1,8 +1,6 @@
 <?php
 	header('Content-type: text/javascript');
 ?>
-google.load("visualization", "1", {packages: ["corechart"]});
-google.setOnLoadCallback(drawChart);
 var disease={};
 var drug={};
 var impact_score={};
@@ -27,7 +25,7 @@ $(document).ready(function() {
     $("#info_detail #Sanofi").fadeIn(); 
     $("#score_explanation #Sanofi").fadeIn();
     $("#fhcn #Sanofi").fadeIn();
-    
+    $("#bar_graph").fadeIn();
     $("li").click(function(){
     	$(".company_info").hide();
     	$(".score_exp").hide();
@@ -64,31 +62,38 @@ $(document).ready(function() {
 ?>
 
 function companyInfo(cName){
+	cName = typeof cName !== 'undefined' ? cName : "Sanofi";
 	var score = impact_score[cName].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 	document.getElementById('company_short_name').innerHTML=cName;
 	document.getElementById('impact_score').innerHTML="Score: "+score;
 	document.getElementById('company_drugs').innerHTML="Drugs: "+drug[cName];
 	document.getElementById('company_disease').innerHTML="Diseases: "+disease[cName];
-	drawChart(cName);
+	drawChart(cName, parseFloat(malaria[cName]), parseFloat(TB[cName]), parseFloat(HIV[cName]));
 }
-function drawChart(cName) {
+google.load("visualization", "1", {packages: ["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(cName, score1, score2, score3) {
 	var vColor="#0083CA";
 	var hColor="#0083CA";
+	cName = typeof cName !== 'undefined' ? cName : "Sanofi";
+	score1 = typeof score1 !== 'undefined' ? score1 : 13762452.39;
+	score2 = typeof score2 !== 'undefined' ? score2 : 2742893.92;
+	score3 = typeof score3 !== 'undefined' ? score3 : 0;
 	var i = 0;
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Impact Name');
 	data.addColumn('number', 'Score');
 	data.addColumn({type: 'string', role: 'style'});
-	if(parseFloat(malaria[cName])>0){
-		data.addRows([['Malaria', parseFloat(malaria[cName]), 'color: #0083CA' ]]);
+	if(score1>0){
+		data.addRows([['Malaria', score1, 'color: #0083CA' ]]);
 		i++;
 	}
-	if(parseFloat(TB[cName])>0){
-		data.addRows([['TB', parseFloat(TB[cName]), 'color: #FFB31C' ]]);
+	if(score2>0){
+		data.addRows([['TB', score2, 'color: #FFB31C' ]]);
 		i++;
 	}
-	if(parseFloat(HIV[cName])>0){
-		data.addRows([['HIV/AIDS', parseFloat(HIV[cName]), 'color: #EF3E2E' ]]);
+	if(score3>0){
+		data.addRows([['HIV/AIDS', score3, 'color: #EF3E2E' ]]);
 		i++;
 	}
 	var width;

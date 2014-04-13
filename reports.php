@@ -29,7 +29,7 @@
 		<div id="info_detail">
 			<div id="Daichii" class="company_info">
 			<div id="subtitle">Daiichi Sankyo</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Daiichi Sankyo reported revenue of 9 Billion.  
 		They are an international pharmaceutical company and are the second largest pharmaceutical company in Japan. 
 		The company is currently ranked number 17 in world sales. They hold the German biotechnology company U3, 
@@ -37,10 +37,11 @@
 		(a majority share). Daiichi focuses on prescription drug manufacturing and research and development. 
 		One of their key drugs is effient. Daiichi Sankyo was founded in 2005 (by merger of Sankyo Co and Daiichi 
 		Pharmaceutical).
-			</div> 
+			</div>
+			</div>  
 			<div id="Sanofi" class="company_info">
 			<div id="subtitle">Sanofi-Aventis</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Sanofi-Aventis reported revenue of 47.5 billion dollars. A few of their key 
 		products include Ambien, Plavix and Renagel, as well as vaccines Fluzone and Menactra. 
 		They focus on products for cardiovascular disease, the central nervous system, internal medicine, 
@@ -48,18 +49,20 @@
 		Genzyme unit makes biopharmaceuticals).  They are a French company, which operates out of 
 		over 100 countries, and were founded in 2004 (by a merger of Aventis and Sanofi-Synthelabo).
 			</div> 
+			</div> 
 			<div id="Shire" class="company_info">
 			<div id="subtitle">Shire Pharmaceuticals</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Shire reported revenue of 5 million.  The company focuses on behavioral health, 
 		regenerative medicine, rare diseases, and gastrointestinal conditions. Shire was founded 
 		in 1986.  Its first major products were calcium supplements for the treatment of osteoporosis. 
 		Since then, it has acquired several companies such as Biochem Canada and Pharavene. Its 
 		major products include Vyvanse and Adderall XR but it also makes an important HIV medication.
 			</div> 
+			</div> 
 			<div id="Boehringer" class="company_info">
 			<div id="subtitle">Boehringer Ingelheim</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Boehringer Ingelheim Pharmaceuticals reported revenue of 18.8 Billion. 
 		The company's main fields of focus are cardiovascular disease, hepatitis, Parkinson's disease, 
 		respiratory disease, HIV, oncology, cerebrovascular disease, and diabetes. Some of their key 
@@ -72,9 +75,10 @@
 		to treatments of respiratory, cardiovascular, and gastrointestinal diseases. During this 
 		time Boehringer also established a number of new plants, notably a subsidiary one in Vienna.
 			</div>
+			</div> 
 			<div id="Pfizer" class="company_info">
 			<div id="subtitle">Pfizer</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Pfizer reported revenue of 59 billion. They are currently the world's largest 
 		research-based biopharmaceutical company. They focus on immunology, inflammation, oncology, 
 		cardiovascular, metabolic diseases, neuroscience, pain, and vaccines. Some key Pfizer 
@@ -82,10 +86,11 @@
 		company and was founded in 1849.  In 1950, Pfizer's discovery of Terramycin (oxytetracycline) 
 		marked a trend for Pfizer as it became increasingly a research oriented pharmaceutical 
 		company and, in 2006, Pfizer sold its consumer healthcare unit to Johnson and Johnson. 
-			</div> 		
+			</div>
+			</div>  		
 			<div id="Bristol-Myers" class="company_info">
 			<div id="subtitle">Bristol-Myers Squibb</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Bristol-Myers Squibb reported revenue of 17.6 billion. The company 
 		manufactures prescription pharmaceuticals in several areas including, HIV/AIDS, cardiovascular 
 		disease, cancer, hepatitis, and diabetes. A few key products include Abilify, Yervoy, and 
@@ -96,10 +101,11 @@
 		into cancer and oncological research. In 1989, Bristol Meyers merged back with Squibb to become 
 		the second largest pharmaceutical company in the world. Recently, Bristol-Myers Squibb launched 
 		a 100 million dollar “secure the future fund” to commit to HIV/AIDS research in African communities. 
+			</div> 
 			</div> 			
 			<div id="Viiv" class="company_info">
 			<div id="subtitle">Viiv Healthcare</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Viiv manufactured 10 major medicines and made a profit of more than two billion. 
 		They are an independent company, which focuses on HIV medication. Viiv is based out of the 
 		UK with headquarters in North America (United States, Puerto Rico, Canada, Mexico), Europe 
@@ -108,19 +114,21 @@
 		created in 2009 as a joint venture between GlaxoSmithKline and Pfizer to take over their HIV 
 		operations. GlaxoSmithKline owns 85 percent of the company while Pfizer owns the remaining 
 		15 percent.
-			</div> 			
+			</div> 	
+			</div> 		
 			<div id="Merck" class="company_info">
 			<div id="subtitle">Merck</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Merck reported revenue of 48 billion  It is currently one of the world’s largest 
 		seven pharmaceutical companies by market capitalization and revenue. Some key products 
 		include Claritin, MiraLax, Zegrid, Coppertone, Dr. Scholl’s, and Lotrimin. Merck also 
 		manufactures the vaccine Gardasil. Friedrich Jacob Merck founded Merck in 1668 as a small 
 		drug store.  It has since expanded, and Merck moved to New York in 1891. 
 			</div> 
-			<div id="Hoffman" class="company_info">
+			</div> 
+			<div id="Hoffman-LaRoche" class="company_info">
 			<div id="subtitle">Hoffman-LaRoche</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Hoffman LaRoche reported revenue of 43 billion U.S Dollars.  Hoffman-LaRoche focuses 
 		primarily on HIV and cancer medication. Some of their key products include Tamiflu and Valium. 
 		Fritz Hoffmann-La Roche founded the company in 1896. At its start, the company mainly produced 
@@ -128,35 +136,39 @@
 		synthetic vitamin (which was branded as Redoxon). By the early 1990s, Roche Biomedical had one 
 		of the biggest clinical lab networks in the United States.  Currently the Swiss firm Novartis 
 		owns a third of its shares.
-			</div> 			
+			</div>
+			</div>  			
 			<div id="Gilead" class="company_info">
 			<div id="subtitle">Gilead Science</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2010, Gilead Science reported revenue of approximately 8.4 billion dollars. They are 
 		an American biotechnology company that develops and sells pharmaceuticals. Currently the 
 		company is highly invested in drugs for HIV/AIDS as well as serious respiratory ailments, 
 		cardiovascular, and metabolic conditions. Some of their key products include Truvada and 
 		Atripla. Gilead was founded in 1987 and is based in California. 
 			</div>
+			</div> 
 			<div id="Abbot" class="company_info">
 			<div id="subtitle">Abbott Labs</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Abbott reported revenue of 38.8 billion.  It is currently a world leader in blood 
 		screening and immunoassay tests and diagnostics. A few of its major products include Valium, 
 		Tamiflu, and Ensure (meal replacement shakes). Abbott is an US company founded in 1888 
 		(as Abbott Alkaloidal Company). They expanded their markets internationally in 1935 (to Canada) 
 		and in 1962 (to Japan). In 1985, Abbott developed the first HIV blood-screening test. 
-			</div>			
+			</div>
+			</div> 			
 			<div id="Tonghe" class="company_info">
 			<div id="subtitle">Chongqing Tonghe</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Chongqing Tonghe's revenue was estimated to be five-hundred thousand to a million 
 		dollars. The company mostly focuses on anti-malarial drugs. They were established in 1998 
 		and are based in China. 
 			</div>
+			</div> 
 			<div id="Novartis" class="company_info">
 			<div id="subtitle">Novartis</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Novartis reported revenue of 56 billion.  The company mainly focuses on prescription 
 		medications and features key products such as Lamisil and Ritalin. In 1996, Novartis was created 
 		from the merger of Ciba-Geigy and Sandoz Laboratories. Both companies have long histories 
@@ -164,19 +176,21 @@
 		made headlines with a biotechnology licensing agreement with University of California at Berkley. 
 		Currently the company has global headquarters in Basel, Switzerland and research headquarters in 
 		Cambridge, Massachusetts. 
-			</div>		
+			</div>
+			</div> 		
 			<div id="Lilly" class="company_info">
 			<div id="subtitle">Eli Lilly</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2010, Eli Lilly reported revenue of over 24 billion.  Currently their products are sold 
 		in over 125 countries. Lilly was the first company to mass-produce penicillin, the Salk polio 
 		vaccine, insulin, methadone, and Prozac. Some of its key products include Cialis and Evista. 
 		Colonel Eli Lilly in Indianapolis founded the company in 1876.  The company has continued to 
 		expand, building plants in three cities (Waluj, Roha, and Goa) all in India. 
-			</div> 		
+			</div>
+			</div>  		
 			<div id="Bayer" class="company_info">
 			<div id="subtitle">Bayer AG</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2011, Bayer reported revenue of over 48 Billion dollars. Bayer focuses primarily on 
 		pharmaceutical, and veterinary products. Much of its profit comes from Aspirin. The company 
 		was founded in 1863 in Germany. In 1888, the company launched its pharmaceutical department. 
@@ -187,15 +201,35 @@
 		pharmaceutical market. In 1989, Bayer bought Cooper Technicon to become one of the world’s 
 		largest suppliers of diagnostics systems and chemical reagents.
 			</div> 
+			</div> 
 			<div id="Kyorin" class="company_info">
 			<div id="subtitle">Kyorin</div><!-- #subtitle end -->
-			<br>
+			<div id="company_explanation">
 		In 2012, Kyorin reported revenue of 11.8 billion dollars.  It is primarily engaged in the 
 		manufacture and sale of prescription medicines. The company also emphasizes respiratory, urinary, 
 		and ear, nose, and throat drugs as well as synthetic antibacterial agents. Some of its key products 
 		include Mucodyne and Kipres. Kyorin Pharmaceutical is a Japanese company founded in 1923.
 			</div>
-		</div><!-- #info_detail end -->			
+			</div> 
+		</div><!-- #info_detail end -->	
+		<div id="report_src">
+			<br><br>
+			<div id="subtitle">
+			Report
+			</div>
+			<table cellpadding="5" width="600">
+				<tr><td><div><a href="">
+				<img src="images/Paper_Global Health Impact.jpg" width="100px" height="150px"/></a></div></td>
+				<td><drug_name>Company Report</drug_name><!-- #subtitle end --><br>
+				 Learn more about the companies and drugs.
+				</td></tr>
+				<tr><td><div><a href="">
+				<img src="images/WP_11_2012_Hassoun.jpg" width="100px" height="150px"/></a></div></td>
+				<td><drug_name>Score Explanation</drug_name><!-- #subtitle end --><br>
+				 This report explains the score break-down for each company.
+				</td></tr>
+			</table>	
+		</div><!-- #report_src end -->		
 	</div><!-- #company_info end -->
 	<div id="tdcn">
 		<div id="info_detail_box">
@@ -206,63 +240,7 @@
 			<div id="bar_graph"></div>
 	
 		</div><!-- #info_detail end -->
-		<div id="score_explanation">
-		<p>&nbsp;</p>
-		<div id="subtitle">
-			Score Explanation
-		</div>
-			<div id="Daichii" class="score_exp">
-			<p>Daiichi Sankyo</p>
-			</div> 
-			<div id="Sanofi" class="score_exp">
-			<p>Sanofi-Aventis</p>
-			</div> 
-			<div id="Shire" class="score_exp">
-			<p>Shire Pharmaceuticals</p>
-			</div> 
-			<div id="Boehringer" class="score_exp">
-			<p>Boehringer Ingelheim Pharmaceuticals</p>
-			</div>
-			<div id="Pfizer" class="score_exp">
-			<p>Pfizer</p> 
-			</div> 		
-			<div id="Bristol-Myers" class="score_exp">
-			<p>Bristol-Myers Squibb</p>
-			</div> 			
-			<div id="Viiv" class="score_exp">
-			<p>Viiv Healthcare</p>
-			</div> 			
-			<div id="Merck" class="score_exp">
-			<p>Merck</p>
-			</div> 
-			<div id="Hoffman" class="score_exp">
-			<p>Hoffman-LaRoche</p>
-			</div> 			
-			<div id="Gilead" class="score_exp">
-			<p>Gilead Science</p>
-			</div>
-			<div id="Abbot" class="score_exp">
-			<p>Abbott Labs</p> 
-			</div>			
-			<div id="Tonghe" class="score_exp">
-			<p>Chongqing Tonghe Pharmaceutical Co</p>
-			</div>
-			<div id="Novartis" class="score_exp">
-			<p>Novartis</p>
-			</div>		
-			<div id="Lilly" class="score_exp">
-			<p>Eli Lilly</p>
-			</div> 		
-			<div id="Bayer" class="score_exp">
-			<p>Bayer AG</p>
-			</div> 
-			<div id="Kyorin" class="score_exp">
-			<p>Kyorin Pharmaceutical Co., Ltd</p>
-			</div>	
-			<br>
-			Score Explanation information goes here.
-			<br>		
-		</div><!-- #score_explanation end -->
+		
 	</div><!-- #tdcn end -->
 	<div id="fhcn">
 		<div id="key_drug">
@@ -367,7 +345,7 @@
 			It was the first antibiotic remedy for tuberculosis. It is only administered through injections and is used 
 			in combination with other anti-TB drugs.
 			</div> 
-			<div id="Hoffman" class="drugs_info">
+			<div id="Hoffman-LaRoche" class="drugs_info">
 			<drug_name>Isoniazid</drug_name> is an organic compound used as first line medication in prevention and 
 			treatment of tuberculosis.  It is a relatively inexpensive medication. The earliest patent for Isoniazid 
 			is by Hoffman La Roche in 1952. 
@@ -423,24 +401,64 @@
 			(eye drops).
 			</div>	
 		</div><!-- #key_drug end -->
-		<div id="report_src">
-			<br><br>
-			<div id="subtitle">
-			Report
+		<div id="score_explanation">
+		<p>&nbsp;</p>
+		<div id="subtitle">
+			Score Explanation
+		</div>
+			<div id="Daichii" class="score_exp">
+			<p>Daiichi Sankyo</p>
+			</div> 
+			<div id="Sanofi" class="score_exp">
+			<p>Sanofi-Aventis</p>
+			</div> 
+			<div id="Shire" class="score_exp">
+			<p>Shire Pharmaceuticals</p>
+			</div> 
+			<div id="Boehringer" class="score_exp">
+			<p>Boehringer Ingelheim Pharmaceuticals</p>
 			</div>
-			<table cellpadding="5">
-				<tr><td><div><a href="">
-				<img src="images/Paper_Global Health Impact.jpg" width="40px" height="60px"/></a></div></td>
-				<td><drug_name>Company Report</drug_name><!-- #subtitle end --><br>
-				 Learn more about the companies and drugs.
-				</td></tr>
-				<tr><td><div><a href="">
-				<img src="images/WP_11_2012_Hassoun.jpg" width="40px" height="60px"/></a></div></td>
-				<td><drug_name>Score Explanation</drug_name><!-- #subtitle end --><br>
-				 This report explains the score break-down for each company.
-				</td></tr>
-			</table>	
-		</div><!-- #report_src end -->
+			<div id="Pfizer" class="score_exp">
+			<p>Pfizer</p> 
+			</div> 		
+			<div id="Bristol-Myers" class="score_exp">
+			<p>Bristol-Myers Squibb</p>
+			</div> 			
+			<div id="Viiv" class="score_exp">
+			<p>Viiv Healthcare</p>
+			</div> 			
+			<div id="Merck" class="score_exp">
+			<p>Merck</p>
+			</div> 
+			<div id="Hoffman-LaRoche" class="score_exp">
+			<p>Hoffman-LaRoche</p>
+			</div> 			
+			<div id="Gilead" class="score_exp">
+			<p>Gilead Science</p>
+			</div>
+			<div id="Abbot" class="score_exp">
+			<p>Abbott Labs</p> 
+			</div>			
+			<div id="Tonghe" class="score_exp">
+			<p>Chongqing Tonghe Pharmaceutical Co</p>
+			</div>
+			<div id="Novartis" class="score_exp">
+			<p>Novartis</p>
+			</div>		
+			<div id="Lilly" class="score_exp">
+			<p>Eli Lilly</p>
+			</div> 		
+			<div id="Bayer" class="score_exp">
+			<p>Bayer AG</p>
+			</div> 
+			<div id="Kyorin" class="score_exp">
+			<p>Kyorin Pharmaceutical Co., Ltd</p>
+			</div>	
+			<br>
+			Score Explanation information goes here.
+			<br>		
+		</div><!-- #score_explanation end -->
+		
 	</div><!-- #fhcn end -->	
 	</div><!-- .main_body end -->
 
