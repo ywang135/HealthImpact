@@ -196,6 +196,9 @@ $(document).ready(function() {
        		$(".TB_bar").hide();
        		$(".HIV_bar").fadeIn();
        	});
+       	$("#popupwd0_summary").click(function(){
+       		$("#showAll").click();
+       	});
     });
 
 var Malaria_coverage={};
@@ -407,8 +410,9 @@ function drawChart(countryName, imp1,imp2,imp3) {
    		var formatter = new google.visualization.NumberFormat({pattern:'#,###.##%'});
     	var data1 = new google.visualization.DataTable();
     	data1.addColumn('string', 'Geographical Region');
-		data1.addColumn('number', 'Treatment Coverage for Children');	
+		//data1.addColumn('number', 'Treatment Coverage for Children');	
 		data1.addColumn('number', 'Treatment Coverage for Adults');	
+		data1.addColumn({type: 'string', role: 'style'});
 		
 		var data2 = new google.visualization.DataTable();
     	data2.addColumn('string', 'Drug Regiment');
@@ -416,7 +420,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data2.addColumn({type: 'string', role: 'style'});
     	
     	for(var key in HIV_children_coverage){
-			data1.addRows([[key, parseFloat(HIV_children_coverage[key]),parseFloat(HIV_adults_coverage[key])]]);
+			data1.addRows([[key, parseFloat(HIV_adults_coverage[key]),'color: #EF3E2E']]);//, parseFloat(HIV_children_coverage[key])
 		}
 		for(var key in HIV_efficacy){
 			data2.addRows([[key, parseFloat(HIV_efficacy[key]),'color: #EF3E2E']]);
@@ -426,6 +430,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	height: 240,
         	fontName: 'Myriad pro Regular',
 			bar: { groupWidth: '50%' },
+			legend: { position: "none"},
         	hAxis:{ textStyle:{color: vColor, minTextSpacing:2},slantedText:true, slantedTextAngle:20,allowContainerBoundaryTextCufoff:true},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
         	chartArea:{left:75, height:100,top:40},
@@ -449,6 +454,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
      		height: 430,
         	marginTop: 180,
         	fontName: 'Myriad pro Regular',
+        	legend: { position: "none"},
 			bar: { groupWidth: '50%' },
         	hAxis:{ textStyle:{color: vColor, minTextSpacing:2},slantedText:true, slantedTextAngle:20,allowContainerBoundaryTextCufoff:true},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
@@ -469,7 +475,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	tooltip:{textStyle: {color: vColor}, showColorCode: true}
     	};
     	formatter.format(data1, 1);
-    	formatter.format(data1, 2);
+    	//formatter.format(data1, 2);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("HIV_graph"));
     	chart1.draw(data1, options1);
 
