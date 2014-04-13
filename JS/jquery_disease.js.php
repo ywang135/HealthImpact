@@ -5,6 +5,7 @@ $SHOW_DISEASE = 0;
 $MAP_MALARIA = 0;
 $MAP_TB = 0;
 $MAP_HIV = 0;
+$SUMMARY_GRAPH = 0;
 $title = "The Global Health Impact Disease Index";
 $(document).ready(function() {
 		$SHOW_DISEASE = 0;
@@ -49,7 +50,7 @@ $(document).ready(function() {
        		$("#popupwd2_hiv").fadeIn();
        	});
        	$("#showSummary").click(function(){
-        	$("#disease_text").html("<p>Breakdown of Disease Impact Summary:</p> context for summary tab");  		
+       		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please click here: link to report page"); 		
         	if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -62,16 +63,20 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
         	}
+        	$SHOW_DISEASE = 4;
+       		if($SUMMARY_GRAPH == 0){
+       			$SUMMARY_GRAPH = 1;
+       			drawChart("",0,0,0);
+       		} 
         	$(".popupwd").hide();   
        		$("#summary_pop").fadeIn();
-        	$("#showSummary a").css("background-color", "#ef3e2e");
-        	$SHOW_DISEASE = 4;        	
+        	$("#showSummary a").css("background-color", "#ef3e2e");        	        	
         	$(".map_container").hide();
         	$("#emap").hide();
        	});
         
         $("#showAll").click(function(){
-        	$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please click here: link to report page");  		
+        	$("#disease_text").html("<p>Breakdown of Need for Drugs for Each Disease:</p> This map shows the need for drugs for all of the diseases together. Click on a country to see the need for drugs for each disease in each country separately.");  		
         	if($SHOW_DISEASE == 1){
         		$("#showMalaria a").css("background-color", "#FFB31C");
         	}
@@ -96,7 +101,7 @@ $(document).ready(function() {
        		$(".HIV_bar").fadeIn();
        	});
        	$("#showMalaria").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. This graph illustrates the how much of the success in reducing the burden of disease due to malaria is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to report page ");  	
+       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for medicines to combat malaria. For additional information, please click here: link to report page ");  	
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -128,7 +133,7 @@ $(document).ready(function() {
        		
        	});
        	$("#showTB").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. This graph illustrates the how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to report page");
+       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to report page");
         	
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
@@ -160,7 +165,7 @@ $(document).ready(function() {
        		$(".HIV_bar").hide();  		
        	});
        	$("#showHIV").click(function(){
-       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. This graph illustrates the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to report page");
+       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to report page");
         	
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
@@ -200,6 +205,10 @@ var TB_efficacy={};
 var HIV_children_coverage={};
 var HIV_adults_coverage={};
 var HIV_efficacy={};
+var DALY={};
+var Treatment_Coverage={};
+var First_Line_Efficacy={};
+var Aggregated_Impact_Score={};
 function setArray(){
 <?php
 	include "../../con_/con_ghi.php";	
@@ -223,6 +232,12 @@ function setArray(){
 		else{
 			$str = $str."HIV_adults_coverage['$row[2]']=$row[3];";
 		}
+	}
+	mysqli_close($con);
+	include "../../con_/con_ghi.php";
+	$result = $con->query("call show_disease()");
+	while($row = mysqli_fetch_array($result)){
+		$str = $str."DALY['$row[0]']=$row[1];Treatment_Coverage['$row[0]']=$row[2];First_Line_Efficacy['$row[0]']=$row[3];Aggregated_Impact_Score['$row[0]']=$row[4];";
 	}
 	mysqli_close($con);
 	echo $str;
@@ -268,7 +283,6 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	['TB', parseFloat(imp2), '#FFB31C'],
         	['HIV/AIDS', parseFloat(imp3), '#EF3E2E']
      	 	]);
-     	 	//, 'color: #0083CA', 'color: #FFB31C' , 'color: #EF3E2E' 
     	var options1 = {
      		width:387,
         	marginTop: 100,
@@ -455,6 +469,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	tooltip:{textStyle: {color: vColor}, showColorCode: true}
     	};
     	formatter.format(data1, 1);
+    	formatter.format(data1, 2);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("HIV_graph"));
     	chart1.draw(data1, options1);
 
@@ -468,7 +483,106 @@ function drawChart(countryName, imp1,imp2,imp3) {
     	var chart4 = new google.visualization.ColumnChart(document.getElementById("HIV_graph2_big"));
     	chart4.draw(data2, options4);
     }
-    else if($SHOW_DISEASE == 4){
+    else if($SHOW_DISEASE == 4){ 
+    	var formatter = new google.visualization.NumberFormat({pattern:'###,###,###.##'} );
+		var data0 = google.visualization.arrayToDataTable([
+        	['Disease', 'Aggregated Impact Score', { role: 'style' }],
+        	['Malaria', parseFloat(Aggregated_Impact_Score['Malaria']), '#0083CA' ],
+        	['TB', parseFloat(Aggregated_Impact_Score['TB']), '#FFB31C'],
+        	['HIV/AIDS', parseFloat(Aggregated_Impact_Score['HIV']), '#EF3E2E']
+     	 	]);
+    	var options0 = {
+     		width:337,
+     		height:440,
+        	fontName: 'Myriad pro Regular',
+        	is3D: true,
+        	legend: { position: 'right', maxLines: 2, textStyle: {color: '#0083CA', fontSize: 16}},
+			isStacked: true,
+        	chartArea:{left:20,top:20,width:"300",height:"350"},
+        	tooltip:{textStyle: {color: vColor}},
+        	bar: { groupWidth: '100%' },
+    	};//hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
     
+  		formatter.format(data0, 1);
+    
+	//var First_Line_Efficacy={};
+	
+    	var chart0 = new google.visualization.PieChart(document.getElementById("summary_graph_0"));
+    	chart0.draw(data0, options0);
+    	
+    	var data1 = new google.visualization.DataTable();
+    	data1.addColumn('string', 'Disease');
+		data1.addColumn('number', 'DALY');
+		data1.addColumn({type: 'string', role: 'style'});
+    	
+		data1.addRows([['Malaria', parseFloat(DALY['Malaria']), '#0083CA']]);
+		data1.addRows([['TB', parseFloat(DALY['TB']), '#FFB31C']]);
+		data1.addRows([['HIV', parseFloat(DALY['HIV']), '#EF3E2E']]);
+    	var options1 = {
+    		width: 217,
+     		height:440,
+        	fontName: 'Myriad pro Regular',
+        	legend: { position: "none"},//'top', maxLines: 1
+			bar: { groupWidth: '50%' },
+			isStacked: true,
+        	hAxis:{ textStyle:{color: vColor,fontSize: 15}},
+        	vAxis:{ textStyle:{color: hColor,fontSize: 11}},
+        	chartArea:{left:80},
+        	tooltip:{textStyle: {color: vColor}}
+    	};    	
+    	formatter.format(data1, 1);
+    	var chart1 = new google.visualization.ColumnChart(document.getElementById("summary_graph_1"));
+    	chart1.draw(data1, options1);
+    	
+    	var formatter2 = new google.visualization.NumberFormat({pattern:'#,###.##%'});
+    	var data2 = new google.visualization.DataTable();
+    	data2.addColumn('string', 'Disease');
+		data2.addColumn('number', 'Treatment Coverage');
+		data2.addColumn({type: 'string', role: 'style'});
+    	
+		data2.addRows([['Malaria', parseFloat(Treatment_Coverage['Malaria']), '#0083CA']]);
+		data2.addRows([['TB', parseFloat(Treatment_Coverage['TB']), '#FFB31C']]);
+		data2.addRows([['HIV', parseFloat(Treatment_Coverage['HIV']), '#EF3E2E']]);
+    	var options2 = {
+    		width: 227,
+     		height:440,
+        	fontName: 'Myriad pro Regular',
+        	legend: { position: "none"},//'top', maxLines: 1
+			bar: { groupWidth: '50%' },
+			isStacked: true,
+        	hAxis:{ textStyle:{color: vColor,fontSize: 15}},
+        	vAxis:{ format:'##.##%', textStyle:{color: hColor,fontSize: 11}},
+        	chartArea:{left:60},
+        	tooltip:{textStyle: {color: vColor}}
+    	}; 
+    	formatter2.format(data2, 1);   	
+    	var chart2 = new google.visualization.ColumnChart(document.getElementById("summary_graph_2"));
+    	chart2.draw(data2, options2);
+    	
+    	var data3 = new google.visualization.DataTable();
+    	data3.addColumn('string', 'Disease');
+		data3.addColumn('number', 'First-Line Efficacy');
+		data3.addColumn({type: 'string', role: 'style'});
+    	
+		data3.addRows([['Malaria', parseFloat(First_Line_Efficacy['Malaria']), '#0083CA']]);
+		data3.addRows([['TB', parseFloat(First_Line_Efficacy['TB']), '#FFB31C']]);
+		data3.addRows([['HIV', parseFloat(First_Line_Efficacy['HIV']), '#EF3E2E']]);
+    	var options3 = {
+    		width: 227,
+     		height:440,
+        	fontName: 'Myriad pro Regular',
+        	legend: { position: "none"},//'top', maxLines: 1
+			bar: { groupWidth: '50%' },
+			isStacked: true,
+        	hAxis:{ textStyle:{color: vColor,fontSize: 15}},
+        	vAxis:{ textStyle:{color: hColor,fontSize: 11}},
+        	chartArea:{left:60},
+        	tooltip:{textStyle: {color: vColor}}
+    	}; 
+    	formatter.format(data3, 1);   	
+    	var chart3 = new google.visualization.ColumnChart(document.getElementById("summary_graph_3"));
+    	chart3.draw(data3, options3);
+    	
+    	
     }
 }
