@@ -68,6 +68,8 @@ $(document).ready(function() {
        			$SUMMARY_GRAPH = 1;
        			drawChart("",0,0,0);
        		} 
+       		$("#disease_text").css("width","1120px");
+       		$("#control_by_disease").css("marginLeft","240px");
         	$(".popupwd").hide();   
        		$("#summary_pop").fadeIn();
         	$("#showSummary a").css("background-color", "#ef3e2e");        	        	
@@ -89,6 +91,8 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 4){
         		$("#showSummary a").css("background-color", "#FFB31C");
         		$("#emap").fadeIn();
+        		$("#disease_text").css("width","712.912px");
+        		$("#control_by_disease").css("marginLeft","0px");
         	}
         	$(".popupwd").hide();   
        		$("#All_pop").fadeIn();
@@ -114,6 +118,8 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 4){
         		$("#showSummary a").css("background-color", "#FFB31C");
         		$("#emap").fadeIn();
+        		$("#disease_text").css("width","712.912px");
+        		$("#control_by_disease").css("marginLeft","0px");
         	}
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
@@ -147,6 +153,8 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 4){
         		$("#showSummary a").css("background-color", "#FFB31C");
         		$("#emap").fadeIn();
+        		$("#disease_text").css("width","712.912px");
+        		$("#control_by_disease").css("marginLeft","0px");
         	}
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
@@ -179,6 +187,8 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 4){
         		$("#showSummary a").css("background-color", "#FFB31C");
         		$("#emap").fadeIn();
+        		$("#disease_text").css("width","712.912px");
+        		$("#control_by_disease").css("marginLeft","0px");
         	}
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
@@ -427,13 +437,13 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		}
 		var options1 = {
      		width:387,
-        	height: 240,
+        	height: 500,
         	fontName: 'Myriad pro Regular',
 			bar: { groupWidth: '50%' },
 			legend: { position: "none"},
         	hAxis:{ textStyle:{color: vColor, minTextSpacing:2},slantedText:true, slantedTextAngle:20,allowContainerBoundaryTextCufoff:true},
         	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 13}},
-        	chartArea:{left:75, height:100,top:40},
+        	chartArea:{left:75, height:400,top:40},
         	tooltip:{textStyle: {color: vColor}}
     	};
     	var options2 = {
@@ -498,13 +508,13 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	['HIV/AIDS', parseFloat(Aggregated_Impact_Score['HIV']), '#EF3E2E']
      	 	]);
     	var options0 = {
-     		width:337,
-     		height:440,
+     		width:487,
+     		height:400,
         	fontName: 'Myriad pro Regular',
         	is3D: true,
         	legend: { position: 'right', maxLines: 2, textStyle: {color: '#0083CA', fontSize: 16}},
 			isStacked: true,
-        	chartArea:{left:20,top:20,width:"300",height:"350"},
+        	chartArea:{left:20,top:20,width:"450",height:"360"},
         	tooltip:{textStyle: {color: vColor}},
         	bar: { groupWidth: '100%' },
     	};//hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
@@ -525,7 +535,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data1.addRows([['TB', parseFloat(DALY['TB']), '#FFB31C']]);
 		data1.addRows([['HIV', parseFloat(DALY['HIV']), '#EF3E2E']]);
     	var options1 = {
-    		width: 217,
+    		width: 167,
      		height:440,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -550,7 +560,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data2.addRows([['TB', parseFloat(Treatment_Coverage['TB']), '#FFB31C']]);
 		data2.addRows([['HIV', parseFloat(Treatment_Coverage['HIV']), '#EF3E2E']]);
     	var options2 = {
-    		width: 227,
+    		width: 177,
      		height:440,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -574,7 +584,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data3.addRows([['TB', parseFloat(First_Line_Efficacy['TB']), '#FFB31C']]);
 		data3.addRows([['HIV', parseFloat(First_Line_Efficacy['HIV']), '#EF3E2E']]);
     	var options3 = {
-    		width: 227,
+    		width: 177,
      		height:440,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1

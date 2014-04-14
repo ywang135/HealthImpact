@@ -36,7 +36,7 @@
 		</div><!-- #popupwd0_summary end -->
 		
 		<div id="popupwd1_summary">
-			<div id="additional_statistic_summary_1" class="additional_statistic">DALY
+			<div id="additional_statistic_summary_1" class="additional_statistic">DALYs
 			</div><!-- #additional_statistic_summary_1 end -->
 			<div id="summary_graph_1" class="ColumnChart_details">
 			</div><!-- #summary_graph_1 end -->
