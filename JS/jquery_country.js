@@ -66,7 +66,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_all_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
+       		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',0,1);
        	});
        	$("#showMalaria").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -94,7 +94,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_malaria_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
+       		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',1,1);
        	});
        	$("#showTB").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -122,7 +122,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_TB_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);  		
+       		popupJS('Indonesia','1534.06','2003327.38','138104.88','2142966.25',2,1);		
        	});
        	$("#showHIV").click(function(){
        		if($SHOW_DISEASE == 0){
@@ -150,7 +150,7 @@ $(document).ready(function() {
        			$(".country_rank_list").hide();
        			$("#list_HIV_impact").fadeIn();
        		}
-       		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
+       		popupJS('South Africa','910.47','487552.63','4932716.50','5421179.50',3,1);
        	});
        	$('#orderForm :checkbox').click(function() {
     		var $this = $(this);
@@ -178,7 +178,7 @@ $(document).ready(function() {
        			}
     		}
 		});
-		drawChart("bar_details", "", parseFloat(0.0), parseFloat(0.0), parseFloat(0.0),$SHOW_DISEASE);
+		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',0,1);
     });
     
 function drawMap(source, div_id, map_id){
@@ -208,7 +208,7 @@ function popupJS(vName, sc1, sc2, sc3, tsc, disease, rank_id){
 	drawChart("bar_details", vName, parseFloat(sc1), parseFloat(sc2), parseFloat(sc3),$SHOW_DISEASE);
 }
 google.load("visualization", "1", {packages: ["corechart"]});
-google.setOnLoadCallback(drawChart);
+//google.setOnLoadCallback(drawChart);
 function drawChart(div_name, countryName, imp1,imp2,imp3,disease) {
 	var vColor="#0083CA";
 	var hColor="#0083CA";
