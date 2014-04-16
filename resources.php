@@ -70,8 +70,7 @@
 			<p>&nbsp;</p><p>&nbsp;</p>
 			<subtitle>Introduction to the Index</subtitle>
 			<p>A slide show for an introduction to the Company Index</p>
-			<iframe src="http://prezi.com/embed/x3zshtfplobb/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
-			</iframe>
+			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 			<p></p>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
