@@ -46,14 +46,8 @@
     	overflow:auto;
     	border-radius:8px;
 		-moz-border-radius:8px;
-		border:2px solid #0083CA;
-		height:250px;
-		padding-left:10px;
-		padding-right:10px;
-		padding-top:5px;
-		padding-bottom:5px;
-		border-top:none;
-		border-bottom:none;
+		border:2px solid white;
+		height:270px;
 	}
 	#bar_graph{
 		z-index:0;
@@ -61,13 +55,10 @@
 	#company_explanation{
 		border-radius:8px;
 		-moz-border-radius:8px;
-		border:2px solid #0083CA;
+		border:2px solid white;
 		overflow:auto;
 		height:270px;
-		padding-left:10px;
-		padding-right:10px;
-		padding-top:10px;
-		padding-bottom:5px;
+        margin-top: 25px;
 		border-top:none;
 		border-bottom:none;
 	}

@@ -215,18 +215,13 @@
 		<div id="report_src">
 			<br><br>
 			<div id="subtitle">
-			Report
+			Company Report
 			</div>
-			<table cellpadding="5" width="600">
+			<table cellpadding="1">
 				<tr><td><div><a href="">
 				<img src="images/Paper_Global Health Impact.jpg" width="100px" height="150px"/></a></div></td>
-				<td><drug_name>Company Report</drug_name><!-- #subtitle end --><br>
+				<td>
 				 Learn more about the companies and drugs.
-				</td></tr>
-				<tr><td><div><a href="">
-				<img src="images/WP_11_2012_Hassoun.jpg" width="100px" height="150px"/></a></div></td>
-				<td><drug_name>Score Explanation</drug_name><!-- #subtitle end --><br>
-				 This report explains the score break-down for each company.
 				</td></tr>
 			</table>	
 		</div><!-- #report_src end -->		
@@ -240,7 +235,63 @@
 			<div id="bar_graph"></div>
 	
 		</div><!-- #info_detail end -->
-		
+		<div id="score_explanation">
+		<p>&nbsp;</p>
+		<div id="subtitle">
+			Score Explanation
+		</div>
+			<div id="Daichii" class="score_exp">
+			<p>Daiichi Sankyo</p>
+			</div> 
+			<div id="Sanofi" class="score_exp">
+			<p>Sanofi-Aventis</p>
+			</div> 
+			<div id="Shire" class="score_exp">
+			<p>Shire Pharmaceuticals</p>
+			</div> 
+			<div id="Boehringer" class="score_exp">
+			<p>Boehringer Ingelheim Pharmaceuticals</p>
+			</div>
+			<div id="Pfizer" class="score_exp">
+			<p>Pfizer</p> 
+			</div> 		
+			<div id="Bristol-Myers" class="score_exp">
+			<p>Bristol-Myers Squibb</p>
+			</div> 			
+			<div id="Viiv" class="score_exp">
+			<p>Viiv Healthcare</p>
+			</div> 			
+			<div id="Merck" class="score_exp">
+			<p>Merck</p>
+			</div> 
+			<div id="Hoffman-LaRoche" class="score_exp">
+			<p>Hoffman-LaRoche</p>
+			</div> 			
+			<div id="Gilead" class="score_exp">
+			<p>Gilead Science</p>
+			</div>
+			<div id="Abbot" class="score_exp">
+			<p>Abbott Labs</p> 
+			</div>			
+			<div id="Tonghe" class="score_exp">
+			<p>Chongqing Tonghe Pharmaceutical Co</p>
+			</div>
+			<div id="Novartis" class="score_exp">
+			<p>Novartis</p>
+			</div>		
+			<div id="Lilly" class="score_exp">
+			<p>Eli Lilly</p>
+			</div> 		
+			<div id="Bayer" class="score_exp">
+			<p>Bayer AG</p>
+			</div> 
+			<div id="Kyorin" class="score_exp">
+			<p>Kyorin Pharmaceutical Co., Ltd</p>
+			</div>	
+			<br>
+			Score Explanation information goes here.
+			<br>		
+		</div><!-- #score_explanation end -->
 	</div><!-- #tdcn end -->
 	<div id="fhcn">
 		<div id="key_drug">
@@ -401,64 +452,19 @@
 			(eye drops).
 			</div>	
 		</div><!-- #key_drug end -->
-		<div id="score_explanation">
-		<p>&nbsp;</p>
-		<div id="subtitle">
-			Score Explanation
-		</div>
-			<div id="Daichii" class="score_exp">
-			<p>Daiichi Sankyo</p>
-			</div> 
-			<div id="Sanofi" class="score_exp">
-			<p>Sanofi-Aventis</p>
-			</div> 
-			<div id="Shire" class="score_exp">
-			<p>Shire Pharmaceuticals</p>
-			</div> 
-			<div id="Boehringer" class="score_exp">
-			<p>Boehringer Ingelheim Pharmaceuticals</p>
+		<div id="report_src">
+			<br><br>
+			<div id="subtitle">
+			Score Explanation Report
 			</div>
-			<div id="Pfizer" class="score_exp">
-			<p>Pfizer</p> 
-			</div> 		
-			<div id="Bristol-Myers" class="score_exp">
-			<p>Bristol-Myers Squibb</p>
-			</div> 			
-			<div id="Viiv" class="score_exp">
-			<p>Viiv Healthcare</p>
-			</div> 			
-			<div id="Merck" class="score_exp">
-			<p>Merck</p>
-			</div> 
-			<div id="Hoffman-LaRoche" class="score_exp">
-			<p>Hoffman-LaRoche</p>
-			</div> 			
-			<div id="Gilead" class="score_exp">
-			<p>Gilead Science</p>
-			</div>
-			<div id="Abbot" class="score_exp">
-			<p>Abbott Labs</p> 
-			</div>			
-			<div id="Tonghe" class="score_exp">
-			<p>Chongqing Tonghe Pharmaceutical Co</p>
-			</div>
-			<div id="Novartis" class="score_exp">
-			<p>Novartis</p>
-			</div>		
-			<div id="Lilly" class="score_exp">
-			<p>Eli Lilly</p>
-			</div> 		
-			<div id="Bayer" class="score_exp">
-			<p>Bayer AG</p>
-			</div> 
-			<div id="Kyorin" class="score_exp">
-			<p>Kyorin Pharmaceutical Co., Ltd</p>
-			</div>	
-			<br>
-			Score Explanation information goes here.
-			<br>		
-		</div><!-- #score_explanation end -->
-		
+			<table cellpadding="1">
+				<tr><td><div><a href="">
+				<img src="images/WP_11_2012_Hassoun.jpg" width="100px" height="150px"/></a></div></td>
+				<td>
+				 This report explains the score break-down for each company.
+				</td></tr>
+			</table>	
+		</div><!-- #report_src end -->
 	</div><!-- #fhcn end -->	
 	</div><!-- .main_body end -->
 

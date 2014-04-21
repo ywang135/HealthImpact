@@ -33,14 +33,14 @@
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">
 			<table cellpadding="5">
-				<tr><td><div><a href="http://harvey.binghamton.edu/%7Enhassoun/Disclaimer_GlobalHealthImpact.php">
+				<tr><td><div><a href="src/Paper_Global Health Impact.pdf">
 				<img src="images/Paper_Global Health Impact.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Policy Proposal</subtitle><br>
 				<p>
 				 This paper explains how to leverage the Index to promote global health.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="http://academicsstand.org/wp-content/uploads/2013/03/WP_11_2012_Hassoun.pdf">
+				<tr><td><div><a href="src/WP_11_2012_Hassoun.pdf">
 				<img src="images/WP_11_2012_Hassoun.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Global Health Impact Index</subtitle><br>
 				<p>
@@ -48,7 +48,7 @@
 				 it gives examples of how drug scores are calculated.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="http://harvey.binghamton.edu/~nhassoun/Papers/Rating%20Efforts%20to%20Extend%20Access%20on%20Essential%20Medicines.pdf">
+				<tr><td><div><a href="src/Rating%20Efforts%20to%20Extend%20Access%20on%20Essential%20Medicines.pdf">
 				<img src="images/Rating Efforts to Extend Access on Essential Medicines.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Extending Access on Essential Medicines</subtitle><br>
 				<p>
