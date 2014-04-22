@@ -7,20 +7,10 @@
 <script type="text/javascript" src="JS/jquery_resources.js"></script>
 	<div class="main_body">
 		<div id="left_bar">
+		<subtitle>Introduction to the Index</subtitle>
+			<p>A slide show for an introduction to the Company Index</p>
+			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 		
-		<subtitle>Presentation at Harvard University</subtitle>
-		<p>Check out this video with a presentation on the Global Health Impact Index 
-		from a recent conference at Harvard University</p>
-		<div id="video1">
-		<div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="300" /></a></div>
-		<div id="videoharvard">
-		<embed src="http://c.brightcove.com/services/viewer/federated_f8/271530229" bgcolor="#FFFFFF" 
-		flashVars="videoId=3004310549001&playerId=271530229&viewerSecureGatewayURL=https://console.brightcove.com/services/amfgateway&servicesURL=http://services.brightcove.com/services&cdnURL=http://admin.brightcove.com&domain=embed&autoStart=true&" 
-		base="http://admin.brightcove.com" name="flashObj" width="100%" height="300" 
-		seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" 
-		pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
-		</div>
-		</div><!-- #video1 -->
 		<p>&nbsp;</p><p>&nbsp;</p>
 			<subtitle>Global Justice and Global Health</subtitle>
 			<p>An interview on New Books in Philosophy that discusses the Global Health Impact Proposal.</p>
@@ -68,9 +58,19 @@
 			</audio>
 			
 			<p>&nbsp;</p><p>&nbsp;</p>
-			<subtitle>Introduction to the Index</subtitle>
-			<p>A slide show for an introduction to the Company Index</p>
-			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+            <subtitle>Presentation at Harvard University</subtitle>
+		<p>Check out this video with a presentation on the Global Health Impact Index 
+		from a recent conference at Harvard University</p>
+		<div id="video1">
+		<!--<div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="300" /></a></div>-->
+		<div id="videoharvard">
+		<video width="100%" height="300" controls>
+            <source src="../src/longPresentation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+		</div>
+		</div><!-- #video1 -->
+			
 			<p></p>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->

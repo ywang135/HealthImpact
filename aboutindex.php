@@ -7,15 +7,13 @@
 <script type="text/javascript" src="JS/jquery_aboutindex.js"></script>
 	<div class="main_body">
 		<div id="left_bar">
-		
 		<div id="video1">
-		<div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="300" /></a></div>
+		<!--<div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="300" /></a></div>-->
 		<div id="videoharvard">
-		<embed src="http://c.brightcove.com/services/viewer/federated_f8/271530229" bgcolor="#FFFFFF" 
-		flashVars="videoId=3004310549001&playerId=271530229&viewerSecureGatewayURL=https://console.brightcove.com/services/amfgateway&servicesURL=http://services.brightcove.com/services&cdnURL=http://admin.brightcove.com&domain=embed&autoStart=true&" 
-		base="http://admin.brightcove.com" name="flashObj" width="100%" height="300" 
-		seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" 
-		pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+        <video width="100%" height="300" controls>
+            <source src="../src/shortPresentation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
 		</div>
 		</div><!-- #video1 -->
 		

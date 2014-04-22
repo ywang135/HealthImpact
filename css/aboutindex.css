@@ -138,7 +138,8 @@
 		font-family: "Myriad pro Semibold";
 	}
 	#videoharvard{
-		display:none;
+		//display:none;
+        margin-top: -35px;
 	}
 //}
 /*

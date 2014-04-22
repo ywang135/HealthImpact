@@ -19,7 +19,7 @@
 		float:left;
 		margin-left:3%;
 		margin-top:10px;
-		width: 29%;
+		width: 25%;
 		height: 680px;
 		border:1px solid white;
 	}
@@ -94,7 +94,7 @@
 		margin-left:3%;
 		margin-top:10px;
 		position:relative;
-		width: 25%;
+		width: 29%;
 		height: 680px;
 		border:1px solid white;
 		text-align:left;
@@ -123,7 +123,7 @@
 		font-family: "Myriad pro Semibold";
 	}
 	#videoharvard{
-		display:none;
+		//display:none;
 	}
 //}
 /*
