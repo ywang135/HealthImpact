@@ -47,7 +47,7 @@
     	border-radius:8px;
 		-moz-border-radius:8px;
 		border:2px solid white;
-		height:270px;
+		height:290px;
 	}
 	#bar_graph{
 		z-index:0;
@@ -57,8 +57,8 @@
 		-moz-border-radius:8px;
 		border:2px solid white;
 		overflow:auto;
-		height:270px;
-        margin-top: 25px;
+		height:290px;
+        margin-top: 22px;
 		border-top:none;
 		border-bottom:none;
 	}
