@@ -137,8 +137,7 @@
 	</div><!-- #popupwd end -->	
 	<div id="items_text">
 	<p>Breakdown of Disease Scores</p>
-	The Global Health Impact Drug Index measures key malaria, TB, and HIV drugs’ impacts.
-	<br> To do so, it looks at three things:
+	The Global Health Impact Drug Index measures key malaria, TB, and HIV drugs’ impacts. To do so, it looks at three things:
 	<ul>
 	<li>The need for several important drugs for tuberculosis, HIV/AIDS, and malaria.</li>
 	<li>The drugs’ effectiveness.</li>

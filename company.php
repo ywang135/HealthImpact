@@ -129,8 +129,7 @@
 	 every day more than 13,400 people are infected with AIDS, every 30 seconds malaria
 	kills a child. About a third of all deaths, 18 million a year are poverty-related. 
 	The Global Health Impact Index considers how companies measure up on the basis of 
-	their drugs’ impact on these global health problems. 
-		<br>It looks at three things:
+	their drugs’ impact on these global health problems. It looks at three things:
 		<ul>
 		<li> The need for several important drugs for tuberculosis, HIV/AIDS, and malaria. </li>
 		<li>The drugs’ effectiveness. </li>

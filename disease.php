@@ -23,6 +23,7 @@
 		<div id="mapcontainer_3" class="map_container">
 		</div><!-- #mapcontainer_3 end -->		
 	</div><!-- #emap end -->
+	<div id="dalys">Disability Adjusted Life Years Lost to All Diseases</div>
 	<div id="disease_text">
  
 

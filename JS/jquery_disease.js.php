@@ -51,6 +51,7 @@ $(document).ready(function() {
        	});
        	$("#showSummary").click(function(){
        		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please click here: link to <a href=\"reports.php\">report page</a>"); 		
+        	$("#dalys").fadeOut();
         	if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -69,7 +70,7 @@ $(document).ready(function() {
        			drawChart("",0,0,0);
        		} 
        		$("#disease_text").css("width","1120px");
-       		$("#control_by_disease").css("marginLeft","240px");
+       		$("#control_by_disease").css("marginLeft","225px");
         	$(".popupwd").hide();   
        		$("#summary_pop").fadeIn();
         	$("#showSummary a").css("background-color", "#ef3e2e");        	        	
@@ -79,6 +80,8 @@ $(document).ready(function() {
         
         $("#showAll").click(function(){
         	$("#disease_text").html("<p>Breakdown of Need for Drugs for Each Disease:</p> This map shows the need for drugs for all of the diseases together. Click on a country to see the need for drugs for each disease in each country separately.");  		
+			$("#dalys").text("Disability Adjusted Life Years Lost to All Diseases");
+        	$("#dalys").fadeIn();
         	if($SHOW_DISEASE == 1){
         		$("#showMalaria a").css("background-color", "#FFB31C");
         	}
@@ -106,6 +109,8 @@ $(document).ready(function() {
        	});
        	$("#showMalaria").click(function(){
        		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for medicines to combat malaria. For additional information, please click here: link to <a href=\"reports.php\">report page</a> ");  	
+       		$("#dalys").text("Disability Adjusted Life Years Lost to Malaria");
+        	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -140,7 +145,8 @@ $(document).ready(function() {
        	});
        	$("#showTB").click(function(){
        		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
-        	
+        	$("#dalys").text("Disability Adjusted Life Years Lost to TB");
+        	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -174,7 +180,8 @@ $(document).ready(function() {
        	});
        	$("#showHIV").click(function(){
        		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
-        	
+        	$("#dalys").text("Disability Adjusted Life Years Lost to HIV/AIDS");
+        	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
         	}
@@ -206,9 +213,6 @@ $(document).ready(function() {
        		$(".TB_bar").hide();
        		$(".HIV_bar").fadeIn();
        	});
-       /*	$("#popupwd0_summary").click(function(){
-       		$("#showAll").click();
-       	});*/
     });
 
 var Malaria_coverage={};

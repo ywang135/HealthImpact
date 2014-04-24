@@ -135,7 +135,7 @@ a:link, a:visited {
 	}
 	#menu_bar #sub_menu ul{
 		list-style-type:none;
-		margin-left:auto;
+		margin-left:120px;//auto;
 		margin-right:auto;
 		margin-top:-15px;
 		text-align:center;

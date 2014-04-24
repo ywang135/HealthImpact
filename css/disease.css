@@ -113,6 +113,15 @@
 		font-family: "Myriad pro Regular";
 		font-size:17px;
 	}
+	#dalys{
+		position: absolute;
+		font-family: "Myriad pro Semibold";
+		color: #EF3E2E;
+		font-size:20px;
+		margin-left:250px;
+		margin-top:55px;
+		z-index:10;
+	}
 	#disease_text {
 		width:712.912px;
 		text-align:left;
@@ -194,7 +203,7 @@
 		width:500px;
 		height:500.438px;
 		margin-left:-680px;
-        margin-top:5px;
+        margin-top:35px;
 		position:absolute;
 		border:4px solid #0083CA;
 		background:white;
@@ -206,7 +215,7 @@
 		width:220px;
 		height:500.438px;
 		margin-left:-145px;
-        margin-top:5px;
+        margin-top:35px;
 		position:absolute;
 		border:4px solid #0083CA;
 		background:white;
@@ -218,7 +227,7 @@
 		width:220px;
 		height:500.438px;
 		margin-left:110px;
-		margin-top:5px;
+		margin-top:35px;
 		position:absolute;
 		border:4px solid #0083CA;
 		background:white;
@@ -230,7 +239,7 @@
 		width:220px;
 		height:500.438px;
 		margin-left:360px;
-		margin-top:5px;
+		margin-top:35px;
 		position:absolute;
 		border:4px solid #0083CA;
 		background:white;
