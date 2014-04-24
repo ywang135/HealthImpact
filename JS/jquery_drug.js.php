@@ -23,6 +23,7 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
         	}
+            $("#c1").text("each disease");
         	$("#showAll a").css("background-color", "#ef3e2e");
         	$SHOW_DISEASE = 0;
        		$(".items_rank_list").hide();
@@ -40,6 +41,7 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
         	}
+            $("#c1").text("malaria");
         	$("#showMalaria a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 1;
        		$(".items_rank_list").hide();
@@ -57,6 +59,7 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 3){
         		$("#showHIV a").css("background-color", "#FFB31C");
         	}
+            $("#c1").text("tuberculosis");
         	$("#showTB a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 2;
        		$(".items_rank_list").hide();
@@ -74,6 +77,7 @@ $(document).ready(function() {
         	else if($SHOW_DISEASE == 1){
         		$("#showMalaria a").css("background-color", "#FFB31C");
         	}
+            $("#c1").text("HIV/AIDS");
         	$("#showHIV a").css("background-color", "#ef3e2e");
        		$SHOW_DISEASE = 3;
        		$(".items_rank_list").hide();

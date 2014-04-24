@@ -32,6 +32,8 @@
 	}
 	#additional_statistic_1 {
 		padding-top:20px;
+        padding-left: 10px;
+        padding-right: 10px;
 		font-family: "Myriad pro Semibold";
 		color: #EF3E2E;
 		font-weight: normal;
@@ -53,6 +55,9 @@
 		margin-left:30px;
 		font-family: "Myriad pro Regular";
 	}
+    #c1 {
+        display:inline;
+    }
 	#check_box{
 		float:left;
 		margin-left:-850px;
