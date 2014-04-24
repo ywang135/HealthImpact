@@ -168,7 +168,7 @@ a:link, a:visited {
 		background: #0083CA;	
 	}
 	#network_ico {
-		margin-top:5px;
+		margin-top:8px;
 		float:right;
 		padding-right:10px;
 		filter:alpha(opacity=61);
@@ -176,6 +176,7 @@ a:link, a:visited {
 	}
 	#search {
 		margin-top:5px;
+		//padding-top:5px;
 		background-color: white;
 		float:right;
 		width:232.5px;
