@@ -13,7 +13,9 @@
 		width:100%;
 		height:auto;
 	}
-	
+	#dan {
+		align:top;
+	}
 	.main_body td{
 	height: 20px;
 	}
@@ -22,7 +24,7 @@
 		font-family:"Myriad pro Regular";
 		font-size:35px;
 		color:#FFB31C;
-		text-align: -webkit-center;
+		text-align: -webkit-left;
 	
 	}
 	#contact{
@@ -60,7 +62,7 @@
 		margin-top:10px
 		margin-bottom;-10px;
 	}
-	#left_bar table {
+	#left_bar table{
 		width: 98%;
 		height:680px;
 	}

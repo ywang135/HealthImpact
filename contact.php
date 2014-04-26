@@ -6,18 +6,22 @@
 	<div class="main_body">
 	<div id="contact">
 	<table>
-	<tr><td>For any queries contact us at <a href="mailto:globalhealthindex@gmail.com">globalhealthindex@gmail.com</a></td></tr>
-	<tr>To contibute to our project click <a href="#">Contribute</a></tr>
+	<tr><td>For any queries conatct us at <a href="mailto:globalhealthindex@gmail.com">here</a></td></tr>
+	<tr>To contribute to our project click  <a href="#"> here </a>
+	</tr> 
 	</table></div>
+    <br>
+    <br>
+    <br>
 		<div id="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
 		<div id="left_bar">
 			<table cellpadding="5">
 				<tr><td><div>
-				<img src="images/Nick.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Nick Hall</subtitle><br>
+				<img src="images/Sheetal.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Sheetal Patel</subtitle><br>
 				<p>
-				 Nicholas Hall is a Ph.D. candidate in philosophy at Binghamton University. His primary areas of study are in normative and applied ethics. 
-				 He has been involved in the Extending Access project since October 2012, working extensively on patent research, the rating model, and sensitivity analyses.
+				 Sheetal Patel is an undergraduate Industrial Labor Relations major and Economics minor at Cornell University. Her interests are focused in economic development and resource management.  She is also interested in 
+				 sustainability and global health issues in developing countries
 				</p>
 				</td></tr>
 				<tr><td><div>
@@ -45,14 +49,13 @@
 				</p>
 				</td></tr>
 				<tr><td><div>
-				<img src="images/Sheetal.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Sheetal Patel</subtitle><br>
+				<img src="images/Nick.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Nick Hall</subtitle><br>
 				<p>
-				 Sheetal Patel is an undergraduate Industrial Labor Relations major and Economics minor at Cornell University. Her interests are focused in economic development and resource management.  She is also interested in 
-				 sustainability and global health issues in developing countries
+				 Nicholas Hall is a Ph.D. candidate in philosophy at Binghamton University. His primary areas of study are in normative and applied ethics. 
+				 He has been involved in the Extending Access project since October 2012, working extensively on patent research, the rating model, and sensitivity analyses.
 				</p>
 				</td></tr>
-				
 				<tr><td><div>
 				<img src="images/Nathan.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Nathan Lubchenco</subtitle><br>
@@ -85,7 +88,7 @@
 				 Jason Goldfarb is an undergraduate at Binghamton University looking to pursue a Ph.D. in Philosophy.
 				</p>
 				</td></tr>
-				<tr><td><div>
+				<tr><td height="140"><div>
 				<img src="images/Cheng.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>Cheng-Yu Chao</subtitle><br>
 				<p>
@@ -93,17 +96,26 @@
 				 His areas of interests include Political Philosophy, especially the question of whether principles of distributive egalitarianism should be included in theories of justice and Ethics.
 				</p>
 				</td></tr>
-				<tr><td><div>
-				<img src="images/Dan-Hougendobler.jpg" width="85px" height="130px"/></a></div></td>
+				<tr><td height="234" valign="top"><div>
+				<img src="images/kathleen.jpg" width="85px" height="130px" vspace="20"/></a></div></td>
+				<td><subtitle>Kathleen Klein</subtitle><br>
+				<p>
+				 Kathleen Klein is a senior majoring in graphic design.  She is also a co-captain of Binghamton University's track and field team as a sprinter.  She is an avid photographer and will pursue a career in graphic design after graduation.
+				</p>
+				</td></tr>
+				<tr><td height="234" valign="top"><div>
+				<img src="images/Dan-Hougendobler.jpg" width="85px" height="130px" vspace="20"/></a></div></td>
 				<td><subtitle>Daniel A. Hougendobler</subtitle><br>
 				<p>
 				 Daniel Hougendobler, J.D., M.P.H., LL.M., is a Law Fellow with the O’Neill Institute. He holds a Juris Doctor and Masters in Public Health from Emory University, where he served as Articles Editor for the Emory Law Journal, as well as a Master of Laws in Global Health Lawfrom Georgetown University. His research interests include health law and policy, trade and health, and the impact of the global governance system on access to medicines.
 				 Prior to joining the O’Neill Institute, Daniel researched PEPFAR implementation in Rwanda, aided in an NGO's implementation of a clean water program in Haiti, and assisted the Medicines Patent Pool in its attempt to lower intellectual property barriers to HIV treatments.
 				</p>
 				</td></tr>
+                
+                
 				</table>
 				<!--  new div -->
-				</div><!-- #left_bar end -->
+	  </div><!-- #left_bar end -->
 				<div id="right_bar">
 				<table cellpadding="5">
 				<tr><td><div>
@@ -112,7 +124,7 @@
 				<p>
 				 Angelina Sung is an undergraduate psychology and philosophy double major at Carnegie Mellon University.
 				 Her research interests include applying positive/humanistic psychology to well-being and health as well as existential psychotherapy. 
-				 Her other interests in environmental ethics, bioethics, and philosophy of science had led her to work with the Global Health Impact project.
+				She is working with the Global Health Impact project since 2010.
 				</p>
 				</td></tr>
 				
@@ -129,7 +141,7 @@
 				<td><subtitle>Michael Agulnick</subtitle><br>
 				<p>
 				 Michael Agulnick is a neuroscience major attending Binghamton University interested in the fields of medicine and biology. 
-				 He is from Long Island, New York and is Ukrainian. His hobbies include diligent research work and skiing.
+				 He is from Long Island, New York and is Ukrainian.
 				</p>
 				</td></tr>
 				<tr><td><div>
@@ -197,10 +209,22 @@
 				 about the significance of the project for everyday consumers.
 				</p>
 				</td></tr>
+				<tr><td><div>
+				<img src="images/Denise.png" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Denise Teo</subtitle><br>
+				<p>
+				Denise Teo is currently an analyst at Barclays Investment Bank in Singapore. 
+				She graduated from Carnegie Mellon University in 2012 with Masters of Science in Information Technology and received
+				her Bachelors of Science in Information Systems from Singapore Management University. Besides technology, she is also 
+				interested in social psychology and data analytics.
+
+				</p>
+				</td></tr>
 			</table>			
 		</div><!-- #right_bar end -->
-		
+    
 	</div><!-- .main_body end -->
+   
 <?php
 	include "footer.php";
 ?>
