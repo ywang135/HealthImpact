@@ -38,7 +38,8 @@
 			//$hover = 'B42F23'; //darker one 75%
 			$hover = 'FF6666';
 		}
-		echo "<entity id='$row[6]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',0,$i);\" />";
+		echo "<entity id='$row[6]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',0,$i);\" />
+		";
 		$i++;
     }
     mysqli_close($con);
