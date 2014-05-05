@@ -33,7 +33,7 @@
 				</td>
 				<td height="33"><a href="" target="_blank"><img src="images/linkedin.ico" alt="Join Our LinkedIn Page" width="32" height="32" border="0"></a>
 				</td>
-				<td height="33"><a href="" target="_blank"><img src="images/twitter.ico" alt="Follow us twitter Page" width="32" height="32" border="0"></a>
+				<td height="33"><a href="https://twitter.com/GBLHealthImpact" target="_blank"><img src="images/twitter.ico" alt="Follow us twitter Page" width="32" height="32" border="0"></a>
 				</td></tr>
   			</table>
 			</div><!-- #network end -->
