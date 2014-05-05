@@ -135,8 +135,8 @@
 		<li>The drugs’ effectiveness. </li>
 		<li>The number of people who can access the drugs.</li>
 		</ul>Each company’s score is the sum of its drugs’ impacts.
-			<br>Resources
-			For additional information, please click here: <a href="reports.php">link to report page </a>
+			For additional information, please click here: link to <a href="aboutindex.php">about page </a> and 
+			link to <a href="methodology.php">methodology page</a>.
 	</div><!-- #items_text end -->
 		
 	</div><!-- .main_body end -->

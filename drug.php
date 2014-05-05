@@ -144,8 +144,8 @@
 	<li>The number of people who can access the drugs.</li>
 	</ul>
 	Here you see the proportional impact of drugs for <div id="c1">each disease</div>. Click <a href="#">here </a> to see the proportional impact by drug.
-	<br>Resources
-			For additional information, please click here: <a href="reports.php">link to report page </a>
+			For additional information, please click here: link to <a href="aboutindex.php">about page </a> and 
+			link to <a href="methodology.php">methodology page</a>.
 
 	</div><!-- items_text end -->
 

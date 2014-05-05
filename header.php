@@ -29,7 +29,7 @@
 			<div id="network_ico">
 			<table border="0" cellpadding="1" >
   				<tr>
-  				<td height="33"><a href="https://www.facebook.com/AcademicsStandAgainstPoverty" target="_blank"><img src="images/facebook.ico" alt="Join Our Facebook Fan Page" width="32" height="32" border="0"></a>
+  				<td height="33"><a href="https://www.facebook.com/GlobalHealthImpactIndex" target="_blank"><img src="images/facebook.ico" alt="Join Our Facebook Fan Page" width="32" height="32" border="0"></a>
 				</td>
 				<td height="33"><a href="" target="_blank"><img src="images/linkedin.ico" alt="Join Our LinkedIn Page" width="32" height="32" border="0"></a>
 				</td>
