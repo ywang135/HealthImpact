@@ -1,6 +1,7 @@
 
 
 <?php
+	header('Content-type: text/javascript');
 	$itv1=1000000;
 	$itv2=500000;
 	include "../../con_/con_ghi.php";
