@@ -18,7 +18,7 @@
 			<table border="0" cellpadding="0">
   				<tr><td>
   				<input type="text" name="q" size="22" maxlength="255" title="search" value="" placeholder="Search" style="margin-top:5px;"/>
-  				<input type="hidden" name="sitesearch" value="www.binghamton.edu"/>
+  				<input type="hidden" name="sitesearch" value="http://global-health-impact.org/"/>
   				</td><td>
   				<input type="image" name="sa" id="edit-sa" alt="Search" class="form-submit form-submit search-submit" 
   				src="images/1391730788_84062.ico" title="search" width="30" height="30" style="margin-top:2px">

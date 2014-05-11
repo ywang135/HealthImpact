@@ -119,7 +119,7 @@
                 ].join(''); 
             }
             //put all three of our HTML strings into our div we made at the top of the page
-            document.getElementById('company_table_container').innerHTML = pre_html + actual_html + post_html;//
+            document.getElementById('company_table_container').innerHTML = pre_html + actual_html + post_html;
         }   
     </script>
 </head>

@@ -179,7 +179,7 @@ $(document).ready(function() {
        		$(".HIV_bar").hide();  		
        	});
        	$("#showHIV").click(function(){
-       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
+       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat HIV/AIDS access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
         	$("#dalys").text("Disability Adjusted Life Years Lost to HIV/AIDS");
         	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
