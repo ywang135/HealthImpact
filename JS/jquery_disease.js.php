@@ -509,17 +509,19 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	['Disease', 'Aggregated Impact Score', { role: 'style' }],
         	['Malaria', parseFloat(Aggregated_Impact_Score['Malaria']), '#0083CA' ],
         	['TB', parseFloat(Aggregated_Impact_Score['TB']), '#FFB31C'],
-        	['HIV/AIDS', parseFloat(Aggregated_Impact_Score['HIV']), '#EF3E2E']
+        	['HIV/AIDS', parseFloat(Aggregated_Impact_Score['HIV']), '#EF3E2E'],
+        	
      	 	]);
     	var options0 = {
      		width:487,
      		height:400,
         	fontName: 'Myriad pro Regular',
+        	pieStartAngle: 100,
         	is3D: true,
-        	legend: { position: 'right', maxLines: 2, textStyle: {color: '#0083CA', fontSize: 16}},
+        	legend: { position: 'right', textStyle: {color: '#0083CA', fontSize: 16}},
 			isStacked: true,
-        	chartArea:{left:130,top:20,width:"450",height:"360"},
-        	tooltip:{textStyle: {color: vColor}},
+        	chartArea:{left:130,top:20,width:"360",height:"360"},
+        	tooltip:{textStyle: {color: vColor}, showColorCode: true},
         	bar: { groupWidth: '100%' },
     	};//hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
     
@@ -545,7 +547,7 @@ function drawChart(countryName, imp1,imp2,imp3) {
             }
         }
 	       google.visualization.events.addListener(chart0, 'select', selectHandler);     
-chart0.draw(data0, options0);
+		chart0.draw(data0, options0);
     	
     	var data1 = new google.visualization.DataTable();
     	data1.addColumn('string', 'Disease');
