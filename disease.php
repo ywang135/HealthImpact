@@ -55,7 +55,7 @@
 		</div><!-- #popupwd2_summary end -->
 		
 		<div id="popupwd3_summary">
-			<div id="additional_statistic_summary_3" class="additional_statistic">First-Line Efficacy
+			<div id="additional_statistic_summary_3" class="additional_statistic">Efficacy
 			</div><!-- #additional_statistic_summary_2 end -->
 			<div id="summary_graph_3" class="disease_info">
 			</div><!-- #summary_graph_3 end -->

@@ -9,7 +9,7 @@
 		<div id="left_bar">
 		<subtitle>Introduction to the Index</subtitle>
 			<p>A slide show for an introduction to the Company Index</p>
-			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 		
 		<p>&nbsp;</p><p>&nbsp;</p>
 			<subtitle>Global Justice and Global Health</subtitle>
@@ -38,14 +38,12 @@
 				 it gives examples of how drug scores are calculated.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="src/Rating%20Efforts%20to%20Extend%20Access%20on%20Essential%20Medicines.pdf">
-				<img src="images/Rating Efforts to Extend Access on Essential Medicines.jpg" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Extending Access on Essential Medicines</subtitle><br>
+				<tr><td><div><a href="src/GHI%20Country%20Paper6%20for%20web.pdf">
+				<img src="images/GHI%20Country%20Paper6%20for%20web.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>The Global Health Impact Country Index</subtitle><br>
 				<p>
-				Increasing Global Health Impact -- This paper considers some philosophical issues underlying 
-				the construction of a good index for rating global health and advances a proposal along the 
-				lines of the Global Health Impact Index
-				</p>
+				 This paper provides a brief introduction to the Global Health Impact country index. You can learn how the index is constructed 
+				 and see and example of how a company's score is calculated for one drug. </p>
 				</td></tr>
 			</table>			
 		</div><!-- #middle_bar end -->

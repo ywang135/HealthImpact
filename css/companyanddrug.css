@@ -136,8 +136,11 @@
 		font-size:16px;
 		color:#0083CA;
 		line-height:10%;
-		
-	}	
+		text-decoration:underline;
+	}
+    #items_text a:hover{
+        color:#FFB31C;
+    }
 	#items_text p{
 		text-align:left;
 		font-family:"Myriad pro Regular";

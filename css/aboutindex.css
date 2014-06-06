@@ -67,6 +67,13 @@
 		height: 680px;
 		border:1px solid white;
 	}
+	#middle_bar a:link, #middle_bar a:visited {
+		text-decoration:underline;
+		color:#0083CA;
+	}
+	#middle_bar a:hover {
+		color:#FFB31C;
+	}
 	#middle_bar p {
 		font-family:"Myriad pro Regular";
 		font-size:15px;
@@ -116,7 +123,11 @@
 	}	
 	#right_bar a:link, #right_bar a:visited {
 		font-size:15px;
+		text-decoration:underline;
 		color:#0083CA;
+	}
+	#right_bar a:hover {
+		color:#FFB31C;
 	}
 	#right_bar p {
 		font-family:"Myriad pro Regular";

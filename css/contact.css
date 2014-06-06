@@ -34,7 +34,15 @@
 		color:#0083CA;
 		//text-align: -webkit-center;
 	}
-		#left_bar {
+    #contact a:link, #contact a:visited{
+		color:#0083CA;
+		line-height:10%;
+		text-decoration:underline;
+	}
+    #contact a:hover{
+        color:#FFB31C;
+    }
+    #left_bar {
 		float:left;
 		position:relative;
 		margin-left:13%;

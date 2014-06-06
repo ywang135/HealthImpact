@@ -50,6 +50,25 @@
 		height:290px;
 		padding-right: 8px;
 	}
+	.score_exp {
+		color: #0083CA;
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+    	overflow:auto;
+    	border-radius:8px;
+		-moz-border-radius:8px;
+		border:2px solid white;
+		height:290px;
+		padding-right: 8px;
+		margin-top:10px;
+	}
 	#bar_graph{
 		z-index:0;
 	}
@@ -133,7 +152,7 @@
 		color:white;
 	}
 	#report_src {
-		margin-left:30px;
+		margin-left:0px;
 		display:block;
 		color:#0083CA;
 		font-size:15px;

@@ -20,7 +20,7 @@ $(document).ready(function() {
     	return false;
 	});	
     $("#main_menu #menu_reports a").css("background-color", "#FFB31C");
-    $("#copyright").css( { "margin-top" : "722px"} );
+    $("#copyright").css( { "margin-top" : "742px"} );
     $("#copyright").fadeIn();
     $("#info_detail #Sanofi").fadeIn(); 
     $("#score_explanation #Sanofi").fadeIn();

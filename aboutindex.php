@@ -57,7 +57,7 @@
 		<div id="right_bar">
 			<subtitle>Introduction to the Company Index</subtitle>
 			<p>Check out this presentation for an introduction to the Company Index. Here you can see the company scores and some of the data that goes into the model. For more information check out our <a href="resources.php">resources</a>, <a href="reports.php">reports</a>, and <a href="methodology.php">methodology</a>.</p>
-			<iframe src="http://prezi.com/embed/gehsmlelb8a1/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
+			<iframe src="http://prezi.com/embed/gehsmlelb8a1/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
 			</iframe>
 			<p></p>
 		</div><!-- #right_bar end -->

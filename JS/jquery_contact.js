@@ -1,4 +1,4 @@
-$title = "The Global Health Impact Contact";
+$title = "The Global Health Impact Organization";
 $(document).ready(function() {
 	$(this).attr("title", $title);
 	$("#menu_the_index").click(function(){

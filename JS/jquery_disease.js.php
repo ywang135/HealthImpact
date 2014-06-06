@@ -19,9 +19,8 @@ $(document).ready(function() {
 		drawMap("Maps/genDiseaseAll.php","mapcontainer_0","0");
 		$("#showAll a").css("background-color", "#ef3e2e");
 		$(".map_container").hide();
-       	$("#mapcontainer_0").fadeIn();
-       	  
-       	$("#All_pop").fadeIn();
+       	//$("#mapcontainer_0").fadeIn();       	
+       	//$("#All_pop").fadeIn();
        	setArray();
        	
        		document.getElementById('additional_statistic_1').innerHTML="Democratic Republic of the Congo";	
@@ -31,7 +30,7 @@ $(document).ready(function() {
 			document.getElementById('disease_info_1').innerHTML=str;
 			document.getElementById('disease_info_2').innerHTML=str;
        		
-       	$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");  		       	
+       	$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a>");  		       	
         
         $("#popupwd1_hiv").click(function(){
         	$(".zoombig").hide();
@@ -50,7 +49,7 @@ $(document).ready(function() {
        		$("#popupwd2_hiv").fadeIn();
        	});
        	$("#showSummary").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combating these different diseases. The first graph illustrates the the impact of key drugs on each of these diseases. Subsequent graphs illustrate the need for, access to, and effectiveness of these drugs. For additional information, please click here: link to <a href=\"reports.php\">report page</a>"); 		
+       		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combating these different diseases. The first graph illustrates the the impact of key drugs on each of these diseases. Subsequent graphs illustrate the need for, access to, and effectiveness of these drugs. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a>"); 		
         	$("#dalys").fadeOut();
         	if($SHOW_DISEASE == 0){
         		$("#showAll a").css("background-color", "#FFB31C");
@@ -108,7 +107,7 @@ $(document).ready(function() {
        		$(".HIV_bar").fadeIn();
        	});
        	$("#showMalaria").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for, access to, and effectiveness of medicines to combat malaria. For additional information, please click here:  link to <a href=\"reports.php\">report page</a> ");  	
+       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for, access to, and effectiveness of medicines to combat malaria. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a> ");  	
        		$("#dalys").text("Disability Adjusted Life Years Lost to Malaria");
         	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
@@ -144,7 +143,7 @@ $(document).ready(function() {
        		
        	});
        	$("#showTB").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
+       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a>");
         	$("#dalys").text("Disability Adjusted Life Years Lost to TB");
         	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
@@ -179,7 +178,7 @@ $(document).ready(function() {
        		$(".HIV_bar").hide();  		
        	});
        	$("#showHIV").click(function(){
-       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat HIV/AIDS access to these medicines, and their efficacy. For additional information, please click here: link to <a href=\"reports.php\">report page</a>");
+       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate the how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat HIV/AIDS access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a>");
         	$("#dalys").text("Disability Adjusted Life Years Lost to HIV/AIDS");
         	$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
@@ -213,6 +212,7 @@ $(document).ready(function() {
        		$(".TB_bar").hide();
        		$(".HIV_bar").fadeIn();
        	});
+       	$("#showSummary").click();
     });
 
 var Malaria_coverage={};
@@ -237,7 +237,13 @@ function setArray(){
 				$str = $str."Malaria_coverage['$row[2]']=$row[3];Malaria_efficacy['$row[2]']=$row[4];";
 			}
 			if($row[1]=="TB"){
-				$str = $str."TB_coverage['$row[2]']=$row[3];TB_efficacy['$row[2]']=$row[4];";
+                if ($row[3]){
+                    $str = $str."TB_coverage['$row[2]']=$row[3];";
+                }
+                if ($row[4]){
+                    $str = $str."TB_efficacy['$row[2]']=$row[4];";
+                }
+				
 			}
 			if($row[1]=="HIV"){
 				$str = $str."HIV_efficacy['$row[2]']=$row[4];";
@@ -399,9 +405,11 @@ function drawChart(countryName, imp1,imp2,imp3) {
 		data2.addColumn({type: 'string', role: 'style'});
 		for(var key in TB_coverage){
 			data1.addRows([[key, parseFloat(TB_coverage[key]),'color: #FFB31C']]);
+		}
+        for(var key in TB_efficacy){
 			data2.addRows([[key, parseFloat(TB_efficacy[key]),'color: #FFB31C']]);
 		}
-		var options = {
+		var options1 = {
      		width:397,
         	fontName: 'Myriad pro Regular',
         	legend: { position: "none"},//'top', maxLines: 1
@@ -412,13 +420,24 @@ function drawChart(countryName, imp1,imp2,imp3) {
         	chartArea:{left:70},
         	tooltip:{textStyle: {color: vColor}}
     	};
+		var options2 = {
+     		width:397,
+        	fontName: 'Myriad pro Regular',
+        	legend: { position: "none"},//'top', maxLines: 1
+			bar: { groupWidth: '40%' },
+			isStacked: true,
+        	hAxis:{ textStyle:{color: vColor,fontSize: 12},slantedText:true,slantedTextAngle:15,allowContainerBoundaryTextCufoff:false},
+        	vAxis:{ format:'##.##%',textStyle:{color: hColor,fontSize: 15}},
+        	chartArea:{left:70},
+        	tooltip:{textStyle: {color: vColor}}
+    	};
     	formatter.format(data1, 1);
     	var chart1 = new google.visualization.ColumnChart(document.getElementById("TB_graph"));
-    	chart1.draw(data1, options);
+    	chart1.draw(data1, options1);
 
     	formatter.format(data2, 1);
     	var chart2 = new google.visualization.ColumnChart(document.getElementById("TB_graph2"));
-    	chart2.draw(data2, options);
+    	chart2.draw(data2, options2);
     }
     else if($SHOW_DISEASE == 3){
    		var formatter = new google.visualization.NumberFormat({pattern:'#,###.##%'});
@@ -516,14 +535,15 @@ function drawChart(countryName, imp1,imp2,imp3) {
      		width:487,
      		height:400,
         	fontName: 'Myriad pro Regular',
-        	pieStartAngle: 100,
+        	//pieStartAngle: 100,
         	is3D: true,
         	legend: { position: 'right', textStyle: {color: '#0083CA', fontSize: 16}},
 			isStacked: true,
+			colors: ['#0083CA','#FFB31C','#EF3E2E'],
         	chartArea:{left:130,top:20,width:"360",height:"360"},
         	tooltip:{textStyle: {color: vColor}, showColorCode: true},
         	bar: { groupWidth: '100%' },
-    	};//hAxis:{ textStyle:{color: vColor}},vAxis:{ textStyle:{color: hColor,fontSize: 13}},
+    	};
     
   		formatter.format(data0, 1);
 

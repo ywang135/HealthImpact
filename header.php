@@ -31,7 +31,7 @@
   				<tr>
   				<td height="33"><a href="https://www.facebook.com/GlobalHealthImpactIndex" target="_blank"><img src="images/facebook.ico" alt="Join Our Facebook Fan Page" width="32" height="32" border="0"></a>
 				</td>
-				<td height="33"><a href="" target="_blank"><img src="images/linkedin.ico" alt="Join Our LinkedIn Page" width="32" height="32" border="0"></a>
+				<td height="33"><a href="https://www.linkedin.com/groups/Global-Health-Impact-8118186/about?goback=%2Egmp_8118186" target="_blank"><img src="images/linkedin.ico" alt="Join Our LinkedIn Page" width="32" height="32" border="0"></a>
 				</td>
 				<td height="33"><a href="https://twitter.com/GBLHealthImpact" target="_blank"><img src="images/twitter.ico" alt="Follow us twitter Page" width="32" height="32" border="0"></a>
 				</td></tr>
@@ -45,7 +45,7 @@
 			<li id="menu_reports"><span><a href="reports.php">Reports</a></span></li>
 			<li id="menu_news"><span><a href="news.php">News</a></span></li>
 			<li id="menu_methodology"><span><a href="methodology.php">Methodology</a></span></li>
-			<li id="menu_contact_us"><span><a href="contact.php">Contact Us</a></span></li>
+			<li id="menu_contact_us"><span><a href="organization.php">The Organization</a></span></li>
 			</ul>
 			</div><!-- #main_menu end -->
 			<HR id="seperate_line" width="100%" color=#0083ca SIZE=5></br>

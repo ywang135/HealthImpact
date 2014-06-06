@@ -122,6 +122,7 @@
 		margin-left:250px;
 		margin-top:55px;
 		z-index:10;
+		display:none;
 	}
 	#disease_text {
 		width:712.912px;
@@ -142,6 +143,14 @@
     	-moz-hyphens:auto;
     	z-index:0;		
 	}
+	#disease_text a:link, #disease_text a:visited{
+		font-family:"Myriad pro Regular";
+		color:#0083CA;
+		text-decoration:underline;
+	}
+    #disease_text a:hover{
+        color:#FFB31C;
+    }
 	#disease_text p{
 		text-align:left;
 		font-family:"Myriad pro Regular";
@@ -162,6 +171,7 @@
 		overflow:hidden;
 		z-index:0;
 		position:absolute;
+		display:none;
 	}
 	#HIV_graph{
 		z-index:10;

@@ -49,9 +49,11 @@
 				$result = $con->query("call show_top_company_by_Malaria(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
+					if($row[4]<1)break;
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
-    					<a href='#'>$row[0]</a>";	
+    					<a href='#'>$row[0]</a>";
+    					
     				$i++;
     				$l1 = "".max(($row[4]*420/14041746),1)."px";
     				echo "
@@ -70,9 +72,11 @@
 				$result = $con->query("call show_top_company_by_TB(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
+					if($row[5]<1)break;
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'>
     					<a href='#'>$row[0]</a>";	
+    				
     				$i++;
     				$l1 = "".max(($row[5]*420/5803804),1)."px";
     				echo "
@@ -91,8 +95,10 @@
 				$result = $con->query("call show_top_company_by_HIV(-1)");
 				$i=1;
 				while($row = mysqli_fetch_array($result)){
+					if($row[6]<1)break;
     				echo "<tr onmouseover=\"popupPiGraph('$row[11]');\">
     					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";
+    				
     				$i++;	
     				$l1 = "".max(($row[6]*420/7494448),1)."px";
     				echo "
@@ -135,8 +141,7 @@
 		<li>The drugs’ effectiveness. </li>
 		<li>The number of people who can access the drugs.</li>
 		</ul>Each company’s score is the sum of its drugs’ impacts.
-			For additional information, please see the <a href="aboutindex.php">about page </a> and 
-			<a href="methodology.php">methodology page</a>.
+			For additional information, please see the <a href="reports.php">reports page</a>.
 	</div><!-- #items_text end -->
 		
 	</div><!-- .main_body end -->

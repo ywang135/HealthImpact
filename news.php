@@ -15,7 +15,7 @@
 		seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" 
 		pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
 			
-		<p>&nbsp;</p><p>&nbsp;</p>
+		<p>&nbsp;</p>
 			<subtitle>Global Justice and Global Health</subtitle>
 			<p>An interview on New Books in Philosophy that discusses the Global Health Impact Proposal.</p>
 			<audio controls>
@@ -43,13 +43,11 @@
 				 Use for the Global Health Impact Index: Fair Trade for Health. 
 				</p>
 				</td></tr>
-				<tr><td><div><a href="http://www.cmu.edu/news/stories/archives/2012/march/march6_nicolehassounbook.html">
-				<img src="images/news3" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>News Brief on Globalization and Global Health Impact </subtitle><br>
+				<tr><td><div><a href="http://harvey.binghamton.edu/~nhassoun/Global%20Health%20Footprint%20-%20Making%20an%20Impact.pdf">
+				<img src="images/news3.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>News Brief on Globalization and Global Health Impact</subtitle><br>
 				<p>
-				Increasing Global Health Impact -- This paper considers some philosophical issues underlying 
-				the construction of a good index for rating global health and advances a proposal along the 
-				lines of the Global Health Impact Index
+				Check out a recent news article that talks about the Global Health Impact Index.
 				</p>
 				</td></tr>
 			</table>			

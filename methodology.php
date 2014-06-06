@@ -52,26 +52,25 @@
 				 and explains the score calculations and goes through an example.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="https://drive.google.com/?authuser=0#folders/0Bx_3ii8A4GX5YmJlMWZiNDAtOGUxNy00MDNlLTg5ZjItMTY0MGUyODc5MzVj">
-				<img src="" width="85px" height="130px"/></a></div></td>
-				<td><subtitle>Malaria Efficacy Data Collection</subtitle><br>
+				<tr><td><div><a href="src/GHI%20Country%20Paper6%20for%20web.pdf">
+				<img src="images/GHI%20Country%20Paper6%20for%20web.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>The Global Health Impact Country Index</subtitle><br>
 				<p>
-				 This report explains our search methodology for finding missing efficacy information for malaria, 
-				a similar search strategy was employed for fall-back data for HIV/AIDS medicines.
-				</p>
+				 This paper provides a brief introduction to the Global Health Impact country index. You can learn how the index is constructed 
+				 and see and example of how a company's score is calculated for one drug. </p>
 				</td></tr>
 			</table>			
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
 			<table rules="rows"><tr><td>
-			<div class="slices"><object data="images/ppt_meth_1.swf"></object></div>
-			<a href="#">slice title and download link</a>
+			<div class="slices"><object data="slice/Malaria%20Drugs%200527.swf"></object></div>
+			<a href="slice/Malaria%20Drugs%200527.pptx">Malaria Drugs</a>
 			</td></tr><tr><td>
-			<div class="slices"><object data="images/ppt_meth_2.swf"></object></div>
-			<a href="#">slice title and download link</a>
+			<div class="slices"><object data="slice/TB%20Powerpoint%200513.swf"></object></div>
+			<a href="slice/TB%20Powerpoint%200513.pptx">TB Powerpoint</a>
 			</td></tr><tr><td>
-			<div class="slices"><object data="images/ppt_meth_3.swf"></object></div>
-			<a href="#">slice title and download link</a>
+			<div class="slices"><object data="slice/HIVDrugsSpreadsheetDocumentation%20052014.swf"></object></div>
+			<a href="slice/HIVDrugsSpreadsheetDocumentation%20052014.pptx">HIV Drugs Spreadsheet</a>
 			</td></tr></table>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
