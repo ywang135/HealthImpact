@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#copyright").fadeIn();
     $("#thumbnail").click(function(){
     	$("#thumbnail").hide();
-    	$("#videoharvard").fadeIn();
+    	$("#videoharvard").fadeIn(); 
+        $("#videoharvard").html("<video width=\"100%\" height=\"300\" controls autoplay> <source src=\"../src/shortPresentation.mp4\" type=\"video/mp4\"></video>");
     });
 });

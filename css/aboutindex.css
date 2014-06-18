@@ -148,8 +148,12 @@
 		margin-top:20px;
 		font-family: "Myriad pro Semibold";
 	}
+    #thumbnail{
+        margin-left:0px;
+        margin-top:3px;
+    }
 	#videoharvard{
-		//display:none;
+		display:none;
         margin-top: -35px;
 	}
 //}

@@ -78,7 +78,7 @@
     					<a href='#'>$row[0]</a>";	
     				
     				$i++;
-    				$l1 = "".max(($row[5]*420/5803804),1)."px";
+    				$l1 = "".max(($row[5]*420/14041746),1)."px";
     				echo "
     					<br>
     					<div class='TB_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
@@ -100,7 +100,7 @@
     					<td id=\"$row[6]\">$i</td><td align='left'><a href='#'>$row[0]</a>";
     				
     				$i++;	
-    				$l1 = "".max(($row[6]*420/7494448),1)."px";
+    				$l1 = "".max(($row[6]*420/14041746),1)."px";
     				echo "
     					<br>
     					<div class='HIV_bar' style='float:left;background:#$row[10];height:15px;width:$l1;'></div>
