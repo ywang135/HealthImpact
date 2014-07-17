@@ -9,7 +9,8 @@
 	<tr><td>For any queries contact us at <a href="mailto:globalhealthindex@gmail.com">here</a></td></tr>
 	<tr><td>To contribute to our project click  <a href="mailto:globalhealthindex@gmail.com">here</a></td>
 	</tr> 
-	<tr><td><p>&ensp;</p>
+	<tr><td>
+        <br>
         <a href="src/Code%20of%20Ethics%20-%20current%203.docx">Code of Ethics</a></td>
 	</tr> 
 	<tr><td><a href="src/Global%20Health%20Impact%20Corp%20Conflicts%20Policy%20-%20Current3%20no%20form.docx">Global Health Impact Corp Conflicts Policy</a></td>

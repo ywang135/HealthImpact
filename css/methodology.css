@@ -100,6 +100,7 @@
 	#right_bar a:link, #right_bar a:visited {
 		font-size:15px;
 		color:#0083CA;
+        text-decoration:underline;
 	}
 	#right_bar table {
 		width: 90%;

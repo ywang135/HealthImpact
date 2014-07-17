@@ -79,7 +79,7 @@
 	#control_by_disease_items div {
 		position: relative;
 	}
-	#control_by_disease_items  div a:link, #control_by_disease_items div a:visited {
+	.c_b_d a:link, .c_b_d a:visited {
 		background: #FFB31C;
 		width: 115px;
 		text-decoration:none;
@@ -97,9 +97,27 @@
 		float:left;
 		margin-left:8px;
 	}
-	#control_by_disease_items  div a:hover {
+	.c_b_d a:hover {
 		background: #EF3E2E;
 	}
+    .c_b_d_choose a:link, .c_b_d_choose a:visited {
+        background: #EF3E2E;
+        width: 115px;
+		text-decoration:none;
+		font-family: "Myriad pro Semibold";
+		font-size:15px;
+		text-align:center;
+		padding-left:auto;
+		padding-right:auto;
+		padding-top:8px;
+		padding-bottom:8px;
+		color: white;
+		border-color:white;
+		border-radius:8px;
+		-moz-border-radius:8px; 
+		float:left;
+		margin-left:8px;
+    }
 	#items_by_rank {;
 		line-height: 50px;
 		position: absolute;

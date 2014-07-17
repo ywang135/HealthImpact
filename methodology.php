@@ -52,7 +52,7 @@
 				 and explains the score calculations and goes through an example.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="src/GHI%20Country%20Paper6%20for%20web.pdf">
+				<tr><td><div><a href="src/GHI%20Country%20Paper6%20for%20web.pdf" title="download link">
 				<img src="images/GHI%20Country%20Paper6%20for%20web.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Global Health Impact Country Index</subtitle><br>
 				<p>
@@ -64,13 +64,13 @@
 		<div id="right_bar">
 			<table rules="rows"><tr><td>
 			<div class="slices"><object data="slice/Malaria%20Drugs%200527.swf"></object></div>
-			<a href="slice/Malaria%20Drugs%200527.pptx">Malaria Drugs</a>
+			<a href="slice/Malaria%20Drugs%200527.pptx" title="download link">Malaria Drugs</a>
 			</td></tr><tr><td>
 			<div class="slices"><object data="slice/TB%20Powerpoint%200513.swf"></object></div>
-			<a href="slice/TB%20Powerpoint%200513.pptx">TB Powerpoint</a>
+			<a href="slice/TB%20Powerpoint%200513.pptx" title="download link">TB Powerpoint</a>
 			</td></tr><tr><td>
 			<div class="slices"><object data="slice/HIVDrugsSpreadsheetDocumentation%20052014.swf"></object></div>
-			<a href="slice/HIVDrugsSpreadsheetDocumentation%20052014.pptx">HIV Drugs Spreadsheet</a>
+			<a href="slice/HIVDrugsSpreadsheetDocumentation%20052014.pptx" title="download link">HIV Drugs Spreadsheet</a>
 			</td></tr></table>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->

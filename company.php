@@ -131,9 +131,7 @@
 		</div><!-- #popupwd2 end -->
 	</div><!-- #popupwd end -->
 	<div id="items_text">
-	<p>Company Index</p>Every year 9 million people are diagnosed with tuberculosis,
-	 every day more than 13,400 people are infected with AIDS, every 30 seconds malaria
-	kills a child. About a third of all deaths, 18 million a year are poverty-related. 
+	<p>Company Index</p>About a third of all deaths, 18 million a year are poverty-related. 
 	The Global Health Impact Index considers how companies measure up on the basis of 
 	their drugs’ impact on these global health problems. It looks at three things:
 		<ul>
@@ -141,7 +139,7 @@
 		<li>The drugs’ effectiveness. </li>
 		<li>The number of people who can access the drugs.</li>
 		</ul>Each company’s score is the sum of its drugs’ impacts.
-			For additional information, please see the <a href="reports.php">reports page</a>.
+			For additional information, please see the <a href="reports.php">Reports</a>.
 	</div><!-- #items_text end -->
 		
 	</div><!-- .main_body end -->

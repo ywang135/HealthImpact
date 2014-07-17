@@ -12,7 +12,6 @@ $(document).ready(function() {
        	$("#copyright").css( { "top" : "950px"} );
        	$("#copyright").fadeIn();
 		drawMap("Maps/genAll.php","mapcontainer_0","0");
-		$("#showAll a").css("background-color", "#ef3e2e");
 		$(".map_container").hide();
 		$(".country_rank_list").hide();
        	$("#mapcontainer_0").fadeIn();
@@ -43,19 +42,22 @@ $(document).ready(function() {
        	$("#popupwd").mouseout(function(){
        		$("#country_text").show();
        		$("#popupwd").hide();
-       	});
-       	
+       	});      	
         $("#showAll").click(function(){
-        	if($SHOW_DISEASE == 1){
-        		$("#showMalaria a").css("background-color", "#FFB31C");
+            if($SHOW_DISEASE == 1){
+        		$("#showMalaria").removeClass("c_b_d_choose");
+                $("#showMalaria").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 2){
-        		$("#showTB a").css("background-color", "#FFB31C");
+                $("#showTB").removeClass("c_b_d_choose");
+                $("#showTB").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 3){
-        		$("#showHIV a").css("background-color", "#FFB31C");
+                $("#showHIV").removeClass("c_b_d_choose");
+                $("#showHIV").addClass("c_b_d");
         	}
-        	$("#showAll a").css("background-color", "#ef3e2e");
+        	$("#showAll").removeClass("c_b_d");
+            $("#showAll").addClass("c_b_d_choose");
         	$SHOW_DISEASE = 0;        	
         	$(".map_container").hide();
        		$("#mapcontainer_0").fadeIn();
@@ -68,17 +70,22 @@ $(document).ready(function() {
        		}
        		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',0,1);
        	});
+        $("#showAll").click();
        	$("#showMalaria").click(function(){
        		if($SHOW_DISEASE == 0){
-        		$("#showAll a").css("background-color", "#FFB31C");
+                $("#showAll").removeClass("c_b_d_choose");
+                $("#showAll").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 2){
-        		$("#showTB a").css("background-color", "#FFB31C");
+        		$("#showTB").removeClass("c_b_d_choose");
+                $("#showTB").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 3){
-        		$("#showHIV a").css("background-color", "#FFB31C");
+        		$("#showHIV").removeClass("c_b_d_choose");
+                $("#showHIV").addClass("c_b_d");
         	}
-        	$("#showMalaria a").css("background-color", "#ef3e2e");
+        	$("#showMalaria").removeClass("c_b_d");
+            $("#showMalaria").addClass("c_b_d_choose");
        		$SHOW_DISEASE = 1;
        		$(".map_container").hide();
        		$("#mapcontainer_1").fadeIn();
@@ -98,15 +105,19 @@ $(document).ready(function() {
        	});
        	$("#showTB").click(function(){
        		if($SHOW_DISEASE == 0){
-        		$("#showAll a").css("background-color", "#FFB31C");
+        		$("#showAll").removeClass("c_b_d_choose");
+                $("#showAll").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 1){
-        		$("#showMalaria a").css("background-color", "#FFB31C");
+        		$("#showMalaria").removeClass("c_b_d_choose");
+                $("#showMalaria").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 3){
-        		$("#showHIV a").css("background-color", "#FFB31C");
+        		$("#showHIV").removeClass("c_b_d_choose");
+                $("#showHIV").addClass("c_b_d");
         	}
-        	$("#showTB a").css("background-color", "#ef3e2e");
+        	$("#showTB").removeClass("c_b_d");
+            $("#showTB").addClass("c_b_d_choose");
        		$SHOW_DISEASE = 2;
        		$(".map_container").hide();
 			if($MAP_TB == 0){
@@ -126,15 +137,19 @@ $(document).ready(function() {
        	});
        	$("#showHIV").click(function(){
        		if($SHOW_DISEASE == 0){
-        		$("#showAll a").css("background-color", "#FFB31C");
+        		$("#showAll").removeClass("c_b_d_choose");
+                $("#showAll").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 2){
-        		$("#showTB a").css("background-color", "#FFB31C");
+        		$("#showTB").removeClass("c_b_d_choose");
+                $("#showTB").addClass("c_b_d");
         	}
         	else if($SHOW_DISEASE == 1){
-        		$("#showMalaria a").css("background-color", "#FFB31C");
+        		$("#showMalaria").removeClass("c_b_d_choose");
+                $("#showMalaria").addClass("c_b_d");
         	}
-        	$("#showHIV a").css("background-color", "#ef3e2e");
+        	$("#showHIV").removeClass("c_b_d");
+            $("#showHIV").addClass("c_b_d_choose");
        		$SHOW_DISEASE = 3;
        		$(".map_container").hide();
        		if($MAP_HIV == 0){

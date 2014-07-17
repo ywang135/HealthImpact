@@ -81,7 +81,7 @@
 	#control_by_disease div {
 		position: relative;
 	}
-	#control_by_disease div a:link, #control_by_disease div a:visited {
+	.c_b_d a:link, .c_b_d a:visited {
 		width: 120px;
 		background: #FFB31C;
 		text-decoration:none;
@@ -99,8 +99,26 @@
 		float:left;
 		margin-left:8px;
 	}
-	#control_by_disease div a:hover {
+	.c_b_d a:hover {
 		background: #EF3E2E;
+	}
+    .c_b_d_choose a:link, .c_b_d_choose a:visited {
+		width: 120px;
+		background: #EF3E2E;
+		text-decoration:none;
+		font-family: "Myriad pro Semibold";
+		font-size:15px;
+		text-align:center;
+		padding-left:auto;
+		padding-right:auto;
+		padding-top:8px;
+		padding-bottom:8px;
+		color: white;
+		border:1px solid white;
+		border-radius:8px;
+		-moz-border-radius:8px; 
+		float:left;
+		margin-left:8px;
 	}
 	#country_by_rank {;
 		line-height: 50px;
