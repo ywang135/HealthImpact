@@ -170,10 +170,10 @@ var ColorHIV=[];
     	}    	
     	
     }    
-    echo "AllImpact['Burden Unalleviated']=(-1*$all).toFixed(2);";
-    echo "MalariaImpact['Burden Unalleviated']=(-1*$malaria).toFixed(2);";
-    echo "TBImpact['Burden Unalleviated']=(-1*$TB).toFixed(2);";
-    echo "HIVImpact['Burden Unalleviated']=(-1*$HIV).toFixed(2);";
+    echo "AllImpact['Unalleviated Burden']=(-1*$all).toFixed(2);";
+    echo "MalariaImpact['Unalleviated Burden']=(-1*$malaria).toFixed(2);";
+    echo "TBImpact['Unalleviated Burden']=(-1*$TB).toFixed(2);";
+    echo "HIVImpact['Unalleviated Burden']=(-1*$HIV).toFixed(2);";
    	mysqli_close($con);
 	echo "}";
 ?>
@@ -192,7 +192,7 @@ function drawChart(div_name, itemsName, showOther) {
 			data.addRows([[itemsName, parseFloat(AllImpact[itemsName])]]);
 		}
 		for(var key in AllImpact){
-			if(showOther==1 || key !== "Burden Unalleviated" ){				
+			if(showOther==1 || key !== "Unalleviated Burden" ){				
 				if(key != itemsName){
 					data.addRows([[key, parseFloat(AllImpact[key])]]);	
 				}
@@ -223,7 +223,7 @@ function drawChart(div_name, itemsName, showOther) {
    	}
    	else if($SHOW_DISEASE == 1){
 		for(var key in MalariaImpact){
-			if(showOther==1 || key !== "Burden Unalleviated" ){
+			if(showOther==1 || key !== "Unalleviated Burden" ){
 				data.addRows([[key, parseFloat(MalariaImpact[key])]]);
 				if(key == itemsName){
 					row = i;
@@ -247,7 +247,7 @@ function drawChart(div_name, itemsName, showOther) {
    	}
    	else if($SHOW_DISEASE == 2){
 		for(var key in TBImpact){
-			if(showOther==1 || key !== "Burden Unalleviated" ){
+			if(showOther==1 || key !== "Unalleviated Burden" ){
 				data.addRows([[key, parseFloat(TBImpact[key])]]);
 				if(key == itemsName){
 					row = i;
@@ -271,7 +271,7 @@ function drawChart(div_name, itemsName, showOther) {
    	}
    	else if($SHOW_DISEASE == 3){
 		for(var key in HIVImpact){
-			if(showOther==1 || key !== "Burden Unalleviated" ){
+			if(showOther==1 || key !== "Unalleviated Burden" ){
 				data.addRows([[key, parseFloat(HIVImpact[key])]]);
 				if(key == itemsName){
 					row = i;

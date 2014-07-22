@@ -8,7 +8,7 @@
 	<div class="main_body">
 		<div id="left_bar">
 		<subtitle>Introduction to the Index</subtitle>
-			<p>A slide show for an introduction to the Company Index</p>
+			<p>A slide show for an introduction to the Company Index.</p>
 			<iframe src="http://prezi.com/embed/knupueeb_xwa/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=1&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="330" height="270" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 		
 		<p>&nbsp;</p><p>&nbsp;</p>
@@ -49,7 +49,7 @@
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
 			<subtitle>Podcast from Santa Clara University</subtitle>
-			<p>A podcast from a lecture on the Global Health Impact Index at Santa Clara University</p>
+			<p>A podcast from a lecture on the Global Health Impact Index at Santa Clara University.</p>
 			<audio controls>
   				<source src="audio/Ethics-at-noon-Nicole-hassoun.mp3" type="audio/mpeg">
 				Your browser does not support the audio element.
@@ -58,7 +58,7 @@
 			<p>&nbsp;</p><p>&nbsp;</p>
             <subtitle>Presentation at Harvard University</subtitle>
 		<p>Check out this video with a presentation on the Global Health Impact Index 
-		from a recent conference at Harvard University</p>
+		from a recent conference at Harvard University.</p>
 		<div id="video1">
 		<!--<div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="300" /></a></div>-->
 		<div id="videoharvard">
