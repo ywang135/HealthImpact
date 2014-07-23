@@ -39,6 +39,7 @@
 		<div id="mapcontainer_3" class="map_container">
 		</div><!-- #mapcontainer_3 end -->		
 	</div><!-- #emap end -->
+	<div id="dalys">Disability Adjusted Life Years Averted for All Diseases</div>
 	<div id="check_box">
 		<form id="orderForm">
 			<input type="checkbox" name="show_ranklist_order" value="by_name">Order by name<br>
