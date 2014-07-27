@@ -8,10 +8,13 @@
 	<div class="main_body">
 		<div id="left_bar">
 		<div id="video1">
-            <div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="260" /></a></div>
-            <div id="videoharvard">
-            
-            </div>
+			<div id="videoharvard_1">
+            			<video width="100%" height="300" controls>
+            				<source src="./src/shortPresentation.ogg" type="video/ogg">
+        	    Your browser does not support the video tag.
+				</video>
+            		</div>
+
             
 		</div><!-- #video1 -->
 		
