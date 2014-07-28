@@ -63,14 +63,14 @@
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
 			<table rules="rows"><tr><td>
-			<div class="slices"><object data="slice/Malaria%20Drugs%200527.swf"></object></div>
-			<a href="slice/Malaria%20Drugs%200527.pptx" title="download link">Malaria Drugs</a>
+			<div class="slices"><embed src="slice/Malaria Drugs 0713.swf" type="application/x-shockwave-flash"></embed></div>
+			<a href="slice/Malaria Drugs 0713.pptx" title="download link">Malaria Drugs</a>
 			</td></tr><tr><td>
-			<div class="slices"><object data="slice/TB%20Powerpoint%200513.swf"></object></div>
-			<a href="slice/TB%20Powerpoint%200513.pptx" title="download link">TB Powerpoint</a>
+			<div class="slices"><embed src="slice/TB Powerpoint 0708.swf" type="application/x-shockwave-flash"></embed></div>
+			<a href="slice/TB Powerpoint 0708.pptx" title="download link">TB Powerpoint</a>
 			</td></tr><tr><td>
-			<div class="slices"><object data="slice/HIVDrugsSpreadsheetDocumentation%20052014.swf"></object></div>
-			<a href="slice/HIVDrugsSpreadsheetDocumentation%20052014.pptx" title="download link">HIV Drugs Spreadsheet</a>
+			<div class="slices"><embed src="slice/HIV Pres 0713.swf" type="application/x-shockwave-flash"></embed></div>
+			<a href="slice/HIV Pres 0713.pptx" title="download link">HIV Drugs Spreadsheet</a>
 			</td></tr></table>
 		</div><!-- #right_bar end -->
 	</div><!-- .main_body end -->
