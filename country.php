@@ -28,7 +28,14 @@
 		<div id="list_HIV_impact" class="country_rank_list">
 		</div><!-- #list_HIV_impact end -->
 	</div><!-- #all_list end -->
+
 	</div><!-- #rankls end -->
+	<div id="list_all_legend" class="list_legend">
+	<div class="legend_text">Legend:</div>
+	<div style='margin-left:30px;float:left;background:#0083CA;height:15px;width:15px;'></div><div class="legend_text">Malaria</div>
+	<div style='float:left;background:#FFB31C;height:15px;width:15px;'></div><div class="legend_text">TB</div>
+	<div style='float:left;background:#EF3E2E;height:15px;width:15px;'></div><div class="legend_text">HIV</div>
+	</div>
 	<div id="emap">
 		<div id="mapcontainer_0" class="map_container">
 		</div><!-- #mapcontainer_0 end -->
