@@ -19,7 +19,7 @@
 	.main_body td{
 	height: 20px;
 	}
-		#heading {
+		.heading {
 		margin-left:13%;
 		font-family:"Myriad pro Regular";
 		font-size:35px;
@@ -75,7 +75,36 @@
 		height:680px;
 	}
 	
-		
+	#top_bar {
+		position:relative;
+		margin-left:13%;
+		width: 60%;
+		border: 1px solid white;
+		}
+	#top_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	#top_bar subtitle {
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+		font-size:18px;
+		margin-top:10px
+		margin-bottom;0px;
+	}
+	#top_bar table{
+		width: 98%;
+		height:300px;
+	}
+
 	#right_bar {
 		float:left;
 		position:relative;

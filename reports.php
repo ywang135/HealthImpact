@@ -218,7 +218,7 @@
 			Company Report
 			</div>
 			<table cellpadding="1">
-				<tr><td><div><a href="">
+				<tr><td><div><a href="src/Consumer and ranking edit 6-28.pdf">
 				<img src="images/Paper_Global Health Impact.jpg" width="100px" height="150px"/></a></div></td>
 				<td>
 				 Learn more about the companies and drugs.
@@ -486,7 +486,7 @@ Kyorin Pharmaceutical Co., Ltd has a total impact score of 1,562.06. All of its 
 			Score Explanation Report
 			</div>
 			<table cellpadding="1">
-				<tr><td><div><a href="">
+				<tr><td><div><a href="src/Company Ranking Only 6-28.pdf">
 				<img src="images/WP_11_2012_Hassoun.jpg" width="100px" height="150px"/></a></div></td>
 				<td>
 				 This report explains the score break-down for each company.

@@ -15,11 +15,21 @@
 	</tr> 
 	<tr><td><a href="src/Global%20Health%20Impact%20Corp%20Conflicts%20Policy%20-%20Current3%20no%20form.docx">Global Health Impact Corp Conflicts Policy</a></td>
 	</tr> 
+	<tr><td><a href="src/Statement of Independence and Organizational Structure.docx">Statement of Independence and Organizational Structure</a></td></tr>
+	<tr><td><a href="src/GHI Brochure 8.docx">Executive Summary</a></td></tr>
 	</table></div>
     <br>
+    <!--<div id="top_bar">
+    <table cellpadding="5">
+    	<tr><td colspan="2" class="heading">Global Health Impact Advisory Board</td></tr>
+    	<tr><td><img src="images/Duford.jpg" width-"85px" height="130px" /></img></td><td><subtitle>Rochelle DuFord</subtitle><br>
+	<p> Rochelle DuFord is a Ph.D. candidate in Philosophy at Binghamton University. Her research is focused on international political philosophy and ethics. She is particularly interested in normative problems that arise from global government, global justice, human rights, and international law.</p></td></tr>
+    </table>
+   
+    </div>
+    <br>-->
     <br>
-    <br>
-		<div id="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
+		<div class="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
 		<div id="left_bar">
 			<table cellpadding="5">
 				<tr><td><div>
