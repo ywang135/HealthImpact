@@ -63,13 +63,13 @@
 		</div><!-- #middle_bar end -->
 		<div id="right_bar">
 			<table rules="rows"><tr><td>
-			<div class="slices"><embed src="slice/Malaria Drugs 0713.swf" type="application/x-shockwave-flash"></embed></div>
+			<div><embed id="malaria_ppt" src="slice/Malaria Drugs 0713.swf" type="application/x-shockwave-flash" allowscriptaccess="true"></object></div>
 			<a href="slice/Malaria Drugs 0713.pptx" title="download link">Malaria Drugs</a>
 			</td></tr><tr><td>
-			<div class="slices"><embed src="slice/TB Powerpoint 0708.swf" type="application/x-shockwave-flash"></embed></div>
+			<div><object><param name='wmode' value='transparent' /><embed id="tb_ppt" src="slice/TB Powerpoint 0708.swf" type="application/x-shockwave-flash"></embed></object></div>
 			<a href="slice/TB Powerpoint 0708.pptx" title="download link">TB Powerpoint</a>
 			</td></tr><tr><td>
-			<div class="slices"><embed src="slice/HIV Pres 0713.swf" type="application/x-shockwave-flash"></embed></div>
+			<div><embed id="hiv_ppt" src="slice/HIV Pres 0713.swf" type="application/x-shockwave-flash"></embed></div>
 			<a href="slice/HIV Pres 0713.pptx" title="download link">HIV Drugs Spreadsheet</a>
 			</td></tr></table>
 		</div><!-- #right_bar end -->
