@@ -22,50 +22,7 @@ a:link, a:visited {
 	text-decoration:none;
 }
 
-p.speech
-{
-	position: absolute;
-	margin-left:1130px;
-	width: 350px;
-	height: 580px;
-	font-size:10px;
-	font-style: normal;
-	font-weight: normal;
-	color: #F00;
-	font-family: "Myriad pro Semibold";
-	text-align: center;
-	line-height: 15px;
-	background-color: #fff;
-	border: 8px solid #F00;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	-webkit-box-shadow: 2px 2px 4px #888;
-	-moz-box-shadow: 2px 2px 4px #888;
-	box-shadow: 2px 2px 4px #888;
-}
-p.speech:before
-{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 30px;
-	top: 580px;
-	border: 25px solid;
-	border-color: #F00 transparent transparent #F00;
-}
-p.speech:after
-{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 38px;
-	top: 580px;
-	border: 15px solid;
-	border-color: #fff transparent transparent #fff;
-}
+
 /*
 @media screen and (max-width:1500px)
 {

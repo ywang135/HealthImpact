@@ -14,7 +14,15 @@ $(document).ready(function() {
        		drawChart("bar_details_2", "", 1);
        	});
        	$(".items_rank_list").hide();
-       	$("#list_all_impact").fadeIn();		
+       	$("#list_all_impact").fadeIn();	
+	$("#important_speech").click(function(){
+		$("#important_speech").hide();
+		$("#important_notes").fadeIn();
+	});
+	$("#important_notes").click(function(){
+		$("#important_notes").hide();
+		$("#important_speech").fadeIn();
+	});
         $("#showAll").click(function(){
         	if($SHOW_DISEASE == 1){
         		$("#showMalaria").removeClass("c_b_d_choose");
