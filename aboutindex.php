@@ -9,8 +9,9 @@
 		<div id="left_bar">
 		<div id="video1">
 			<div id="videoharvard_1">
-            			<video width="100%" height="300" controls>
-            				<source src="./src/shortPresentation.ogg" type="video/ogg">
+
+            			<video width="100%" height="300" poster="images/videothumbnail.png" controls>
+				            				<source src="./src/shortPresentation.ogg" type="video/ogg">
         	    Your browser does not support the video tag.
 				</video>
             		</div>
