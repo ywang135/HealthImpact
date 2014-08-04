@@ -19,17 +19,30 @@
 	<tr><td><a href="src/GHI Brochure 8.docx">Executive Summary</a></td></tr>
 	</table></div>
     <br>
-    <!--<div id="top_bar">
+    <div class="heading"><table><tr>Global Health Impact Advisory Board</tr></table></div>
+    <div id="top_left_bar">
     <table cellpadding="5">
-    	<tr><td colspan="2" class="heading">Global Health Impact Advisory Board</td></tr>
-    	<tr><td><img src="images/Duford.jpg" width-"85px" height="130px" /></img></td><td><subtitle>Rochelle DuFord</subtitle><br>
-	<p> Rochelle DuFord is a Ph.D. candidate in Philosophy at Binghamton University. Her research is focused on international political philosophy and ethics. She is particularly interested in normative problems that arise from global government, global justice, human rights, and international law.</p></td></tr>
+    	<tr><td><img src="images/Sanjuan.jpg" width="85px" height="130px" /></img></td><td><subtitle>Judit Rius Sanjuan</subtitle><br>
+	<p> Judit Rius Sanjuan currently works as the US Manager of the Access Campaign for Doctors Without Borders/Médecins Sans Frontières (MSF) in New York. The MSF Access Campaign's purpose is to ensure greater access to, and the development of, life-saving and life prolonging medicines, diagnostic tests, and vaccines for patients. Prior to joining the MSF Access Campaign, among other things, Judit was an adjunct professor at Georgetown Law School where she co-taught a human rights fact-finding seminar on access to essential medicines in Central America. Judit also worked in the legal departments of an international pharmaceutical company.</p></td></tr>
+	<tr><td><img src="images/Margai.jpg" width="85px" height="130px"/></img></td><td><subtitle>Florence Margai</subtitle><br>
+	<p>Dr. Margai's research interests entail the use of geospatial technologies in the mapping and assessment of environmental hazards and negative health outcomes particularly within vulnerable communities including marginalized groups, women, the elderly, and children. Her past and current research activities include the study of food insecurity and childhood health outcomes, malaria morbidity and treatment seeking approaches in West Africa, toxic exposures such as pediatric lead poisoning and adverse health consequences. She has worked with several nonprofit organizations in the U.S. and Africa to assist in the geographic targeting of vulnerable population groups for disease intervention and health promotional campaigns, sustainability and capacity development initiatives.</p></td></tr>
+	<tr><td><img src="images/Hollis.jpg" width="85px" height="130px"/></img></td><td><subtitle>Aidan Hollis</subtitle><br>
+	<p>Aidan Hollis was educated at Cambridge University and the University of Toronto, where he obtained a PhD in Economics. His research is broadly in the area of industrial organization, and is particularly focused on competition and innovation issues in pharmaceutical markets. Prof. Hollis is also Vice-President and a Director of Incentives for Global Health, a non-profit whose chief objective is the promotion and development of the Health Impact Fund. For the academic year 2003-4 he was appointed TD MacDonald Chair of Industrial Economics at the Competition Bureau, Industry Canada.</p></td></tr>
     </table>
-   
     </div>
-    <br>-->
-    <br>
-		<div class="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
+
+    <div id="top_right_bar">
+    <table cellpadding="5">
+    	<tr><td><img src="images/Pogge.jpg" width="85px" height="130px" /></img></td><td><subtitle>Thomas Pogge</subtitle><br>
+	<p>Pogge heads the Global Justice Program at Yale's MacMillan Center. Work there currently focuses on four projects: (1) a team effort toward developing a complement to the pharmaceutical patent regime that would improve access to advanced medicines worldwide (Health Impact Fund); (2) a team effort toward developing new indexes for tracking poverty and gender disparities worldwide; (3) a team effort toward finding ways of reducing the enormous losses poor populations suffer through illicit financial outflows due to corruption as well as tax evasion and tax avoidance; and (4) a team effort toward mobilizing the creativity and expertise of academics in support of effective poverty reduction through promoting stronger collaboration, effective public outreach and thoughtful policy intervention (Academics Stand Against Poverty).</p></td></tr>
+	<tr><td><img src="images/Hassoun.jpg" width="85px" height="130px"/></img></td><td><subtitle>Nicole Hassoun</subtitle><br>
+	<p>Nicole Hassoun heads the Global Health Impact project intended to extend access to medicines to the global poor. Her research interests are in social and political philosophy, global justice, global health, and applied ethics. From 2006-2012 she was an assistant professor in philosophy at Carnegie Mellon University, affiliated with Carnegie Mellon's Program on International Relations and the University of Pittsburgh’s Center for Bioethics and Health Law. In 2009-2010 she held a postdoctoral position at Stanford University and visited at the United Nation’s World Institute for Development Economics Research. She has also been a visiting scholar at the Center for Poverty Research in Austria and the Center for Advanced Studies in Frankfurt. Her book Globalization and Global Justice: Shrinking Distance, Expanding Obligations was recently published with Cambridge University Press. </p></td></tr>
+	<tr><td><img src="images/Dan-Hougendobler.jpg" width="85px" height="130px"/></img></td><td><subtitle>Daniel Hougendobler</subtitle><br>
+	<p>Daniel Hougendobler, J.D., M.P.H., LL.M., is a Law Fellow with the O’Neill Institute. He holds a Juris Doctor and Masters in Public Health from Emory University, where he served as Articles Editor for the Emory Law Journal, as well as a Master of Laws in Global Health Lawfrom Georgetown University. His research interests include health law and policy, trade and health, and the impact of the global governance system on access to medicines. Prior to joining the O’Neill Institute, Daniel researched PEPFAR implementation in Rwanda, aided in an NGO's implementation of a clean water program in Haiti, and assisted the Medicines Patent Pool in its attempt to lower intellectual property barriers to HIV treatments.</p></td></tr>
+    </table>
+    </div>
+
+	<div style="float:left" class="heading"><table><tr>Global Health Impact Research Team </tr></table></div>
 		<div id="left_bar">
 			<table cellpadding="5">
 				<tr><td><div>
@@ -120,11 +133,10 @@
 				</p>
 				</td></tr>
 				<tr><td height="234" valign="top"><div>
-				<img src="images/Dan-Hougendobler.jpg" width="85px" height="130px" vspace="20"/></a></div></td>
-				<td><subtitle>Daniel A. Hougendobler</subtitle><br>
+				<img src="images/Duford.jpg" width="85px" height="130px" vspace="20"/></a></div></td>
+				<td><subtitle>Rochelle DuFord</subtitle><br>
 				<p>
-				 Daniel Hougendobler, J.D., M.P.H., LL.M., is a Law Fellow with the O’Neill Institute. He holds a Juris Doctor and Masters in Public Health from Emory University, where he served as Articles Editor for the Emory Law Journal, as well as a Master of Laws in Global Health Lawfrom Georgetown University. His research interests include health law and policy, trade and health, and the impact of the global governance system on access to medicines.
-				 Prior to joining the O’Neill Institute, Daniel researched PEPFAR implementation in Rwanda, aided in an NGO's implementation of a clean water program in Haiti, and assisted the Medicines Patent Pool in its attempt to lower intellectual property barriers to HIV treatments.
+				Rochelle DuFord is a Ph.D. candidate in Philosophy at Binghamton University. Her research is focused on international 					political philosophy and ethics. She is particularly interested in normative problems that arise from global government, 				global justice, human rights, and international law.
 				</p>
 				</td></tr>
                 
