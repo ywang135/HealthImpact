@@ -30,16 +30,16 @@
 				 This paper explains how to leverage the Index to promote global health.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="src/WP_11_2012_Hassoun.pdf">
-				<img src="images/WP_11_2012_Hassoun.jpg" width="85px" height="130px"/></a></div></td>
+				<tr><td><div><a href="src/Company Ranking Only 6-28.pdf">
+				<img src="images/RankingExplanationThumb.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Global Health Impact Index</subtitle><br>
 				<p>
 				 This report explains in detail how the Company Index is calculated. In doing so, 
 				 it gives examples of how drug scores are calculated.
 				</p>
 				</td></tr>
-				<tr><td><div><a href="src/GHI%20Country%20Paper6%20for%20web.pdf">
-				<img src="images/GHI%20Country%20Paper6%20for%20web.jpg" width="85px" height="130px"/></a></div></td>
+				<tr><td><div><a href="src/Country Paper 072214.pdf">
+				<img src="images/CountryIndexThumb.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Global Health Impact Country Index</subtitle><br>
 				<p>
 				 This paper provides a brief introduction to the Global Health Impact country index. You can learn how the index is constructed 
