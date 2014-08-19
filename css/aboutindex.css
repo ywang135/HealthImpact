@@ -152,9 +152,13 @@
         margin-left:0px;
         margin-top:3px;
     }
+	#videoharvard_1 {
+	border: 1px solid #CCCCCC;
+	}
 	#videoharvard{
-		display:none;
+	display:none;
         margin-top: -35px;
+	border: 2px solid #0083CA;
 	}
 //}
 /*

@@ -10,15 +10,15 @@ div.speech
 	margin-left:1130px;
 	width: 135px;
 	height: 35px;
-	font-size:13px;
+	font-size:14px;
 	font-style: normal;
 	font-weight: normal;
 	color: #FFF;
 	font-family: "Myriad pro Semibold";
 	text-align: center;
-	line-height: 15px;
-	background-color: #F00;
-	border: 8px solid #F00;
+	line-height: 12px;
+	background-color: #EF3E2E;
+	border: 8px solid #EF3E2E;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
@@ -36,7 +36,7 @@ div.speech:before
 	left: 0px;
 	top: 30px;
 	border: 20px solid;
-	border-color: #F00 transparent transparent #F00;
+	border-color: #EF3E2E transparent transparent #EF3E2E;
 }
 div.speech:after
 {
@@ -47,7 +47,7 @@ div.speech:after
 	left: 0px;
 	top: 30px;
 	border: 10px solid;
-	border-color: #f00 transparent transparent #f00;
+	border-color: #EF3E2E transparent transparent #EF3E2E;
 }
 	.chosen {
 		filter:alpha(opacity=80);
