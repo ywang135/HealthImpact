@@ -35,8 +35,8 @@
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">
 			<table cellpadding="5">
-				<tr><td><div><a href="src/Company Ranking Only 6-28.pdf">
-				<img src="images/RankingExplanationThumb.jpg" width="85px" height="130px"/></a></div></td>
+				<tr><td><div><a href="src/Extending Access Index.pdf">
+				<img src="images/ExtendingAccessThumb.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Global Health Impact Index</subtitle><br>
 				<p>
 				 This report explains in detail how the Company Index is calculated. In doing so, 
