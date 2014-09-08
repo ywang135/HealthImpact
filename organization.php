@@ -269,6 +269,15 @@
 				</p>
 				</td></tr>
 
+				<tr><td><div>
+				<img src="images/Furrey.jpg" width="85px" height="130px"/></a></div></td>
+				<td><subtitle>Patrick Furrey</subtitle><br>
+				<p>
+				Patrick Furrey is a sophomore at Rochester Institute of Technology enrolled as a double major in Physics and Philosophy, with a specialization in Philosophy and Law, and is involved in analyzing data and community outreach for the Global Health Impact team.
+
+				</p>
+				</td></tr>
+
 
 			</table>			
 		</div><!-- #right_bar end -->
