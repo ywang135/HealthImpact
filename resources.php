@@ -23,8 +23,8 @@
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">
 			<table cellpadding="5">
-				<tr><td><div><a href="src/Paper_Global Health Impact.pdf">
-				<img src="images/Paper_Global Health Impact.jpg" width="85px" height="130px"/></a></div></td>
+				<tr><td><div><a href="src/Global Health Impact 0902.pdf">
+				<img src="images/PolicyThumb.jpg" width="85px" height="130px"/></a></div></td>
 				<td><subtitle>The Policy Proposal</subtitle><br>
 				<p>
 				 This paper explains how to leverage the Index to promote global health.

@@ -37,15 +37,19 @@
     <div id="top_right_bar">
     <table cellpadding="5">
 
-	<tr><td valign="top"><img src="images/Hollis.jpg" width="85px" height="130px"/></img></td><td><subtitle>Aidan Hollis</subtitle><br>
-	<p>Aidan Hollis was educated at Cambridge University and the University of Toronto, where he obtained a PhD in Economics. His research is broadly in the area of industrial organization, and is particularly focused on competition and innovation issues in pharmaceutical markets. Prof. Hollis is also Vice-President and a Director of Incentives for Global Health, a non-profit whose chief objective is the promotion and development of the Health Impact Fund. For the academic year 2003-4 he was appointed TD MacDonald Chair of Industrial Economics at the Competition Bureau, Industry Canada.</p></td></tr>
+	<tr><td valign="top"><img src="images/Gostin.jpg" width="85px" height="130px"/></img></td><td><subtitle>Lawrence Gostin</subtitle><br>
+	<p>Lawrence O. Gostin is University Professor, Founding O’Neill Chair in Global Health Law, and Director of the O’Neill Institute for National and Global Health Law at Georgetown University.  Prof. Gostin holds international professorial appointments at Oxford University, University of Witwatersrand, (South Africa), and Melbourne University. He is also the Director of the World Health Organization Collaborating Center on Public Health Law & Human Rights.</p></td></tr>
 
     	<tr><td valign="top"><img src="images/Pogge.jpg" width="85px" height="130px" /></img></td><td><subtitle>Thomas Pogge</subtitle><br>
 	<p>Pogge heads the Global Justice Program at Yale's MacMillan Center. Work there currently focuses on four projects: (1) a team effort toward developing a complement to the pharmaceutical patent regime that would improve access to advanced medicines worldwide (Health Impact Fund); (2) a team effort toward developing new indexes for tracking poverty and gender disparities worldwide; (3) a team effort toward finding ways of reducing the enormous losses poor populations suffer through illicit financial outflows due to corruption as well as tax evasion and tax avoidance; and (4) a team effort toward mobilizing the creativity and expertise of academics in support of effective poverty reduction through promoting stronger collaboration, effective public outreach and thoughtful policy intervention (Academics Stand Against Poverty).</p></td></tr>
 
+	<tr><td valign="top"><img src="images/Hollis.jpg" width="85px" height="130px"/></img></td><td><subtitle>Aidan Hollis</subtitle><br>
+	<p>Aidan Hollis was educated at Cambridge University and the University of Toronto, where he obtained a PhD in Economics. His research is broadly in the area of industrial organization, and is particularly focused on competition and innovation issues in pharmaceutical markets. Prof. Hollis is also Vice-President and a Director of Incentives for Global Health, a non-profit whose chief objective is the promotion and development of the Health Impact Fund. For the academic year 2003-4 he was appointed TD MacDonald Chair of Industrial Economics at the Competition Bureau, Industry Canada.</p></td></tr>
 
 	<tr><td valign="top"><img src="images/Dan-Hougendobler.jpg" width="85px" height="130px"/></img></td><td><subtitle>Daniel Hougendobler</subtitle><br>
 	<p>Daniel Hougendobler, J.D., M.P.H., LL.M., is a Law Fellow with the O’Neill Institute. He holds a Juris Doctor and Masters in Public Health from Emory University, where he served as Articles Editor for the Emory Law Journal, as well as a Master of Laws in Global Health Lawfrom Georgetown University. His research interests include health law and policy, trade and health, and the impact of the global governance system on access to medicines. Prior to joining the O’Neill Institute, Daniel researched PEPFAR implementation in Rwanda, aided in an NGO's implementation of a clean water program in Haiti, and assisted the Medicines Patent Pool in its attempt to lower intellectual property barriers to HIV treatments.</p></td></tr>
+
+
     </table>
     </div>
 
