@@ -222,8 +222,10 @@ div.speech:after
 		height:719px;
 	}
 	#popupwd1 {
+		float:right;
 		width:368.517px;
 		height:350.438px;
+		margin-top:360px;
 		margin-left:55px;
 		position:absolute;
 		border:4px solid #0083CA;
@@ -234,11 +236,9 @@ div.speech:after
 		text-align:center;
 	}
 	#popupwd2 {
-		float:right;
 		width:368.517px;
 		height:350.438px;
 		margin-left:55px;
-		margin-top:360px;
 		position:absolute;
 		border:4px solid #0083CA;
 		background:white;
