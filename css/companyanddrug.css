@@ -313,6 +313,31 @@ div.speech:after
 		color:#FFB31C;
 		line-height:10%;
 	}
+	#list_all_legend {
+		z-index:12;
+		width:230px;
+		height:15px;
+		margin-left:300px;
+		margin-top:700px;
+		padding-top:2px;
+		background: white;
+		float:left;
+		position: absolute;
+		border:1px solid black;
+		box-shadow:1px 1px 1px gray;
+		overflow:hidden;
+
+
+	}
+	.legend_text {
+		float:left;
+		font-family: "Verdana";
+		font-size:10px;
+		padding-left:5px;
+		padding-right:15px;
+		}
+
+
 //}
 /*
 @media screen and (max-width:1000px)
