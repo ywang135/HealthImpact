@@ -5,19 +5,20 @@
 <script type="text/javascript" src="JS/jquery_contact.js"></script>
 	<div class="main_body">
 	<div id="contact">
-	<table>
-	<tr><td>For any queries contact us at <a href="mailto:globalhealthindex@gmail.com">here</a>.</td></tr>
-	<tr><td>To contribute to our project click  <a href="mailto:globalhealthindex@gmail.com">here</a>.</td>
-	</tr> 
-	<tr><td>
-        <br>
-        <a href="src/Code%20of%20Ethics%20-%20current%203.docx">Code of Ethics</a></td>
-	</tr> 
-	<tr><td><a href="src/Global%20Health%20Impact%20Corp%20Conflicts%20Policy%20-%20Current3%20no%20form.docx">Global Health Impact Corp Conflicts Policy</a></td>
-	</tr> 
-	<tr><td><a href="src/Statement of Independence and Organizational Structure.docx">Statement of Independence and Organizational Structure</a></td></tr>
-	<tr><td><a href="src/GHI Brochure 8.docx">Executive Summary</a></td></tr>
-	<tr><td><a href="src/GHI Acknowledgments.docx">Thanks!</a></td></tr>
+	<table cellpadding="20" width = "90%">
+	<tr><td width="50%">We are a collaboration of researchers from universities and civil society organizations 
+from around the world, dedicated to measuring pharmaceutical products’ impact 
+on global health to advance access to affordable medicines.<br /><br />
+	To contribute to our project click  <a href="mailto:globalhealthindex@gmail.com">here</a>. <br /> <br />
+	For any queries contact us at <a href="mailto:globalhealthindex@gmail.com">here</a>.<br />
+	</td>
+	<td width="50%" valign="top">
+        <a href="src/Code%20of%20Ethics%20-%20current%203.docx">Code of Ethics</a><br />
+	<a href="src/Global%20Health%20Impact%20Corp%20Conflicts%20Policy%20-%20Current3%20no%20form.docx">Global Health Impact Conflicts of Interest Policy</a><br />
+	<a href="src/Statement of Independence and Organizational Structure.docx">Statement of Independence and Organizational Structure</a><br /><br />
+	<a href="src/GHI Brochure 8.docx">Executive Summary</a><br />
+	<a href="src/GHI Acknowledgments.docx">Thanks!</a>
+	
 	</table></div>
     <br>
     <div class="heading"><table><tr>Advisory Board and Collaborators</tr></table></div>
@@ -25,6 +26,10 @@
     <table cellpadding="5">
     	<tr><td style='vertical-align:top;'><img src="images/Sanjuan.jpg" width="85px" height="130px"/></img></td><td><subtitle>Judit Rius Sanjuan</subtitle><br>
 	<p> Judit Rius Sanjuan currently works as the US Manager of the Access Campaign for Doctors Without Borders/Médecins Sans Frontières (MSF) in New York. The MSF Access Campaign's purpose is to ensure greater access to, and the development of, life-saving and life prolonging medicines, diagnostic tests, and vaccines for patients. Prior to joining the MSF Access Campaign, among other things, Judit was an adjunct professor at Georgetown Law School where she co-taught a human rights fact-finding seminar on access to essential medicines in Central America. Judit also worked in the legal departments of an international pharmaceutical company.</p></td></tr>
+
+	<tr><td valign="top"><img src="images/Lee.jpg" width="85px" height="130px"/></img></td><td><subtitle>Bruce Y. Lee, MD, MBA</subtitle><br>
+	<p><b>Director, Operations Research, International Vaccine Access Center, Johns Hopkins Bloomberg School of Public Health</b><br />Dr. Lee is the Director of Operations Research at the International Vaccine Access Center (IVAC).  Previously, he was Associate Professor at the University of Pittsburgh, where he founded and directs the Public Health</p></td></tr>
+
 	<tr><td valign="top"><img src="images/Margai.jpg" width="85px" height="130px"/></img></td><td><subtitle>Florence Margai</subtitle><br>
 	<p>Dr. Margai's research interests entail the use of geospatial technologies in the mapping and assessment of environmental hazards and negative health outcomes particularly within vulnerable communities including marginalized groups, women, the elderly, and children. Her past and current research activities include the study of food insecurity and childhood health outcomes, malaria morbidity and treatment seeking approaches in West Africa, toxic exposures such as pediatric lead poisoning and adverse health consequences. She has worked with several nonprofit organizations in the U.S. and Africa to assist in the geographic targeting of vulnerable population groups for disease intervention and health promotional campaigns, sustainability and capacity development initiatives.</p></td></tr>
 
