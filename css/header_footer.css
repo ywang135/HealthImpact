@@ -68,6 +68,15 @@ a:link, a:visited {
 		margin-right:auto;
 		padding-bottom:0px;
 	}
+	#title_bar {
+		font-family: "Myriad pro Regular";
+		font-size: 25px;
+		color:#0083CA;
+		position:absolute;
+		margin-left: 240px;
+		margin-top: 15px;
+		width:800px
+		}
 	#header {
 		width:100%;
 		position:relative;
