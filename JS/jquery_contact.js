@@ -6,6 +6,6 @@ $(document).ready(function() {
     	return false;
 	});
     $("#main_menu #menu_contact_us a").css("background-color", "#FFB31C");
-    $("#copyright").css( { "margin-top" : "2150px"} );
+    $("#copyright").css( { "margin-top" : "3500px"} );
     $("#copyright").fadeIn();
 });

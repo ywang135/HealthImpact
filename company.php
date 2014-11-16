@@ -112,6 +112,11 @@
 		</div><!-- #list_HIV_impact end -->
 		</div><!-- #all_list end -->
 	</div><!-- #rankls end -->
+	<div id="list_all_legend" class="list_legend">
+	<div style='margin-left:30px;float:left;background:#0083CA;height:12px;width:12px;'></div><div class="legend_text">Malaria</div>
+	<div style='float:left;background:#FFB31C;height:12px;width:12px;'></div><div class="legend_text">TB</div>
+	<div style='float:left;background:#EF3E2E;height:12px;width:12px;'></div><div class="legend_text">HIV</div>
+	</div>
 	<div id="popupwd">
 		<div id="popupwd1">
 			<div id="additional_statistic">Impact Score by Company
@@ -130,8 +135,15 @@
 			</div>
 		</div><!-- #popupwd2 end -->
 	</div><!-- #popupwd end -->
+	<div class="speech" id="important_speech">Important Notes About the Company Rankings</div>
+	<div id="important_notes"><p>Important Notes About the Company Rankings</p>
+	<div style="float:right;position:relative;top:-30px;left:-20px;font-size:18px"><a href="#" onClick="return false;">X</a></div>
+	<br /><b><i>Limitations: </i></b><br /><br />The rankings on this website are meant to provide a metric of the impacts of pharmaceutical companies’ drugs on a few important global diseases. This index is not meant to measure how “good” a pharmaceutical company is in relation to its peers, or how effective it has been at ensuring access to its drugs. <br /><br />The impacts of the ranked companies’ drugs is only one of many measures of a company’s overall fulfillment of its social responsibilities. For instance, companies with high scores on this index may have poor access policies and those with lower scores better access policies. For a more complete picture, these rankings are best read in combination with other academic and civil society analyses of drug companies’ global impact.<br /><br /><b><i>Purpose and Value:</i></b><br /><br />While not intended to serve as a measure of good company behavior, we believe that this index can serve as a valuable tool. This ranking system serves as the first scientifically rigorous comparison of pharmaceutical companies by their drugs’ impacts on death and disability. A scientific model of this impact is a neglected, yet important, piece of the larger picture. <br /><br />While we endorse the vital importance of strong access policies, we believe this ranking can be an important piece in that puzzle. Companies’ scores will improve most if they: (1) develop drugs that will have the biggest impact on the global burden of disease and (2) change their access policies to ensure these drugs (along with their existing products) reach as many people as possible. We strongly believe that this is best achieved by working closely with civil society organizations. <br /><br />Of course, some companies may raise their scores by simply acquiring the most effective drugs for a particular disease (the first prong), and counting on governments and aid organizations to pay inflated prices for them (ignoring the second prong). Thus, for a complete picture, this ranking system must be read in conjunction with others (see Limitations, above).<br />
+</div>
 	<div id="items_text">
-	<p>Company Index</p>About a third of all deaths, 18 million a year are poverty-related. 
+	<p>Company Index</p>Every year 9 million people are diagnosed with tuberculosis,
+	 every day more than 13,400 people are infected with AIDS, every 30 seconds malaria
+	kills a child. About a third of all deaths, 18 million a year, are poverty-related. 
 	The Global Health Impact Index considers how companies measure up on the basis of 
 	their drugs’ impact on these global health problems. It looks at three things:
 		<ul>

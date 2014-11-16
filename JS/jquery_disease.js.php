@@ -25,7 +25,10 @@ $(document).ready(function() {
 			var str = "<br>Overall Dalys: 12,732,860.00";
 			str = str+"<br>Rank: 4";
 			document.getElementById('disease_info_1').innerHTML=str;
-			document.getElementById('disease_info_2').innerHTML=str; 		       	
+			document.getElementById('disease_info_2').innerHTML=str;
+       		
+       	$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but we are having different degrees of success in combatting these different diseases. This graph illustrates the how much of the key drugs’ success in ameliorating the global burden of disease due to these causes is attributable to their success in combating each disease. For additional information, please see the <a href=\"aboutindex.php\">about page</a> and <a href=\"methodology.php\">methodology page</a>");  		       	
+        
         $("#popupwd1_hiv").click(function(){
         	$(".zoombig").hide();
         	$("#popupwd1_hiv_big").fadeIn();
@@ -43,7 +46,7 @@ $(document).ready(function() {
        		$("#popupwd2_hiv").fadeIn();
        	});
        	$("#showSummary").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but key drugs are having different degrees of success in combating these different diseases. The first graph illustrates the impact of key drugs on each of these diseases. Subsequent graphs illustrate the need for, access to, and effectiveness of these drugs. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>"); 		
+       		$("#disease_text").html("<p>Breakdown of Disease Impact:</p> Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDS, every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year are poverty-related. Essential medicines for these diseases together help us reduce the global burden of disease but key drugs are having different degrees of success in combating these different diseases. The first graph illustrates the impact of key drugs on each of these diseases. Subsequent graphs illustrate the need for, access to, and effectiveness of these drugs. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>."); 		
         	$("#dalys").fadeOut();
         	if($SHOW_DISEASE == 0){
                 $("#showAll").removeClass("c_b_d_choose");
@@ -112,7 +115,7 @@ $(document).ready(function() {
        		$(".HIV_bar").fadeIn();
        	});
        	$("#showMalaria").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for, access to, and effectiveness of medicines to combat malaria. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a> ");  	
+       		$("#disease_text").html("<p>Breakdown of Malaria Impact</p>Every 30 seconds malaria kills a child. Essential medicines for malaria help us reduce the global burden of disease. These graphs illustrate the need for, access to, and effectiveness of medicines to combat malaria. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>.");  	
        		$("#dalys").text("Disability Adjusted Life Years Lost to Malaria");
         	$("#dalys").fadeIn();
             if($SHOW_DISEASE == 4){
@@ -153,7 +156,7 @@ $(document).ready(function() {
        		
        	});
        	$("#showTB").click(function(){
-       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>");
+       		$("#disease_text").html("<p>Breakdown of Tuberculosis Impact</p> Every year 9 million people are diagnosed with tuberculosis. Essential medicines for tuberculosis help us reduce the global burden of disease. These graphs illustrate how much of the success in reducing the burden of disease due to tuberculosis is attributable to the need for medicines to combat tuberculosis, access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>.");
         	$("#dalys").text("Disability Adjusted Life Years Lost to TB");
         	$("#dalys").fadeIn();
             if($SHOW_DISEASE == 4){
@@ -193,7 +196,7 @@ $(document).ready(function() {
        		$(".HIV_bar").hide();  		
        	});
        	$("#showHIV").click(function(){
-       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat HIV/AIDS access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>");
+       		$("#disease_text").html("<p>Breakdown of HIV/AIDS Impact</p>Every day more than 13,400 people are infected with AIDS. Essential medicines for HIV/AIDS help us reduce the global burden of disease. These graphs illustrate how much of the success in reducing the burden of disease due to HIV/AIDS is attributable to the need for medicines to combat HIV/AIDS access to these medicines, and their efficacy. For additional information, please see the <a href=\"aboutindex.php\">About the Index</a> and <a href=\"methodology.php\">Methodology</a>.");
         	$("#dalys").text("Disability Adjusted Life Years Lost to HIV/AIDS");
         	$("#dalys").fadeIn();
             if($SHOW_DISEASE == 4){

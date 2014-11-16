@@ -6,7 +6,7 @@
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
-	<color minValue='$itv1' maxValue='2100000' color='#EF3E2E' />
+	<color minValue='$itv1' maxValue='8360000' color='#EF3E2E' />
 	<color minValue='$itv2' maxValue='$itv1' color='#FFB31C' />
 	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>

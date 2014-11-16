@@ -28,7 +28,13 @@
 		<div id="list_HIV_impact" class="country_rank_list">
 		</div><!-- #list_HIV_impact end -->
 	</div><!-- #all_list end -->
+
 	</div><!-- #rankls end -->
+	<div id="list_all_legend" class="list_legend">
+	<div style='margin-left:30px;float:left;background:#0083CA;height:12px;width:12px;'></div><div class="legend_text">Malaria</div>
+	<div style='float:left;background:#FFB31C;height:12px;width:12px;'></div><div class="legend_text">TB</div>
+	<div style='float:left;background:#EF3E2E;height:12px;width:12px;'></div><div class="legend_text">HIV</div>
+	</div>
 	<div id="emap">
 		<div id="mapcontainer_0" class="map_container">
 		</div><!-- #mapcontainer_0 end -->
@@ -39,16 +45,18 @@
 		<div id="mapcontainer_3" class="map_container">
 		</div><!-- #mapcontainer_3 end -->		
 	</div><!-- #emap end -->
+	<div id="dalys">Disability Adjusted Life Years Averted for All Diseases</div>
 	<div id="check_box">
 		<form id="orderForm">
 			<input type="checkbox" name="show_ranklist_order" value="by_name">Order by name<br>	
 		</form>
 	</div><!-- #check_box end -->
 	<div id="country_text">
-	<p>Country Index</p>About a third of all deaths, 18 million a year are poverty-related. 
+	<p>Country Index</p>Every year 9 million people are diagnosed with tuberculosis, every day more than 13,400 people are infected with AIDs,
+ every 30 seconds malaria kills a child. About a third of all deaths, 18 million a year, are poverty-related. 
  Access to essential medicines for these diseases varies widely around the world. 
- The Global Health Impact Country Index measures key drugs’ impact on these global health problems in each country. For additional information, please see the <a href="aboutindex.php">about page</a> and 
-			<a href="methodology.php">methodology page</a>. 
+ The Global Health Impact Country Index measures key drugs’ impact on these global health problems in each country. For additional information, please see <a href="aboutindex.php">About the Index</a> and 
+			<a href="methodology.php">Methodology</a>. 
 	</div><!-- #country_text end -->
 	<div id="popupwd">
 		<div id="additional_statistic">ADDITIONAL STATISTICS

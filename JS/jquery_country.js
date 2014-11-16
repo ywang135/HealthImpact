@@ -44,6 +44,8 @@ $(document).ready(function() {
        		$("#popupwd").hide();
        	});      	
         $("#showAll").click(function(){
+		$("#dalys").text("Disability Adjusted Life Years Averted for All Diseases");
+		$("#dalys").fadeIn();
             if($SHOW_DISEASE == 1){
         		$("#showMalaria").removeClass("c_b_d_choose");
                 $("#showMalaria").addClass("c_b_d");
@@ -71,10 +73,13 @@ $(document).ready(function() {
        		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',0,1);
        	});
         $("#showAll").click();
-       	$("#showMalaria").click(function(){
-       		$(".map_container").hide();
-       		$("#mapcontainer_1").fadeIn();
-       		if($SHOW_DISEASE == 0){
+       		
+		$("#showMalaria").click(function(){
+
+			$("#dalys").text("Disability Adjusted Life Years Averted for Malaria");
+	
+		$("#dalys").fadeIn();
+			if($SHOW_DISEASE == 0){
                 $("#showAll").removeClass("c_b_d_choose");
                 $("#showAll").addClass("c_b_d");
         	}
@@ -90,6 +95,8 @@ $(document).ready(function() {
             $("#showMalaria").addClass("c_b_d_choose");
        		$SHOW_DISEASE = 1;
        		
+       		$(".map_container").hide();
+       		$("#mapcontainer_1").fadeIn();
        		
        		if($MAP_MALARIA == 0){
        			$("#list_malaria_impact").load("Maps/Malaria.php");
@@ -106,6 +113,8 @@ $(document).ready(function() {
        		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',1,1);
        	});
        	$("#showTB").click(function(){
+		$("#dalys").text("Disability Adjusted Life Years Averted for TB");
+		$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
         		$("#showAll").removeClass("c_b_d_choose");
                 $("#showAll").addClass("c_b_d");
@@ -138,6 +147,8 @@ $(document).ready(function() {
        		popupJS('Indonesia','1534.06','2003327.38','138104.88','2142966.25',2,1);		
        	});
        	$("#showHIV").click(function(){
+		$("#dalys").text("Disability Adjusted Life Years Averted for HIV/AIDS");
+		$("#dalys").fadeIn();
        		if($SHOW_DISEASE == 0){
         		$("#showAll").removeClass("c_b_d_choose");
                 $("#showAll").addClass("c_b_d");

@@ -19,7 +19,7 @@
 	.main_body td{
 	height: 20px;
 	}
-		#heading {
+		.heading {
 		margin-left:13%;
 		font-family:"Myriad pro Regular";
 		font-size:35px;
@@ -48,7 +48,6 @@
 		margin-left:13%;
 		margin-top:30px;
 		width: 37%;
-		height: 880px;
 		border:1px solid white;
 	}
 	#left_bar p {
@@ -72,17 +71,73 @@
 	}
 	#left_bar table{
 		width: 98%;
-		height:680px;
+	}
+
+	#top_right_bar {
+		float:left;
+		margin-left:3%;
+		width: 37%;
+		border: 1px solid white;
+		}
+	#top_right_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	#top_right_bar subtitle {
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+		font-size:18px;
+		margin-top:10px
+		margin-bottom:0px;
+	}
+	#top_right_bar table{
+		width: 98%;
 	}
 	
-		
+	#top_left_bar {
+		float:left;
+		position:relative;
+		margin-left:13%;
+		width: 37%;
+		border: 1px solid white;
+		}
+	#top_left_bar p {
+		font-family:"Myriad pro Regular";
+		font-size:15px;
+		color:#0083CA;
+		hyphens:auto;
+    	text-align:justify;
+    	-webkit-hyphens:auto;
+    	-webkit-hyphenate-character:"\2010";
+    	-webkit-hyphenate-limit-after:1;
+    	-webkit-hyphenate-limit-before:3;
+    	-moz-hyphens:auto;	
+	}
+	#top_left_bar subtitle {
+		font-family: "Myriad pro Semibold";
+		color:#FFB31C;
+		font-size:18px;
+		margin-top:10px
+		margin-bottom;0px;
+	}
+	#top_left_bar table{
+		width: 98%;
+	}
+
 	#right_bar {
 		float:left;
 		position:relative;
 		margin-left:3%;
 		margin-top:30px;
 		width: 37%;
-		height: 880px;
 		border:1px solid white;
 	}
 	#right_bar p {
@@ -106,7 +161,6 @@
 	}
 	#right_bar table {
 		width: 98%;
-		height:680px;
 	}
 	
 //}

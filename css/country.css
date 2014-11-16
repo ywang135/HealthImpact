@@ -120,6 +120,16 @@
 		float:left;
 		margin-left:8px;
 	}
+	#dalys{
+		position: absolute;
+		font-family: "Myriad pro Semibold";
+		color: #EF3E2E;
+		font-size:20px;
+		margin-left:500px;
+		margin-top:55px;
+		z-index:10;
+		display:none;
+	}
 	#country_by_rank {;
 		line-height: 50px;
 		position: absolute;
@@ -238,6 +248,28 @@
 	#rankls tr:hover {
 		background: #F1F1F1;
 	}
+	#list_all_legend {
+		width:230px;
+		height:15px;
+		margin-left:70px;
+		margin-top:500px;
+		padding-top:2px;
+		background: white;
+		float:left;
+		position: absolute;
+		border:1px solid black;
+		box-shadow:1px 1px 1px gray;
+		overflow:hidden;
+
+
+	}
+	.legend_text {
+		float:left;
+		font-family: "Verdana";
+		font-size:10px;
+		padding-left:5px;
+		padding-right:15px;
+		}
 //}
 /*
 @media screen and (max-width:1000px)

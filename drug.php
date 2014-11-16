@@ -117,6 +117,11 @@
 		</div><!-- #list_HIV_impact end -->
 		</div><!-- #all_list end -->
 	</div><!-- #rankls end -->
+	<div id="list_all_legend" class="list_legend">
+	<div style='margin-left:30px;float:left;background:#0083CA;height:12px;width:12px;'></div><div class="legend_text">Malaria</div>
+	<div style='float:left;background:#FFB31C;height:12px;width:12px;'></div><div class="legend_text">TB</div>
+	<div style='float:left;background:#EF3E2E;height:12px;width:12px;'></div><div class="legend_text">HIV</div>
+	</div>
 	<div id="popupwd">
 		<div id="popupwd1">
 			<div id="additional_statistic">Impact Score by Drug
@@ -137,15 +142,15 @@
 	</div><!-- #popupwd end -->	
 	<div id="items_text">
 	<p>Breakdown of Disease Scores</p>
-	The Global Health Impact Drug Index measures key malaria, TB, and HIV drugs’ impacts. To do so, it looks at three things:
+	The Global Health Impact Drug Index measures key malaria, TB, and HIV/AIDS drugs' impacts. To do so, it looks at three things:
 	<ul>
 	<li>The need for several important drugs for tuberculosis, HIV/AIDS, and malaria.</li>
 	<li>The drugs’ effectiveness.</li>
 	<li>The number of people who can access the drugs.</li>
 	</ul>
-	Here you see the proportional impact of drugs for <div id="c1">each disease</div>. Click <a href="#rankls">here </a> to see the proportional impact by drug.
-			For additional information, please see the <a href="aboutindex.php">about page</a> and 
-			<a href="methodology.php">methodology page</a>
+	Here you see the proportional impact of drugs for <div id="c1">each disease</div>. 
+			For additional information, please see <a href="aboutindex.php">About the Index</a> and 
+			<a href="methodology.php">Methodology</a>.
 
 	</div><!-- items_text end -->
 

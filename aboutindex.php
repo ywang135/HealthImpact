@@ -8,17 +8,21 @@
 	<div class="main_body">
 		<div id="left_bar">
 		<div id="video1">
-            <div id="thumbnail"><a href="#videoharvard"><img src="images/videothumbnail.png" width="100%" height="260" /></a></div>
-            <div id="videoharvard">
-            
-            </div>
+			<div id="videoharvard_1">
+
+            			<video width="100%" height="300" poster="images/videothumbnail.png" controls>
+				            				<source src="./src/shortPresentation.ogg" type="video/ogg">
+        	    Your browser does not support the video tag.
+				</video>
+            		</div>
+
             
 		</div><!-- #video1 -->
 		
 		
 			<subtitle>Learn about the Global Health Impact Index</subtitle>
 			<p>Check out this video from a recent conference at Harvard University for a brief presentation on the Global Health Impact project. Professor Nicole Hassoun introduces the Index, some possible uses for it, and explains the insight behind it.</p>
-			<p>To view whole video, go <a href="resources.php#video1">Resources</a></p>
+			<p>To view whole video, see <a href="resources.php#video1">Resources</a></p>
 		<p></p>	
 		</div><!-- #left_bar end -->
 		<div id="middle_bar">

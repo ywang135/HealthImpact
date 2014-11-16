@@ -11,6 +11,9 @@
 <body>
 	<container>
 	<div id="header">
+	<div id="title_bar">
+	An initiative to evaluate and compare medicines’ global health impact.
+	</div>
 	<a href="index.php" id="logo_site">Global Health Impact</a>
 		<div id="menu_bar">
 			<div id="search">
