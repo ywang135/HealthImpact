@@ -55,17 +55,17 @@ a:link, a:visited {
 		display:block;
 		margin-top:80px;
 	}
-	#copyright {
-		display:none;
-		position:absolute;
-		width:100%;
-		font-family: "Myriad pro Regular";
-		color:#0083CA;
-		text-align:center;
-		margin-left:auto;
-		margin-right:auto;
-		padding-bottom:0px;
-	}
+#copyright {
+    display:none;
+    position:absolute;
+    width:100%;
+    font-family: "Myriad pro Regular";
+    color:#0083CA;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:0px;
+}
 	#header {
 		width:100%;
 		position:relative;

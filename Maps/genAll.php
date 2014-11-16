@@ -1,13 +1,8 @@
-
-
 <?php
 	header('Content-type: text/javascript');
-	include "../../con_/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
+	include "../../con_/con_ghi.php";
 	$itv1=2000000;
 	$itv2=500000;
-	//$itv3=500000;
-	//$itv4=150000;<color minValue='$itv3' maxValue='$itv2'  color='#FFE85E' />
-	//<color minValue='$itv4' maxValue='$itv3'  color='#6DC067' />
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10'  markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
