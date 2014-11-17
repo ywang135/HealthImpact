@@ -18,8 +18,6 @@ $(document).ready(function() {
        	$("#copyright").fadeIn();
 		drawMap("Maps/genDiseaseAll.php","mapcontainer_0","0");
 		$(".map_container").hide();
-       	//$("#mapcontainer_0").fadeIn();       	
-       	//$("#All_pop").fadeIn();
        	setArray();
        	
        		document.getElementById('additional_statistic_1').innerHTML="Democratic Republic of the Congo";	
@@ -292,7 +290,7 @@ function setArray(){
 ?>
 }
 function drawMap(source, div_id, map_id){
-	var myMap = new FusionCharts ("Maps/FCMap_WorldwithCountries.swf", map_id, "706.912", "522.928", "0");
+	var myMap = new FusionCharts ("FCMap_WorldwithCountries", map_id, "706.912", "522.928", "1");
     myMap.setXMLUrl (source);//"Maps/genAll.php"
     myMap.render(div_id);//"mapcontainer"
 }

@@ -2,7 +2,7 @@
 	include "header.php";
 ?>
 <link rel="stylesheet" href="css/disease.css" type="text/css" media="screen">
-<script type="text/javascript" src="Maps/FusionCharts.js"></script>
+<script type="text/javascript" src="Maps/fusioncharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="JS/jquery_disease.js.php"></script>
 	<div class="main_body">

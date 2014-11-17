@@ -2,7 +2,7 @@
 	include "header.php";
 ?>
 <link rel="stylesheet" href="css/country.css" type="text/css" media="screen">
-<script type="text/javascript" src="Maps/FusionCharts.js"></script>
+<script type="text/javascript" src="Maps/fusioncharts.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript" src="JS/jquery_country.js"></script>
 	<div class="main_body">
@@ -48,14 +48,7 @@
 	<div id="dalys">Disability Adjusted Life Years Averted for All Diseases</div>
 	<div id="check_box">
 		<form id="orderForm">
-			<input type="checkbox" name="show_ranklist_order" value="by_name">Order by name<br>
-			<!--<input type="radio" name="show_ranklist_order" value="by_impact" checked>Order by impact<p>
-			
-			<input type="radio" name="show_disease" value="All" checked>All<br>
-			<input type="radio" name="show_disease" value="Malaria">Malaria<br>
-			<input type="radio" name="show_disease" value="TB">TB<br>
-			<input type="radio" name="show_disease" value="HIV">HIV/AIDS<br>	
-			-->		
+			<input type="checkbox" name="show_ranklist_order" value="by_name">Order by name<br>	
 		</form>
 	</div><!-- #check_box end -->
 	<div id="country_text">

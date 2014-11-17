@@ -1,13 +1,8 @@
-
-
 <?php
 	header('Content-type: text/javascript');
-	include "../../con_/con_ghi.php";//displayValue='High' displayValue='middle'  displayValue='low'
+	include "../../con_/con_ghi.php";
 	$itv1=10000000;
 	$itv2=500000;
-	//$itv3=500000;
-	//$itv4=150000;<color minValue='$itv3' maxValue='$itv2'  color='#FFE85E' />
-	//<color minValue='$itv4' maxValue='$itv3'  color='#6DC067' />
 	echo "
 	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10'  markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
@@ -17,8 +12,6 @@
 	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>
 	<data>";
-//useHoverColor='1'
-//<entity id='174' value='174' link='JavaScript:myJS('R', 174);' />
 	$result = $con->query("call show_top_countries_for_disease(-1)");
 	$hover ="";
 	$i = 1;
@@ -34,8 +27,6 @@
 			$hover = '';
 		}
 		else {
-			//$hover = 'A9213A';
-			//$hover = 'B42F23'; //darker one 75%
 			$hover = 'FF6666';
 		}
 		echo "<entity id='$row[6]' value='$row[4]' hoverColor='$hover' link=\"JavaScript:popupJS('$row[0]','$row[1]','$row[2]','$row[3]','$row[4]',0,$i);\" />";
