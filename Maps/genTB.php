@@ -1,5 +1,5 @@
 <?php
-	header('Content-type: text/javascript');
+	header('Content-type: text');
 	$itv1=800000;
 	$itv2=100000;
 	include "../../con_/con_ghi.php";
@@ -43,18 +43,15 @@
     	<entity id='171' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',2,'');\" />
     	<entity id='174' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('','0','0','0','0',2,'');\" />
     	<entity id='204' value='0' hoverColor='F1f1f1' link=\"JavaScript:popupJS('South Sudan','0','0','0','0',2,'');\" />
-    	</data>
-	
+    </data>
 	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='1' radius='40'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-    </definition>
-		<application>
-		</application>
-		</markers>
-		</map>";
+		<shapes>
+	     	<shape id='myCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='1' radius='40'/>
+		 	<shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
+		</shapes>
+		<definition></definition>
+		<application></application>
+	</markers>
+</map>";
 	
 ?>

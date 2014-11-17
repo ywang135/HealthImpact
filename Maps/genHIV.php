@@ -1,6 +1,5 @@
 <?php
-	header('Content-type: text/javascript');
-	include "../../con_/con_ghi.php";
+	header('Content-type: text');
 	$itv1=2000000;
 	$itv2=500000;
 	echo "
@@ -11,6 +10,7 @@
 	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>
 	<data>";
+	include "../../con_/con_ghi.php";
 	$result = $con->query("call show_top_countries_by_HIV(-1)");
 	$hover ="";
 	$i = 1;

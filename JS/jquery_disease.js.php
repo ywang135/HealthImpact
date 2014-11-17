@@ -2,11 +2,13 @@
 	header('Content-type: text/javascript');
 ?>
 $SHOW_DISEASE = 0;
+$MAP_ALL = 0;
 $MAP_MALARIA = 0;
 $MAP_TB = 0;
 $MAP_HIV = 0;
 $SUMMARY_GRAPH = 0;
 $title = "The Global Health Impact Disease Index";
+
 $(document).ready(function() {
 		$SHOW_DISEASE = 0;
         $(this).attr("title", $title);
@@ -16,7 +18,6 @@ $(document).ready(function() {
         $("#sub_menu #sub_disease a").css("background-color", "#0083CA");
        	$("#copyright").css( { "top" : "1050px"} );
        	$("#copyright").fadeIn();
-		drawMap("Maps/genDiseaseAll.php","mapcontainer_0","0");
 		$(".map_container").hide();
        	setArray();
        	
@@ -67,10 +68,7 @@ $(document).ready(function() {
         	$SHOW_DISEASE = 4;           
         	$("#showSummary").removeClass("c_b_d");
             $("#showSummary").addClass("c_b_d_choose");
-       		if($SUMMARY_GRAPH == 0){
-       			$SUMMARY_GRAPH = 1;
-       			drawChart("",0,0,0);
-       		} 
+       		drawChart("",0,0,0);
        		$("#disease_text").css("width","1120px");
        		$("#control_by_disease").css("marginLeft","225px");
         	$(".popupwd").hide();   
@@ -78,7 +76,10 @@ $(document).ready(function() {
         	$(".map_container").hide();
         	$("#emap").hide();
        	});
-        
+        drawMap("Maps/genDiseaseAll.php","mapcontainer_0","Map_0");
+       	drawMap("Maps/genDiseaseMalaria.php","mapcontainer_1","Map_1");
+       	drawMap("Maps/genDiseaseTB.php","mapcontainer_2","Map_2");
+       	drawMap("Maps/genDiseaseHIV.php","mapcontainer_3","Map_3");
         $("#showAll").click(function(){
         	$("#disease_text").html("<p>Breakdown of Need for Drugs for Each Disease:</p> This map shows the need for drugs for all of the diseases together. Click on a country to see the need for drugs for each disease in each country separately.");  		
 			$("#dalys").text("Disability Adjusted Life Years Lost to All Diseases");
@@ -107,7 +108,8 @@ $(document).ready(function() {
             $("#showAll").addClass("c_b_d_choose");
         	$(".popupwd").hide();   
        		$("#All_pop").fadeIn();
-        	$SHOW_DISEASE = 0;        	
+        	$SHOW_DISEASE = 0;   
+        	drawChart("",0,0,0);     	
         	$(".map_container").hide();
        		$("#mapcontainer_0").fadeIn();
        		$(".malaria_bar").fadeIn();
@@ -141,18 +143,11 @@ $(document).ready(function() {
         	$("#showMalaria").removeClass("c_b_d");
             $("#showMalaria").addClass("c_b_d_choose");
        		$(".map_container").hide();
-       		$("#mapcontainer_1").fadeIn();
-       		if($MAP_MALARIA == 0){
-       			$("#list_malaria_impact").load("Maps/Malaria.php");
-       			drawMap("Maps/genDiseaseMalaria.php","mapcontainer_1","1");
-       			$MAP_MALARIA = 1;
-       			drawChart("",0,0,0);
-       		}
+       		drawChart("",0,0,0);
        		$(".popupwd").hide();   
        		$("#Malaria_pop").fadeIn();
        		$(".malaria_bar").fadeIn();
-       		$(".TB_bar").hide();
-       		$(".HIV_bar").hide();
+       		$("#mapcontainer_1").fadeIn();
        		
        	});
        	$("#showTB").click(function(){
@@ -178,18 +173,14 @@ $(document).ready(function() {
                 $("#showHIV").removeClass("c_b_d_choose");
                 $("#showHIV").addClass("c_b_d");
         	}
-        	$SHOW_DISEASE = 2;           
+        	$SHOW_DISEASE = 2; 
+        	$("#emap").fadeIn();        
         	$("#showTB").removeClass("c_b_d");
             $("#showTB").addClass("c_b_d_choose");
-       		$(".map_container").hide();
-			if($MAP_TB == 0){
-       			$("#list_TB_impact").load("Maps/TB.php");
-       			drawMap("Maps/genDiseaseTB.php","mapcontainer_2","2");
-       			$MAP_TB = 1;
-       			drawChart("",0,0,0);
-       		}      		
+       		$(".map_container").hide();     		
        		$(".popupwd").hide();   
        		$("#TB_pop").fadeIn();
+       		drawChart("",0,0,0);
        		$("#mapcontainer_2").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").fadeIn();
@@ -222,14 +213,9 @@ $(document).ready(function() {
         	$("#showHIV").removeClass("c_b_d");
             $("#showHIV").addClass("c_b_d_choose");
        		$(".map_container").hide();
-       		if($MAP_HIV == 0){
-       			$("#list_HIV_impact").load("Maps/HIV.php");
-       			drawMap("Maps/genDiseaseHIV.php","mapcontainer_3","3");
-       			$MAP_HIV = 1;
-       			drawChart("",0,0,0);
-       		} 
        		$(".popupwd").hide();   
-       		$("#HIV_pop").fadeIn(); 		
+       		$("#HIV_pop").fadeIn();
+       		drawChart("",0,0,0); 		
        		$("#mapcontainer_3").fadeIn();
        		$(".malaria_bar").hide();
        		$(".TB_bar").hide();
@@ -290,9 +276,16 @@ function setArray(){
 ?>
 }
 function drawMap(source, div_id, map_id){
-	var myMap = new FusionCharts ("FCMap_WorldwithCountries", map_id, "706.912", "522.928", "1");
-    myMap.setXMLUrl (source);//"Maps/genAll.php"
-    myMap.render(div_id);//"mapcontainer"
+//	var myMap = new FusionCharts ("FCMap_WorldwithCountries", map_id, "706.912px", "522.928px", map_id);
+	var myMap = new FusionCharts({
+        "type": "WorldwithCountries",
+        "dataFormat": "xmlurl",
+        "dataSource": source,
+        "width": "706.912px",
+        "height": "522.928px"
+        });	
+    //myMap.setXMLUrl (source);//"Maps/genAll.php"
+    myMap.render(div_id);
 }
 
 function popupJS(vName, sc1, sc2, sc3, tsc, disease, rank_id){

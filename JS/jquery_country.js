@@ -12,6 +12,9 @@ $(document).ready(function() {
        	$("#copyright").css( { "top" : "950px"} );
        	$("#copyright").fadeIn();
 		drawMap("Maps/genAll.php","mapcontainer_0","Map0");
+		drawMap("Maps/genMalaria.php","mapcontainer_1","Map1");
+		drawMap("Maps/genTB.php","mapcontainer_2","Map2");
+       	drawMap("Maps/genHIV.php","mapcontainer_3","Map3");
 		$(".map_container").hide();
 		$(".country_rank_list").hide();
        	$("#mapcontainer_0").fadeIn();
@@ -46,6 +49,8 @@ $(document).ready(function() {
         $("#showAll").click(function(){
 		$("#dalys").text("Disability Adjusted Life Years Averted for All Diseases");
 		$("#dalys").fadeIn();
+            $(".map_container").hide();
+       		$("#mapcontainer_0").fadeIn();
             if($SHOW_DISEASE == 1){
         		$("#showMalaria").removeClass("c_b_d_choose");
                 $("#showMalaria").addClass("c_b_d");
@@ -61,8 +66,7 @@ $(document).ready(function() {
         	$("#showAll").removeClass("c_b_d");
             $("#showAll").addClass("c_b_d_choose");
         	$SHOW_DISEASE = 0;        	
-        	$(".map_container").hide();
-       		$("#mapcontainer_0").fadeIn();
+        	
        		$(".malaria_bar").fadeIn();
        		$(".TB_bar").fadeIn();
        		$(".HIV_bar").fadeIn();
@@ -79,6 +83,8 @@ $(document).ready(function() {
 			$("#dalys").text("Disability Adjusted Life Years Averted for Malaria");
 	
 		$("#dalys").fadeIn();
+			$(".map_container").hide();
+       		$("#mapcontainer_1").show();
 			if($SHOW_DISEASE == 0){
                 $("#showAll").removeClass("c_b_d_choose");
                 $("#showAll").addClass("c_b_d");
@@ -95,12 +101,8 @@ $(document).ready(function() {
             $("#showMalaria").addClass("c_b_d_choose");
        		$SHOW_DISEASE = 1;
        		
-       		$(".map_container").hide();
-       		$("#mapcontainer_1").fadeIn();
-       		
        		if($MAP_MALARIA == 0){
        			$("#list_malaria_impact").load("Maps/Malaria.php");
-       			drawMap("Maps/genMalaria.php","mapcontainer_1","Map1");
        			$MAP_MALARIA = 1;
        		}
        		$(".malaria_bar").fadeIn();
@@ -133,7 +135,6 @@ $(document).ready(function() {
        		$(".map_container").hide();
 			if($MAP_TB == 0){
        			$("#list_TB_impact").load("Maps/TB.php");
-       			drawMap("Maps/genTB.php","mapcontainer_2","Map2");
        			$MAP_TB = 1;
        		}      		
        		$("#mapcontainer_2").fadeIn();
@@ -167,7 +168,6 @@ $(document).ready(function() {
        		$(".map_container").hide();
        		if($MAP_HIV == 0){
        			$("#list_HIV_impact").load("Maps/HIV.php");
-       			drawMap("Maps/genHIV.php","mapcontainer_3","Map3");
        			$MAP_HIV = 1;
        		}      		
        		$("#mapcontainer_3").fadeIn();
@@ -208,13 +208,13 @@ $(document).ready(function() {
 		});
 		popupJS('Nigeria','8317430.00','710282.06','1524099.50','10551812.00',0,1);
     });
-    
+  
 function drawMap(source, div_id, map_id){
-	FusionCharts.ready(function(){
- 		var myMap = new FusionCharts ("FCMap_WorldwithCountries", map_id, "706.912", "522.928", '0');
+// 	FusionCharts.ready(function(){
+ 		var myMap = new FusionCharts ("FCMap_WorldwithCountries", map_id, "706.912", "522.928", '0'); 
     	myMap.setXMLUrl (source);//"Maps/genAll.php"
     	myMap.render(div_id);//"mapcontainer"
-    });
+//     });
 }
 function popupJS(vName, sc1, sc2, sc3, tsc, disease, rank_id){
 	document.getElementById('additional_statistic').innerHTML=vName;			

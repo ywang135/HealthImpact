@@ -1,17 +1,16 @@
-
 <?php
-	header('Content-type: text/javascript');
+ 	header('Content-type: text');
 	$itv1=1000000;
 	$itv2=100000;
-	include "../../con_/con_ghi.php";
-	echo "
-	<map animation='10' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
+	
+	echo "<map animation='10' width='100%' height='100%' showShadow='0' showBevel='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='0' legendPosition='bottom' showMarkerToolTip='1' >
 	<colorRange>
 	<color minValue='$itv1' maxValue='16000000' color='#EF3E2E' />
 	<color minValue='$itv2' maxValue='$itv1' color='#FFB31C' />
 	<color minValue='1' maxValue='$itv2' color='#0083CA' />
 	</colorRange>
 	<data>";
+	include "../../con_/con_ghi.php";
 	$result = $con->query("call show_top_countries_by_TB_for_disease(-1)");
 	$hover ="";
 	$i = 1;
